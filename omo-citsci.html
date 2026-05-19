@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-19 Tue 18:56 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Citizen Science</title>
+<meta name="author" content="Staff Member(s), [[https://github.com/ourghostorg][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Citizen Science</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orga7f9de7">1. General</a></li>
+<li><a href="#org07abc7e">2. STEMM</a>
+<ul>
+<li><a href="#org4544452">2.1. General</a></li>
+<li><a href="#org1790b2a">2.2. Systems Sciences, Misc</a>
+<ul>
+<li><a href="#org6862784">2.2.1. International Institute for Applied Systems Analysis</a></li>
+<li><a href="#org9c5fb6d">2.2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgf0cae94">2.3. Biological Sciences, Misc</a>
+<ul>
+<li><a href="#org4840da0">2.3.1. Environment, Ecology</a></li>
+</ul>
+</li>
+<li><a href="#orgba15bd8">2.4. Basic Sciences, Misc</a>
+<ul>
+<li><a href="#orgcba4d12">2.4.1. Physics</a></li>
+</ul>
+</li>
+<li><a href="#org23a0d2e">2.5. Mathematical, Computational Sciences, Misc</a>
+<ul>
+<li><a href="#orgc9899fe">2.5.1. CSE</a></li>
+</ul>
+</li>
+<li><a href="#org8a58807">2.6. Special Topics</a>
+<ul>
+<li><a href="#org09c5816">2.6.1. Open Science</a></li>
+<li><a href="#org317b906">2.6.2. NatGeo</a></li>
+</ul>
+</li>
+<li><a href="#org746dbd9">2.7. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orge1adc2d">3. Worldly Matters</a>
+<ul>
+<li><a href="#orgc85ec3d">3.1. Orgs</a></li>
+<li><a href="#orgf8551e2">3.2. Nation States</a>
+<ul>
+<li><a href="#org8d343f5">3.2.1. India</a></li>
+</ul>
+</li>
+<li><a href="#orge06de6d">3.3. Special Groups</a>
+<ul>
+<li><a href="#orgd0340d4">3.3.1. Youth</a></li>
+<li><a href="#org498e911">3.3.2. Women</a></li>
+</ul>
+</li>
+<li><a href="#org2c78b62">3.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org65e7a01">4. Core</a>
+<ul>
+<li><a href="#org1850883">4.1. Principles</a></li>
+<li><a href="#org2ca2be7">4.2. Projects</a></li>
+<li><a href="#orgde4a02c">4.3. EU Citizen Science</a>
+<ul>
+<li><a href="#org642daba">4.3.1. General</a></li>
+<li><a href="#org6661f12">4.3.2. Misc</a></li>
+<li><a href="#orgdd36e18">4.3.3. TIME4CS</a></li>
+</ul>
+</li>
+<li><a href="#orgb7bd571">4.4. SciStarter</a>
+<ul>
+<li><a href="#orgc933410">4.4.1. General</a></li>
+<li><a href="#org75e6f6f">4.4.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org125b456">4.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgbb25018">5. Arts</a>
+<ul>
+<li><a href="#orgd7dfa79">5.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org2be3e75">6. Special Topics</a>
+<ul>
+<li><a href="#orgcdf4473">6.1. Popular Resources</a></li>
+</ul>
+</li>
+<li><a href="#orgf67b89d">7. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orga7f9de7" class="outline-2">
+<h2 id="orga7f9de7"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Citizen science,” Wikipedia. Nov. 11, 2024. Accessed: Dec. 22, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Citizen_science&amp;oldid=1256696680">https://en.wikipedia.org/w/index.php?title=Citizen_science&amp;oldid=1256696680</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org07abc7e" class="outline-2">
+<h2 id="org07abc7e"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org4544452" class="outline-3">
+<h3 id="org4544452"><span class="section-number-3">2.1.</span> General</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>K. Vohland et al., Eds., <b>The Science of Citizen Science.</b> Cham: Springer International Publishing, 2021. doi: 10.1007/978-3-030-58278-4.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1790b2a" class="outline-3">
+<h3 id="org1790b2a"><span class="section-number-3">2.2.</span> Systems Sciences, Misc</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-org6862784" class="outline-4">
+<h4 id="org6862784"><span class="section-number-4">2.2.1.</span> International Institute for Applied Systems Analysis</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<ul class="org-ul">
+<li>“Breaking boundaries through citizen science,” IIASA - International Institute for Applied Systems Analysis. Accessed: Apr. 12, 2024. [Online]. Available: <a href="https://iiasa.ac.at/blog/apr-2024/breaking-boundaries-through-citizen-science">https://iiasa.ac.at/blog/apr-2024/breaking-boundaries-through-citizen-science</a></li>
+<li>“The collaborative power of AI and citizen science in advancing the Sustainable Development Goals,” IIASA - International Institute for Applied Systems Analysis. Accessed: Dec. 17, 2024. [Online]. Available: <a href="https://iiasa.ac.at/news/dec-2024/collaborative-power-of-ai-and-citizen-science-in-advancing-sustainable-development">https://iiasa.ac.at/news/dec-2024/collaborative-power-of-ai-and-citizen-science-in-advancing-sustainable-development</a></li>
+<li>“Breaking boundaries through citizen science,” IIASA - International Institute for Applied Systems Analysis. Accessed: Apr. 13, 2024. [Online]. Available: <a href="https://iiasa.ac.at/blog/apr-2024/breaking-boundaries-through-citizen-science">https://iiasa.ac.at/blog/apr-2024/breaking-boundaries-through-citizen-science</a></li>
+<li>“Revealing the power of citizen science for SDG advancement,” IIASA - International Institute for Applied Systems Analysis. <a href="https://iiasa.ac.at/news/jun-2023/revealing-power-of-citizen-science-for-sdg-advancement">https://iiasa.ac.at/news/jun-2023/revealing-power-of-citizen-science-for-sdg-advancement</a> (accessed Jun. 28, 2023).</li>
+<li><b>“Citizen science goes global,”</b> IIASA - International Institute for Applied Systems Analysis. <a href="http://iiasa.ac.at/news/oct-2022/citizen-science-goes-global">http://iiasa.ac.at/news/oct-2022/citizen-science-goes-global</a> (accessed Oct. 08, 2022).</li>
+<li>“CROPS: a new EU-funded project to grow citizen science in Europe,” IIASA - International Institute for Applied Systems Analysis. Accessed: Apr. 03, 2024. [Online]. Available: <a href="https://iiasa.ac.at/news/apr-2024/crops-new-eu-funded-project-to-grow-citizen-science-in-europe">https://iiasa.ac.at/news/apr-2024/crops-new-eu-funded-project-to-grow-citizen-science-in-europe</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9c5fb6d" class="outline-4">
+<h4 id="org9c5fb6d"><span class="section-number-4">2.2.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-2-2">
+<ul class="org-ul">
+<li>“Enhancing citizen observatories for sustainable cities,” CitiObs. Accessed: Jul. 19, 2024. [Online]. Available: <a href="https://citiobs.eu/">https://citiobs.eu/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf0cae94" class="outline-3">
+<h3 id="orgf0cae94"><span class="section-number-3">2.3.</span> Biological Sciences, Misc</h3>
+<div class="outline-text-3" id="text-2-3">
+</div>
+<div id="outline-container-org4840da0" class="outline-4">
+<h4 id="org4840da0"><span class="section-number-4">2.3.1.</span> Environment, Ecology</h4>
+<div class="outline-text-4" id="text-2-3-1">
+<ul class="org-ul">
+<li>J. L. Dickinson and R. E. Bonney, Eds., Citizen Science: Public Participation in Environmental Research, Illustrated edition. Ithaca: Comstock Publishing Associates, 2012.</li>
+<li>D. Fraisl et al., “Citizen science in environmental and ecological sciences,” Nat Rev Methods Primers, vol. 2, no. 1, pp. 1–20, Aug. 2022, doi: 10.1038/s43586-022-00144-4.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgba15bd8" class="outline-3">
+<h3 id="orgba15bd8"><span class="section-number-3">2.4.</span> Basic Sciences, Misc</h3>
+<div class="outline-text-3" id="text-2-4">
+</div>
+<div id="outline-container-orgcba4d12" class="outline-4">
+<h4 id="orgcba4d12"><span class="section-number-4">2.4.1.</span> Physics</h4>
+<div class="outline-text-4" id="text-2-4-1">
+</div>
+<ul class="org-ul">
+<li><a id="orgeb28191"></a>NASA<br />
+<div class="outline-text-5" id="text-orgeb28191">
+<ul class="org-ul">
+<li>“Citizen Science - NASA Science.” Accessed: Dec. 23, 2024. [Online]. Available: <a href="https://science.nasa.gov/citizen-science/">https://science.nasa.gov/citizen-science/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org23a0d2e" class="outline-3">
+<h3 id="org23a0d2e"><span class="section-number-3">2.5.</span> Mathematical, Computational Sciences, Misc</h3>
+<div class="outline-text-3" id="text-2-5">
+</div>
+<div id="outline-container-orgc9899fe" class="outline-4">
+<h4 id="orgc9899fe"><span class="section-number-4">2.5.1.</span> CSE</h4>
+<div class="outline-text-4" id="text-2-5-1">
+</div>
+<ul class="org-ul">
+<li><a id="orgfd785e7"></a>AI<br />
+<ul class="org-ul">
+<li><a id="orge41a222"></a>International Institute for Applied Systems Analysis<br />
+<div class="outline-text-6" id="text-orge41a222">
+<ul class="org-ul">
+<li>“The collaborative power of AI and citizen science in advancing the Sustainable Development Goals,” IIASA - International Institute for Applied Systems Analysis. Accessed: Dec. 17, 2024. [Online]. Available: <a href="https://iiasa.ac.at/news/dec-2024/collaborative-power-of-ai-and-citizen-science-in-advancing-sustainable-development">https://iiasa.ac.at/news/dec-2024/collaborative-power-of-ai-and-citizen-science-in-advancing-sustainable-development</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgcb2e408"></a>Misc<br />
+<div class="outline-text-6" id="text-orgcb2e408">
+<ul class="org-ul">
+<li>“How AI might impact citizen science,” nesta. Accessed: Aug. 08, 2024. [Online]. Available: <a href="https://www.nesta.org.uk/feature/emerging-and-desirable-futures-for-citizen-science/how-ai-might-impact-citizen-science/">https://www.nesta.org.uk/feature/emerging-and-desirable-futures-for-citizen-science/how-ai-might-impact-citizen-science/</a></li>
+
+<li>“AI for Citizen Science Apps - Update on the SPOTTERON AI Image Recognition System for species ID or object identification,” SPOTTERON Citizen Science. Accessed: Sep. 04, 2024. [Online]. Available: <a href="https://www.spotteron.net/blog-and-news/ai-for-citizen-science-apps-update-on-the-spotteron-ai-image-recognition-system-for-species-id-or-object-identification">https://www.spotteron.net/blog-and-news/ai-for-citizen-science-apps-update-on-the-spotteron-ai-image-recognition-system-for-species-id-or-object-identification</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgf9fa5af"></a>BlockChain<br /></li>
+<li><a id="org4d56314"></a>Misc<br />
+<div class="outline-text-5" id="text-org4d56314">
+<ul class="org-ul">
+<li>“Home.” Accessed: Oct. 18, 2024. [Online]. Available: <a href="https://www.geo-wiki.org/">https://www.geo-wiki.org/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8a58807" class="outline-3">
+<h3 id="org8a58807"><span class="section-number-3">2.6.</span> Special Topics</h3>
+<div class="outline-text-3" id="text-2-6">
+</div>
+<div id="outline-container-org09c5816" class="outline-4">
+<h4 id="org09c5816"><span class="section-number-4">2.6.1.</span> Open Science</h4>
+<div class="outline-text-4" id="text-2-6-1">
+<ul class="org-ul">
+<li>“Open Science Meets Citizen Science - A Guide,” LIBER Europe. Accessed: May 26, 2024. [Online]. Available: <a href="https://libereurope.eu/article/open-science-meets-citizen-science-a-guide/">https://libereurope.eu/article/open-science-meets-citizen-science-a-guide/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org317b906" class="outline-4">
+<h4 id="org317b906"><span class="section-number-4">2.6.2.</span> NatGeo</h4>
+<div class="outline-text-4" id="text-2-6-2">
+<ul class="org-ul">
+<li>“Citizen Science.” Accessed: Dec. 23, 2024. [Online]. Available: <a href="https://education.nationalgeographic.org/resource/citizen-science-article">https://education.nationalgeographic.org/resource/citizen-science-article</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org746dbd9" class="outline-3">
+<h3 id="org746dbd9"><span class="section-number-3">2.7.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-7">
+<ul class="org-ul">
+<li>G. Hager, T. Harwell, and I. Moorthy, “How much citizen science does city science need?,” Environment and Planning B: Urban Analytics and City Science, vol. 52, no. 9, pp. 2057–2063, Nov. 2025, doi: 10.1177/23998083251391719.</li>
+
+<li>T. M. P. Reader, “How Citizen Science Games Could Help Cure Disease,” The MIT Press Reader. Accessed: Jul. 02, 2025. [Online]. Available: <a href="https://thereader.mitpress.mit.edu/how-citizen-science-games-could-help-cure-disease/">https://thereader.mitpress.mit.edu/how-citizen-science-games-could-help-cure-disease/</a></li>
+
+<li>“ECSA and ECS are leaving X.” Accessed: Nov. 28, 2024. [Online]. Available: <a href="https://eu-citizen.science/blog/2024/11/27/ecsa-and-ecs-are-leaving-x/">https://eu-citizen.science/blog/2024/11/27/ecsa-and-ecs-are-leaving-x/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orge1adc2d" class="outline-2">
+<h2 id="orge1adc2d"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgc85ec3d" class="outline-3">
+<h3 id="orgc85ec3d"><span class="section-number-3">3.1.</span> Orgs</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>“Citizen Science | Science Mission Directorate.” <a href="https://science.nasa.gov/citizenscience">https://science.nasa.gov/citizenscience</a> (accessed Oct. 08, 2022).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“SciStarter,” SciStarter. Accessed: Mar. 31, 2024. [Online]. Available: <a href="https://scistarter.org/">https://scistarter.org/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf8551e2" class="outline-3">
+<h3 id="orgf8551e2"><span class="section-number-3">3.2.</span> Nation States</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-org8d343f5" class="outline-4">
+<h4 id="org8d343f5"><span class="section-number-4">3.2.1.</span> India</h4>
+<div class="outline-text-4" id="text-3-2-1">
+</div>
+<ul class="org-ul">
+<li><a id="org17505d2"></a>General<br /></li>
+<li><a id="org415755f"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org1a08a13"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org0a85ab9"></a>World<br />
+<ul class="org-ul">
+<li><a id="orgf5b479e"></a>Orgs<br />
+<div class="outline-text-6" id="text-orgf5b479e">
+<ul class="org-ul">
+<li>“Home,” Citizen Science India. Accessed: Dec. 22, 2024. [Online]. Available: <a href="https://citsci-india.org/">https://citsci-india.org/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org07f1ec5"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org33fa639"></a>Core<br />
+<div class="outline-text-5" id="text-org33fa639">
+<ul class="org-ul">
+<li>Dinesh C Sharma, “Citizen science growing in India: Study,” Down To Earth. Accessed: Dec. 22, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/science-technology/citizen-science-growing-in-india-study-66375">https://www.downtoearth.org.in/science-technology/citizen-science-growing-in-india-study-66375</a></li>
+<li>S. K. Namdeo and M. Koley, “Citizen Science in India: Introduction, Challenges and Way Forward,” DIALOGUE: Science, Scientists and Society, pp. 1–15, Sep. 2023, Accessed: Dec. 22, 2024. [Online]. Available: <a href="https://dialogue.ias.ac.in/index.php/dialogue/article/view/28">https://dialogue.ias.ac.in/index.php/dialogue/article/view/28</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org37876af"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="org6db996d"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org2509f97"></a>Misc<br />
+<div class="outline-text-5" id="text-org2509f97">
+<ul class="org-ul">
+<li>“Home,” Citizen Science India. Accessed: Oct. 27, 2025. [Online]. Available: <a href="https://citsci-india.org/">https://citsci-india.org/</a></li>
+</ul>
+
+
+
+
+<ul class="org-ul">
+<li>P. Sekhsaria and N. Thayyil, First Steps - Citizen Science in Ecology in India [Paperback] Pankaj Sekhsaria and Naveen Thayyil, First Edition. New Delhi: DST Centre for Policy Research, IIT Delhi and AuthorsUpfront, 2022.</li>
+<li>R. Malhotra, “Citizen science projects take flight,” Nature India, Nov. 2018, doi: 10.1038/nindia.2018.142.</li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“From Citizen Science to Conservation Initiative: Examples of eBird in Asia - CitizenScience.Asia.” Accessed: May 18, 2024. [Online]. Available: <a href="https://citizenscience.asia/event/from-citizen-science-to-conservation-initiative-examples-of-ebird-in-asia/">https://citizenscience.asia/event/from-citizen-science-to-conservation-initiative-examples-of-ebird-in-asia/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge06de6d" class="outline-3">
+<h3 id="orge06de6d"><span class="section-number-3">3.3.</span> Special Groups</h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-orgd0340d4" class="outline-4">
+<h4 id="orgd0340d4"><span class="section-number-4">3.3.1.</span> Youth</h4>
+<div class="outline-text-4" id="text-3-3-1">
+<ul class="org-ul">
+<li>D. Borgström, P. Canto-Farachala, A. L. Hagen, R. Norvoll, L. Rådmark, and S. B. Lorenzen, “Handbook of Youth Citizen Social Science. Working with Young People and the Local Community for Social Change,” Jan. 2024, doi: 10.5281/zenodo.10566411.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org498e911" class="outline-4">
+<h4 id="org498e911"><span class="section-number-4">3.3.2.</span> Women</h4>
+</div>
+</div>
+<div id="outline-container-org2c78b62" class="outline-3">
+<h3 id="org2c78b62"><span class="section-number-3">3.4.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li>A. Irwin, Citizen Science: A Study of People, Expertise and Sustainable Development, 1st edition. London New York: Routledge, 1995.</li>
+
+<li>M. Leach, I. Scoones, and B. Wynne, Science And Citizens, First Edition. Orient BlackSwan, 2007.</li>
+
+<li>C. M. C. R. S. and I. E. Commission, Citizen Science: Innovation in Open Science, Society and Policy. UCL Press, 2018.
+<ul class="org-ul">
+<li>Citizen Science: Innovation in Open Science, Society and Policy. UCL Press, 2018. Accessed: Dec. 23, 2024. [Online]. Available: <a href="https://www.jstor.org/stable/j.ctv550cf2">https://www.jstor.org/stable/j.ctv550cf2</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org65e7a01" class="outline-2">
+<h2 id="org65e7a01"><span class="section-number-2">4.</span> Core</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org1850883" class="outline-3">
+<h3 id="org1850883"><span class="section-number-3">4.1.</span> Principles</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>E. (European C. S. Association), “Ten Principles of Citizen Science,” Sep. 2015, doi: 10.17605/OSF.IO/XPR2N.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2ca2be7" class="outline-3">
+<h3 id="org2ca2be7"><span class="section-number-3">4.2.</span> Projects</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>“List of citizen science projects,” Wikipedia. Dec. 11, 2024. Accessed: Dec. 22, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=List_of_citizen_science_projects&amp;oldid=1262360779">https://en.wikipedia.org/w/index.php?title=List_of_citizen_science_projects&amp;oldid=1262360779</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgde4a02c" class="outline-3">
+<h3 id="orgde4a02c"><span class="section-number-3">4.3.</span> EU Citizen Science</h3>
+<div class="outline-text-3" id="text-4-3">
+</div>
+<div id="outline-container-org642daba" class="outline-4">
+<h4 id="org642daba"><span class="section-number-4">4.3.1.</span> General</h4>
+<div class="outline-text-4" id="text-4-3-1">
+<ul class="org-ul">
+<li>“European Citizen Science Platform.” Accessed: Dec. 22, 2024. [Online]. Available: <a href="https://eu-citizen.science/">https://eu-citizen.science/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6661f12" class="outline-4">
+<h4 id="org6661f12"><span class="section-number-4">4.3.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-4-3-2">
+<ul class="org-ul">
+<li>“Training is key!” Accessed: Jun. 20, 2024. [Online]. Available: <a href="https://eu-citizen.science/blog/2024/06/17/training-is-key/">https://eu-citizen.science/blog/2024/06/17/training-is-key/</a></li>
+<li>“European Citizen Science Platform :: Projects.” Accessed: May 23, 2024. [Online]. Available: <a href="https://eu-citizen.science/projects?keywords=biodiversity">https://eu-citizen.science/projects?keywords=biodiversity</a></li>
+<li>“Urban engaged university.” Accessed: Feb. 08, 2024. [Online]. Available: <a href="https://eu-citizen.science/blog/2024/01/31/urban-engaged-university/">https://eu-citizen.science/blog/2024/01/31/urban-engaged-university/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“European Citizen Science Platform.” Accessed: Dec. 03, 2024. [Online]. Available: <a href="https://eu-citizen.science/p/ecs-collaboration-sessions">https://eu-citizen.science/p/ecs-collaboration-sessions</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdd36e18" class="outline-4">
+<h4 id="orgdd36e18"><span class="section-number-4">4.3.3.</span> TIME4CS</h4>
+<div class="outline-text-4" id="text-4-3-3">
+<ul class="org-ul">
+<li>A. Salnikova, E. Vilarchao, A. Brandstetter-Kunc, and I. Ipolyi, “Promotional version of TIME4CS Statement: it is time for Citizen Science!,” Nov. 2023, Accessed: Aug. 07, 2024. [Online]. Available: <a href="https://zenodo.org/records/10401971">https://zenodo.org/records/10401971</a></li>
+<li>“Developing New Knowledge &amp; Contributing to Social Change by Promoting Citizen Social Science,” TIME4CS Project. Accessed: May 15, 2024. [Online]. Available: <a href="https://www.time4cs.eu/news/developing-new-knowledge-amp-contributing-to-social-change-by-promoting-citizen-social-science">https://www.time4cs.eu/news/developing-new-knowledge-amp-contributing-to-social-change-by-promoting-citizen-social-science</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb7bd571" class="outline-3">
+<h3 id="orgb7bd571"><span class="section-number-3">4.4.</span> SciStarter</h3>
+<div class="outline-text-3" id="text-4-4">
+</div>
+<div id="outline-container-orgc933410" class="outline-4">
+<h4 id="orgc933410"><span class="section-number-4">4.4.1.</span> General</h4>
+<div class="outline-text-4" id="text-4-4-1">
+<ul class="org-ul">
+<li>“SciStarter,” SciStarter. Accessed: Dec. 22, 2024. [Online]. Available: <a href="https://scistarter.org/">https://scistarter.org/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org75e6f6f" class="outline-4">
+<h4 id="org75e6f6f"><span class="section-number-4">4.4.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-4-4-2">
+<ul class="org-ul">
+<li>“About Citizen Science Month and One Million Acts of Science,” SciStarter. Accessed: Mar. 31, 2024. [Online]. Available: <a href="https://scistarter.org/citizensciencemonth-about">https://scistarter.org/citizensciencemonth-about</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org125b456" class="outline-3">
+<h3 id="org125b456"><span class="section-number-3">4.5.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgbb25018" class="outline-2">
+<h2 id="orgbb25018"><span class="section-number-2">5.</span> Arts</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgd7dfa79" class="outline-3">
+<h3 id="orgd7dfa79"><span class="section-number-3">5.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org2be3e75" class="outline-2">
+<h2 id="org2be3e75"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgcdf4473" class="outline-3">
+<h3 id="orgcdf4473"><span class="section-number-3">6.1.</span> Popular Resources</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>D. Cavalier, C. Hoffman, and C. Cooper, The Field Guide to Citizen Science: How You Can Contribute to Scientific Research and Make a Difference. Timber Press, 2020.</li>
+<li>C. Cooper, <i>Citizen Science: How Ordinary People are Changing the Face of Discovery.</i> Abrams, 2016.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf67b89d" class="outline-2">
+<h2 id="orgf67b89d"><span class="section-number-2">7.</span> Misc</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>“Global data gaps highlight why citizen science has now become essential for official statistics,” IIASA - International Institute for Applied Systems Analysis. Accessed: Jan. 09, 2026. [Online]. Available: <a href="http://iiasa.ac.at/news/jan-2026/global-data-gaps-highlight-why-citizen-science-has-now-become-essential-for-official">http://iiasa.ac.at/news/jan-2026/global-data-gaps-highlight-why-citizen-science-has-now-become-essential-for-official</a></li>
+
+<li>S. Woods, “People power.” Accessed: Nov. 19, 2025. [Online]. Available: <a href="https://www.resurgence.org/magazine/article6550-people-power.html">https://www.resurgence.org/magazine/article6550-people-power.html</a></li>
+
+<li>S. Woods, “How citizen science can help to solve the global freshwater crisis,” Nature, vol. 644, no. 8077, pp. 582–582, Aug. 2025, doi: 10.1038/d41586-025-02614-7.</li>
+
+<li>“From Vienna to the world: launch of citizen science campaign to measure trees and map carbon,” IIASA - International Institute for Applied Systems Analysis. Accessed: Jun. 23, 2025. [Online]. Available: <a href="http://iiasa.ac.at/news/jun-2025/from-vienna-to-world-launch-of-citizen-science-campaign-to-measure-trees-and-map">http://iiasa.ac.at/news/jun-2025/from-vienna-to-world-launch-of-citizen-science-campaign-to-measure-trees-and-map</a></li>
+
+<li>A. Coutrot and H. J. Spiers, “Citizen Science,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.19a2c99d.</li>
+
+<li>“Strengthening citizen science and sustainability monitoring in Europe,” IIASA - International Institute for Applied Systems Analysis. Accessed: Feb. 17, 2025. [Online]. Available: <a href="https://iiasa.ac.at/news/feb-2025/strengthening-citizen-science-and-sustainability-monitoring-in-europe">https://iiasa.ac.at/news/feb-2025/strengthening-citizen-science-and-sustainability-monitoring-in-europe</a></li>
+
+<li>“Naturhistorisches Museum Wien - ECSA.” Accessed: Apr. 08, 2024. [Online]. Available: <a href="https://www.nhm-wien.ac.at/jart/prj3/nhm-resp/main.jart?rel=de&amp;content-id=1706834184106">https://www.nhm-wien.ac.at/jart/prj3/nhm-resp/main.jart?rel=de&amp;content-id=1706834184106</a></li>
+
+<li>L. Bui, “Why Citizen Science and Public Media Need to Get Together,” MIT Graduate Program in Comparative Media Studies, Oct. 27, 2014. <a href="https://cms.mit.edu/citizen-science-public-media-need-get-together/">https://cms.mit.edu/citizen-science-public-media-need-get-together/</a> (accessed Oct. 08, 2022).</li>
+<li>C. © M. I. of Technology and 1977-2022 All rights reserved, “Could ‘Citizen Science’ Be Better Than Academy Science?,” MIT Sloan Management Review. <a href="https://sloanreview.mit.edu/article/could-citizen-science-be-better-than-academy-science/">https://sloanreview.mit.edu/article/could-citizen-science-be-better-than-academy-science/</a> (accessed Oct. 08, 2022).</li>
+
+<li>“Citizen Science: Theory and Practice.” Accessed: Feb. 08, 2024. [Online]. Available: <a href="https://theoryandpractice.citizenscienceassociation.org/">https://theoryandpractice.citizenscienceassociation.org/</a></li>
+<li>S. Beck, D. Fraisl, M. Poetz, and H. Sauermann, “Multi-disciplinary Perspectives on Citizen Science&amp;mdash;Synthesizing Five Paradigms of Citizen Involvement,” Citizen Science: Theory and Practice, vol. 9, no. 1, Apr. 2024, doi: 10.5334/cstp.691.</li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://github.com/ourghostorg">OurGhostOrg</a></p>
+<p class="date">Created: 2026-05-19 Tue 18:56</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

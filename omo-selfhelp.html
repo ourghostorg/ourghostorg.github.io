@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-19 Tue 18:56 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Self-Help</title>
+<meta name="author" content="Staff Member(s), [[https://github.com/ourghostorg][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Self-Help</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org7aed946">1. General</a></li>
+<li><a href="#orgad85386">2. STEMM</a>
+<ul>
+<li><a href="#orgc782f96">2.1. Systems Sciences, Misc</a></li>
+<li><a href="#orge990f5f">2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org40222c5">3. Worldly Matters</a>
+<ul>
+<li><a href="#orgcf41580">3.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org55ba007">4. Core</a></li>
+<li><a href="#orgc7c4b10">5. Arts</a>
+<ul>
+<li><a href="#orgc545dbe">5.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgf085185">6. Special Topics</a>
+<ul>
+<li><a href="#org21f743d">6.1. Possibly MisInfo/DisInfo</a>
+<ul>
+<li><a href="#org00590d5">6.1.1. Fortune-telling</a></li>
+<li><a href="#orgc2ad71f">6.1.2. Palmistry</a></li>
+</ul>
+</li>
+<li><a href="#org417ae92">6.2. Ikigai</a></li>
+<li><a href="#org7eaf91d">6.3. Articles, Essays</a></li>
+<li><a href="#org3e54e64">6.4. Texts</a></li>
+<li><a href="#orgd78124c">6.5. Hindi</a></li>
+</ul>
+</li>
+<li><a href="#orga5cf40f">7. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org7aed946" class="outline-2">
+<h2 id="org7aed946"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Self-help,” Wikipedia. May 04, 2025. Accessed: Jun. 15, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Self-help&amp;oldid=1288789615">https://en.wikipedia.org/w/index.php?title=Self-help&amp;oldid=1288789615</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgad85386" class="outline-2">
+<h2 id="orgad85386"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgc782f96" class="outline-3">
+<h3 id="orgc782f96"><span class="section-number-3">2.1.</span> Systems Sciences, Misc</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>R. Ison, Systems Practice: How to Act: In situations of uncertainty and complexity in a climate-change world, 2nd edition. Springer, 2017.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge990f5f" class="outline-3">
+<h3 id="orge990f5f"><span class="section-number-3">2.2.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>N. Giansiracusa, “Ruled by Numbers: How Data Dominates Every Facet of Our Daily Lives,” Literary Hub. Accessed: Aug. 14, 2025. [Online]. Available: <a href="https://lithub.com/ruled-by-numbers-how-data-dominates-every-facet-of-our-daily-lives/">https://lithub.com/ruled-by-numbers-how-data-dominates-every-facet-of-our-daily-lives/</a></li>
+
+<li>C. Hall, “How to instantly be better at things,” Big Think. Accessed: Aug. 12, 2025. [Online]. Available: <a href="https://bigthink.com/smart-skills/how-to-instantly-be-better-at-things/">https://bigthink.com/smart-skills/how-to-instantly-be-better-at-things/</a></li>
+
+<li>J. Browning, “Four Requirements for High Performance,” Big Think. Accessed: Aug. 12, 2025. [Online]. Available: <a href="https://bigthink.com/plus/four-requirements-for-high-performance/">https://bigthink.com/plus/four-requirements-for-high-performance/</a></li>
+
+<li>cxdig, “When Rivalry Backfires: How Individual Skill and Risk of Status Loss Moderate the Effects of Rivalry on Performance,” Complexity Digest. Accessed: Aug. 07, 2025. [Online]. Available: <a href="https://comdig.unam.mx/2025/08/06/when-rivalry-backfires-how-individual-skill-and-risk-of-status-loss-moderate-the-effects-of-rivalry-on-performance/">https://comdig.unam.mx/2025/08/06/when-rivalry-backfires-how-individual-skill-and-risk-of-status-loss-moderate-the-effects-of-rivalry-on-performance/</a></li>
+<li>“A new ‘field theory’ reveals the hidden forces that guide us | Aeon Essays,” Aeon. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://aeon.co/essays/a-new-field-theory-reveals-the-hidden-forces-that-guide-us">https://aeon.co/essays/a-new-field-theory-reveals-the-hidden-forces-that-guide-us</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org40222c5" class="outline-2">
+<h2 id="org40222c5"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgcf41580" class="outline-3">
+<h3 id="orgcf41580"><span class="section-number-3">3.1.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>J. Macy and C. Johnstone, Active Hope (revised): How to Face the Mess We’re in with Unexpected Resilience and Creative Power. Novato, California: New World Library, 2022.</li>
+
+<li>“Humble Book Bundle: Adulting for Dummies by Wiley,” Humble Bundle. Accessed: Jan. 09, 2026. [Online]. Available: <a href="https://www.humblebundle.com/books/adulting-for-dummies-wiley-books">https://www.humblebundle.com/books/adulting-for-dummies-wiley-books</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org55ba007" class="outline-2">
+<h2 id="org55ba007"><span class="section-number-2">4.</span> Core</h2>
+</div>
+<div id="outline-container-orgc7c4b10" class="outline-2">
+<h2 id="orgc7c4b10"><span class="section-number-2">5.</span> Arts</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgc545dbe" class="outline-3">
+<h3 id="orgc545dbe"><span class="section-number-3">5.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgf085185" class="outline-2">
+<h2 id="orgf085185"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org21f743d" class="outline-3">
+<h3 id="org21f743d"><span class="section-number-3">6.1.</span> Possibly MisInfo/DisInfo</h3>
+<div class="outline-text-3" id="text-6-1">
+</div>
+<div id="outline-container-org00590d5" class="outline-4">
+<h4 id="org00590d5"><span class="section-number-4">6.1.1.</span> Fortune-telling</h4>
+<div class="outline-text-4" id="text-6-1-1">
+<ul class="org-ul">
+<li>“Fortune-telling,” Wikipedia. Nov. 16, 2022. Accessed: Nov. 18, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Fortune-telling&amp;oldid=1122227483">https://en.wikipedia.org/w/index.php?title=Fortune-telling&amp;oldid=1122227483</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc2ad71f" class="outline-4">
+<h4 id="orgc2ad71f"><span class="section-number-4">6.1.2.</span> Palmistry</h4>
+<div class="outline-text-4" id="text-6-1-2">
+<ul class="org-ul">
+<li>“Palmistry,” Wikipedia. Oct. 16, 2022. Accessed: Nov. 18, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Palmistry&amp;oldid=1116445278">https://en.wikipedia.org/w/index.php?title=Palmistry&amp;oldid=1116445278</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org417ae92" class="outline-3">
+<h3 id="org417ae92"><span class="section-number-3">6.2.</span> Ikigai</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li>F. Miralles and H. García, The Book of Ichigo Ichie: The Art of Making the Most of Every Moment, the Japanese Way. Hachette UK, 2020.</li>
+<li>H. García and F. Miralles, The Ikigai Journey: A Practical Guide to Finding Happiness and Purpose the Japanese Way. チャールズ・イー・タトル出版, 2020.</li>
+<li>H. García and F. Miralles, Ikigai: The Japanese secret to a long and happy life. Random House, 2017.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7eaf91d" class="outline-3">
+<h3 id="org7eaf91d"><span class="section-number-3">6.3.</span> Articles, Essays</h3>
+<div class="outline-text-3" id="text-6-3">
+<ul class="org-ul">
+<li>R. Dabas, “The art of failing forward,” Chemistry World. Accessed: May 26, 2025. [Online]. Available: <a href="https://www.chemistryworld.com/opinion/the-art-of-failing-forward/4020489.article">https://www.chemistryworld.com/opinion/the-art-of-failing-forward/4020489.article</a></li>
+<li>T. M. P. Reader, “The Beguiling, Bizarre World of Midcentury Self-Help Records,” The MIT Press Reader. Accessed: Oct. 25, 2024. [Online]. Available: <a href="https://thereader.mitpress.mit.edu/the-beguiling-bizarre-world-of-midcentury-self-help-records/">https://thereader.mitpress.mit.edu/the-beguiling-bizarre-world-of-midcentury-self-help-records/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3e54e64" class="outline-3">
+<h3 id="org3e54e64"><span class="section-number-3">6.4.</span> Texts</h3>
+<div class="outline-text-3" id="text-6-4">
+<ul class="org-ul">
+<li>A. Brones, <b>Live Lagom: Balanced Living, The Swedish Way.</b> Random House, 2017.</li>
+<li>C. Hamilton and T. S. of Life, <b>How to Deal with Adversity.</b> Pan Macmillan, 2014.</li>
+<li>N. Lähteenmäki, N. Rosendahl, A. Hoffman, and J. Oliver, <i>The Book of You: Daily Micro-Actions for a Happier, Healthier You.</i> Penguin Books, Limited, 2015.</li>
+<li>S. Kumar, You Are, Therefore I Am: A Declaration of Dependence. Green Books, 2002.</li>
+<li>S. Kumar, Elegant Simplicity: The Art of Living Well. New Society Publisher, 2019.</li>
+<li>S. Masuno, <i>Zen: The Art of Simple Living.</i> 2019.</li>
+<li>E. F. Schumacher, <i>A Guide for the Perplexed.</i> Vintage, 1995.</li>
+<li>E. Fromm, <i>Man for Himself: An Inquiry Into the Psychology of Ethics.</i> Open Road Media, 2013.</li>
+<li>G. Saunders, <i>Congratulations, by the Way: Some Thoughts on Kindness.</i> A&amp;C Black, 2014.</li>
+<li>H. Prather, <i>Notes to Myself: My Struggle to Become a Person.</i> Random House Publishing Group, 2009.</li>
+<li>R. Wiseman, <i>Quirkology: The Curious Science of Everyday Lives.</i> Pan Macmillan Limited, 2008.</li>
+<li>S. Johnson, <i>Who Moved My Cheese?: An Amazing Way to Deal with Change in Your Work and in Your Life.</i> Penguin, 1998.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd78124c" class="outline-3">
+<h3 id="orgd78124c"><span class="section-number-3">6.5.</span> Hindi</h3>
+<div class="outline-text-3" id="text-6-5">
+<ul class="org-ul">
+<li>S. Masuno, Zen : Saral Jeevan Jeene ki Kala. Manjul Publishing House, 2021.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orga5cf40f" class="outline-2">
+<h2 id="orga5cf40f"><span class="section-number-2">7.</span> Misc</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>“Why we should embrace ‘nepantla’ – the in-betweenness of life | Psyche Ideas.” Accessed: Feb. 10, 2026. [Online]. Available: <a href="https://psyche.co/ideas/why-we-should-embrace-nepantla-the-in-betweenness-of-life">https://psyche.co/ideas/why-we-should-embrace-nepantla-the-in-betweenness-of-life</a></li>
+
+<li>“Work,” Joanna Macy &amp; Her Work. Accessed: Feb. 07, 2026. [Online]. Available: <a href="https://www.joannamacy.net/work">https://www.joannamacy.net/work</a></li>
+
+<li>O. Scharmer and E. Pomeroy, “Fourth Person: The Knowing of the Field,” Journal of Awareness-Based Systems Change, vol. 4, no. 1, pp. 19–48, May 2024, doi: 10.47061/jasc.v4i1.7909.</li>
+
+<li>H. Gunnsteinsdottir, InnSaei: Icelandic wisdom for turbulent times. London: Lagom, 2024.</li>
+
+<li>“Nate Silver: Habits of highly successful risk-takers,” Big Think. Accessed: Sep. 04, 2025. [Online]. Available: <a href="https://bigthink.com/series/the-big-think-interview/nate-silver-risk/">https://bigthink.com/series/the-big-think-interview/nate-silver-risk/</a></li>
+
+<li>C. Sandis, “The best books on human action,” Shepherd. Accessed: Aug. 23, 2025. [Online]. Available: <a href="https://shepherd.com/best-books/human-action">https://shepherd.com/best-books/human-action</a></li>
+
+<li>J. Harsono, Self Reiki: Tune in to Your Life Force to Achieve Harmony and Balance. DK, 2019.</li>
+<li>“A Little Book of Self Care.” Accessed: Aug. 18, 2025. [Online]. Available: <a href="http://www.amazon.in/A-Little-Book-of-Self-Care-6-book-series/dp/B09NQ3W5JN?ref=dbs_m_mng_rwt_0000_share">http://www.amazon.in/A-Little-Book-of-Self-Care-6-book-series/dp/B09NQ3W5JN?ref=dbs_m_mng_rwt_0000_share</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“The Case for Pragmatic Progress,” Los Angeles Review of Books. Accessed: Aug. 14, 2025. [Online]. Available: <a href="https://lareviewofbooks.org/article/the-case-for-pragmatic-progress">https://lareviewofbooks.org/article/the-case-for-pragmatic-progress</a></li>
+
+<li>D. Markovits, “How Life Became an Endless, Terrible Competition,” The Atlantic, Aug. 19, 2019. Accessed: Aug. 13, 2025. [Online]. Available: <a href="https://www.theatlantic.com/magazine/archive/2019/09/meritocracys-miserable-winners/594760/">https://www.theatlantic.com/magazine/archive/2019/09/meritocracys-miserable-winners/594760/</a></li>
+
+<li>T. Editors, “Life Advice From the Armed Forces,” JSTOR Daily. Accessed: Jun. 20, 2025. [Online]. Available: <a href="https://daily.jstor.org/life-advice-from-the-armed-forces/">https://daily.jstor.org/life-advice-from-the-armed-forces/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“How to cope with disruptive changes in life | Psyche Guides.” Accessed: Jan. 17, 2026. [Online]. Available: <a href="https://psyche.co/guides/how-to-accept-and-adapt-to-disruptive-changes-in-life">https://psyche.co/guides/how-to-accept-and-adapt-to-disruptive-changes-in-life</a></li>
+
+<li>“Humble Book Bundle: Adulting for Dummies by Wiley,” Humble Bundle. Accessed: Feb. 01, 2026. [Online]. Available: <a href="https://www.humblebundle.com/books/adulting-for-dummies-wiley-books">https://www.humblebundle.com/books/adulting-for-dummies-wiley-books</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Want things to go well? Plan like a defensive pessimist | Psyche Guides.” Accessed: Feb. 05, 2026. [Online]. Available: <a href="https://psyche.co/guides/want-things-to-go-well-plan-like-a-defensive-pessimist">https://psyche.co/guides/want-things-to-go-well-plan-like-a-defensive-pessimist</a></li>
+</ul>
+
+
+
+
+<ul class="org-ul">
+<li>“True mastery demands going beyond the rules to learn for yourself | Aeon Videos.” Accessed: Feb. 04, 2026. [Online]. Available: <a href="https://aeon.co/videos/true-mastery-demands-going-beyond-the-rules-to-learn-for-yourself">https://aeon.co/videos/true-mastery-demands-going-beyond-the-rules-to-learn-for-yourself</a></li>
+<li>“Figure It Out: The Art of Living through Systems Failure.” Accessed: Feb. 07, 2026. [Online]. Available: <a href="https://pb.sandpoints.org/inquiry/snadisedruze/">https://pb.sandpoints.org/inquiry/snadisedruze/</a></li>
+
+<li>bell hooks, All About Love: New Visions. New York: William Morrow Paperbacks, 2018.</li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://github.com/ourghostorg">OurGhostOrg</a></p>
+<p class="date">Created: 2026-05-19 Tue 18:56</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

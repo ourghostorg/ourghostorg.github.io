@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-19 Tue 18:56 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ethics</title>
+<meta name="author" content="Staff Member(s), [[https://github.com/ourghostorg][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Ethics</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org8b0da32">1. General</a></li>
+<li><a href="#orgf1826cf">2. STEMM</a>
+<ul>
+<li><a href="#orga74abd0">2.1. Systems Sciences, Misc</a>
+<ul>
+<li><a href="#orgd33fb5c">2.1.1. Complexity Science</a></li>
+<li><a href="#orgf5710b0">2.1.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgd401345">2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org1d4918f">3. Worldly Matters</a>
+<ul>
+<li><a href="#orgd8bf6c6">3.1. Nation States</a>
+<ul>
+<li><a href="#org2e4e329">3.1.1. India</a></li>
+</ul>
+</li>
+<li><a href="#org9a81dbc">3.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org686a8b5">4. Core</a>
+<ul>
+<li><a href="#orgd1eddcf">4.1. Undergraduate Texts</a></li>
+<li><a href="#org81b8048">4.2. Readers</a></li>
+</ul>
+</li>
+<li><a href="#org4047bb6">5. Special Topics</a>
+<ul>
+<li><a href="#orgcc365f5">5.1. Classics, Original Works</a></li>
+<li><a href="#org45f9c48">5.2. Popular Resources</a>
+<ul>
+<li><a href="#orgd2034d4">5.2.1. Graphic Works</a></li>
+</ul>
+</li>
+<li><a href="#org09cf0dd">5.3. Conscience</a>
+<ul>
+<li><a href="#org706bc47">5.3.1. General</a></li>
+<li><a href="#orgdb04039">5.3.2. Very Short Introductions</a></li>
+<li><a href="#orgb37688e">5.3.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org203aa10">5.4. Corruption</a>
+<ul>
+<li><a href="#orgb94e071">5.4.1. General</a></li>
+<li><a href="#org30e8162">5.4.2. STEMM</a></li>
+<li><a href="#org9fd3a97">5.4.3. Worldly Matters</a></li>
+<li><a href="#orgee78b46">5.4.4. Arts</a></li>
+<li><a href="#orgfcc0ff1">5.4.5. Special Topics</a></li>
+<li><a href="#orgca6fb8b">5.4.6. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orge0c5677">6. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org8b0da32" class="outline-2">
+<h2 id="org8b0da32"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Ethics,” Wikipedia. Dec. 26, 2024. Accessed: Jan. 05, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Ethics&amp;oldid=1265326129">https://en.wikipedia.org/w/index.php?title=Ethics&amp;oldid=1265326129</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf1826cf" class="outline-2">
+<h2 id="orgf1826cf"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orga74abd0" class="outline-3">
+<h3 id="orga74abd0"><span class="section-number-3">2.1.</span> Systems Sciences, Misc</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-orgd33fb5c" class="outline-4">
+<h4 id="orgd33fb5c"><span class="section-number-4">2.1.1.</span> Complexity Science</h4>
+<div class="outline-text-4" id="text-2-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org20dc570"></a>New England Complex Systems Institute<br />
+<div class="outline-text-5" id="text-2-1-1-1">
+<ul class="org-ul">
+<li><b>Ethical Values: A Multiscale Scientific Perspective</b>,  New England Complex Systems Institute. [Online]. Available: <a href="https://necsi.edu/ethical-values-a-multiscale-scientific-perspective">https://necsi.edu/ethical-values-a-multiscale-scientific-perspective</a>. [Accessed: 13-Sep-2019].</li>
+</ul>
+</div>
+</li>
+<li><a id="orgef325a8"></a>Misc<br />
+<div class="outline-text-5" id="text-2-1-1-2">
+<ul class="org-ul">
+<li>“Ethics in Complex Systems,” UZH – Digital Society Initiative – Ethics. Accessed: Jul. 27, 2025. [Online]. Available: <a href="https://ethics.dsi.uzh.ch/project/ethics-in-complex-systems/">https://ethics.dsi.uzh.ch/project/ethics-in-complex-systems/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgf5710b0" class="outline-4">
+<h4 id="orgf5710b0"><span class="section-number-4">2.1.2.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-orgd401345" class="outline-3">
+<h3 id="orgd401345"><span class="section-number-3">2.2.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>E. Svoboda, “How to Train Your Brain to Act Morally,” Scientific American. Accessed: Oct. 20, 2025. [Online]. Available: <a href="https://www.scientificamerican.com/article/what-brain-science-reveals-about-ethical-decline-and-moral-growth/">https://www.scientificamerican.com/article/what-brain-science-reveals-about-ethical-decline-and-moral-growth/</a></li>
+
+<li>“What Gödel’s incompleteness theorems say about AI morality | Aeon Essays,” Aeon. Accessed: Aug. 09, 2025. [Online]. Available: <a href="https://aeon.co/essays/what-godels-incompleteness-theorems-say-about-ai-morality">https://aeon.co/essays/what-godels-incompleteness-theorems-say-about-ai-morality</a></li>
+
+<li>B. G. Hallsson, H. R. Siebner, and O. J. Hulme, “Fairness, fast and slow: A review of dual process models of fairness,” Neuroscience &amp; Biobehavioral Reviews, vol. 89, pp. 49–60, Jun. 2018, doi: 10.1016/j.neubiorev.2018.02.016.</li>
+
+<li>C. Boehm, <i>Moral Origins: The Evolution of Virtue, Altruism, and Shame.</i> Hachette UK, 2012.</li>
+<li>C. Boehm and C. Boehm, <i>Hierarchy in the Forest: The Evolution of Egalitarian Behavior.</i> Harvard University Press, 2009.</li>
+
+<li>M. Shermer, <i>The Moral Arc: How Science Makes Us Better People.</i> St. Martin’s Publishing Group, 2016.</li>
+<li>M. Shermer, <i>The Science of Good and Evil: Why People Cheat, Gossip, Care, Share, and Follow the Golden Rule.</i> Macmillan, 2005.</li>
+
+<li>J. Greene, <i>Moral Tribes: Emotion, Reason and the Gap Between Us and Them.</i> Atlantic Books Ltd, 2014.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org1d4918f" class="outline-2">
+<h2 id="org1d4918f"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgd8bf6c6" class="outline-3">
+<h3 id="orgd8bf6c6"><span class="section-number-3">3.1.</span> Nation States</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-org2e4e329" class="outline-4">
+<h4 id="org2e4e329"><span class="section-number-4">3.1.1.</span> India</h4>
+<div class="outline-text-4" id="text-3-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgdbf32dc"></a>General<br /></li>
+<li><a id="orgd08ca41"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="org2f85c9c"></a>Texts<br />
+<div class="outline-text-6" id="text-3-1-1-2-1">
+<ul class="org-ul">
+<li>P. Bilimoria, J. Prabhu, and R. M. Sharma, <i>Indian Ethics: Classical traditions and contemporary challenges.</i> Ashgate Publishing, Ltd., 2007.</li>
+
+<li>M. Säävälä, Middle-class moralities : everyday struggle over belonging and prestige in India. Orient BlackSwan, 2010.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgfc4b7b3"></a>Misc<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org9a81dbc" class="outline-3">
+<h3 id="org9a81dbc"><span class="section-number-3">3.2.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>K. Norlock, “Feminist Ethics,” in The Stanford Encyclopedia of Philosophy, Summer 2019., E. N. Zalta, Ed., Metaphysics Research Lab, Stanford University, 2019. Accessed: Jan. 06, 2025. [Online]. Available: <a href="https://plato.stanford.edu/archives/sum2019/entries/feminism-ethics/">https://plato.stanford.edu/archives/sum2019/entries/feminism-ethics/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Annual National Uehiro Oxford Prize in Practical Ethics.” Accessed: Oct. 18, 2024. [Online]. Available: <a href="https://www.uehiro.ox.ac.uk/oxford-uehiro-prize">https://www.uehiro.ox.ac.uk/oxford-uehiro-prize</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org686a8b5" class="outline-2">
+<h2 id="org686a8b5"><span class="section-number-2">4.</span> Core</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgd1eddcf" class="outline-3">
+<h3 id="orgd1eddcf"><span class="section-number-3">4.1.</span> Undergraduate Texts</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>H. J. Gensler, <i>Ethics: A Contemporary Introduction.</i> Routledge, 2006.</li>
+
+<li>W. K. Frankena, <b>Ethics.</b> Prentice-Hall, 1964.
+<ul class="org-ul">
+<li>"A clear, terse, typical introductory undergraduate text on ethics."</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org81b8048" class="outline-3">
+<h3 id="org81b8048"><span class="section-number-3">4.2.</span> Readers</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>P. Singer, <b>Ethics.</b> Oxford University Press, 1994.
+<ul class="org-ul">
+<li>"The 'Mind's I' of ethics."</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org4047bb6" class="outline-2">
+<h2 id="org4047bb6"><span class="section-number-2">5.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgcc365f5" class="outline-3">
+<h3 id="orgcc365f5"><span class="section-number-3">5.1.</span> Classics, Original Works</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>F. Nietzsche, <i>Beyond Good and Evil.</i> Penguin UK, 2003.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org45f9c48" class="outline-3">
+<h3 id="org45f9c48"><span class="section-number-3">5.2.</span> Popular Resources</h3>
+<div class="outline-text-3" id="text-5-2">
+</div>
+<div id="outline-container-orgd2034d4" class="outline-4">
+<h4 id="orgd2034d4"><span class="section-number-4">5.2.1.</span> Graphic Works</h4>
+<div class="outline-text-4" id="text-5-2-1">
+<ul class="org-ul">
+<li>D. Robinson and C. Garratt, <i>Introducing Ethics: A Graphic Guide.</i> Icon Books Ltd, 2014.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org09cf0dd" class="outline-3">
+<h3 id="org09cf0dd"><span class="section-number-3">5.3.</span> Conscience</h3>
+<div class="outline-text-3" id="text-5-3">
+</div>
+<div id="outline-container-org706bc47" class="outline-4">
+<h4 id="org706bc47"><span class="section-number-4">5.3.1.</span> General</h4>
+</div>
+<div id="outline-container-orgdb04039" class="outline-4">
+<h4 id="orgdb04039"><span class="section-number-4">5.3.2.</span> Very Short Introductions</h4>
+<div class="outline-text-4" id="text-5-3-2">
+<ul class="org-ul">
+<li>P. Strohm, <i>Conscience: A Very Short Introduction.</i> OUP Oxford, 2011.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb37688e" class="outline-4">
+<h4 id="orgb37688e"><span class="section-number-4">5.3.3.</span> Misc</h4>
+<div class="outline-text-4" id="text-5-3-3">
+<ul class="org-ul">
+<li>P. Churchland, Conscience: The Origins of Moral Intuition. New York: W. W. Norton &amp; Company, 2020.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org203aa10" class="outline-3">
+<h3 id="org203aa10"><span class="section-number-3">5.4.</span> Corruption</h3>
+<div class="outline-text-3" id="text-5-4">
+</div>
+<div id="outline-container-orgb94e071" class="outline-4">
+<h4 id="orgb94e071"><span class="section-number-4">5.4.1.</span> General</h4>
+</div>
+<div id="outline-container-org30e8162" class="outline-4">
+<h4 id="org30e8162"><span class="section-number-4">5.4.2.</span> STEMM</h4>
+<div class="outline-text-4" id="text-5-4-2">
+</div>
+<ol class="org-ol">
+<li><a id="orga6ee840"></a>Systems Sciences, Misc<br />
+<ol class="org-ol">
+<li><a id="org24fbb65"></a>Network Science<br />
+<div class="outline-text-6" id="text-5-4-2-1-1">
+<ul class="org-ul">
+<li>O. M. Granados and J. R. Nicolás-Carlock, <b>Corruption Networks: Concepts and Applications.</b> Springer International Publishing, 2021.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgc817437"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org49cf454"></a>Biology<br />
+<div class="outline-text-5" id="text-5-4-2-2">
+<ul class="org-ul">
+<li>“Game theory’s cure for corruption? Make us all cops | Aeon Essays,” Aeon. <a href="https://aeon.co/essays/game-theory-s-cure-for-corruption-make-us-all-cops">https://aeon.co/essays/game-theory-s-cure-for-corruption-make-us-all-cops</a> (accessed Feb. 24, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="org720c9c7"></a>Data Science<br />
+<div class="outline-text-5" id="text-5-4-2-3">
+<ul class="org-ul">
+<li>E. Ortiz-Ospina and M. Roser, “Corruption,” Our World in Data, Oct. 2016, Accessed: Feb. 04, 2022. [Online]. Available: <a href="https://ourworldindata.org/corruption">https://ourworldindata.org/corruption</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org896fe02"></a>Misc<br />
+<div class="outline-text-5" id="text-5-4-2-4">
+<ul class="org-ul">
+<li>“Complexity Science Hub * Projects * Data-driven Methods For Analyzing Illegal Payment Flows In Cross-ledger DeFi Ecosystems.” Accessed: Apr. 29, 2025. [Online]. Available: <a href="https://csh.ac.at/project/data-driven-methods-for-analyzing-illegal-payment-flows-in-cross-ledger-defi-ecosystems/">https://csh.ac.at/project/data-driven-methods-for-analyzing-illegal-payment-flows-in-cross-ledger-defi-ecosystems/</a></li>
+
+<li>“OCCRP Announces a New Chapter for Its Investigative Data Platform — Aleph Pro,” OCCRP. Accessed: Apr. 10, 2025. [Online]. Available: <a href="https://www.occrp.org/en/announcement/occrp-announces-a-new-chapter-for-its-investigative-data-platform-aleph-pro">https://www.occrp.org/en/announcement/occrp-announces-a-new-chapter-for-its-investigative-data-platform-aleph-pro</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org9fd3a97" class="outline-4">
+<h4 id="org9fd3a97"><span class="section-number-4">5.4.3.</span> Worldly Matters</h4>
+<div class="outline-text-4" id="text-5-4-3">
+</div>
+<ol class="org-ol">
+<li><a id="orge4005b9"></a>Orgs<br />
+<div class="outline-text-5" id="text-5-4-3-1">
+<ul class="org-ul">
+<li>“Home,” Transparency.org. <a href="https://www.transparency.org/en/">https://www.transparency.org/en/</a> (accessed Feb. 24, 2022).</li>
+<li>“Organized Crime and Corruption Reporting Project - OCCRP.” <a href="https://www.occrp.org/en">https://www.occrp.org/en</a> (accessed Mar. 22, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="orge24f2df"></a>Nation States<br />
+<ol class="org-ol">
+<li><a id="orgd503bb8"></a>India<br />
+<ul class="org-ul">
+<li><a id="org1a2955f"></a>OCCRP<br />
+<div class="outline-text-7" id="text-org1a2955f">
+<ul class="org-ul">
+<li>“Solomon Islands Water CEO Quits Amid Alleged Gov’t Pressure to Work With Troubled Indian Firm,” OCCRP. Accessed: Oct. 28, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/solomon-islands-water-ceo-quits-amid-govt-pressure-to-work-with-troubled-indian-firm">https://www.occrp.org/en/news/solomon-islands-water-ceo-quits-amid-govt-pressure-to-work-with-troubled-indian-firm</a></li>
+
+<li>“India,” OCCRP. Accessed: Feb. 24, 2025. [Online]. Available: <a href="https://www.occrp.org/en/regions/india">https://www.occrp.org/en/regions/india</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orga9ce1a9"></a>GIJN<br />
+<div class="outline-text-7" id="text-orga9ce1a9">
+<ul class="org-ul">
+<li>“‘A Global Transit Point’: Investigating Human Trafficking and People Smuggling in South Asia.” Accessed: Oct. 17, 2025. [Online]. Available: <a href="https://gijn.org/stories/asia-focus-investigating-human-trafficking-people-smuggling/">https://gijn.org/stories/asia-focus-investigating-human-trafficking-people-smuggling/</a></li>
+<li>“State-Connected Oligarchs and Looted Public Funds: Tracking Illicit Money Across Asia.” Accessed: Oct. 09, 2025. [Online]. Available: <a href="https://gijn.org/stories/asia-focus-money-laundering-corruption/">https://gijn.org/stories/asia-focus-money-laundering-corruption/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgdc0b42d"></a>Texts<br />
+<div class="outline-text-7" id="text-orgdc0b42d">
+<ul class="org-ul">
+<li>N. Ram, Why Scams are Here to Stay: Understanding Political Corruption in India. Aleph, 2017.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgb7efd96"></a>Misc<br />
+<div class="outline-text-7" id="text-orgb7efd96">
+<ul class="org-ul">
+<li>“Inside India’s Scariest Scam — and How to Stop It,” Bloomberg.com, Oct. 12, 2025. Accessed: Oct. 20, 2025. [Online]. Available: <a href="https://www.bloomberg.com/opinion/features/2025-10-12/digital-arrests-inside-india-s-scariest-scam-and-how-to-stop-it">https://www.bloomberg.com/opinion/features/2025-10-12/digital-arrests-inside-india-s-scariest-scam-and-how-to-stop-it</a></li>
+<li>P. Marwaha, “From vulnerability to vigilance: How communities and systems are fighting child trafficking in India,” Down To Earth. Accessed: Aug. 01, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/governance/from-vulnerability-to-vigilance-how-communities-and-systems-are-fighting-child-trafficking-in-india">https://www.downtoearth.org.in/governance/from-vulnerability-to-vigilance-how-communities-and-systems-are-fighting-child-trafficking-in-india</a></li>
+<li>“Transferred Again, IAS Officer Ashok Khemka Says Reward for Honesty is Humiliation,” The Wire. Accessed: May 09, 2025. [Online]. Available: <a href="https://thewire.in/government/transferred-again-ias-officer-ashok-khemka-says-reward-for-honesty-is-humiliation">https://thewire.in/government/transferred-again-ias-officer-ashok-khemka-says-reward-for-honesty-is-humiliation</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org13b68cf"></a>USA<br />
+<div class="outline-text-6" id="text-5-4-3-2-2">
+<ul class="org-ul">
+<li>Z. Teachout, Corruption in America: From Benjamin Franklin’s Snuff Box to Citizens United. Harvard University Press, 2014.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org42ed5a4"></a>Misc<br />
+<div class="outline-text-5" id="text-5-4-3-3">
+<ul class="org-ul">
+<li>“Following the Money, Routes, and Violence: Inside Cross-Border Criminal Enterprises.” Accessed: Feb. 05, 2026. [Online]. Available: <a href="https://gijn.org/stories/reporting-cross-border-criminal-enterprises/">https://gijn.org/stories/reporting-cross-border-criminal-enterprises/</a></li>
+
+<li>“Chasing Oligarchs Across Borders.” Accessed: Nov. 27, 2025. [Online]. Available: <a href="https://gijn.org/stories/gijc25-cross-border-investigations-tips-oligarchs/">https://gijn.org/stories/gijc25-cross-border-investigations-tips-oligarchs/</a></li>
+
+<li>“‘Pravfond’ Leak Shows Pro-Russia Network Operating in Ukraine,” OCCRP. Accessed: Nov. 21, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/pravfond-leak-shows-pro-russia-network-operating-in-ukraine">https://www.occrp.org/en/news/pravfond-leak-shows-pro-russia-network-operating-in-ukraine</a></li>
+<li>“U.S. Sanctions Canadian Ex-Olympian on FBI Most Wanted List for Global Cocaine Empire,” OCCRP. Accessed: Nov. 21, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/us-sanctions-canadian-ex-olympian-on-fbi-most-wanted-list-for-global-cocaine-empire">https://www.occrp.org/en/news/us-sanctions-canadian-ex-olympian-on-fbi-most-wanted-list-for-global-cocaine-empire</a></li>
+<li>“Mexico Arrests Suspected Mastermind in Killing of Uruapan Mayor,” OCCRP. Accessed: Nov. 21, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/mexico-arrests-suspected-mastermind-in-killing-of-uruapan-mayor">https://www.occrp.org/en/news/mexico-arrests-suspected-mastermind-in-killing-of-uruapan-mayor</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“New Zealand Labour Party leader postures as a ‘democratic socialist,’” World Socialist Web Site. Accessed: Nov. 21, 2025. [Online]. Available: <a href="https://www.wsws.org/en/articles/2025/11/21/mktv-n21.html">https://www.wsws.org/en/articles/2025/11/21/mktv-n21.html</a></li>
+
+<li>“Leaked Russian Records Reveal Obscure Firms Helping Bust Oil Sanctions on North Korea,” OCCRP. Accessed: Nov. 21, 2025. [Online]. Available: <a href="https://www.occrp.org/en/scoop/leaked-russian-records-reveal-obscure-firms-helping-bust-oil-sanctions-on-north-korea">https://www.occrp.org/en/scoop/leaked-russian-records-reveal-obscure-firms-helping-bust-oil-sanctions-on-north-korea</a></li>
+
+<li>“Jailed Moldovan Oligarch Hid Behind a Global Maze of Fake Identities,” OCCRP. Accessed: Nov. 13, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/jailed-moldovan-oligarch-hid-behind-a-global-maze-of-fake-identities">https://www.occrp.org/en/news/jailed-moldovan-oligarch-hid-behind-a-global-maze-of-fake-identities</a></li>
+
+<li>“Georgian Prosecutors Link Bridge Collapse to Corruption and Falsified Records,” OCCRP. Accessed: Nov. 14, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/georgian-prosecutors-link-bridge-collapse-to-corruption-and-falsified-records">https://www.occrp.org/en/news/georgian-prosecutors-link-bridge-collapse-to-corruption-and-falsified-records</a></li>
+
+<li>“Rights Groups Decry Tunisia’s Escalating Repression Under President Saied,” OCCRP. Accessed: Nov. 14, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/rights-groups-decry-tunisias-escalating-repression-under-president-saied">https://www.occrp.org/en/news/rights-groups-decry-tunisias-escalating-repression-under-president-saied</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Tips for Investigating New Oligarchs and Novel Corruption Ploys.” Accessed: Jul. 16, 2025. [Online]. Available: <a href="https://gijn.org/stories/tips-for-investigating-new-oligarchs-and-novel-corruption-ploys/">https://gijn.org/stories/tips-for-investigating-new-oligarchs-and-novel-corruption-ploys/</a></li>
+
+<li>U. of Copenhagen, “‘Dark’ personality traits thrive in societies with corruption and inequality, global study shows.” Accessed: Jun. 16, 2025. [Online]. Available: <a href="https://phys.org/news/2025-06-dark-personality-traits-societies-corruption.html">https://phys.org/news/2025-06-dark-personality-traits-societies-corruption.html</a></li>
+
+<li>“The Reactionary International.” Accessed: May 27, 2025. [Online]. Available: <a href="https://reactionary.international">https://reactionary.international</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Passports Are Key to Uncovering Offshore Secrecy — We Use Machine Learning to Find Them Efficiently.” Accessed: May 14, 2025. [Online]. Available: <a href="https://gijn.org/stories/passports-machine-learning-icij/">https://gijn.org/stories/passports-machine-learning-icij/</a></li>
+
+<li>“We Investigate Corruption. Swiss Law Calls That a Crime.,” OCCRP. Accessed: Apr. 11, 2025. [Online]. Available: <a href="https://www.occrp.org/en/feature/we-investigate-corruption-swiss-law-calls-that-a-crime">https://www.occrp.org/en/feature/we-investigate-corruption-swiss-law-calls-that-a-crime</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgee78b46" class="outline-4">
+<h4 id="orgee78b46"><span class="section-number-4">5.4.4.</span> Arts</h4>
+</div>
+<div id="outline-container-orgfcc0ff1" class="outline-4">
+<h4 id="orgfcc0ff1"><span class="section-number-4">5.4.5.</span> Special Topics</h4>
+</div>
+<div id="outline-container-orgca6fb8b" class="outline-4">
+<h4 id="orgca6fb8b"><span class="section-number-4">5.4.6.</span> Misc</h4>
+<div class="outline-text-4" id="text-5-4-6">
+<ul class="org-ul">
+<li>“Anti-Corruption Probe Launched Into Romanian Business Registry’s Failed IT System,” OCCRP. Accessed: Feb. 18, 2026. [Online]. Available: <a href="https://www.occrp.org/en/news/anti-corruption-probe-launched-into-romanian-business-registrys-failed-it-system">https://www.occrp.org/en/news/anti-corruption-probe-launched-into-romanian-business-registrys-failed-it-system</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Third Kuciak Murder Trial Starts in Slovakia,” OCCRP. Accessed: Jan. 30, 2026. [Online]. Available: <a href="https://www.occrp.org/en/news/third-kuciak-murder-trial-starts-in-slovakia">https://www.occrp.org/en/news/third-kuciak-murder-trial-starts-in-slovakia</a></li>
+<li>“Repressive States Misuse Interpol Red Notices to Pursue Political Targets: Report,” OCCRP. Accessed: Jan. 30, 2026. [Online]. Available: <a href="https://www.occrp.org/en/news/repressive-states-misuse-interpol-red-notices-to-pursue-political-targets-report">https://www.occrp.org/en/news/repressive-states-misuse-interpol-red-notices-to-pursue-political-targets-report</a></li>
+<li>“China Executes 11 in Myanmar-Linked Telecom Fraud Gang,” OCCRP. Accessed: Jan. 30, 2026. [Online]. Available: <a href="https://www.occrp.org/en/news/china-executes-11-in-myanmar-linked-telecom-fraud-gang">https://www.occrp.org/en/news/china-executes-11-in-myanmar-linked-telecom-fraud-gang</a></li>
+<li>“German Prosecutors Raid Deutsche Bank in Money Laundering Probe,” OCCRP. Accessed: Jan. 30, 2026. [Online]. Available: <a href="https://www.occrp.org/en/news/german-prosecutors-raid-deutsche-bank-in-money-laundering-probe">https://www.occrp.org/en/news/german-prosecutors-raid-deutsche-bank-in-money-laundering-probe</a></li>
+<li>“Behind Closed Doors: Secret Tape Reveals Plans To Launder Venezuela’s Oil Money,” OCCRP. Accessed: Jan. 30, 2026. [Online]. Available: <a href="https://www.occrp.org/en/project/white-collars-dirty-hands/behind-closed-doors-secret-tape-reveals-plans-to-launder-venezuelas-oil-money">https://www.occrp.org/en/project/white-collars-dirty-hands/behind-closed-doors-secret-tape-reveals-plans-to-launder-venezuelas-oil-money</a></li>
+</ul>
+
+
+
+
+<ul class="org-ul">
+<li>“Montenegro Shaken as Convicted Crime Boss Vanishes After Sentencing,” OCCRP. Accessed: Feb. 01, 2026. [Online]. Available: <a href="https://www.occrp.org/en/news/montenegros-ex-supreme-court-chief-sentenced-for-corruption-her-son-flees">https://www.occrp.org/en/news/montenegros-ex-supreme-court-chief-sentenced-for-corruption-her-son-flees</a></li>
+
+<li>“Foreign Workers, Local Sponsors: Inside Palau’s Hotel Scam Centers,” OCCRP. Accessed: Jan. 14, 2026. [Online]. Available: <a href="https://www.occrp.org/en/investigation/foreign-workers-local-sponsors-inside-palaus-hotel-scam-centers">https://www.occrp.org/en/investigation/foreign-workers-local-sponsors-inside-palaus-hotel-scam-centers</a></li>
+
+<li>“International Anti-Corruption Day,” Wikipedia. Mar. 10, 2025. Accessed: Dec. 09, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=International_Anti-Corruption_Day&amp;oldid=1279808914">https://en.wikipedia.org/w/index.php?title=International_Anti-Corruption_Day&amp;oldid=1279808914</a></li>
+
+<li>“Lawyer Who Absconded From UK Prison Will Have Cypriot Legal License Suspended,” OCCRP. Accessed: Dec. 06, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/lawyer-who-absconded-from-uk-prison-will-have-cypriot-legal-license-suspended">https://www.occrp.org/en/news/lawyer-who-absconded-from-uk-prison-will-have-cypriot-legal-license-suspended</a></li>
+<li>“Meet the South Pacific Ponzi King With a Bogus Bank — and a Global Fan Club | OCCRP.” Accessed: Dec. 06, 2025. [Online]. Available: <a href="https://www.occrp.org/en/feature/meet-the-south-pacific-ponzi-king-with-a-bogus-bank-and-a-global-fan-club">https://www.occrp.org/en/feature/meet-the-south-pacific-ponzi-king-with-a-bogus-bank-and-a-global-fan-club</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“UN Resolution Urges Russia to Return ‘Forcibly Transferred’ Ukrainian Children,” OCCRP. Accessed: Dec. 06, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/un-resolution-urges-russia-to-return-forcibly-transferred-ukrainian-children">https://www.occrp.org/en/news/un-resolution-urges-russia-to-return-forcibly-transferred-ukrainian-children</a></li>
+
+<li>“Italians With Alleged Mafia Ties Doing Business in Slovakia,” OCCRP. Accessed: Dec. 06, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/italian-mafia-figures-doing-business-in-slovakia">https://www.occrp.org/en/news/italian-mafia-figures-doing-business-in-slovakia</a></li>
+
+<li>“Bankera Revelations Lead to Raids, Court Fight,” OCCRP. Accessed: Dec. 06, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/bankera-revelations-lead-to-raids-court-fight">https://www.occrp.org/en/news/bankera-revelations-lead-to-raids-court-fight</a></li>
+
+<li>“Greek Court to Hear Case Against Aid Workers Allegedly Smuggling Migrants,” OCCRP. Accessed: Dec. 06, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/greek-court-to-hear-case-against-aid-workers-allegedly-smuggling-migrants">https://www.occrp.org/en/news/greek-court-to-hear-case-against-aid-workers-allegedly-smuggling-migrants</a></li>
+<li>“Lawyer Who Absconded From UK Prison Will Have Cypriot Legal License Suspended,” OCCRP. Accessed: Dec. 06, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/lawyer-who-absconded-from-uk-prison-will-have-cypriot-legal-license-suspended">https://www.occrp.org/en/news/lawyer-who-absconded-from-uk-prison-will-have-cypriot-legal-license-suspended</a></li>
+<li>“Scam Network Crackdown Takes Aim At Firms Behind Fraudulent Ads,” OCCRP. Accessed: Dec. 06, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/scam-network-crackdown-takes-aim-at-third-party-marketing-firms">https://www.occrp.org/en/news/scam-network-crackdown-takes-aim-at-third-party-marketing-firms</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Philippine Authorities Arrest Seven in Flood-Control Corruption Probe,” OCCRP. Accessed: Nov. 26, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/philippine-authorities-arrest-seven-in-flood-control-corruption-probe">https://www.occrp.org/en/news/philippine-authorities-arrest-seven-in-flood-control-corruption-probe</a></li>
+<li>“Cheers Above, Torture Below: The Dark Revival of Venezuelan Basketball,” OCCRP. Accessed: Nov. 26, 2025. [Online]. Available: <a href="https://www.occrp.org/en/feature/cheers-above-torture-below-the-dark-revival-of-venezuelan-basketball">https://www.occrp.org/en/feature/cheers-above-torture-below-the-dark-revival-of-venezuelan-basketball</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Nobel Laureate Urges Journalists to Investigate the Systems and Enablers that Foster Corruption Worldwide.” Accessed: Nov. 24, 2025. [Online]. Available: <a href="https://gijn.org/stories/gijc25-joseph-stiglitz-keynote-conversation/">https://gijn.org/stories/gijc25-joseph-stiglitz-keynote-conversation/</a></li>
+
+<li>our partners Cir. A. Media, “Turkey Probes Companies With Same Owner as Firms That Processed Online Fraud Payments,” OCCRP. Accessed: Nov. 22, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/turkey-probes-companies-with-same-owner-as-firms-that-processed-online-fraud-payments">https://www.occrp.org/en/news/turkey-probes-companies-with-same-owner-as-firms-that-processed-online-fraud-payments</a></li>
+
+<li>“How Violent Criminals Keep Their Doctors’ Licenses in Finland,” OCCRP. Accessed: Nov. 20, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/how-violent-criminals-keep-their-doctors-licenses-in-finland">https://www.occrp.org/en/news/how-violent-criminals-keep-their-doctors-licenses-in-finland</a></li>
+
+<li>“Europol Cracks Down on Crypto-Funded Digital Piracy,” OCCRP. Accessed: Nov. 20, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/europol-cracks-down-on-crypto-funded-digital-piracy">https://www.occrp.org/en/news/europol-cracks-down-on-crypto-funded-digital-piracy</a></li>
+
+<li>“Amnesty Report Details Abuse Behind Saudi Arabia’s Metro Project,” OCCRP. Accessed: Nov. 20, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/amnesty-report-details-abuse-behind-saudi-arabias-metro-project">https://www.occrp.org/en/news/amnesty-report-details-abuse-behind-saudi-arabias-metro-project</a></li>
+
+<li>“Ukraine Jails Former Deputy PM Chernyshov in Energoatom Kickback Case,” OCCRP. Accessed: Nov. 20, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/ukraine-jails-former-deputy-pm-chernyshov-in-energoatom-kickback-case">https://www.occrp.org/en/news/ukraine-jails-former-deputy-pm-chernyshov-in-energoatom-kickback-case</a></li>
+<li>“Myanmar Military Arrests Hundreds in Raid on Thai-Border Scam Center,” OCCRP. Accessed: Nov. 20, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/myanmar-military-arrests-hundreds-in-raid-on-thai-border-scam-center">https://www.occrp.org/en/news/myanmar-military-arrests-hundreds-in-raid-on-thai-border-scam-center</a></li>
+
+<li>“Conviction Shows Nigeria’s Efforts Against Pangolin Trafficking are Paying Off, Officials Say,” OCCRP. Accessed: Nov. 20, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/conviction-shows-nigerias-efforts-against-pangolin-trafficking-are-paying-off-officials-say">https://www.occrp.org/en/news/conviction-shows-nigerias-efforts-against-pangolin-trafficking-are-paying-off-officials-say</a></li>
+
+<li>“US, UK, Australia Sanction Russia-Based Cybercrime Hosting Firms,” OCCRP. Accessed: Nov. 20, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/us-uk-australia-sanction-russia-based-cybercrime-hosting-firms">https://www.occrp.org/en/news/us-uk-australia-sanction-russia-based-cybercrime-hosting-firms</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Will a New UN Mission Succeed in ‘Neutralizing’ Haiti’s Murderous Gangs?,” OCCRP. Accessed: Oct. 30, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/will-a-new-un-mission-succeed-in-neutralizing-haitis-murderous-gangs">https://www.occrp.org/en/news/will-a-new-un-mission-succeed-in-neutralizing-haitis-murderous-gangs</a></li>
+
+<li>“Azerbaijan’s Former Presidential Chief of Staff Placed Under House Arrest,” OCCRP. Accessed: Oct. 16, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/azerbaijans-former-presidential-chief-of-staff-placed-under-house-arrest">https://www.occrp.org/en/news/azerbaijans-former-presidential-chief-of-staff-placed-under-house-arrest</a>- “Azerbaijan’s Former Presidential Chief of Staff Placed Under House Arrest,” OCCRP. Accessed: Oct. 16, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/azerbaijans-former-presidential-chief-of-staff-placed-under-house-arrest">https://www.occrp.org/en/news/azerbaijans-former-presidential-chief-of-staff-placed-under-house-arrest</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>B. Schneier, “Louvre Jewel Heist,” Schneier on Security. Accessed: Oct. 28, 2025. [Online]. Available: <a href="https://www.schneier.com/blog/archives/2025/10/louvre-jewel-heist.html">https://www.schneier.com/blog/archives/2025/10/louvre-jewel-heist.html</a></li>
+
+<li>“Uncovering Schemes Worth Billions: Inside the Belarusian Investigative Center.” Accessed: Oct. 23, 2025. [Online]. Available: <a href="https://gijn.org/stories/inside-belarusian-investigative-center/">https://gijn.org/stories/inside-belarusian-investigative-center/</a></li>
+
+<li>“Alleged Member of ‘Notorious’ Cambodian Scam Network Bought Luxury Dubai Properties,” OCCRP. Accessed: Oct. 17, 2025. [Online]. Available: <a href="https://www.occrp.org/en/scoop/alleged-member-of-notorious-cambodian-scam-network-bought-luxury-dubai-properties">https://www.occrp.org/en/scoop/alleged-member-of-notorious-cambodian-scam-network-bought-luxury-dubai-properties</a></li>
+
+<li>“EXCLUSIVE: Azerbaijani Ex-Autocrat’s Son Buys Back Luxury Hotel Sold Amid Political Upheaval,” OCCRP. Accessed: Sep. 23, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/exclusive-azerbaijani-ex-autocrats-son-buys-back-luxury-hotel-sold-amid-political-upheaval">https://www.occrp.org/en/news/exclusive-azerbaijani-ex-autocrats-son-buys-back-luxury-hotel-sold-amid-political-upheaval</a></li>
+
+<li>“One Dead, Hundreds Arrested in Philippine Anticorruption Protests,” OCCRP. Accessed: Sep. 23, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/one-dead-hundreds-arrested-in-philippine-anticorruption-protests">https://www.occrp.org/en/news/one-dead-hundreds-arrested-in-philippine-anticorruption-protests</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Beirut Port Explosion Probe Gains Momentum With Extradition Request,” OCCRP. Accessed: Sep. 19, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/beirut-port-explosion-investigation-gains-momentum-with-extradition-request">https://www.occrp.org/en/news/beirut-port-explosion-investigation-gains-momentum-with-extradition-request</a></li>
+
+<li>“Corruption Perceptions Index 2024,” Transparency.org. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://www.transparency.org/en/cpi/2024">https://www.transparency.org/en/cpi/2024</a></li>
+
+<li>“South African Firms Suspect UAE Companies May Have Obtained Military Intellectual Property,” OCCRP. Accessed: May 27, 2025. [Online]. Available: <a href="https://www.occrp.org/en/scoop/south-african-defense-firms-suspect-uae-companies-may-have-obtained-military-intellectual-property">https://www.occrp.org/en/scoop/south-african-defense-firms-suspect-uae-companies-may-have-obtained-military-intellectual-property</a></li>
+
+<li>our partner CIN, “Using Stolen Identities, Balkan Gangsters Armed Themselves With Bosnian Passports,” OCCRP. Accessed: May 16, 2025. [Online]. Available: <a href="https://www.occrp.org/en/investigation/using-stolen-identities-balkan-gangsters-armed-themselves-with-bosnian-passports">https://www.occrp.org/en/investigation/using-stolen-identities-balkan-gangsters-armed-themselves-with-bosnian-passports</a></li>
+
+<li>“Corruption has shaped history. Why do we still ignore it? | Aeon Essays,” Aeon. <a href="https://aeon.co/essays/corruption-has-shaped-history-why-do-we-still-ignore-it">https://aeon.co/essays/corruption-has-shaped-history-why-do-we-still-ignore-it</a> (accessed Apr. 01, 2022).</li>
+
+<li>“Grand corruption as a systemic parasite upon society | Aeon Essays,” Aeon. <a href="https://aeon.co/essays/grand-corruption-as-a-systemic-parasite-upon-society">https://aeon.co/essays/grand-corruption-as-a-systemic-parasite-upon-society</a> (accessed Feb. 24, 2022).</li>
+
+<li>“Organized Crime,” OCCRP. Accessed: Feb. 24, 2025. [Online]. Available: <a href="https://www.occrp.org/en/themes/organized-crime">https://www.occrp.org/en/themes/organized-crime</a></li>
+<li>“Corruption,” OCCRP. Accessed: Feb. 24, 2025. [Online]. Available: <a href="https://www.occrp.org/en/themes/corruption">https://www.occrp.org/en/themes/corruption</a></li>
+
+<li>“Pakistan,” OCCRP. Accessed: Feb. 24, 2025. [Online]. Available: <a href="https://www.occrp.org/en/regions/pakistan">https://www.occrp.org/en/regions/pakistan</a></li>
+
+<li>“China,” OCCRP. Accessed: Feb. 24, 2025. [Online]. Available: <a href="https://www.occrp.org/en/regions/china">https://www.occrp.org/en/regions/china</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orge0c5677" class="outline-2">
+<h2 id="orge0c5677"><span class="section-number-2">6.</span> Misc</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>“How do some people manage to go against the moral grain? | Aeon Essays.” Accessed: Feb. 21, 2026. [Online]. Available: <a href="https://aeon.co/essays/how-do-some-people-manage-to-go-against-the-moral-grain">https://aeon.co/essays/how-do-some-people-manage-to-go-against-the-moral-grain</a></li>
+
+<li>V. Held, The Ethics of Care: Personal, Political, and Global. Oxford University Press, 2005. doi: 10.1093/0195180992.001.0001.</li>
+
+<li>“Should we act morally towards trees? Empedocles says yes | Aeon Essays.” Accessed: Nov. 26, 2025. [Online]. Available: <a href="https://aeon.co/essays/should-we-act-morally-towards-trees-empedocles-says-yes">https://aeon.co/essays/should-we-act-morally-towards-trees-empedocles-says-yes</a></li>
+
+<li>“An ant is drowning: here’s how to decide if you should save it | Aeon Essays,” Aeon. Accessed: Nov. 11, 2025. [Online]. Available: <a href="https://aeon.co/essays/an-ant-is-drowning-heres-how-to-decide-if-you-should-save-it">https://aeon.co/essays/an-ant-is-drowning-heres-how-to-decide-if-you-should-save-it</a></li>
+
+<li>“Moral Problems and the Good Life.” Accessed: Oct. 01, 2025. [Online]. Available: <a href="http://mitxonline.mit.edu/cms/pages:438/courses/course-v1:MITxT+24.02x/">http://mitxonline.mit.edu/cms/pages:438/courses/course-v1:MITxT+24.02x/</a></li>
+
+<li>bloomsbury.com, “From Action to Ethics,” Bloomsbury. Accessed: Sep. 23, 2025. [Online]. Available: <a href="https://www.bloomsbury.com/uk/from-action-to-ethics-9781350235151/">https://www.bloomsbury.com/uk/from-action-to-ethics-9781350235151/</a></li>
+
+<li>“Is virtue worth pursuing? A psychologist explains,” Big Think. Accessed: Aug. 28, 2025. [Online]. Available: <a href="https://bigthink.com/the-well/why-should-we-pursue-virtue/">https://bigthink.com/the-well/why-should-we-pursue-virtue/</a></li>
+
+<li>G. Abdelal, “The Ethics of ‘I’: Philosophy, Voice, and the Politics of Inclusion | Blog of the APA.” Accessed: Aug. 23, 2025. [Online]. Available: <a href="https://blog.apaonline.org/2025/08/20/the-ethics-of-i-philosophy-voice-and-the-politics-of-inclusion/">https://blog.apaonline.org/2025/08/20/the-ethics-of-i-philosophy-voice-and-the-politics-of-inclusion/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Aztec moral philosophy didn’t expect anyone to be a saint | Aeon Essays,” Aeon. Accessed: Aug. 20, 2025. [Online]. Available: <a href="https://aeon.co/essays/aztec-moral-philosophy-didnt-expect-anyone-to-be-a-saint">https://aeon.co/essays/aztec-moral-philosophy-didnt-expect-anyone-to-be-a-saint</a></li>
+<li>“For Iris Murdoch, morality is about love, not duties and rules | Aeon Essays,” Aeon. Accessed: Aug. 13, 2025. [Online]. Available: <a href="https://aeon.co/essays/for-iris-murdoch-morality-is-about-love-not-duties-and-rules">https://aeon.co/essays/for-iris-murdoch-morality-is-about-love-not-duties-and-rules</a></li>
+
+<li>J. Weinberg, “Sullivan Wins $10 Million Grant for ‘Love Ethic’ Project at Notre Dame - Daily Nous.” Accessed: Jul. 04, 2025. [Online]. Available: <a href="https://dailynous.com/2025/06/24/sullivan-wins-10-million-grant-for-love-ethic-project-at-notre-dame/">https://dailynous.com/2025/06/24/sullivan-wins-10-million-grant-for-love-ethic-project-at-notre-dame/</a>, <a href="https://dailynous.com/2025/06/24/sullivan-wins-10-million-grant-for-love-ethic-project-at-notre-dame/">https://dailynous.com/2025/06/24/sullivan-wins-10-million-grant-for-love-ethic-project-at-notre-dame/</a></li>
+
+<li>L. M. Walton, “Jenkins Center for Virtue Ethics receives grant to advance love-based ethical framework,” Notre Dame News. Accessed: Jul. 04, 2025. [Online]. Available: <a href="https://news.nd.edu/news/jenkins-center-for-virtue-ethics-receives-grant-to-advance-love-based-ethical-framework/">https://news.nd.edu/news/jenkins-center-for-virtue-ethics-receives-grant-to-advance-love-based-ethical-framework/</a></li>
+
+<li>R. Bregman, Moral Ambition: An Antidote to Apathy, 1st edition. S.l.: Bloomsbury UK, 2025.</li>
+
+<li>“What a real-life ‘trolley problem’ reveals about morality | Psyche Ideas,” Psyche. Accessed: Jan. 29, 2025. [Online]. Available: <a href="https://psyche.co/ideas/what-a-real-life-trolley-problem-reveals-about-morality">https://psyche.co/ideas/what-a-real-life-trolley-problem-reveals-about-morality</a></li>
+
+<li>“‘The dance between autonomy and affinity creates morality,’” MIT News | Massachusetts Institute of Technology. Accessed: Jul. 25, 2024. [Online]. Available: <a href="https://news.mit.edu/2024/dance-between-autonomy-and-affinity-creates-morality-abe-mathew-0718">https://news.mit.edu/2024/dance-between-autonomy-and-affinity-creates-morality-abe-mathew-0718</a></li>
+
+<li>“Why does moral progress feel preachy and annoying? | Aeon Essays,” Aeon. Accessed: Jun. 25, 2024. [Online]. Available: <a href="https://aeon.co/essays/why-does-moral-progress-feel-preachy-and-annoying">https://aeon.co/essays/why-does-moral-progress-feel-preachy-and-annoying</a></li>
+
+<li>“Why Kierkegaard believed it’s lazy to admire our moral heroes | Psyche Ideas,” Psyche. <a href="https://psyche.co/ideas/why-kierkegaard-believed-its-lazy-to-admire-our-moral-heroes">https://psyche.co/ideas/why-kierkegaard-believed-its-lazy-to-admire-our-moral-heroes</a> (accessed Feb. 17, 2022).</li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://github.com/ourghostorg">OurGhostOrg</a></p>
+<p class="date">Created: 2026-05-19 Tue 18:56</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

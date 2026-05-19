@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-19 Tue 18:56 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Transnational Institute</title>
+<meta name="author" content="Staff Member(s), [[https://github.com/ourghostorg][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Transnational Institute</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgfc99a3f">1. General</a></li>
+<li><a href="#org92fe1e6">2. STEMM</a>
+<ul>
+<li><a href="#org65e5eeb">2.1. Systems Sciences, Misc</a>
+<ul>
+<li><a href="#org104ce04">2.1.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org278da52">2.2. Information, Communication Technology, Misc</a></li>
+<li><a href="#orgc02351b">2.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org7ba794a">3. Worldly Matters</a>
+<ul>
+<li><a href="#orgcfcecd6">3.1. Space and Time</a>
+<ul>
+<li><a href="#org7bb8c49">3.1.1. History</a></li>
+<li><a href="#org1979cc0">3.1.2. Geography</a></li>
+<li><a href="#orgb4d0844">3.1.3. Cities</a></li>
+<li><a href="#org2f3b474">3.1.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org9970e0d">3.2. Space, Earth, Life Sciences, Environment, Ecology, Health, Misc</a>
+<ul>
+<li><a href="#org95d61b2">3.2.1. Climate Studies</a></li>
+<li><a href="#orga2d1d5b">3.2.2. Energy</a></li>
+<li><a href="#org799ebd3">3.2.3. Environment</a></li>
+<li><a href="#orgdde48a4">3.2.4. Health</a></li>
+<li><a href="#orgf7e16dd">3.2.5. Food, Misc</a></li>
+<li><a href="#org1c05467">3.2.6. Drugs</a></li>
+<li><a href="#org5564ea1">3.2.7. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgd29feda">3.3. Religions, Spirituality, Misc</a>
+<ul>
+<li><a href="#org1f70bf2">3.3.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org3aede70">3.4. Humanities, Misc</a>
+<ul>
+<li><a href="#orgc25addd">3.4.1. Psychology, Misc</a></li>
+<li><a href="#org20ca80d">3.4.2. People</a></li>
+</ul>
+</li>
+<li><a href="#orgc882d22">3.5. Culture, Misc</a></li>
+<li><a href="#org60133de">3.6. SocioPolitical Studies, Law, Misc</a>
+<ul>
+<li><a href="#org7f49854">3.6.1. Relationships, Gender, Feminism, Misc</a></li>
+<li><a href="#org770e83d">3.6.2. Special Groups</a></li>
+<li><a href="#org9ab8618">3.6.3. Culture</a></li>
+<li><a href="#org0fc2f31">3.6.4. Orgs</a></li>
+<li><a href="#orge4d6a8c">3.6.5. Politics</a></li>
+<li><a href="#orgdb1b5f7">3.6.6. Nation States, Misc</a></li>
+<li><a href="#org857ce51">3.6.7. Law</a></li>
+<li><a href="#org33a923f">3.6.8. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org42ceea5">3.7. Business Studies, Misc</a>
+<ul>
+<li><a href="#orgaf6d01e">3.7.1. Management, Misc</a></li>
+<li><a href="#org756385c">3.7.2. Economics, Misc</a></li>
+<li><a href="#org08344c8">3.7.3. Finance, Misc</a></li>
+<li><a href="#orgb1d9e9e">3.7.4. Work</a></li>
+<li><a href="#org6a1a044">3.7.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgcf3a8a4">3.8. Security Studies, Misc</a>
+<ul>
+<li><a href="#org14f4f9f">3.8.1. Misc</a></li>
+<li><a href="#org80de16d">3.8.2. Nuclear Security</a></li>
+</ul>
+</li>
+<li><a href="#org6a79305">3.9. Communication, Misc</a></li>
+<li><a href="#orge1c94dd">3.10. Special Topics</a></li>
+<li><a href="#org1946ad0">3.11. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org04ea7ab">4. Core</a>
+<ul>
+<li><a href="#org3c3dbf4">4.1. State of Power Series</a>
+<ul>
+<li><a href="#org0840ff3">4.1.1. General</a></li>
+<li><a href="#org13a5f23">4.1.2. Year Wise</a></li>
+</ul>
+</li>
+<li><a href="#org9cf42ef">4.2. Annual Reports</a></li>
+</ul>
+</li>
+<li><a href="#orgd00be97">5. Arts</a>
+<ul>
+<li><a href="#orgd0d3b61">5.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgdcb43b1">6. Special Topics</a>
+<ul>
+<li><a href="#org0db1d13">6.1. Critical Studies</a></li>
+</ul>
+</li>
+<li><a href="#org2a7b7f4">7. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orgfc99a3f" class="outline-2">
+<h2 id="orgfc99a3f"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Transnational Institute,” Wikipedia. May 08, 2026. Accessed: May 10, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Transnational_Institute&amp;oldid=1353120509">https://en.wikipedia.org/w/index.php?title=Transnational_Institute&amp;oldid=1353120509</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org92fe1e6" class="outline-2">
+<h2 id="org92fe1e6"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org65e5eeb" class="outline-3">
+<h3 id="org65e5eeb"><span class="section-number-3">2.1.</span> Systems Sciences, Misc</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org104ce04" class="outline-4">
+<h4 id="org104ce04"><span class="section-number-4">2.1.1.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org278da52" class="outline-3">
+<h3 id="org278da52"><span class="section-number-3">2.2.</span> Information, Communication Technology, Misc</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>“Digital Futures | Transnational Institute.” Accessed: Aug. 28, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/digital-futures">https://www.tni.org/en/topic/digital-futures</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>M. R. Ginting Pius, “Right to Repair and Circular Economy | Transnational Institute.” Accessed: Dec. 13, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/right-to-repair-and-circular-economy">https://www.tni.org/en/article/right-to-repair-and-circular-economy</a></li>
+<li>T. Font, “AI wars in a new age of Great Power rivalry | Transnational Institute.” Accessed: Feb. 07, 2025. [Online]. Available: <a href="https://www.tni.org/en/article/ai-wars-in-a-new-age-of-great-power-rivalry">https://www.tni.org/en/article/ai-wars-in-a-new-age-of-great-power-rivalry</a></li>
+<li>“What Artificial Intelligence is hiding | Transnational Institute.” Accessed: Aug. 28, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/what-artificial-intelligence-is-hiding">https://www.tni.org/en/article/what-artificial-intelligence-is-hiding</a></li>
+<li>“The Intelligent Corporation: data and the digital economy,” Longreads. Accessed: Oct. 11, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/the-intelligent-corporation-data-and-the-digital-economy">https://longreads.tni.org/stateofpower/the-intelligent-corporation-data-and-the-digital-economy</a></li>
+<li>K.-H. Hung, “Beyond Big Tech Geopolitics | Transnational Institute.” Accessed: Feb. 07, 2025. [Online]. Available: <a href="https://www.tni.org/en/article/beyond-big-tech-geopolitics">https://www.tni.org/en/article/beyond-big-tech-geopolitics</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc02351b" class="outline-3">
+<h3 id="orgc02351b"><span class="section-number-3">2.3.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org7ba794a" class="outline-2">
+<h2 id="org7ba794a"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgcfcecd6" class="outline-3">
+<h3 id="orgcfcecd6"><span class="section-number-3">3.1.</span> Space and Time</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-org7bb8c49" class="outline-4">
+<h4 id="org7bb8c49"><span class="section-number-4">3.1.1.</span> History</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<ul class="org-ul">
+<li>S. G. Hamouchene Peter Weiss,Cora Weiss,John Cavanagh,Achin Vanaik,Anthony Barnett,Susan Buck-Morss,Ariane van Buren,Manuel Pérez-Rocha,John Berger,Isabel Letelier,Orlando Letelier,Eqbal Ahmad,Basker Vashee,Fred Halliday,Hilary Wainwright,Walden Bello,Martin Jelsma,Gonzalo Berrón,Lyda Fernanda Forero,Jun Borras,Fiona Dove,Arun Kundnani,Dorothy Grace Guerrero,Howard Wachtel,Brid Brennan,Satoko Kishimoto,Sol Trumbo Vila,Niamh Ní Bhriain ,Lucía Bárcena,Katie Sandwell,Abir Kopty,Hamza, “History in Action | Transnational Institute.” Accessed: Dec. 14, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/history-in-action">https://www.tni.org/en/article/history-in-action</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1979cc0" class="outline-4">
+<h4 id="org1979cc0"><span class="section-number-4">3.1.2.</span> Geography</h4>
+</div>
+<div id="outline-container-orgb4d0844" class="outline-4">
+<h4 id="orgb4d0844"><span class="section-number-4">3.1.3.</span> Cities</h4>
+<div class="outline-text-4" id="text-3-1-3">
+<ul class="org-ul">
+<li>S. T. V. Buxton Nick, “Transformative Cities Introduction | Transnational Institute.” Accessed: Oct. 16, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/transformative-cities-introduction">https://www.tni.org/en/publication/transformative-cities-introduction</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2f3b474" class="outline-4">
+<h4 id="org2f3b474"><span class="section-number-4">3.1.4.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org9970e0d" class="outline-3">
+<h3 id="org9970e0d"><span class="section-number-3">3.2.</span> Space, Earth, Life Sciences, Environment, Ecology, Health, Misc</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-org95d61b2" class="outline-4">
+<h4 id="org95d61b2"><span class="section-number-4">3.2.1.</span> Climate Studies</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<ul class="org-ul">
+<li>“Climate Security | Transnational Institute.” Accessed: Jul. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/climate-security">https://www.tni.org/en/topic/climate-security</a></li>
+<li>“Climate Crisis | Transnational Institute.” Accessed: Jul. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/climate-crisis">https://www.tni.org/en/topic/climate-crisis</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga2d1d5b" class="outline-4">
+<h4 id="orga2d1d5b"><span class="section-number-4">3.2.2.</span> Energy</h4>
+<div class="outline-text-4" id="text-3-2-2">
+<ul class="org-ul">
+<li>“Energy Democracy | Transnational Institute.” Accessed: Jul. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/energy-democracy">https://www.tni.org/en/topic/energy-democracy</a></li>
+<li>“Energy Charter Treaty (ECT) | Transnational Institute.” Accessed: Sep. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/energy-charter-treaty">https://www.tni.org/en/topic/energy-charter-treaty</a></li>
+
+<li>L. S. Mataram Rowan, “The Public Power files | Transnational Institute.” Accessed: Nov. 23, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/the-public-power-files">https://www.tni.org/en/article/the-public-power-files</a></li>
+<li>L. Steinfort, “Why we need public power and energy democracy for feminist futures | Transnational Institute.” Accessed: Oct. 29, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/why-we-need-public-power-and-energy-democracy-for-feminist-futures">https://www.tni.org/en/article/why-we-need-public-power-and-energy-democracy-for-feminist-futures</a></li>
+
+<li>L. S. Angel James, “Energy Transition Mythbusters | Transnational Institute.” Accessed: Dec. 06, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/energy-transition-mythbusters">https://www.tni.org/en/publication/energy-transition-mythbusters</a></li>
+<li>L. S. Angel Rowan Mataram,James, “Reclaiming Energy | Transnational Institute.” Accessed: Dec. 06, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/reclaiming-energy">https://www.tni.org/en/publication/reclaiming-energy</a></li>
+<li>L. S. Mataram Rowan, “Reclaiming Energy Report: Part 2 - Better Public Ownership | Transnational Institute.” Accessed: Dec. 19, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/reclaiming-energy-report-part-2-better-public-ownership">https://www.tni.org/en/publication/reclaiming-energy-report-part-2-better-public-ownership</a></li>
+<li>L. S. Mataram Rowan, “Reclaiming Energy Report: Part 3 - Beyond the State | Transnational Institute.” Accessed: Dec. 19, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/reclaiming-energy-report-part-3-beyond-the-state">https://www.tni.org/en/publication/reclaiming-energy-report-part-3-beyond-the-state</a></li>
+<li>L. S. Mataram Rowan, “Reclaiming Energy Report: Part 4 - Global Public Goods | Transnational Institute.” Accessed: Dec. 19, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/reclaiming-energy-report-part-4-global-public-goods">https://www.tni.org/en/publication/reclaiming-energy-report-part-4-global-public-goods</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>O. P. Dubois Clémence, “Power-off | Transnational Institute.” Accessed: Sep. 26, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/power-off">https://www.tni.org/en/article/power-off</a></li>
+
+<li>E. R. Collective, “Negotiating a global energy crisis on our stairwell | Transnational Institute.” Accessed: Sep. 26, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/negotiating-a-global-energy-crisis-on-our-stairwell">https://www.tni.org/en/article/negotiating-a-global-energy-crisis-on-our-stairwell</a></li>
+<li>L. S. Angel James, “Energy Transition Mythbusters | Transnational Institute.” Accessed: Sep. 26, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/energy-transition-mythbusters">https://www.tni.org/en/publication/energy-transition-mythbusters</a></li>
+<li>V. Weghmann, “Waste to Energy | Transnational Institute.” Accessed: Sep. 24, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/waste-to-energy">https://www.tni.org/en/article/waste-to-energy</a></li>
+
+<li>“Transnational Institute | Ideas into Movement.” Accessed: Sep. 21, 2024. [Online]. Available: <a href="https://www.tni.org/en">https://www.tni.org/en</a></li>
+<li>“The ‘new Darwinian world’ of the energy transition | Transnational Institute.” Accessed: Aug. 29, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/the-new-darwinian-world-of-the-energy-transition">https://www.tni.org/en/article/the-new-darwinian-world-of-the-energy-transition</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org799ebd3" class="outline-4">
+<h4 id="org799ebd3"><span class="section-number-4">3.2.3.</span> Environment</h4>
+<div class="outline-text-4" id="text-3-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="org8d39842"></a>Misc<br />
+<div class="outline-text-5" id="text-3-2-3-1">
+<ul class="org-ul">
+<li>A. Kundnani, “The right to breathe | Transnational Institute.” Accessed: Oct. 02, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/the-right-to-breathe">https://www.tni.org/en/article/the-right-to-breathe</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org71a8d39"></a>Climate Studies<br />
+<div class="outline-text-5" id="text-3-2-3-2">
+<ul class="org-ul">
+<li>S. Malik, “Illustrating Geopolitics | Transnational Institute.” Accessed: Feb. 07, 2025. [Online]. Available: <a href="https://www.tni.org/en/article/illustrating-geopolitics">https://www.tni.org/en/article/illustrating-geopolitics</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org31ed65e"></a>Water<br />
+<div class="outline-text-5" id="text-3-2-3-3">
+<ul class="org-ul">
+<li>“Flowing movement: Building alternative water governance in Mexico - State of power 2018,” Longreads. Accessed: Oct. 17, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/flowing-movement-building-alternative-water-governance-in-mexico">https://longreads.tni.org/stateofpower/flowing-movement-building-alternative-water-governance-in-mexico</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgdde48a4" class="outline-4">
+<h4 id="orgdde48a4"><span class="section-number-4">3.2.4.</span> Health</h4>
+<div class="outline-text-4" id="text-3-2-4">
+</div>
+<ol class="org-ol">
+<li><a id="org62ad0d9"></a>Misc<br />
+<div class="outline-text-5" id="text-3-2-4-1">
+<ul class="org-ul">
+<li>D. Enlund, “Fighting for public health | Transnational Institute.” Accessed: Oct. 17, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/fighting-for-public-health">https://www.tni.org/en/publication/fighting-for-public-health</a></li>
+<li>D. Enlund, “Fighting for public health | Transnational Institute.” Accessed: Oct. 17, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/fighting-for-public-health">https://www.tni.org/en/publication/fighting-for-public-health</a></li>
+
+<li>S. G. Aye Mónica Vargas,David Legge,Kajal Bhardwaj,Mark Heywood,Baba, “Taking Health Back from Corporations | Transnational Institute.” Accessed: Oct. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/video/taking-health-back-from-corporations">https://www.tni.org/en/video/taking-health-back-from-corporations</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org31595f0"></a>COVID-19<br />
+<div class="outline-text-5" id="text-3-2-4-2">
+<ul class="org-ul">
+<li>T. Institute, “COVAX: a global multistakeholder group that poses political and health risks to developing countries and multilateralism,” Longreads. Accessed: Sep. 21, 2024. [Online]. Available: <a href="https://longreads.tni.org/covax">https://longreads.tni.org/covax</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgf7e16dd" class="outline-4">
+<h4 id="orgf7e16dd"><span class="section-number-4">3.2.5.</span> Food, Misc</h4>
+<div class="outline-text-4" id="text-3-2-5">
+<ul class="org-ul">
+<li>“Agroecology | Transnational Institute.” Accessed: Jul. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/agroecology">https://www.tni.org/en/topic/agroecology</a></li>
+<li>“Water Justice | Transnational Institute.” Accessed: Jul. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/water-justice">https://www.tni.org/en/topic/water-justice</a></li>
+<li>“Food Sovereignty | Transnational Institute.” Accessed: Jul. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/food-sovereignty">https://www.tni.org/en/topic/food-sovereignty</a></li>
+<li>“Cannabis | Transnational Institute.” Accessed: Jul. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/cannabis">https://www.tni.org/en/topic/cannabis</a></li>
+<li>“Coca Leaf | Transnational Institute.” Accessed: Oct. 23, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/coca-leaf">https://www.tni.org/en/topic/coca-leaf</a></li>
+<li>“Flex Crops | Transnational Institute.” Accessed: Oct. 23, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/flex-crops">https://www.tni.org/en/topic/flex-crops</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1c05467" class="outline-4">
+<h4 id="org1c05467"><span class="section-number-4">3.2.6.</span> Drugs</h4>
+<div class="outline-text-4" id="text-3-2-6">
+<ul class="org-ul">
+<li>T. Blickman, “Coca leaf: Myths and Reality | Transnational Institute.” Accessed: Oct. 23, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/coca-leaf-myths-and-reality">https://www.tni.org/en/publication/coca-leaf-myths-and-reality</a></li>
+<li>J. A. F.-G. Peña-García Miranda D. Mosis,Diana María, “Cocaine on Wall Street, The War on Drugs, and Peace in Colombia | Transnational Institute.” Accessed: Oct. 14, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/cocaine-on-wall-street-the-war-on-drugs-and-peace-in-colombia">https://www.tni.org/en/publication/cocaine-on-wall-street-the-war-on-drugs-and-peace-in-colombia</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5564ea1" class="outline-4">
+<h4 id="org5564ea1"><span class="section-number-4">3.2.7.</span> Misc</h4>
+<div class="outline-text-4" id="text-3-2-7">
+<ul class="org-ul">
+<li>“Green Economy | Transnational Institute.” Accessed: Jul. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/green-economy">https://www.tni.org/en/topic/green-economy</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd29feda" class="outline-3">
+<h3 id="orgd29feda"><span class="section-number-3">3.3.</span> Religions, Spirituality, Misc</h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-org1f70bf2" class="outline-4">
+<h4 id="org1f70bf2"><span class="section-number-4">3.3.1.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org3aede70" class="outline-3">
+<h3 id="org3aede70"><span class="section-number-3">3.4.</span> Humanities, Misc</h3>
+<div class="outline-text-3" id="text-3-4">
+</div>
+<div id="outline-container-orgc25addd" class="outline-4">
+<h4 id="orgc25addd"><span class="section-number-4">3.4.1.</span> Psychology, Misc</h4>
+<div class="outline-text-4" id="text-3-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="org861be21"></a>Cognitive Science, Misc<br /></li>
+<li><a id="org2194dac"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org20ca80d" class="outline-4">
+<h4 id="org20ca80d"><span class="section-number-4">3.4.2.</span> People</h4>
+<div class="outline-text-4" id="text-3-4-2">
+<ul class="org-ul">
+<li>“Obituary: Dave Bewley-Taylor | Transnational Institute.” Accessed: Dec. 04, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/obituary-dave-bewley-taylor">https://www.tni.org/en/article/obituary-dave-bewley-taylor</a></li>
+<li>“Arun Kundnani | Transnational Institute.” Accessed: Oct. 02, 2024. [Online]. Available: <a href="https://www.tni.org/en/profile/arun-kundnani">https://www.tni.org/en/profile/arun-kundnani</a></li>
+<li>“Benny Kuruvilla | Transnational Institute.” Accessed: Dec. 22, 2024. [Online]. Available: <a href="https://www.tni.org/en/profile/benny-kuruvilla">https://www.tni.org/en/profile/benny-kuruvilla</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc882d22" class="outline-3">
+<h3 id="orgc882d22"><span class="section-number-3">3.5.</span> Culture, Misc</h3>
+</div>
+<div id="outline-container-org60133de" class="outline-3">
+<h3 id="org60133de"><span class="section-number-3">3.6.</span> SocioPolitical Studies, Law, Misc</h3>
+<div class="outline-text-3" id="text-3-6">
+</div>
+<div id="outline-container-org7f49854" class="outline-4">
+<h4 id="org7f49854"><span class="section-number-4">3.6.1.</span> Relationships, Gender, Feminism, Misc</h4>
+<div class="outline-text-4" id="text-3-6-1">
+</div>
+<ol class="org-ol">
+<li><a id="org31b93ef"></a>Sex<br />
+<div class="outline-text-5" id="text-3-6-1-1">
+<ul class="org-ul">
+<li>“Power of Porn Cultures,” Longreads. Accessed: Sep. 28, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/power-of-porn-cultures">https://longreads.tni.org/stateofpower/power-of-porn-cultures</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org3f66684"></a>Feminism<br />
+<div class="outline-text-5" id="text-3-6-1-2">
+<ul class="org-ul">
+<li>“Power and patriarchy,” Longreads. Accessed: Sep. 29, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/power-and-patriarchy">https://longreads.tni.org/stateofpower/power-and-patriarchy</a></li>
+<li>“Building feminist counter-power: In for the long haul - State of power 2018,” Longreads. Accessed: Oct. 17, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/feminist-counter-power">https://longreads.tni.org/stateofpower/feminist-counter-power</a></li>
+<li>“Marching forward: women, resistance and counter-power - State of power 2018,” Longreads. Accessed: Oct. 17, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/women-resistance-counterpower">https://longreads.tni.org/stateofpower/women-resistance-counterpower</a></li>
+
+<li>“Building feminist counter-power: In for the long haul - State of power 2018,” Longreads. Accessed: Sep. 27, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/feminist-counter-power">https://longreads.tni.org/stateofpower/feminist-counter-power</a></li>
+<li>L. Steinfort, “Why we need public power and energy democracy for feminist futures | Transnational Institute.” Accessed: Oct. 29, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/why-we-need-public-power-and-energy-democracy-for-feminist-futures">https://www.tni.org/en/article/why-we-need-public-power-and-energy-democracy-for-feminist-futures</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org665fa02"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org770e83d" class="outline-4">
+<h4 id="org770e83d"><span class="section-number-4">3.6.2.</span> Special Groups</h4>
+<div class="outline-text-4" id="text-3-6-2">
+</div>
+<ol class="org-ol">
+<li><a id="org4121761"></a>Indigenous People<br /></li>
+<li><a id="orgf281fc6"></a>Misc<br /></li>
+<li><a id="org9cba7db"></a>Race<br />
+<div class="outline-text-5" id="text-3-6-2-3">
+<ul class="org-ul">
+<li>“White Supremacy as Cultural Cannibalism,” Longreads. Accessed: Sep. 30, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/white-supremacy">https://longreads.tni.org/stateofpower/white-supremacy</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org9ab8618" class="outline-4">
+<h4 id="org9ab8618"><span class="section-number-4">3.6.3.</span> Culture</h4>
+<div class="outline-text-4" id="text-3-6-3">
+<ul class="org-ul">
+<li>“Culture, power and resistance: Reflections on the ideas of Amilcar Cabral,” Longreads. Accessed: Sep. 29, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/culture-power-and-resistance">https://longreads.tni.org/stateofpower/culture-power-and-resistance</a></li>
+<li>“On culture and power,” Longreads. Accessed: Sep. 28, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/on-culture-power">https://longreads.tni.org/stateofpower/on-culture-power</a></li>
+
+<li>“Cultural power | Transnational Institute.” Accessed: Sep. 27, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/cultural-power">https://www.tni.org/en/publication/cultural-power</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0fc2f31" class="outline-4">
+<h4 id="org0fc2f31"><span class="section-number-4">3.6.4.</span> Orgs</h4>
+<div class="outline-text-4" id="text-3-6-4">
+<ul class="org-ul">
+<li>A. Garcia, “Building BRICS | Transnational Institute.” Accessed: Feb. 07, 2025. [Online]. Available: <a href="https://www.tni.org/en/article/building-brics">https://www.tni.org/en/article/building-brics</a></li>
+
+<li>“People’s Working Group on Multistakeholderism | Transnational Institute.” Accessed: Sep. 21, 2024. [Online]. Available: <a href="https://www.tni.org/en/profile/peoples-working-group-on-multistakeholderism">https://www.tni.org/en/profile/peoples-working-group-on-multistakeholderism</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge4d6a8c" class="outline-4">
+<h4 id="orge4d6a8c"><span class="section-number-4">3.6.5.</span> Politics</h4>
+<div class="outline-text-4" id="text-3-6-5">
+</div>
+<ol class="org-ol">
+<li><a id="org87483c0"></a>Misc<br />
+<div class="outline-text-5" id="text-3-6-5-1">
+<ul class="org-ul">
+<li>C. R. Khazen Elia El, “Leaking Imperialism | Transnational Institute.” Accessed: Dec. 03, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/leaking-imperialism">https://www.tni.org/en/article/leaking-imperialism</a></li>
+<li>S. George, “Shadow Sovereigns | Transnational Institute.” Accessed: Oct. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/shadow-sovereigns">https://www.tni.org/en/publication/shadow-sovereigns</a></li>
+<li>“Making counter-power out of madness - State of power 2018,” Longreads. Accessed: Oct. 17, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/making-counter-power-out-of-madness">https://longreads.tni.org/stateofpower/making-counter-power-out-of-madness</a></li>
+<li>“The Latent, Unused Power of Citizens – and the Production of Public Collateral,” Longreads. Accessed: Oct. 05, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/power-of-citizens">https://longreads.tni.org/stateofpower/power-of-citizens</a></li>
+<li>“Role of human behaviour in generating plutocracies,” Longreads. Accessed: Sep. 29, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/human-behaviour-in-plutocracies">https://longreads.tni.org/stateofpower/human-behaviour-in-plutocracies</a></li>
+<li>“Organizing cultures of resilience: activism in the Anthropocene,” Longreads. Accessed: Sep. 29, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/activism-in-the-anthropocene-organizing-cultures-of-resilience">https://longreads.tni.org/stateofpower/activism-in-the-anthropocene-organizing-cultures-of-resilience</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. K. Steinfort Olivier Petitjean,Lavinia, “Reclaiming Public Services | Transnational Institute.” Accessed: Oct. 08, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/reclaiming-public-services">https://www.tni.org/en/publication/reclaiming-public-services</a></li>
+<li>“Examining Barcelona en Comu’s attempt to be a movement-party | Transnational Institute.” Accessed: Oct. 16, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/examining-barcelona-en-comus-attempt-to-be-a-movement-party">https://www.tni.org/en/publication/examining-barcelona-en-comus-attempt-to-be-a-movement-party</a></li>
+<li>“Which country rules the world? | Transnational Institute.” Accessed: Feb. 05, 2025. [Online]. Available: <a href="https://www.tni.org/en/which-country-rules-the-world">https://www.tni.org/en/which-country-rules-the-world</a></li>
+<li>“In an age of great power rivalry where does that leave the rest of the world? | Transnational Institute.” Accessed: Feb. 05, 2025. [Online]. Available: <a href="https://www.tni.org/en/in-an-age-of-great-power-rivalry-where-does-that-leave-the-rest-of-the-world">https://www.tni.org/en/in-an-age-of-great-power-rivalry-where-does-that-leave-the-rest-of-the-world</a></li>
+
+<li>“Democracy | Transnational Institute.” Accessed: Sep. 27, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/democracy">https://www.tni.org/en/publication/democracy</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgdb1b5f7" class="outline-4">
+<h4 id="orgdb1b5f7"><span class="section-number-4">3.6.6.</span> Nation States, Misc</h4>
+<div class="outline-text-4" id="text-3-6-6">
+</div>
+<ol class="org-ol">
+<li><a id="org4960844"></a>USA<br />
+<div class="outline-text-5" id="text-3-6-6-1">
+<ul class="org-ul">
+<li>“Neoextractivism and state violence: Defending the defenders in Latin America,” Longreads. Accessed: Oct. 02, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/neoextractivism-and-state-violence-defending-the-defenders-in-latin-america">https://longreads.tni.org/stateofpower/neoextractivism-and-state-violence-defending-the-defenders-in-latin-america</a></li>
+<li>“Counter-power and self-defence in Latin America - State of power 2018,” Longreads. Accessed: Oct. 02, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/vida-y-territorio/">https://longreads.tni.org/stateofpower/vida-y-territorio/</a></li>
+
+<li>S. George, “Hijacking America | Transnational Institute.” Accessed: Oct. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/hijacking-america">https://www.tni.org/en/publication/hijacking-america</a></li>
+<li>“What does the US election mean for global justice movements? | Transnational Institute.” Accessed: Nov. 12, 2024. [Online]. Available: <a href="https://www.tni.org/en/USAelections24">https://www.tni.org/en/USAelections24</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org75252bc"></a>China<br />
+<div class="outline-text-5" id="text-3-6-6-2">
+<ul class="org-ul">
+<li>“China | Transnational Institute.” Accessed: Aug. 28, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/china">https://www.tni.org/en/topic/china</a></li>
+<li>S. O.-S. Vervest Mads Barbesgaard,Pietje, “The Belt and Road Initiative (BRI) | Transnational Institute.” Accessed: Oct. 12, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/the-belt-and-road-initiative-bri">https://www.tni.org/en/publication/the-belt-and-road-initiative-bri</a></li>
+<li>S. K. Starrs, “Can China challenge the US empire? | Transnational Institute.” Accessed: Feb. 07, 2025. [Online]. Available: <a href="https://www.tni.org/en/article/can-china-challenge-the-us-empire">https://www.tni.org/en/article/can-china-challenge-the-us-empire</a></li>
+<li>B. Wray, “China and the geopolitics of the green transition | Transnational Institute.” Accessed: Feb. 07, 2025. [Online]. Available: <a href="https://www.tni.org/en/article/china-and-the-geopolitics-of-the-green-transition">https://www.tni.org/en/article/china-and-the-geopolitics-of-the-green-transition</a></li>
+<li>“Does China pose a challenge to the US empire? | Transnational Institute.” Accessed: Feb. 05, 2025. [Online]. Available: <a href="https://www.tni.org/en/does-china-pose-a-challenge-to-the-us-empire">https://www.tni.org/en/does-china-pose-a-challenge-to-the-us-empire</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org540e9c4"></a>Israel<br />
+<div class="outline-text-5" id="text-3-6-6-3">
+<ul class="org-ul">
+<li>“Israel: the model coercive state,” Longreads. Accessed: Oct. 02, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/israel-the-model-coercive-state">https://longreads.tni.org/stateofpower/israel-the-model-coercive-state</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgad5dd52"></a>Serbia<br />
+<div class="outline-text-5" id="text-3-6-6-4">
+<ul class="org-ul">
+<li>T. Dominicus, “In Serbia, the EU’s Green Deal is fuelling pollution and human rights abuses | Transnational Institute.” Accessed: Nov. 23, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/in-serbia-the-eus-green-deal-is-fuelling-pollution-and-human-rights-abuses">https://www.tni.org/en/article/in-serbia-the-eus-green-deal-is-fuelling-pollution-and-human-rights-abuses</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc1cdd59"></a>MENA<br />
+<div class="outline-text-5" id="text-3-6-6-5">
+<ul class="org-ul">
+<li>“Middle East and North Africa | Transnational Institute.” Accessed: Aug. 28, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/middle-east-and-north-africa">https://www.tni.org/en/topic/middle-east-and-north-africa</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org798db26"></a>Africa<br />
+<div class="outline-text-5" id="text-3-6-6-6">
+<ul class="org-ul">
+<li>H. Mahjoub, “The emerging sub-imperial role of the United Arab Emirates in Africa | Transnational Institute.” Accessed: Feb. 07, 2025. [Online]. Available: <a href="https://www.tni.org/en/article/the-emerging-sub-imperial-role-of-the-united-arab-emirates-in-africa">https://www.tni.org/en/article/the-emerging-sub-imperial-role-of-the-united-arab-emirates-in-africa</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org33db85d"></a>India<br />
+<div class="outline-text-5" id="text-3-6-6-7">
+<ul class="org-ul">
+<li>“Power in India: radical pathways,” Transnational Institute. Accessed: Nov. 21, 2022. [Online]. Available: <a href="https://www.tni.org/en/publication/power-in-india-radical-pathways">https://www.tni.org/en/publication/power-in-india-radical-pathways</a></li>
+
+<li>A. S. Sandwell Katie, “Lessons from the Indian Farmers’ Movement | Transnational Institute.” Accessed: Sep. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/lessons-from-the-indian-farmers-movement">https://www.tni.org/en/publication/lessons-from-the-indian-farmers-movement</a></li>
+
+<li>“Settled Habits, New Tricks: Casteist Policing Meets Big Tech in India,” Longreads. Accessed: Sep. 28, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/viejos-habitos-nuevos-trucos-la-politica-de-castas-se-une-a-las-grandes-tecnologias-en-la-india/">https://longreads.tni.org/stateofpower/viejos-habitos-nuevos-trucos-la-politica-de-castas-se-une-a-las-grandes-tecnologias-en-la-india/</a></li>
+
+<li>B. Kakati, “Conflict and development in Northeast India | Transnational Institute.” Accessed: Oct. 02, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/conflict-and-development-in-northeast-india">https://www.tni.org/en/article/conflict-and-development-in-northeast-india</a></li>
+<li>D. and Democracy, “On the Frontline of Northeast India | Transnational Institute.” Accessed: Oct. 02, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/on-the-frontline-of-northeast-india">https://www.tni.org/en/publication/on-the-frontline-of-northeast-india</a></li>
+<li>B. Kakati, “Conflict and development in Northeast India | Transnational Institute.” Accessed: Sep. 27, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/conflict-and-development-in-northeast-india">https://www.tni.org/en/article/conflict-and-development-in-northeast-india</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org0f0bf31"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org857ce51" class="outline-4">
+<h4 id="org857ce51"><span class="section-number-4">3.6.7.</span> Law</h4>
+<div class="outline-text-4" id="text-3-6-7">
+</div>
+<ol class="org-ol">
+<li><a id="org2109817"></a>Crime<br />
+<div class="outline-text-5" id="text-3-6-7-1">
+<ul class="org-ul">
+<li>N. N. B. Akkerman Mark, “Partners in Crime | Transnational Institute.” Accessed: Oct. 15, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/partners-in-crime-EU-complicity-Israel-genocide-Gaza">https://www.tni.org/en/publication/partners-in-crime-EU-complicity-Israel-genocide-Gaza</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org1138e9a"></a>Misc<br />
+<div class="outline-text-5" id="text-3-6-7-2">
+<ul class="org-ul">
+<li>G. Baars, “The Limits of Law | Transnational Institute.” Accessed: Oct. 15, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/the-limits-of-law">https://www.tni.org/en/publication/the-limits-of-law</a></li>
+<li>C. O. Ghiotto Bettina Müller,Luciana, “Impacts of investment arbitration against Latin America and the Caribbean | Transnational Institute.” Accessed: Nov. 01, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/impacts-of-investment-arbitration-against-latin-america-and-the-caribbean">https://www.tni.org/en/publication/impacts-of-investment-arbitration-against-latin-america-and-the-caribbean</a></li>
+<li>B. M. Ghiotto Luciana, “ISDS in numbers | Transnational Institute.” Accessed: Nov. 01, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/isds-in-numbers-1">https://www.tni.org/en/publication/isds-in-numbers-1</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org33a923f" class="outline-4">
+<h4 id="org33a923f"><span class="section-number-4">3.6.8.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org42ceea5" class="outline-3">
+<h3 id="org42ceea5"><span class="section-number-3">3.7.</span> Business Studies, Misc</h3>
+<div class="outline-text-3" id="text-3-7">
+</div>
+<div id="outline-container-orgaf6d01e" class="outline-4">
+<h4 id="orgaf6d01e"><span class="section-number-4">3.7.1.</span> Management, Misc</h4>
+<div class="outline-text-4" id="text-3-7-1">
+<ul class="org-ul">
+<li>N. Peters, “Holding the strings | Transnational Institute.” Accessed: Sep. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/holding-the-strings">https://www.tni.org/en/article/holding-the-strings</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org756385c" class="outline-4">
+<h4 id="org756385c"><span class="section-number-4">3.7.2.</span> Economics, Misc</h4>
+<div class="outline-text-4" id="text-3-7-2">
+<ul class="org-ul">
+<li>“The Shareholder Revolution,” Longreads. Accessed: Oct. 19, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/shareholder-revolution">https://longreads.tni.org/stateofpower/shareholder-revolution</a></li>
+<li>“From Xinjiang to Mississippi: Terror capitalism, labour and surveillance,” Longreads. Accessed: Oct. 02, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/from-xinjiang-to-mississippi-terror-capitalism-labour-and-surveillance">https://longreads.tni.org/stateofpower/from-xinjiang-to-mississippi-terror-capitalism-labour-and-surveillance</a></li>
+<li>“Gangsters for capitalism,” Longreads. Accessed: Sep. 28, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/gangsters-capitalism">https://longreads.tni.org/stateofpower/gangsters-capitalism</a></li>
+<li>“Crash Course on rentier and monopoly capitalism | Transnational Institute.” Accessed: Sep. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/event/crash-course-on-rentier-and-monopoly-capitalism">https://www.tni.org/en/event/crash-course-on-rentier-and-monopoly-capitalism</a></li>
+<li>N. B. Hung Adam Tooze,Walden Bello,Ilias Alami,Jessica DiCarlo,Steve Rolf,Seth Schindler,Tica Font,Rafeef Ziadah,Ana Garcia,Sean Kenji Starrs,Benjamin Wray,Husam Mahjoub,Juan Lovera,Iqra Anugrah,Kai-Hsin, “Geopolitics of Capitalism | Transnational Institute.” Accessed: Feb. 05, 2025. [Online]. Available: <a href="https://www.tni.org/en/publication/geopolitics-of-capitalism">https://www.tni.org/en/publication/geopolitics-of-capitalism</a></li>
+
+<li>N. B. Weghmann Timothy Mitchell,Thea Riofrancos,Ozzi Warwick,Steffen Haag,Johanna Tunn,Tobias Kalt,Franziska Müller,Jenny Simon,Ebla Research Collective,Gz MeeNilankco Theiventhran,Kristian Stokke,Olivier Petitjean,Clémence Dubois ,James Goodman ,Decarbonising Electricity research group,Daniel Chavez,Lala Peñaranda,Tatiana Roa Avendaño,Eliana Carolina Carrillo Rodríguez,Communia Collective,Ashley Dawson,Matt Rota,Benjamin Schütze,Elia El Khazen,Charlotte Mueller,Philipp Wagner,Lisa Pier,Matthews Hlabane,Vera, “Energy, Power and Transition | Transnational Institute.” Accessed: Sep. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/energy-power-and-transition">https://www.tni.org/en/publication/energy-power-and-transition</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Ocean, Water and Fisher Peoples’ Tribunals | Transnational Institute.” Accessed: Sep. 08, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/ocean-water-and-fisher-peoples-tribunals">https://www.tni.org/en/publication/ocean-water-and-fisher-peoples-tribunals</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org08344c8" class="outline-4">
+<h4 id="org08344c8"><span class="section-number-4">3.7.3.</span> Finance, Misc</h4>
+</div>
+<div id="outline-container-orgb1d9e9e" class="outline-4">
+<h4 id="orgb1d9e9e"><span class="section-number-4">3.7.4.</span> Work</h4>
+<div class="outline-text-4" id="text-3-7-4">
+<ul class="org-ul">
+<li>C. M. K. Pajević Filipa, “Bright lights, tech city for the no-collar worker | Transnational Institute.” Accessed: Oct. 11, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/bright-lights-tech-city-for-the-no-collar-worker">https://www.tni.org/en/publication/bright-lights-tech-city-for-the-no-collar-worker</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6a1a044" class="outline-4">
+<h4 id="org6a1a044"><span class="section-number-4">3.7.5.</span> Misc</h4>
+<div class="outline-text-4" id="text-3-7-5">
+<ul class="org-ul">
+<li>“Free Trade Agreements | Transnational Institute.” Accessed: Jul. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/free-trade-agreements">https://www.tni.org/en/topic/free-trade-agreements</a></li>
+<li>“Bilateral Investment Treaties | Transnational Institute.” Accessed: Jul. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/bilateral-investment-treaties">https://www.tni.org/en/topic/bilateral-investment-treaties</a></li>
+<li>“Finance | Transnational Institute.” Accessed: Sep. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/finance">https://www.tni.org/en/topic/finance</a></li>
+<li>“Stop Corporate Impunity | Transnational Institute.” Accessed: Sep. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/stop-corporate-impunity">https://www.tni.org/en/topic/stop-corporate-impunity</a></li>
+<li>“Battling bankers – insights on financial power from the grassroots,” Longreads. Accessed: Oct. 05, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/battling-bankers">https://longreads.tni.org/stateofpower/battling-bankers</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>T. Blickman, “Countering illicit and unregulated money flows | Transnational Institute.” Accessed: Oct. 15, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/countering-illicit-and-unregulated-money-flows">https://www.tni.org/en/publication/countering-illicit-and-unregulated-money-flows</a></li>
+<li>A. Arauz, “The data of money | Transnational Institute.” Accessed: Oct. 15, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/the-data-of-money">https://www.tni.org/en/publication/the-data-of-money</a></li>
+
+<li>P. C. Angel Olivier Petitjean,Alfons Pérez ,Lavinia Steinfort,James, “‘Green’ Multinationals Exposed | Transnational Institute.” Accessed: Dec. 06, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/green-multinationals-exposed">https://www.tni.org/en/publication/green-multinationals-exposed</a></li>
+<li>“Finance | Transnational Institute.” Accessed: Sep. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/finance">https://www.tni.org/en/publication/finance</a></li>
+<li>“Gentrification of Payments,” Longreads. Accessed: Oct. 05, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/digital-payment-gentrification">https://longreads.tni.org/stateofpower/digital-payment-gentrification</a></li>
+<li>A. Arauz, “The data of money | Transnational Institute.” Accessed: Sep. 27, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/the-data-of-money">https://www.tni.org/en/publication/the-data-of-money</a></li>
+<li>“Gentrification of Payments,” Longreads. Accessed: Sep. 27, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/digital-payment-gentrification">https://longreads.tni.org/stateofpower/digital-payment-gentrification</a></li>
+<li>“Mall culture,” Longreads. Accessed: Sep. 28, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/mall-culture">https://longreads.tni.org/stateofpower/mall-culture</a></li>
+<li>“The Intelligent Corporation: data and the digital economy,” Longreads. Accessed: Sep. 27, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/the-intelligent-corporation-data-and-the-digital-economy">https://longreads.tni.org/stateofpower/the-intelligent-corporation-data-and-the-digital-economy</a></li>
+<li>“The Corporation | Transnational Institute.” Accessed: Sep. 27, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/the-corporation">https://www.tni.org/en/publication/the-corporation</a></li>
+<li>“Corporations as Private Sovereign Powers: The case of Total,” Longreads. Accessed: Sep. 26, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/corporations-as-private-sovereign-powers">https://longreads.tni.org/stateofpower/corporations-as-private-sovereign-powers</a></li>
+<li>“The End of the Corporation?,” Longreads. Accessed: Oct. 12, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/the-end-of-the-corporation">https://longreads.tni.org/stateofpower/the-end-of-the-corporation</a></li>
+<li>“The Corporate Architecture of Impunity,” Longreads. Accessed: Oct. 12, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/lex-mercatoria/">https://longreads.tni.org/stateofpower/lex-mercatoria/</a></li>
+<li>“Charming Psychopaths: The modern corporation,” Longreads. Accessed: Oct. 11, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/charming-psychopaths-the-modern-corporation">https://longreads.tni.org/stateofpower/charming-psychopaths-the-modern-corporation</a></li>
+<li>“The Corporate Architecture of Impunity,” Longreads. Accessed: Oct. 15, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/lex-mercatoria/">https://longreads.tni.org/stateofpower/lex-mercatoria/</a></li>
+<li>M. Bezuidenhout, “Ending corporate impunity &amp; realising the Right to Say No | Transnational Institute.” Accessed: Dec. 12, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/ending-corporate-impunity-realising-the-right-to-say-no">https://www.tni.org/en/article/ending-corporate-impunity-realising-the-right-to-say-no</a></li>
+<li>P. C. Angel Olivier Petitjean,Alfons Pérez ,Lavinia Steinfort,James, “‘Green’ Multinationals Exposed | Transnational Institute.” Accessed: Sep. 26, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/green-multinationals-exposed">https://www.tni.org/en/publication/green-multinationals-exposed</a></li>
+<li>“There Are No Markets Anymore | Transnational Institute.” Accessed: Feb. 10, 2023. [Online]. Available: <a href="https://www.tni.org/en/article/there-are-no-markets-anymore">https://www.tni.org/en/article/there-are-no-markets-anymore</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcf3a8a4" class="outline-3">
+<h3 id="orgcf3a8a4"><span class="section-number-3">3.8.</span> Security Studies, Misc</h3>
+<div class="outline-text-3" id="text-3-8">
+</div>
+<div id="outline-container-org14f4f9f" class="outline-4">
+<h4 id="org14f4f9f"><span class="section-number-4">3.8.1.</span> Misc</h4>
+<div class="outline-text-4" id="text-3-8-1">
+<ul class="org-ul">
+<li>R. B. Tufail Ben Hayes,Nisha Kapoor,Arun Kundnani,Narzanin Massoumi,David Miller,Tom Mills,Rizwaan Sabir,Katy Sian,Waqas, “Leaving the War on Terror | Transnational Institute.” Accessed: Oct. 02, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/leaving-the-war-on-terror">https://www.tni.org/en/publication/leaving-the-war-on-terror</a></li>
+
+<li>A. Metheven, “Militarism and the police | Transnational Institute.” Accessed: Oct. 06, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/militarism-and-the-police">https://www.tni.org/en/article/militarism-and-the-police</a></li>
+<li>H. Hamouchene, “Vietnam, Algeria, Palestine | Transnational Institute.” Accessed: Dec. 03, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/vietnam-algeria-palestine">https://www.tni.org/en/article/vietnam-algeria-palestine</a></li>
+<li>H. H. Ashraf Adam Hanieh,Kribsoo Diallo,Muzan Alneel,Vijay Kolinjivadi,Asmaa, “Palestine Liberation series | Transnational Institute.” Accessed: Dec. 03, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/palestine-liberation-series">https://www.tni.org/en/article/palestine-liberation-series</a></li>
+
+<li>A. Kundnani, “Abolish national security | Transnational Institute.” Accessed: Oct. 02, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/abolish-national-security">https://www.tni.org/en/publication/abolish-national-security</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“The 9/11 complex: The political economy of counter-terrorism,” Longreads. Accessed: Oct. 02, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/the-9-11-complex-the-political-economy-of-counter-terrorism">https://longreads.tni.org/stateofpower/the-9-11-complex-the-political-economy-of-counter-terrorism</a></li>
+<li>“Blurring the monopoly on violence: PMSCs and coercive state power,” Longreads. Accessed: Oct. 02, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/difuminar-el-monopolio-de-la-violencia-empresas-militares-de-seguridad-privada-y-el-poder-coercitivo-del-estado/">https://longreads.tni.org/stateofpower/difuminar-el-monopolio-de-la-violencia-empresas-militares-de-seguridad-privada-y-el-poder-coercitivo-del-estado/</a></li>
+<li>“Becoming Black: Coercive power, the state and racism in a time of crisis,” Longreads. Accessed: Oct. 02, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/devenir-negro-poder-coercitivo-estado-y-racismo-en-tiempos-de-crisis/">https://longreads.tni.org/stateofpower/devenir-negro-poder-coercitivo-estado-y-racismo-en-tiempos-de-crisis/</a></li>
+<li>“No business without enemies: War and the arms trade,” Longreads. Accessed: Oct. 01, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/no-hay-negocio-sin-enemigos-la-guerra-y-el-comercio-de-armas/">https://longreads.tni.org/stateofpower/no-hay-negocio-sin-enemigos-la-guerra-y-el-comercio-de-armas/</a></li>
+<li>“Israel’s war on Gaza | Transnational Institute.” Accessed: Aug. 29, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/israels-war-on-gaza">https://www.tni.org/en/article/israels-war-on-gaza</a></li>
+<li>R. Ziadah, “Geopolitics of genocide | Transnational Institute.” Accessed: Feb. 07, 2025. [Online]. Available: <a href="https://www.tni.org/en/article/geopolitics-of-genocide">https://www.tni.org/en/article/geopolitics-of-genocide</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org80de16d" class="outline-4">
+<h4 id="org80de16d"><span class="section-number-4">3.8.2.</span> Nuclear Security</h4>
+</div>
+</div>
+<div id="outline-container-org6a79305" class="outline-3">
+<h3 id="org6a79305"><span class="section-number-3">3.9.</span> Communication, Misc</h3>
+<div class="outline-text-3" id="text-3-9">
+<ul class="org-ul">
+<li>A. H. D. C. Gutiérrez Constanza Maluenda Castañeda,Daniela Ortega San Martín,Danny Rayman Labrin,Dinka Benítez Piraino,Macarena Martínez Abarca,Natalia Vallejos, “Expression meets repression | Transnational Institute.” Accessed: Oct. 03, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/expression-meets-repression">https://www.tni.org/en/article/expression-meets-repression</a></li>
+<li>“Without translation, no hay revolución! - State of power 2018,” Longreads. Accessed: Oct. 17, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/without-translation-no-hay-revolucion">https://longreads.tni.org/stateofpower/without-translation-no-hay-revolucion</a></li>
+<li>“Without translation, no hay revolución! - State of power 2018,” Longreads. Accessed: Oct. 17, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/without-translation-no-hay-revolucion">https://longreads.tni.org/stateofpower/without-translation-no-hay-revolucion</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge1c94dd" class="outline-3">
+<h3 id="orge1c94dd"><span class="section-number-3">3.10.</span> Special Topics</h3>
+</div>
+<div id="outline-container-org1946ad0" class="outline-3">
+<h3 id="org1946ad0"><span class="section-number-3">3.11.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-11">
+<ul class="org-ul">
+<li>“Just Transition | Transnational Institute.” Accessed: Sep. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/just-transition">https://www.tni.org/en/topic/just-transition</a></li>
+<li>“Multistakeholderism | Transnational Institute.” Accessed: Sep. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/multistakeholderism">https://www.tni.org/en/topic/multistakeholderism</a></li>
+<li>“Remunicipalisation | Transnational Institute.” Accessed: Sep. 26, 2024. [Online]. Available: <a href="https://www.tni.org/en/topic/remunicipalisation">https://www.tni.org/en/topic/remunicipalisation</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org04ea7ab" class="outline-2">
+<h2 id="org04ea7ab"><span class="section-number-2">4.</span> Core</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org3c3dbf4" class="outline-3">
+<h3 id="org3c3dbf4"><span class="section-number-3">4.1.</span> State of Power Series</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-org0840ff3" class="outline-4">
+<h4 id="org0840ff3"><span class="section-number-4">4.1.1.</span> General</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<ul class="org-ul">
+<li>“State of Power | Transnational Institute.” Accessed: Feb. 07, 2025. [Online]. Available: <a href="https://www.tni.org/en/topic/state-of-power">https://www.tni.org/en/topic/state-of-power</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org13a5f23" class="outline-4">
+<h4 id="org13a5f23"><span class="section-number-4">4.1.2.</span> Year Wise</h4>
+<div class="outline-text-4" id="text-4-1-2">
+<ul class="org-ul">
+<li>“State of Power 2012 | Transnational Institute.” Accessed: Oct. 19, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/state-of-power-2012">https://www.tni.org/en/publication/state-of-power-2012</a></li>
+<li>“State of Power 2013 | Transnational Institute.” Accessed: Oct. 19, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/state-of-power-2013">https://www.tni.org/en/publication/state-of-power-2013</a></li>
+<li>“State of Power 2014 | Transnational Institute.” Accessed: Oct. 19, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/state-of-power-2014">https://www.tni.org/en/publication/state-of-power-2014</a></li>
+<li>“State of Power 2015 | Transnational Institute.” Accessed: Sep. 27, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/state-of-power-2015">https://www.tni.org/en/publication/state-of-power-2015</a></li>
+<li>2016
+<ul class="org-ul">
+<li>“Democracy | Transnational Institute.” Accessed: Oct. 19, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/democracy">https://www.tni.org/en/publication/democracy</a></li>
+</ul></li>
+<li>2017
+<ul class="org-ul">
+<li>“Cultural power | Transnational Institute.” Accessed: Sep. 29, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/cultural-power">https://www.tni.org/en/publication/cultural-power</a></li>
+</ul></li>
+<li>2018
+<ul class="org-ul">
+<li>“Counter-power | Transnational Institute.” Accessed: Sep. 27, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/counter-power">https://www.tni.org/en/publication/counter-power</a></li>
+</ul></li>
+<li>2019
+<ul class="org-ul">
+<li>“Finance | Transnational Institute.” Accessed: Sep. 27, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/finance">https://www.tni.org/en/publication/finance</a></li>
+</ul></li>
+<li>2020
+<ul class="org-ul">
+<li>“The Corporation | Transnational Institute.” Accessed: Sep. 27, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/the-corporation">https://www.tni.org/en/publication/the-corporation</a></li>
+</ul></li>
+<li>2021
+<ul class="org-ul">
+<li>“Coercive World | Transnational Institute.” Accessed: Sep. 27, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/coercive-world">https://www.tni.org/en/publication/coercive-world</a></li>
+</ul></li>
+<li>2022</li>
+<li>2023
+<ul class="org-ul">
+<li>“Digital Capitalism | Transnational Institute.” Accessed: Sep. 18, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/digital-capitalism">https://www.tni.org/en/publication/digital-capitalism</a></li>
+</ul></li>
+<li>2024
+<ul class="org-ul">
+<li>N. B. Weghmann Timothy Mitchell,Thea Riofrancos,Ozzi Warwick,Steffen Haag,Johanna Tunn,Tobias Kalt,Franziska Müller,Jenny Simon,Ebla Research Collective,Gz MeeNilankco Theiventhran,Kristian Stokke,Olivier Petitjean,Clémence Dubois ,James Goodman ,Decarbonising Electricity research group,Daniel Chavez,Lala Peñaranda,Tatiana Roa Avendaño,Eliana Carolina Carrillo Rodríguez,Communia Collective,Ashley Dawson,Matt Rota,Benjamin Schütze,Elia El Khazen,Charlotte Mueller,Philipp Wagner,Lisa Pier,Matthews Hlabane,Vera, “Energy, Power and Transition | Transnational Institute.” Accessed: Sep. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/energy-power-and-transition">https://www.tni.org/en/publication/energy-power-and-transition</a></li>
+</ul></li>
+<li>2025
+<ul class="org-ul">
+<li>N. B. Malik Adam Tooze,Walden Bello,Ilias Alami,Jessica DiCarlo,Steve Rolf,Seth Schindler,Tica Font,Rafeef Ziadah,Ana Garcia,Sean Kenji Starrs,Benjamin Wray,Husam Mahjoub,Juan Lovera,Iqra Anugrah,Kai-Hsin Hung,Shehzil, “Geopolitics of Capitalism | Transnational Institute.” Accessed: Feb. 07, 2025. [Online]. Available: <a href="https://www.tni.org/en/publication/geopolitics-of-capitalism">https://www.tni.org/en/publication/geopolitics-of-capitalism</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org9cf42ef" class="outline-3">
+<h3 id="org9cf42ef"><span class="section-number-3">4.2.</span> Annual Reports</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>“Annual reports | Transnational Institute.” Accessed: Feb. 07, 2025. [Online]. Available: <a href="https://www.tni.org/en/annual-reports">https://www.tni.org/en/annual-reports</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd00be97" class="outline-2">
+<h2 id="orgd00be97"><span class="section-number-2">5.</span> Arts</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgd0d3b61" class="outline-3">
+<h3 id="orgd0d3b61"><span class="section-number-3">5.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgdcb43b1" class="outline-2">
+<h2 id="orgdcb43b1"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org0db1d13" class="outline-3">
+<h3 id="org0db1d13"><span class="section-number-3">6.1.</span> Critical Studies</h3>
+</div>
+</div>
+<div id="outline-container-org2a7b7f4" class="outline-2">
+<h2 id="org2a7b7f4"><span class="section-number-2">7.</span> Misc</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>J. Lovera, “A transatlantic bargain | Transnational Institute.” Accessed: Feb. 07, 2025. [Online]. Available: <a href="https://www.tni.org/en/article/a-transatlantic-bargain">https://www.tni.org/en/article/a-transatlantic-bargain</a></li>
+
+<li>I. A. Schindler Jessica DiCarlo,Steve Rolf,Seth, “The new frontline | Transnational Institute.” Accessed: Feb. 07, 2025. [Online]. Available: <a href="https://www.tni.org/en/article/the-new-frontline">https://www.tni.org/en/article/the-new-frontline</a></li>
+
+<li>A. T. Bello Walden, “A fractured world | Transnational Institute.” Accessed: Feb. 07, 2025. [Online]. Available: <a href="https://www.tni.org/en/article/a-fractured-world">https://www.tni.org/en/article/a-fractured-world</a></li>
+
+<li>I. Anugrah, “In search of alternatives | Transnational Institute.” Accessed: Feb. 05, 2025. [Online]. Available: <a href="https://www.tni.org/en/article/in-search-of-alternatives">https://www.tni.org/en/article/in-search-of-alternatives</a></li>
+
+<li>M. N. Lomas Olivier Hoedeman,Barbara Schuster, Joel Tölgyes,Sacha Dierckx,Oldřich Sklenář,Dieter Plehwe,Alessandro Montebugnoli,Simone Furzi,John Burant,Pedro L., “Race 2 Paris | Transnational Institute.” Accessed: Jan. 27, 2025. [Online]. Available: <a href="https://www.tni.org/en/publication/race-2-paris">https://www.tni.org/en/publication/race-2-paris</a></li>
+
+<li>“Annual report 2019 – Transnational Institute TNI,” TNI Annual Report. Accessed: Dec. 22, 2024. [Online]. Available: <a href="https://annualreport.tni.org/">https://annualreport.tni.org/</a></li>
+
+<li>K. S. Sekine Yukari, “Digging Deeper | Transnational Institute.” Accessed: Dec. 11, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/digging-deeper">https://www.tni.org/en/article/digging-deeper</a></li>
+<li>K. S. Sekine Yukari, “Digging Deeper | Transnational Institute.” Accessed: Dec. 11, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/digging-deeper-conversations">https://www.tni.org/en/article/digging-deeper-conversations</a></li>
+
+<li>“People and the Planet: Entebbe Declaration | Transnational Institute.” Accessed: Dec. 10, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/people-and-the-planet-entebbe-declaration">https://www.tni.org/en/publication/people-and-the-planet-entebbe-declaration</a></li>
+
+<li>M. N. Lomas Olivier Hoedeman,Barbara Schuster, Joel Tölgyes,Sacha Dierckx,Oldřich Sklenář,Dieter Plehwe,Alessandro Montebugnoli,Simone Furzi,John Burant,Pedro L., “Race 2 Paris | Transnational Institute.” Accessed: Nov. 30, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/race-2-paris">https://www.tni.org/en/publication/race-2-paris</a></li>
+
+<li>“Our standards and certifications | Transnational Institute.” Accessed: Nov. 23, 2024. [Online]. Available: <a href="https://www.tni.org/en/our-standards-and-certifications">https://www.tni.org/en/our-standards-and-certifications</a></li>
+<li>S. George, “Whose Crisis? Whose Future? | Transnational Institute.” Accessed: Oct. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/publication/whose-crisis-whose-future">https://www.tni.org/en/publication/whose-crisis-whose-future</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“All change or no change?,” Longreads. Accessed: Sep. 30, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/all-change-or-no-change">https://longreads.tni.org/stateofpower/all-change-or-no-change</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Age of Monsters,” Longreads. Accessed: Sep. 28, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/monstruos-de-la-imaginacion-financierizada/">https://longreads.tni.org/stateofpower/monstruos-de-la-imaginacion-financierizada/</a></li>
+
+<li>G. M. T. Stokke Kristian, “Titanic Encounters | Transnational Institute.” Accessed: Sep. 26, 2024. [Online]. Available: <a href="https://www.tni.org/en/article/titanic-encounters">https://www.tni.org/en/article/titanic-encounters</a></li>
+
+<li>“IGNITE! | Transnational Institute.” Accessed: Jul. 20, 2024. [Online]. Available: <a href="https://www.tni.org/en/event/ignite">https://www.tni.org/en/event/ignite</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://github.com/ourghostorg">OurGhostOrg</a></p>
+<p class="date">Created: 2026-05-19 Tue 18:56</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-19 Tue 18:56 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ramachandra Guha</title>
+<meta name="author" content="Staff Member(s), [[https://github.com/ourghostorg][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Ramachandra Guha</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org96b1916">1. General</a></li>
+<li><a href="#org329cd2f">2. STEMM</a>
+<ul>
+<li><a href="#org7aa5eb8">2.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orga9ef9bb">3. Worldly Matters</a>
+<ul>
+<li><a href="#org9ee2bc3">3.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgac02cb9">4. Core</a>
+<ul>
+<li><a href="#orga4caefd">4.1. Works</a>
+<ul>
+<li><a href="#org4cf02d3">4.1.1. Education</a></li>
+<li><a href="#org84165de">4.1.2. Economics</a></li>
+<li><a href="#org0d4bc42">4.1.3. Space, Earth, Life Sciences, Environment, Health, Misc</a></li>
+<li><a href="#orgf34ca67">4.1.4. Religions, Spirituality, Misc</a></li>
+<li><a href="#org1a6b3a8">4.1.5. SocioPolitical Studies, Law, Misc</a></li>
+<li><a href="#org2386af4">4.1.6. Arts</a></li>
+<li><a href="#orgb8a063e">4.1.7. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org7b4246d">5. Arts</a>
+<ul>
+<li><a href="#org1ab28f2">5.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org00ba93f">6. Special Topics</a>
+<ul>
+<li><a href="#org91b29ed">6.1. Hindi</a>
+<ul>
+<li><a href="#org31575a9">6.1.1. General</a></li>
+<li><a href="#org98f2435">6.1.2. Environment</a></li>
+<li><a href="#org09e7c83">6.1.3. LifeStyle</a></li>
+<li><a href="#org6a6ca36">6.1.4. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgc18c379">7. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org96b1916" class="outline-2">
+<h2 id="org96b1916"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Ramachandra Guha,” Wikipedia. May 02, 2025. Accessed: Jun. 08, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Ramachandra_Guha&amp;oldid=1288413084">https://en.wikipedia.org/w/index.php?title=Ramachandra_Guha&amp;oldid=1288413084</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org329cd2f" class="outline-2">
+<h2 id="org329cd2f"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org7aa5eb8" class="outline-3">
+<h3 id="org7aa5eb8"><span class="section-number-3">2.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orga9ef9bb" class="outline-2">
+<h2 id="orga9ef9bb"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org9ee2bc3" class="outline-3">
+<h3 id="org9ee2bc3"><span class="section-number-3">3.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgac02cb9" class="outline-2">
+<h2 id="orgac02cb9"><span class="section-number-2">4.</span> Core</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orga4caefd" class="outline-3">
+<h3 id="orga4caefd"><span class="section-number-3">4.1.</span> Works</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-org4cf02d3" class="outline-4">
+<h4 id="org4cf02d3"><span class="section-number-4">4.1.1.</span> Education</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<ul class="org-ul">
+<li>R. Guha, Pluralism in the Indian University: (Penguin Petit). Penguin UK, 2013.</li>
+<li>R. Guha, The Rise and Fall of the Bilingual Intellectual: (Penguin Petit). Penguin UK, 2013.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org84165de" class="outline-4">
+<h4 id="org84165de"><span class="section-number-4">4.1.2.</span> Economics</h4>
+<div class="outline-text-4" id="text-4-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="org3eacde4"></a>Sections, Misc<br />
+<div class="outline-text-5" id="text-4-1-2-1">
+<ul class="org-ul">
+<li>S. Villamayor-Tomas and R. Muradian, Eds., The Barcelona School of Ecological Economics and Political Ecology: A Companion in Honour of Joan Martinez-Alier. Springer, 2023.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org0d4bc42" class="outline-4">
+<h4 id="org0d4bc42"><span class="section-number-4">4.1.3.</span> Space, Earth, Life Sciences, Environment, Health, Misc</h4>
+<div class="outline-text-4" id="text-4-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="org6dbf7d5"></a>Environment, Ecology<br />
+<div class="outline-text-5" id="text-4-1-3-1">
+<ul class="org-ul">
+<li>M. Gadgil and R. Guha, Ecology and Equity: The Use and Abuse of Nature in Contemporary India, 1st edition. London ; New York: Routledge, 1995.</li>
+<li>M. Gadgil and R. Guha, This Fissured Land, 2nd Edition. New Delhi, India: Oxford University Press, 2012.</li>
+
+<li>G. Ramachandra, Ed., Social Ecology. Delhi: Oxford University Press, 1998.</li>
+<li>R. Guha, Unquiet Woods, The. Orient Blackswan Private Limited - New Delhi, 2013.</li>
+<li>R. Guha, Environmentalism (PB): A Global History. Penguin Random House India, 2016.</li>
+<li>R. Guha, Speaking with Nature: The Origins of Indian Environmentalism. Fourth Estate India, 2024.</li>
+</ul>
+</div>
+</li>
+<li><a id="org0276045"></a>Lifestyle, Misc<br />
+<div class="outline-text-5" id="text-4-1-3-2">
+<ul class="org-ul">
+<li>R. Guha, How Much Should A Person Consume [Paperback] Ramachandra Guha [Paperback] Ramachandra Guha [Paperback] Guha, Ramachandra. Hachette India Local, 2010.</li>
+</ul>
+</div>
+</li>
+<li><a id="org6afd82d"></a>Sports<br />
+<div class="outline-text-5" id="text-4-1-3-3">
+<ul class="org-ul">
+<li>M. Rodrigues and R. Guha, Batting For The Empire. New Delhi: Penguin Books India, 2003.</li>
+<li>R. Guha, Commonwealth Of Cricket. Fourth Estate India, 2022.</li>
+<li>R. Guha, Corner of a Foreign Field, A (PB): The Indian History of a British Sport. Penguin Random House India, 2016.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgf34ca67" class="outline-4">
+<h4 id="orgf34ca67"><span class="section-number-4">4.1.4.</span> Religions, Spirituality, Misc</h4>
+</div>
+<div id="outline-container-org1a6b3a8" class="outline-4">
+<h4 id="org1a6b3a8"><span class="section-number-4">4.1.5.</span> SocioPolitical Studies, Law, Misc</h4>
+<div class="outline-text-4" id="text-4-1-5">
+</div>
+<ol class="org-ol">
+<li><a id="org7329f0d"></a>Special Groups<br />
+<ol class="org-ol">
+<li><a id="org6d3ed1c"></a>Indigenous People<br />
+<div class="outline-text-6" id="text-4-1-5-1-1">
+<ul class="org-ul">
+<li>R. Guha, Savaging the Civilized (PB): Verrier Elwin, His Tribals and India. Penguin Random House India, 2016.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org3f79073"></a>Politics<br />
+<ol class="org-ol">
+<li><a id="orgcc5b23e"></a>GandhiJi<br />
+<div class="outline-text-6" id="text-4-1-5-2-1">
+<ul class="org-ul">
+<li>R. Guha, Gandhi. India Penguin, 2020.</li>
+<li>R. Guha, Gandhi’s Faith and Ours: (Penguin Petit). Penguin UK, 2013.</li>
+<li>R. Guha, Gandhi Before India [Paperback] Ramachandra Guha, Latest edition. PENGUIN INDIA, 2014.</li>
+</ul>
+</div>
+</li>
+<li><a id="orge0fcdae"></a>India After Gandhi<br />
+<div class="outline-text-6" id="text-4-1-5-2-2">
+<ul class="org-ul">
+<li>R. Guha, India After Gandhi: A History. New Delhi: Picador India, 2023.</li>
+</ul>
+</div>
+</li>
+<li><a id="org76db8c7"></a>Western Fighters For India's Freedom<br />
+<div class="outline-text-6" id="text-4-1-5-2-3">
+<ul class="org-ul">
+<li>R. Guha, Rebels against the Raj. Penguin, 2024.</li>
+</ul>
+</div>
+</li>
+<li><a id="org8c2f648"></a>Nehru<br />
+<div class="outline-text-6" id="text-4-1-5-2-4">
+<ul class="org-ul">
+<li>R. Guha, Verdicts on Nehru: The Rise and Fall of a Reputation (Penguin Petit). Penguin UK, 2013.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgcf2e48d"></a>Politics: Left<br />
+<div class="outline-text-6" id="text-4-1-5-2-5">
+<ul class="org-ul">
+<li>R. Guha, The Past and Future of the Indian Left: (Penguin Petit). Penguin UK, 2013.</li>
+</ul>
+</div>
+</li>
+<li><a id="org4c0bf0c"></a>Congress<br />
+<div class="outline-text-6" id="text-4-1-5-2-6">
+<ul class="org-ul">
+<li>R. Guha, A Short History of Congress Chamchagiri: (Penguin Petit). Penguin UK, 2013.</li>
+</ul>
+</div>
+</li>
+<li><a id="org46ad58e"></a>Politics: Right<br />
+<div class="outline-text-6" id="text-4-1-5-2-7">
+<ul class="org-ul">
+<li>R. Guha, Hindutva Hate Mail: (Penguin Petit). Penguin UK, 2013.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org133f791"></a>Sino-Indian Conflict<br />
+<div class="outline-text-5" id="text-4-1-5-3">
+<ul class="org-ul">
+<li>R. Guha, An Asian Clash of Civilizations?: The Sino-Indian Conflict Revisited (Penguin Petit). Penguin UK, 2013.</li>
+</ul>
+</div>
+</li>
+<li><a id="org519725c"></a>Modernity Makers<br />
+<div class="outline-text-5" id="text-4-1-5-4">
+<ul class="org-ul">
+<li>R. Guha, J. Taylor, R. Mitter, O. A. Westad, and S. Raghavan, Makers of Modern Asia, Reprint edition. Harvard University Press, 2017.</li>
+<li>R. Guha, Makers of Modern India, Latest edition. Penguin India, 2012.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgc90a7cc"></a>Misc<br />
+<div class="outline-text-5" id="text-4-1-5-5">
+<ul class="org-ul">
+<li>G. Ramachandra, Ed., Social Ecology. Delhi: Oxford University Press, 1998.</li>
+<li>R. Guha, Patriots and Partisans, Latest Edition. Penguin India, 2013.</li>
+<li>R. Guha, An Anthropologist among the Marxists and other Essays. Permanent Black, 2018.</li>
+<li>R. Guha, Last Liberal And Other Essays, 1st Edition. Ranikhet: Orient Blackswan Private Limited - New Delhi, 2007.</li>
+<li>R. Guha, Democrats and Dissenters. Penguin Random House India, 2017.</li>
+<li>R. Guha, The Professor and the Protester: (Penguin Petit). Penguin UK, 2013.</li>
+<li>R. Guha, The Gentle Colossus: Krishna Raj and the EPW (Penguin Petit). Penguin UK, 2013.</li>
+<li>R. Guha, Redeeming the Republic: (Penguin Petit). Penguin UK, 2013.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org2386af4" class="outline-4">
+<h4 id="org2386af4"><span class="section-number-4">4.1.6.</span> Arts</h4>
+<div class="outline-text-4" id="text-4-1-6">
+</div>
+<ol class="org-ol">
+<li><a id="orga079fd4"></a>Literature<br />
+<div class="outline-text-5" id="text-4-1-6-1">
+<ul class="org-ul">
+<li>R. Guha, The Cooking of Books : A Literary Memoir [Hardcover] Ramachandra Guha [Hardcover] Ramachandra Guha [Hardcover] Ramachandra Guha [Hardcover] Ramachandra Guha. New Delhi: Juggernaut, 2024.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgb8a063e" class="outline-4">
+<h4 id="orgb8a063e"><span class="section-number-4">4.1.7.</span> Misc</h4>
+<div class="outline-text-4" id="text-4-1-7">
+<ul class="org-ul">
+<li>R. Guha, Turning Crimson At Premier’s: (Penguin Petit). Penguin UK, 2013.</li>
+<li>R. Guha, The Beauty of Compromise: (Penguin Petit). Penguin UK, 2013.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org7b4246d" class="outline-2">
+<h2 id="org7b4246d"><span class="section-number-2">5.</span> Arts</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org1ab28f2" class="outline-3">
+<h3 id="org1ab28f2"><span class="section-number-3">5.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org00ba93f" class="outline-2">
+<h2 id="org00ba93f"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org91b29ed" class="outline-3">
+<h3 id="org91b29ed"><span class="section-number-3">6.1.</span> Hindi</h3>
+<div class="outline-text-3" id="text-6-1">
+</div>
+<div id="outline-container-org31575a9" class="outline-4">
+<h4 id="org31575a9"><span class="section-number-4">6.1.1.</span> General</h4>
+</div>
+<div id="outline-container-org98f2435" class="outline-4">
+<h4 id="org98f2435"><span class="section-number-4">6.1.2.</span> Environment</h4>
+<div class="outline-text-4" id="text-6-1-2">
+<ul class="org-ul">
+<li>R. Guha, Upbhog Ki Laxman Rekha, Latest Edition. Penguin India, 2013.</li>
+
+<li>M. Gadgil and R. Guha, Yeh Darakti Zameen: Bharat Ka Paristhitik Itihas. Oxford University Press India, 2018.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org09e7c83" class="outline-4">
+<h4 id="org09e7c83"><span class="section-number-4">6.1.3.</span> LifeStyle</h4>
+<div class="outline-text-4" id="text-6-1-3">
+<ul class="org-ul">
+<li>R. Guha, Upbhog Ki Laxman Rekha, Latest Edition. Penguin India, 2013.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6a6ca36" class="outline-4">
+<h4 id="org6a6ca36"><span class="section-number-4">6.1.4.</span> Misc</h4>
+<div class="outline-text-4" id="text-6-1-4">
+<ul class="org-ul">
+<li>R. रामचंद्र Guha, Gandhi/गांधी: Dakshin Africa Se Bharat Aagman Aur Golmez Sammelan Tak 1914-31, Khand-1/दक्षिण अफ्रीक़ा से भारत आगमन और गोलमेज़ सम्मेलन तक 1914-31 खंड-1. Penguin, 2021.</li>
+<li>R. Guha, Bharat Gandhi Ke Baad, New edition. Penguin India, 2012.</li>
+
+<li>गुहा R. G., Shatabdi Ke Jharokhe Se/शताब्दी के झरोखे से. Penguin Swadesh, 2025.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc18c379" class="outline-2">
+<h2 id="orgc18c379"><span class="section-number-2">7.</span> Misc</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>R. Guha, “From Asia Publishing to Permanent Black: Ramachandra Guha pays a tribute to editors and publishers,” Scroll.in. Accessed: Apr. 01, 2025. [Online]. Available: <a href="https://scroll.in/article/959293/from-asia-publishing-to-permanent-black-ramachandra-guha-pays-a-tribute-to-editors-and-publishers">https://scroll.in/article/959293/from-asia-publishing-to-permanent-black-ramachandra-guha-pays-a-tribute-to-editors-and-publishers</a></li>
+
+<li>“How Ramachandra Guha Became an Essayist,” The Wire. Accessed: Feb. 26, 2025. [Online]. Available: <a href="https://thewire.in/books/how-ramachandra-guha-became-an-essayist">https://thewire.in/books/how-ramachandra-guha-became-an-essayist</a></li>
+
+<li>N. Sundar and S. Raghavan, Eds., A Functioning Anarchy?: Essays for Ramachandra Guha. Allen Lane, 2021.</li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://github.com/ourghostorg">OurGhostOrg</a></p>
+<p class="date">Created: 2026-05-19 Tue 18:56</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

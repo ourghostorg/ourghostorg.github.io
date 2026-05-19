@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-19 Tue 18:56 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Global Risks</title>
+<meta name="author" content="Staff Member(s), [[https://github.com/ourghostorg][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Global Risks</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org93c2629">1. General</a></li>
+<li><a href="#orge74918f">2. STEMM</a>
+<ul>
+<li><a href="#org15abd95">2.1. Systems Sciences, Misc</a>
+<ul>
+<li><a href="#orgfc3944f">2.1.1. IIASA</a></li>
+<li><a href="#orged84d2d">2.1.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org02b9028">2.2. CSER</a></li>
+<li><a href="#org96bc79f">2.3. Bulletin of the Atomic Scientists</a>
+<ul>
+<li><a href="#orgbc050ac">2.3.1. Misc</a></li>
+<li><a href="#orgc3fb230">2.3.2. Doomsday Clock</a></li>
+</ul>
+</li>
+<li><a href="#orgf813233">2.4. International Science Council</a></li>
+<li><a href="#org2ee7816">2.5. Technology, Misc</a></li>
+<li><a href="#orga2ceca2">2.6. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orge5a3bc8">3. Worldly Matters</a>
+<ul>
+<li><a href="#orgd9c3035">3.1. Space and Time</a></li>
+<li><a href="#org65f1d0c">3.2. Space, Earth, Life Sciences, Environment, Health, Misc</a></li>
+<li><a href="#org6ad786a">3.3. Religions, Spirituality, Misc</a></li>
+<li><a href="#org756f903">3.4. Humanities, Misc</a></li>
+<li><a href="#org7605afc">3.5. SocioPolitical Studies, Law, Misc</a>
+<ul>
+<li><a href="#orgef535e0">3.5.1. Orgs</a></li>
+<li><a href="#org10ece1b">3.5.2. UN</a></li>
+</ul>
+</li>
+<li><a href="#org74f9403">3.6. Business Studies, Misc</a></li>
+<li><a href="#orgb200309">3.7. Security Studies, Misc</a></li>
+<li><a href="#orgda06c4c">3.8. Communication, Misc</a></li>
+<li><a href="#orgf5d2bdc">3.9. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org4232a5c">4. Core</a>
+<ul>
+<li><a href="#orgdc5e4b4">4.1. Variants</a>
+<ul>
+<li><a href="#orgb04cbf8">4.1.1. Systemic Risks</a></li>
+<li><a href="#org3572726">4.1.2. Catastrophic Risks</a></li>
+<li><a href="#org7ac35d4">4.1.3. Existential Risks</a></li>
+<li><a href="#org1373048">4.1.4. PolyCrisis</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org1f8e241">5. Arts</a>
+<ul>
+<li><a href="#org5ea0292">5.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org07e5b07">6. Special Topics</a>
+<ul>
+<li><a href="#orgf58e630">6.1. Texts</a></li>
+</ul>
+</li>
+<li><a href="#org5ace847">7. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org93c2629" class="outline-2">
+<h2 id="org93c2629"><span class="section-number-2">1.</span> General</h2>
+</div>
+<div id="outline-container-orge74918f" class="outline-2">
+<h2 id="orge74918f"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org15abd95" class="outline-3">
+<h3 id="org15abd95"><span class="section-number-3">2.1.</span> Systems Sciences, Misc</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-orgfc3944f" class="outline-4">
+<h4 id="orgfc3944f"><span class="section-number-4">2.1.1.</span> IIASA</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<ul class="org-ul">
+<li>“Navigating multi-hazard risks: building resilience in a systemic risk landscape,” IIASA - International Institute for Applied Systems Analysis. Accessed: Oct. 19, 2024. [Online]. Available: <a href="https://iiasa.ac.at/blog/oct-2024/navigating-multi-hazard-risks-building-resilience-in-systemic-risk-landscape">https://iiasa.ac.at/blog/oct-2024/navigating-multi-hazard-risks-building-resilience-in-systemic-risk-landscape</a></li>
+<li>“Leveraging social media intelligence for disaster risk management: a game-changer in real-time response,” IIASA - International Institute for Applied Systems Analysis. Accessed: Nov. 19, 2024. [Online]. Available: <a href="https://iiasa.ac.at/blog/nov-2024/leveraging-social-media-intelligence-for-disaster-risk-management-game-changer-in">https://iiasa.ac.at/blog/nov-2024/leveraging-social-media-intelligence-for-disaster-risk-management-game-changer-in</a></li>
+<li>“IIASA and Kyoto University intensify cooperation in the disaster space,” IIASA - International Institute for Applied Systems Analysis. Accessed: May 22, 2025. [Online]. Available: <a href="http://iiasa.ac.at/news/may-2025/iiasa-and-kyoto-university-intensify-cooperation-in-disaster-space">http://iiasa.ac.at/news/may-2025/iiasa-and-kyoto-university-intensify-cooperation-in-disaster-space</a></li>
+
+<li>“Launch of the Global Assessment Report 2025 (GAR) on Disaster Risk Reduction,” IIASA - International Institute for Applied Systems Analysis. Accessed: May 24, 2025. [Online]. Available: <a href="http://iiasa.ac.at/news/may-2025/launch-of-global-assessment-report-2025-gar-on-disaster-risk-reduction">http://iiasa.ac.at/news/may-2025/launch-of-global-assessment-report-2025-gar-on-disaster-risk-reduction</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orged84d2d" class="outline-4">
+<h4 id="orged84d2d"><span class="section-number-4">2.1.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<ul class="org-ul">
+<li>“From Static Maps to Dynamic Resilience: How PARATUS Reinvents Risk Assessment,” IIASA - International Institute for Applied Systems Analysis. Accessed: Nov. 28, 2025. [Online]. Available: <a href="http://iiasa.ac.at/news/nov-2025/from-static-maps-to-dynamic-resilience-how-paratus-reinvents-risk-assessment">http://iiasa.ac.at/news/nov-2025/from-static-maps-to-dynamic-resilience-how-paratus-reinvents-risk-assessment</a></li>
+
+<li>“What do holidays and disaster planning have in common?,” IIASA - International Institute for Applied Systems Analysis. Accessed: Nov. 28, 2025. [Online]. Available: <a href="http://iiasa.ac.at/news/nov-2025/what-do-holidays-and-disaster-planning-have-in-common">http://iiasa.ac.at/news/nov-2025/what-do-holidays-and-disaster-planning-have-in-common</a></li>
+
+<li>S. J. Beard and T. Hobson, An Anthology of Global Risk. Open Book Publishers, 2024. doi: 10.11647/obp.0360.</li>
+
+<li>S. Hochrainer-Stigler et al., “Towards a framework for systemic multi-hazard and multi-risk assessment and management,” iScience, vol. 26, no. 5, p. e106736, May 2023, doi: 10.1016/j.isci.2023.106736.</li>
+<li>S. Hochrainer-Stigler, T. Deubelli, J. Parviainen, L. Cumiskey, P.-J. Schweizer, and U. Dieckmann, “Managing systemic risk through transformative change: Combining systemic risk analysis with knowledge co-production,” One Earth, vol. 7, no. 5, pp. 771–781, May 2024, doi: 10.1016/j.oneear.2024.04.014.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org02b9028" class="outline-3">
+<h3 id="org02b9028"><span class="section-number-3">2.2.</span> CSER</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>L. Elmer, “The Problem of Algorithmic Collisions: Mitigating Unforeseen Risks in a Connected World - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Jun. 03, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/the-problem-of-algorithmic-collisions-mitigating-unforeseen-risks-in-a-connected-world/">https://www.cser.ac.uk/work/the-problem-of-algorithmic-collisions-mitigating-unforeseen-risks-in-a-connected-world/</a></li>
+<li>L. Elmer, “CSER May 2025 Newsletter - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Jun. 03, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/cser-may-2025-newsletter/">https://www.cser.ac.uk/work/cser-may-2025-newsletter/</a></li>
+<li>L. Elmer, “Catastrophic Risks in and from the Arctic Seminar; 29 April 2025 - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Apr. 15, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/catastrophic-risks-in-and-from-the-arctic-seminar-29-april-2025/">https://www.cser.ac.uk/work/catastrophic-risks-in-and-from-the-arctic-seminar-29-april-2025/</a></li>
+<li>L. Elmer, “Extinction of the human species: What could cause it and how likely is it to occur? - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Apr. 01, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/extinction-of-the-human-species-what-could-cause-it-and-how-likely-is-it-to-occur/">https://www.cser.ac.uk/work/extinction-of-the-human-species-what-could-cause-it-and-how-likely-is-it-to-occur/</a></li>
+<li>L. Elmer, “CSER April 2025 Newsletter - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: May 08, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/cser-april-2025-newsletter/">https://www.cser.ac.uk/work/cser-april-2025-newsletter/</a></li>
+<li>G. E. Shackelford et al., “Accumulating evidence using crowdsourcing and machine learning: A living bibliography about existential risk and global catastrophic risk,” Futures, vol. 116, p. 102508, Feb. 2020, doi: 10.1016/j.futures.2019.102508.</li>
+<li>L. Elmer, “The Existential Risk Research Assessment (TERRA) - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Mar. 20, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/the-existential-risk-research-assessment-terra/">https://www.cser.ac.uk/work/the-existential-risk-research-assessment-terra/</a></li>
+<li>L. Elmer, “Exploring futures for the science of global risk - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Mar. 14, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/exploring-futures-for-the-science-of-global-risk/">https://www.cser.ac.uk/work/exploring-futures-for-the-science-of-global-risk/</a></li>
+<li>L. Elmer, “CSER March 2025 Newsletter - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Apr. 09, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/cser-march-2025-newsletter/">https://www.cser.ac.uk/work/cser-march-2025-newsletter/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org96bc79f" class="outline-3">
+<h3 id="org96bc79f"><span class="section-number-3">2.3.</span> Bulletin of the Atomic Scientists</h3>
+<div class="outline-text-3" id="text-2-3">
+</div>
+<div id="outline-container-orgbc050ac" class="outline-4">
+<h4 id="orgbc050ac"><span class="section-number-4">2.3.1.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-3-1">
+<ul class="org-ul">
+<li>S. Goudarzi, “Global threats don’t happen in silos. They shouldn’t be managed separately, either.,” Bulletin of the Atomic Scientists. Accessed: Aug. 23, 2024. [Online]. Available: <a href="https://thebulletin.org/2024/08/global-threats-dont-happen-in-silos-they-shouldnt-be-managed-separately-either/">https://thebulletin.org/2024/08/global-threats-dont-happen-in-silos-they-shouldnt-be-managed-separately-either/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc3fb230" class="outline-4">
+<h4 id="orgc3fb230"><span class="section-number-4">2.3.2.</span> Doomsday Clock</h4>
+<div class="outline-text-4" id="text-2-3-2">
+</div>
+<ol class="org-ol">
+<li><a id="org2c8512e"></a>General<br />
+<div class="outline-text-5" id="text-2-3-2-1">
+<ul class="org-ul">
+<li>“Doomsday Clock,” Bulletin of the Atomic Scientists. Accessed: Jan. 24, 2024. [Online]. Available: <a href="https://thebulletin.org/doomsday-clock/">https://thebulletin.org/doomsday-clock/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org99297ca"></a>2024<br />
+<div class="outline-text-5" id="text-2-3-2-2">
+<ul class="org-ul">
+<li>“Current Time - 2024,” Bulletin of the Atomic Scientists. Accessed: Jan. 24, 2024. [Online]. Available: <a href="https://thebulletin.org/doomsday-clock/current-time/">https://thebulletin.org/doomsday-clock/current-time/</a></li>
+<li>S. Starkey, “PRESS RELEASE: Doomsday Clock remains at 90 seconds to midnight,” Bulletin of the Atomic Scientists. Accessed: Jan. 24, 2024. [Online]. Available: <a href="https://thebulletin.org/2024/01/press-release-doomsday-clock-remains-at-90-seconds-to-midnight/">https://thebulletin.org/2024/01/press-release-doomsday-clock-remains-at-90-seconds-to-midnight/</a></li>
+<li>2024 Doomsday Clock Announcement. Accessed: Jan. 24, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=-p67zvLaUFs">https://www.youtube.com/watch?v=-p67zvLaUFs</a></li>
+<li>“January 2024,” Bulletin of the Atomic Scientists. Accessed: Jan. 24, 2024. [Online]. Available: <a href="https://thebulletin.org/magazine/2024-01/">https://thebulletin.org/magazine/2024-01/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgab482c1"></a>Misc<br />
+<div class="outline-text-5" id="text-2-3-2-3">
+<ul class="org-ul">
+<li>“Some disagree that it is 100 seconds to midnight. These undergrads held a debate,” Bulletin of the Atomic Scientists, Jun. 02, 2022. <a href="https://thebulletin.org/2022/06/some-disagree-that-it-is-100-seconds-to-midnight-these-undergrads-held-a-debate/">https://thebulletin.org/2022/06/some-disagree-that-it-is-100-seconds-to-midnight-these-undergrads-held-a-debate/</a> (accessed Jun. 03, 2022).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Introduction: What you can do to turn back the hands of the Doomsday Clock,” Bulletin of the Atomic Scientists. Accessed: Jan. 24, 2024. [Online]. Available: <a href="https://thebulletin.org/premium/2024-01/introduction-what-you-can-do-to-turn-back-the-hands-of-the-clock/">https://thebulletin.org/premium/2024-01/introduction-what-you-can-do-to-turn-back-the-hands-of-the-clock/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Interview with Sneha Revanur, ‘the Greta Thunberg of AI,’” Bulletin of the Atomic Scientists. Accessed: Jan. 24, 2024. [Online]. Available: <a href="https://thebulletin.org/premium/2024-01/interview-with-sneha-revanur-the-greta-thunberg-of-ai/">https://thebulletin.org/premium/2024-01/interview-with-sneha-revanur-the-greta-thunberg-of-ai/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“#TurnBacktheClock Challenge,” Bulletin of the Atomic Scientists. Accessed: Jan. 24, 2024. [Online]. Available: <a href="https://thebulletin.org/turn-back-the-clock-challenge/">https://thebulletin.org/turn-back-the-clock-challenge/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgf813233" class="outline-3">
+<h3 id="orgf813233"><span class="section-number-3">2.4.</span> International Science Council</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li>“Update of the UNDRR-ISC hazard information profiles,” International Science Council. Accessed: Jun. 04, 2025. [Online]. Available: <a href="https://council.science/publications/review-hazard-profiles/">https://council.science/publications/review-hazard-profiles/</a></li>
+<li>Zhenya, “From heatwaves to cyber threats: a comprehensive new guide to today’s hazards,” International Science Council. Accessed: Jun. 04, 2025. [Online]. Available: <a href="https://council.science/news/hazard-profiles-2025/">https://council.science/news/hazard-profiles-2025/</a></li>
+<li>Lea, “International Science Council appoints new members to IRDR Scientific Committee,” International Science Council. Accessed: Jun. 25, 2024. [Online]. Available: <a href="https://council.science/news/new-members-irdr-scientific-committee/">https://council.science/news/new-members-irdr-scientific-committee/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2ee7816" class="outline-3">
+<h3 id="org2ee7816"><span class="section-number-3">2.5.</span> Technology, Misc</h3>
+<div class="outline-text-3" id="text-2-5">
+<ul class="org-ul">
+<li>“Practical Doomsday,” Jul. 22, 2021. <a href="https://nostarch.com/practical-doomsday">https://nostarch.com/practical-doomsday</a> (accessed Mar. 21, 2022).</li>
+<li>“Managing Extreme Technological Risk.” Accessed: Oct. 25, 2024. [Online]. Available: <a href="https://www.worldscientific.com/worldscibooks/10.1142/q0438">https://www.worldscientific.com/worldscibooks/10.1142/q0438</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga2ceca2" class="outline-3">
+<h3 id="orga2ceca2"><span class="section-number-3">2.6.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-6">
+<ul class="org-ul">
+<li>U. of Tokyo, “Switching it up: The secret survival strategy to life as revealed by mathematics.” Accessed: Oct. 01, 2025. [Online]. Available: <a href="https://phys.org/news/2025-09-secret-survival-strategy-life-revealed.html">https://phys.org/news/2025-09-secret-survival-strategy-life-revealed.html</a></li>
+
+<li>“Undergraduate Project Explores Risk Assessment in the Context of Natural Disasters | SIAM,” Society for Industrial and Applied Mathematics. Accessed: Jul. 30, 2025. [Online]. Available: <a href="https://www.siam.org/publications/siam-news/articles/undergraduate-project-explores-risk-assessment-in-the-context-of-natural-disasters/">https://www.siam.org/publications/siam-news/articles/undergraduate-project-explores-risk-assessment-in-the-context-of-natural-disasters/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orge5a3bc8" class="outline-2">
+<h2 id="orge5a3bc8"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgd9c3035" class="outline-3">
+<h3 id="orgd9c3035"><span class="section-number-3">3.1.</span> Space and Time</h3>
+</div>
+<div id="outline-container-org65f1d0c" class="outline-3">
+<h3 id="org65f1d0c"><span class="section-number-3">3.2.</span> Space, Earth, Life Sciences, Environment, Health, Misc</h3>
+</div>
+<div id="outline-container-org6ad786a" class="outline-3">
+<h3 id="org6ad786a"><span class="section-number-3">3.3.</span> Religions, Spirituality, Misc</h3>
+</div>
+<div id="outline-container-org756f903" class="outline-3">
+<h3 id="org756f903"><span class="section-number-3">3.4.</span> Humanities, Misc</h3>
+</div>
+<div id="outline-container-org7605afc" class="outline-3">
+<h3 id="org7605afc"><span class="section-number-3">3.5.</span> SocioPolitical Studies, Law, Misc</h3>
+<div class="outline-text-3" id="text-3-5">
+</div>
+<div id="outline-container-orgef535e0" class="outline-4">
+<h4 id="orgef535e0"><span class="section-number-4">3.5.1.</span> Orgs</h4>
+<div class="outline-text-4" id="text-3-5-1">
+<ul class="org-ul">
+<li>“IRDR - Addressing the challenges of natural &amp; human-induced environmental hazards.” Accessed: Jun. 25, 2024. [Online]. Available: <a href="https://irdrinternational.org/">https://irdrinternational.org/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org10ece1b" class="outline-4">
+<h4 id="org10ece1b"><span class="section-number-4">3.5.2.</span> UN</h4>
+<div class="outline-text-4" id="text-3-5-2">
+</div>
+<ol class="org-ol">
+<li><a id="orge45e06c"></a>Sendai Framework<br />
+<div class="outline-text-5" id="text-3-5-2-1">
+<ul class="org-ul">
+<li>“Sendai Framework for Disaster Risk Reduction 2015-2030 | UNDRR.” Accessed: Jul. 22, 2024. [Online]. Available: <a href="http://www.undrr.org/publication/sendai-framework-disaster-risk-reduction-2015-2030">http://www.undrr.org/publication/sendai-framework-disaster-risk-reduction-2015-2030</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org74f9403" class="outline-3">
+<h3 id="org74f9403"><span class="section-number-3">3.6.</span> Business Studies, Misc</h3>
+<div class="outline-text-3" id="text-3-6">
+<ul class="org-ul">
+<li>N. Roubini, Megathreats: Our Ten Biggest Threats, and How to Survive Them. Hachette UK, 2022.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb200309" class="outline-3">
+<h3 id="orgb200309"><span class="section-number-3">3.7.</span> Security Studies, Misc</h3>
+</div>
+<div id="outline-container-orgda06c4c" class="outline-3">
+<h3 id="orgda06c4c"><span class="section-number-3">3.8.</span> Communication, Misc</h3>
+</div>
+<div id="outline-container-orgf5d2bdc" class="outline-3">
+<h3 id="orgf5d2bdc"><span class="section-number-3">3.9.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-9">
+<ul class="org-ul">
+<li>“Introduction: How the Trump administration has upended international relations and increased existential risk,” Bulletin of the Atomic Scientists. Accessed: Sep. 05, 2025. [Online]. Available: <a href="https://thebulletin.org/premium/2025-09/introduction-how-the-trump-administration-has-upended-international-relations-and-increased-existential-risk/">https://thebulletin.org/premium/2025-09/introduction-how-the-trump-administration-has-upended-international-relations-and-increased-existential-risk/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org4232a5c" class="outline-2">
+<h2 id="org4232a5c"><span class="section-number-2">4.</span> Core</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgdc5e4b4" class="outline-3">
+<h3 id="orgdc5e4b4"><span class="section-number-3">4.1.</span> Variants</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-orgb04cbf8" class="outline-4">
+<h4 id="orgb04cbf8"><span class="section-number-4">4.1.1.</span> Systemic Risks</h4>
+</div>
+<div id="outline-container-org3572726" class="outline-4">
+<h4 id="org3572726"><span class="section-number-4">4.1.2.</span> Catastrophic Risks</h4>
+</div>
+<div id="outline-container-org7ac35d4" class="outline-4">
+<h4 id="org7ac35d4"><span class="section-number-4">4.1.3.</span> Existential Risks</h4>
+<div class="outline-text-4" id="text-4-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="org3015e15"></a>General<br /></li>
+<li><a id="org4809fe6"></a>Orgs<br />
+<div class="outline-text-5" id="text-4-1-3-2">
+<ul class="org-ul">
+<li><i>“Centre for the Study of Existential Risk,”</i> Wikipedia. Nov. 02, 2021. Accessed: Nov. 26, 2021. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Centre_for_the_Study_of_Existential_Risk&amp;oldid=1053171224">https://en.wikipedia.org/w/index.php?title=Centre_for_the_Study_of_Existential_Risk&amp;oldid=1053171224</a></li>
+<li><i>“Centre for the Study of Existential Risk.”</i> <a href="https://www.cser.ac.uk/">https://www.cser.ac.uk/</a> (accessed Nov. 26, 2021).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Stanford University, Stanford, and C. 94305 C. Complaints, “Stanford Existential Risks Initiative.” <a href="https://cisac.fsi.stanford.edu/stanford-existential-risks-initiative/content/stanford-existential-risks-initiative">https://cisac.fsi.stanford.edu/stanford-existential-risks-initiative/content/stanford-existential-risks-initiative</a> (accessed Jan. 13, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="org6d4d7c9"></a>Texts<br />
+<div class="outline-text-5" id="text-4-1-3-3">
+<ul class="org-ul">
+<li>A. Leigh, What’s the Worst That Could Happen?: Existential Risk and Extreme Politics. Cambridge, MA, USA: MIT Press, 2021.</li>
+</ul>
+</div>
+</li>
+<li><a id="org7ed6b0d"></a>SocioPolitical Studies, Law, Misc<br />
+<div class="outline-text-5" id="text-4-1-3-4">
+<ul class="org-ul">
+<li>“The Greatest Threat to World Peace,” In These Times. <a href="https://inthesetimes.com/article/the-greatest-threat-to-world-peace-is-the-united-states">https://inthesetimes.com/article/the-greatest-threat-to-world-peace-is-the-united-states</a> (accessed Mar. 11, 2022).</li>
+<li>“Chomsky and Prashad: There are 3 major threats to life on Earth that we must address in 2021,” Alternet.org, Jan. 05, 2021. <a href="https://www.alternet.org/2021/01/noam-chomsky-vijay-prashad/">https://www.alternet.org/2021/01/noam-chomsky-vijay-prashad/</a> (accessed Mar. 11, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="org080aee1"></a>Misc<br />
+<div class="outline-text-5" id="text-4-1-3-5">
+<ul class="org-ul">
+<li>S. ÓhÉigeartaigh, “Extinction of the human species: What could cause it and how likely is it to occur?,” Cambridge Prisms: Extinction, vol. 3, p. e4, Jan. 2025, doi: 10.1017/ext.2025.4.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org1373048" class="outline-4">
+<h4 id="org1373048"><span class="section-number-4">4.1.4.</span> PolyCrisis</h4>
+<div class="outline-text-4" id="text-4-1-4">
+<ul class="org-ul">
+<li>PolyCrisis: <a href="https://tinyurl.com/45dhr9pj">https://tinyurl.com/45dhr9pj</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org1f8e241" class="outline-2">
+<h2 id="org1f8e241"><span class="section-number-2">5.</span> Arts</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org5ea0292" class="outline-3">
+<h3 id="org5ea0292"><span class="section-number-3">5.1.</span> Misc</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>J. Bland, “The Art of Risk: New Illustrations of Existential Risk The Art of Risk: New Illustrations of Existential Risk - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Oct. 18, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/the-art-of-risk-new-illustrations-of-existential-risk/">https://www.cser.ac.uk/work/the-art-of-risk-new-illustrations-of-existential-risk/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org07e5b07" class="outline-2">
+<h2 id="org07e5b07"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgf58e630" class="outline-3">
+<h3 id="orgf58e630"><span class="section-number-3">6.1.</span> Texts</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>S. Dixson-Decleve, O. Gaffney, J. Ghosh, J. Randers, J. Rockstrom, and P. E. Stoknes, Earth for All: A Survival Guide for Humanity. New Society Publishers, 2022.</li>
+
+<li>P. Embrechts, M. Hofert, and V. Chavez-Demoulin, Risk Revealed: Cautionary Tales, Understanding and Communication. Cambridge: Cambridge University Press, 2024. Accessed: Feb. 18, 2024. [Online]. Available: <a href="https://www.cambridge.org/core/books/risk-revealed/6C0AEEEA9CF39A538F87BE8F435F8821">https://www.cambridge.org/core/books/risk-revealed/6C0AEEEA9CF39A538F87BE8F435F8821</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org5ace847" class="outline-2">
+<h2 id="org5ace847"><span class="section-number-2">7.</span> Misc</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>“About,” Disasterology. Accessed: Mar. 19, 2026. [Online]. Available: <a href="http://www.disaster-ology.com/about">http://www.disaster-ology.com/about</a></li>
+
+<li>L. Portoghese, “Homepage,” PARATUS. Accessed: Feb. 18, 2026. [Online]. Available: <a href="https://www.paratus-project.eu/">https://www.paratus-project.eu/</a></li>
+
+<li>“How do perceptions impact behavior during multi-hazard events? Citizens at the heart of multi-hazard resilience,” IIASA - International Institute for Applied Systems Analysis. Accessed: Feb. 17, 2026. [Online]. Available: <a href="http://iiasa.ac.at/blog/feb-2026/how-do-perceptions-impact-behavior-during-multi-hazard-events-citizens-at-heart-of">http://iiasa.ac.at/blog/feb-2026/how-do-perceptions-impact-behavior-during-multi-hazard-events-citizens-at-heart-of</a></li>
+
+<li>L. Elmer, “CSER November 2025 Newsletter - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Nov. 29, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/cser-november-2025-newsletter/">https://www.cser.ac.uk/work/cser-november-2025-newsletter/</a></li>
+
+<li>L. Elmer, “Call for Papers: After Sendai; Governing catastrophic risks in the emerging global order - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Aug. 28, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/call-for-papers-after-sendai-governing-catastrophic-risks-in-the-emerging-global-order/">https://www.cser.ac.uk/work/call-for-papers-after-sendai-governing-catastrophic-risks-in-the-emerging-global-order/</a></li>
+
+<li>“Creating a platform for disaster management and risk reduction,” IIASA - International Institute for Applied Systems Analysis. Accessed: Nov. 01, 2023. [Online]. Available: <a href="https://iiasa.ac.at/news/oct-2023/creating-platform-for-disaster-management-and-risk-reduction">https://iiasa.ac.at/news/oct-2023/creating-platform-for-disaster-management-and-risk-reduction</a></li>
+
+<li>L. Elmer, “CSER July 2025 Newsletter - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Aug. 01, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/cser-july-2025-newsletter/">https://www.cser.ac.uk/work/cser-july-2025-newsletter/</a></li>
+
+<li>L. Elmer, “Is Climate Change an Existential Threat? - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Jul. 25, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/is-climate-change-an-existential-threat/">https://www.cser.ac.uk/work/is-climate-change-an-existential-threat/</a></li>
+
+<li>L. Elmer, “Existential risks and global challenges: migrant workers and interspecies exploitation - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Jul. 25, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/existential-risks-and-global-challenges-migrant-workers-and-interspecies-exploitation/">https://www.cser.ac.uk/work/existential-risks-and-global-challenges-migrant-workers-and-interspecies-exploitation/</a></li>
+
+<li>F. U. Jehn et al., “The state of global catastrophic risk research: a bibliometric review,” Earth System Dynamics, vol. 16, no. 4, pp. 1053–1084, Jul. 2025, doi: 10.5194/esd-16-1053-2025.</li>
+
+<li>L. Elmer, “The state of global catastrophic risk research: a bibliometric review - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Jul. 23, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/the-state-of-global-catastrophic-risk-research-a-bibliometric-review/">https://www.cser.ac.uk/work/the-state-of-global-catastrophic-risk-research-a-bibliometric-review/</a></li>
+
+<li>“Stephen Wolfram visits RWRI 20 (The Real World Risk Summer School, 2025) - YouTube.” Accessed: Jul. 22, 2025. [Online]. Available: <a href="https://www.youtube.com/watch?v=pve8TYM7fbA">https://www.youtube.com/watch?v=pve8TYM7fbA</a></li>
+
+<li>Paco, “What I Pack in My Go Bag to Stay Ready for Any Natural Disaster,” Organic Consumers. Accessed: Jul. 17, 2025. [Online]. Available: <a href="https://organicconsumers.org/what-i-pack-in-my-go-bag-to-stay-ready-for-any-natural-disaster-2/">https://organicconsumers.org/what-i-pack-in-my-go-bag-to-stay-ready-for-any-natural-disaster-2/</a></li>
+
+<li>L. Elmer, “CSER Report January – March 2025 - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Jul. 02, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/cser-report-january-march-2025/">https://www.cser.ac.uk/work/cser-report-january-march-2025/</a></li>
+
+<li>L. Elmer, “Systemic contributions to global catastrophic risk - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Jun. 27, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/systemic-contributions-to-global-catastrophic-risk/">https://www.cser.ac.uk/work/systemic-contributions-to-global-catastrophic-risk/</a></li>
+
+<li>C. W. Arnscheidt et al., “Systemic contributions to global catastrophic risk,” Global Sustainability, vol. 8, p. e19, Jan. 2025, doi: 10.1017/sus.2025.20.</li>
+
+<li>T. M. P. Reader, “The Business of Betting on Catastrophe,” The MIT Press Reader. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://thereader.mitpress.mit.edu/the-business-of-betting-on-catastrophe/">https://thereader.mitpress.mit.edu/the-business-of-betting-on-catastrophe/</a></li>
+
+<li>“Systemic risks, vulnerability analysis and integrated disaster risk management for disaster resilient societies,” IIASA - International Institute for Applied Systems Analysis. Accessed: Jun. 24, 2025. [Online]. Available: <a href="http://iiasa.ac.at/news/jun-2025/systemic-risks-vulnerability-analysis-and-integrated-disaster-risk-management-for">http://iiasa.ac.at/news/jun-2025/systemic-risks-vulnerability-analysis-and-integrated-disaster-risk-management-for</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>T. Gaulkin, “Tracking Trump’s approach to existential threats,” Bulletin of the Atomic Scientists. Accessed: Jun. 09, 2025. [Online]. Available: <a href="https://thebulletin.org/2025/04/tracking-trumps-approach-to-existential-threats/">https://thebulletin.org/2025/04/tracking-trumps-approach-to-existential-threats/</a></li>
+
+<li>S. I. of Technology, “Emotions and levels of threat affect communities’ resilience during extreme events.” Accessed: Apr. 16, 2025. [Online]. Available: <a href="https://phys.org/news/2025-04-emotions-threat-affect-communities-resilience.html">https://phys.org/news/2025-04-emotions-threat-affect-communities-resilience.html</a></li>
+
+<li>S. Hochrainer-Stigler et al., “Toward a framework for systemic multi-hazard and multi-risk assessment and management,” iScience, vol. 26, no. 5, May 2023, doi: 10.1016/j.isci.2023.106736.</li>
+
+<li>A. Danchin, P. M. Binder, and S. Noria, “Antifragility and Tinkering in Biology (and in Business) Flexibility Provides an Efficient Epigenetic Way to Manage Risk,” Genes (Basel), vol. 2, no. 4, pp. 998–1016, Nov. 2011, doi: 10.3390/genes2040998.</li>
+
+<li>G. C. M. Report, “Creation of a Historical High Impact Low Probability (HILP) disasters Reference Library,” Global Crisis Management Report. Accessed: Jun. 05, 2024. [Online]. Available: <a href="https://globalcmrpt.wordpress.com/2024/06/01/creation-of-a-historical-high-impact-low-probability-hilp-disasters-reference-library/">https://globalcmrpt.wordpress.com/2024/06/01/creation-of-a-historical-high-impact-low-probability-hilp-disasters-reference-library/</a></li>
+
+<li>L. Elmer, “Are we prepared for global disasters? - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Sep. 27, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/are-we-prepared-for-global-disasters/">https://www.cser.ac.uk/work/are-we-prepared-for-global-disasters/</a></li>
+
+<li>R. Read, “How we deliver strategic adaptation for emergency resilience,” Bright Green. Accessed: Sep. 23, 2025. [Online]. Available: <a href="https://bright-green.org/2025/09/22/how-we-deliver-strategic-adaptation-for-emergency-resilience/">https://bright-green.org/2025/09/22/how-we-deliver-strategic-adaptation-for-emergency-resilience/</a></li>
+
+<li>“Assessing Near-Term Accuracy in the Existential Risk Persuasion Tournament,” Forecasting Research Institute. Accessed: Sep. 04, 2025. [Online]. Available: <a href="https://forecastingresearch.org/near-term-xpt-accuracy">https://forecastingresearch.org/near-term-xpt-accuracy</a></li>
+<li>L. Elmer, “CSER August 2025 Newsletter - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Sep. 05, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/cser-august-2025-newsletter/">https://www.cser.ac.uk/work/cser-august-2025-newsletter/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Researchers awarded $15 million NSF grant to transform the science of natural hazards,” Berkeley Engineering. Accessed: Sep. 10, 2025. [Online]. Available: <a href="https://engineering.berkeley.edu/news/2025/09/researchers-awarded-15-million-nsf-grant-to-transform-the-science-of-natural-hazards/">https://engineering.berkeley.edu/news/2025/09/researchers-awarded-15-million-nsf-grant-to-transform-the-science-of-natural-hazards/</a></li>
+
+<li>“AI-Driven Disaster Response and Displacement Monitoring – Communications of the ACM.” Accessed: Sep. 20, 2025. [Online]. Available: <a href="https://cacm.acm.org/arab-world-regional-special-section/ai-driven-disaster-response-and-displacement-monitoring/">https://cacm.acm.org/arab-world-regional-special-section/ai-driven-disaster-response-and-displacement-monitoring/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Existential Hope: Facing Our Future When the Signs Look Bad.” Accessed: Oct. 11, 2025. [Online]. Available: <a href="https://www.politybooks.com/bookdetail?book_slug=existential-hope-facing-our-future-when-the-signs-look-bad--9781509563043">https://www.politybooks.com/bookdetail?book_slug=existential-hope-facing-our-future-when-the-signs-look-bad--9781509563043</a></li>
+
+<li>L. Elmer, “24 October 2025: Conversations on Existential Hope - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Oct. 11, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/24-october-2025-conversations-on-existential-hope/">https://www.cser.ac.uk/work/24-october-2025-conversations-on-existential-hope/</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“Global Tipping Points | understanding risks &amp; their potential impact,” Global Tipping Points. Accessed: Oct. 14, 2025. [Online]. Available: <a href="https://global-tipping-points.org/">https://global-tipping-points.org/</a></li>
+<li>L. Elmer, “Global Tipping Points report - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Oct. 14, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/global-tipping-points-report/">https://www.cser.ac.uk/work/global-tipping-points-report/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>J. Bland, “The Art of Risk: New Illustrations of Existential Risk The Art of Risk: New Illustrations of Existential Risk - CSER,” CSER - Centre for the Study of Existential Risk. Accessed: Oct. 15, 2025. [Online]. Available: <a href="https://www.cser.ac.uk/work/the-art-of-risk-new-illustrations-of-existential-risk/">https://www.cser.ac.uk/work/the-art-of-risk-new-illustrations-of-existential-risk/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>D. Patra, “International Day for Disaster Risk Reduction 2025: Fund resilience, not disasters, by empowering vulnerable communities,” Down To Earth. Accessed: Oct. 13, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/climate-change/international-day-for-disaster-risk-reduction-2025-fund-resilience-not-disasters-by-empowering-vulnerable-communities">https://www.downtoearth.org.in/climate-change/international-day-for-disaster-risk-reduction-2025-fund-resilience-not-disasters-by-empowering-vulnerable-communities</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“‘Resilience Science Must-Knows’: Landmark report shows how decision-makers can manage global crises.” Accessed: Nov. 07, 2025. [Online]. Available: <a href="https://www.stockholmresilience.org/research/research-stories/2025-11-04-resilience-science-must-knows-landmark-report-shows-how-decision-makers-can-manage-global-crises.html">https://www.stockholmresilience.org/research/research-stories/2025-11-04-resilience-science-must-knows-landmark-report-shows-how-decision-makers-can-manage-global-crises.html</a></li>
+
+<li>“Pluralistic: Boss preppers (22 Nov 2025) – Pluralistic: Daily links from Cory Doctorow.” Accessed: Nov. 23, 2025. [Online]. Available: <a href="https://pluralistic.net/2025/11/22/eschatology-watch/">https://pluralistic.net/2025/11/22/eschatology-watch/</a></li>
+
+<li>R. G. Mitchell, Dancing At Armageddon: Survivalism And Chaos In Modern Times, New edition. Chicago, Ill.: Univ of Chicago Pr, 2004.</li>
+<li>D. Rushkoff, Survival of the Richest: escape fantasies of the tech billionaires. Scribe, 2022.</li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://github.com/ourghostorg">OurGhostOrg</a></p>
+<p class="date">Created: 2026-05-19 Tue 18:56</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

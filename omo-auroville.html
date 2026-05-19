@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-19 Tue 18:56 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Auroville</title>
+<meta name="author" content="Staff Member(s), [[https://github.com/ourghostorg][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Auroville</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org9aeed1b">1. General</a></li>
+<li><a href="#org16e951e">2. STEMM</a>
+<ul>
+<li><a href="#org7d2df9f">2.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org47b14ab">3. Worldly Matters</a>
+<ul>
+<li><a href="#org1c4c3c6">3.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org1daf2ae">4. Core</a>
+<ul>
+<li><a href="#orgec4550f">4.1. Education</a>
+<ul>
+<li><a href="#org3c531ac">4.1.1. Magazines</a></li>
+<li><a href="#org679c6a3">4.1.2. Internet Resources</a></li>
+<li><a href="#org0b049dc">4.1.3. Texts</a></li>
+<li><a href="#org02b7c76">4.1.4. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org109171f">5. Arts</a>
+<ul>
+<li><a href="#orgac364ef">5.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org4c8981e">6. Special Topics</a>
+<ul>
+<li><a href="#orgecaae6d">6.1. Crisis</a></li>
+<li><a href="#org73a2dab">6.2. Articles, Essays</a>
+<ul>
+<li><a href="#org3d35a9b">6.2.1. Misc</a></li>
+<li><a href="#orgefc51b5">6.2.2. A. Kothari</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orga285470">7. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org9aeed1b" class="outline-2">
+<h2 id="org9aeed1b"><span class="section-number-2">1.</span> General</h2>
+</div>
+<div id="outline-container-org16e951e" class="outline-2">
+<h2 id="org16e951e"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org7d2df9f" class="outline-3">
+<h3 id="org7d2df9f"><span class="section-number-3">2.1.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>Down To Earth, This is an incredible natural food forest grown in Auroville, Tamil Nadu, India, (Feb. 20, 2020). Accessed: Jul. 11, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=5iOTq6kb4qM">https://www.youtube.com/watch?v=5iOTq6kb4qM</a></li>
+
+<li>D. Varma, “Auroville and IIT-M working to fast-track sustainability campus project,” The Hindu, Jul. 25, 2025. Accessed: Jul. 26, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/puducherry/auroville-and-iit-m-working-to-fast-track-sustainability-campus-project/article69855291.ece">https://www.thehindu.com/news/cities/puducherry/auroville-and-iit-m-working-to-fast-track-sustainability-campus-project/article69855291.ece</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org47b14ab" class="outline-2">
+<h2 id="org47b14ab"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org1c4c3c6" class="outline-3">
+<h3 id="org1c4c3c6"><span class="section-number-3">3.1.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>T. H. Bureau, “Auroville governing board completes four-year term,” The Hindu, Oct. 02, 2025. Accessed: Oct. 03, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/puducherry/auroville-governing-board-completes-four-year-term/article70117778.ece">https://www.thehindu.com/news/cities/puducherry/auroville-governing-board-completes-four-year-term/article70117778.ece</a></li>
+
+<li>T. H. Bureau, “Former Auroville chairman reviews progress of development projects in international township,” The Hindu, Aug. 21, 2025. Accessed: Aug. 25, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/puducherry/former-auroville-chairman-reviews-progress-of-development-projects-in-international-township/article69960524.ece">https://www.thehindu.com/news/cities/puducherry/former-auroville-chairman-reviews-progress-of-development-projects-in-international-township/article69960524.ece</a></li>
+
+<li>D. Varma, “Proposed handover of Auroville farm land for IIT-M campus reignites sustainability debate,” The Hindu, Aug. 20, 2025. Accessed: Aug. 21, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/puducherry/proposed-handover-of-auroville-farm-land-for-iit-m-campus-reignites-sustainability-debate/article69955894.ece">https://www.thehindu.com/news/cities/puducherry/proposed-handover-of-auroville-farm-land-for-iit-m-campus-reignites-sustainability-debate/article69955894.ece</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>P. P. Thirumurthy Priyanka, “Inside Auroville: How the BJP is turning a spiritual commune into a federal enclave,” Newslaundry. Accessed: Apr. 17, 2025. [Online]. Available: <a href="https://www.newslaundry.com/2025/04/16/inside-auroville-how-the-bjp-is-turning-a-spiritual-commune-into-a-federal-enclave">https://www.newslaundry.com/2025/04/16/inside-auroville-how-the-bjp-is-turning-a-spiritual-commune-into-a-federal-enclave</a></li>
+
+<li>P. P. Sigamany Priyanka Thirumurthy,Vidya, “Inside Auroville: Power, profit, and plans for a federal enclave,” The News Minute. Accessed: Apr. 17, 2025. [Online]. Available: <a href="https://www.thenewsminute.com/long-form/inside-auroville-power-profit-and-plans-for-a-federal-enclave">https://www.thenewsminute.com/long-form/inside-auroville-power-profit-and-plans-for-a-federal-enclave</a></li>
+
+<li>P. P. Thirumurthy Priyanka, “The RSS and BJP’s quiet takeover of Auroville,” Newslaundry. Accessed: Apr. 02, 2025. [Online]. Available: <a href="https://www.newslaundry.com/2025/04/01/the-rss-and-bjps-quiet-takeover-of-auroville">https://www.newslaundry.com/2025/04/01/the-rss-and-bjps-quiet-takeover-of-auroville</a></li>
+<li>P. P. Sigamany Priyanka Thirumurthy,Vidya, “RSS and BJP’s quiet takeover of Auroville,” The News Minute. Accessed: Apr. 02, 2025. [Online]. Available: <a href="https://www.thenewsminute.com/long-form/rss-and-bjps-quiet-takeover-of-auroville">https://www.thenewsminute.com/long-form/rss-and-bjps-quiet-takeover-of-auroville</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org1daf2ae" class="outline-2">
+<h2 id="org1daf2ae"><span class="section-number-2">4.</span> Core</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgec4550f" class="outline-3">
+<h3 id="orgec4550f"><span class="section-number-3">4.1.</span> Education</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-org3c531ac" class="outline-4">
+<h4 id="org3c531ac"><span class="section-number-4">4.1.1.</span> Magazines</h4>
+<div class="outline-text-4" id="text-4-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org96ff2a9"></a>Voice of Auroville<br />
+<div class="outline-text-5" id="text-4-1-1-1">
+<ul class="org-ul">
+<li>“Voice of Auroville – Journal - Auroville Media Liaison.” Accessed: May 25, 2025. [Online]. Available: <a href="https://auroville.media/voa/">https://auroville.media/voa/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org679c6a3" class="outline-4">
+<h4 id="org679c6a3"><span class="section-number-4">4.1.2.</span> Internet Resources</h4>
+<div class="outline-text-4" id="text-4-1-2">
+<ul class="org-ul">
+<li>“Auroville Dog Shelter – Auroville Initiative.” Accessed: May 26, 2025. [Online]. Available: <a href="https://aurovilledogshelter.com/">https://aurovilledogshelter.com/</a></li>
+<li>“Auroville Film Festival | the biennial film festival in, out of and about Auroville.” Accessed: May 26, 2025. [Online]. Available: <a href="https://aurovillefilmfestival.in/">https://aurovillefilmfestival.in/</a></li>
+<li>“Auroville Village Action Group.” Accessed: May 26, 2025. [Online]. Available: <a href="https://www.villageaction.in/">https://www.villageaction.in/</a></li>
+<li>“Auroville Foundation.” Accessed: May 26, 2025. [Online]. Available: <a href="https://aurovillefoundation.org.in/">https://aurovillefoundation.org.in/</a></li>
+<li>“Homepage | Auroville Today.” Accessed: May 26, 2025. [Online]. Available: <a href="https://auroville.today/">https://auroville.today/</a></li>
+<li>“aurovilletv.org/.” Accessed: May 26, 2025. [Online]. Available: <a href="https://www.aurovilletv.org/">https://www.aurovilletv.org/</a></li>
+<li>“HOME - Auroville Media Liaison.” Accessed: May 26, 2025. [Online]. Available: <a href="https://auroville.media/">https://auroville.media/</a></li>
+<li>damien, “AurovilleRadio - The voices of Auroville.” Accessed: May 26, 2025. [Online]. Available: <a href="https://www.aurovilleradio.org">https://www.aurovilleradio.org</a></li>
+<li>“Stand for Auroville Unity | Instagram, Facebook,” Linktree. Accessed: May 26, 2025. [Online]. Available: <a href="https://linktr.ee/sfavu">https://linktr.ee/sfavu</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0b049dc" class="outline-4">
+<h4 id="org0b049dc"><span class="section-number-4">4.1.3.</span> Texts</h4>
+<div class="outline-text-4" id="text-4-1-3">
+<ul class="org-ul">
+<li>A. Majumdar, <i>Auroville: A City for the Future.</i> Harper Collins, 2017.</li>
+<li>J. Namakkal, <i>Unsettling Utopia: The Making and Unmaking of French India.</i> Columbia University Press, 2021.</li>
+<li>S. A. A. A. And R. L. I. Collaboration With A. Archives, The Dawn Of Auroville. Sri Aurobindo Ashram Publication Department, Pondicherry, 2019.</li>
+<li>T. Mother, The Mother on Auroville.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org02b7c76" class="outline-4">
+<h4 id="org02b7c76"><span class="section-number-4">4.1.4.</span> Misc</h4>
+<div class="outline-text-4" id="text-4-1-4">
+<ul class="org-ul">
+<li>T. H. Bureau, “College students gain exposure to Auroville’s education concept,” The Hindu, Aug. 12, 2025. Accessed: Aug. 13, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/puducherry/college-students-gain-exposure-to-aurovilles-education-concept/article69924055.ece">https://www.thehindu.com/news/cities/puducherry/college-students-gain-exposure-to-aurovilles-education-concept/article69924055.ece</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org109171f" class="outline-2">
+<h2 id="org109171f"><span class="section-number-2">5.</span> Arts</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgac364ef" class="outline-3">
+<h3 id="orgac364ef"><span class="section-number-3">5.1.</span> Misc</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>T. H. Bureau, “Auroville Foundation plans next edition of literature festival,” The Hindu, Nov. 11, 2025. Accessed: Nov. 12, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/puducherry/auroville-foundation-plans-next-edition-of-literature-festival/article70267307.ece">https://www.thehindu.com/news/cities/puducherry/auroville-foundation-plans-next-edition-of-literature-festival/article70267307.ece</a></li>
+
+<li>D. Varma, “Art season in Auroville begins with a photo retrospective on township’s early days,” The Hindu, Jul. 31, 2025. Accessed: Aug. 02, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/puducherry/art-season-in-auroville-begins-with-a-photo-retrospective-on-townships-early-days/article69878296.ece">https://www.thehindu.com/news/cities/puducherry/art-season-in-auroville-begins-with-a-photo-retrospective-on-townships-early-days/article69878296.ece</a></li>
+
+<li>D. Varma, “Art season in Auroville begins with a photo retrospective on township’s early days,” The Hindu, Jul. 31, 2025. Accessed: Aug. 01, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/puducherry/art-season-in-auroville-begins-with-a-photo-retrospective-on-townships-early-days/article69878296.ece">https://www.thehindu.com/news/cities/puducherry/art-season-in-auroville-begins-with-a-photo-retrospective-on-townships-early-days/article69878296.ece</a></li>
+
+<li>T. H. Bureau, “Ceramic art expo in Auroville,” The Hindu, Jul. 13, 2025. Accessed: Jul. 14, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/puducherry/ceramic-art-expo-in-auroville/article69807330.ece">https://www.thehindu.com/news/cities/puducherry/ceramic-art-expo-in-auroville/article69807330.ece</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org4c8981e" class="outline-2">
+<h2 id="org4c8981e"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgecaae6d" class="outline-3">
+<h3 id="orgecaae6d"><span class="section-number-3">6.1.</span> Crisis</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>Mael, “‘Auroville in Crisis &amp; the Way Forward’ - Auroville Media Liaison.” Accessed: May 25, 2025. [Online]. Available: <a href="https://auroville.media/auroville-in-crisis-report/">https://auroville.media/auroville-in-crisis-report/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org73a2dab" class="outline-3">
+<h3 id="org73a2dab"><span class="section-number-3">6.2.</span> Articles, Essays</h3>
+<div class="outline-text-3" id="text-6-2">
+</div>
+<div id="outline-container-org3d35a9b" class="outline-4">
+<h4 id="org3d35a9b"><span class="section-number-4">6.2.1.</span> Misc</h4>
+<div class="outline-text-4" id="text-6-2-1">
+<ul class="org-ul">
+<li>T. H. Bureau, “NTPC team visits Auroville,” The Hindu, Jan. 26, 2025. Accessed: Jan. 27, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/national/tamil-nadu/ntpc-team-visits-auroville/article69143193.ece">https://www.thehindu.com/news/national/tamil-nadu/ntpc-team-visits-auroville/article69143193.ece</a></li>
+<li>T. H. Bureau, “Auroville Foundation’s governing board reviews ongoing projects,” The Hindu, Oct. 01, 2024. Accessed: Oct. 02, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/cities/puducherry/auroville-foundations-governing-board-reviews-ongoing-projects/article68705735.ece">https://www.thehindu.com/news/cities/puducherry/auroville-foundations-governing-board-reviews-ongoing-projects/article68705735.ece</a></li>
+<li>A. Majumdar, “Much-needed impetus to making Auroville a ‘city of the future,’” The Hindu, Nov. 14, 2024. Accessed: Nov. 15, 2024. [Online]. Available: <a href="https://www.thehindu.com/opinion/op-ed/much-needed-impetus-to-making-auroville-a-city-of-the-future/article68869905.ece">https://www.thehindu.com/opinion/op-ed/much-needed-impetus-to-making-auroville-a-city-of-the-future/article68869905.ece</a></li>
+<li>F. Gautier, “A case for the organic, harmonious growth of Auroville,” The Hindu, Nov. 14, 2024. Accessed: Nov. 15, 2024. [Online]. Available: <a href="https://www.thehindu.com/opinion/op-ed/a-case-for-the-organic-harmonious-growth-of-auroville/article68869792.ece">https://www.thehindu.com/opinion/op-ed/a-case-for-the-organic-harmonious-growth-of-auroville/article68869792.ece</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgefc51b5" class="outline-4">
+<h4 id="orgefc51b5"><span class="section-number-4">6.2.2.</span> A. Kothari</h4>
+<div class="outline-text-4" id="text-6-2-2">
+<ul class="org-ul">
+<li>“Auroville Global Fellowship - Presentation of eco swaraj with Ashish Kothari - 11 11 2024 - YouTube.” Accessed: Dec. 25, 2024. [Online]. Available: <a href="https://www.youtube.com/watch?v=M_6uFz-ILhQ">https://www.youtube.com/watch?v=M_6uFz-ILhQ</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orga285470" class="outline-2">
+<h2 id="orga285470"><span class="section-number-2">7.</span> Misc</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>T. H. Bureau, “Tourists, locals flock Auroville for Manju Virattu,” The Hindu, Jan. 17, 2026. Accessed: Jan. 18, 2026. [Online]. Available: <a href="https://www.thehindu.com/news/cities/puducherry/tourists-locals-flock-auroville-for-manju-virattu/article70518554.ece">https://www.thehindu.com/news/cities/puducherry/tourists-locals-flock-auroville-for-manju-virattu/article70518554.ece</a></li>
+
+<li>T. H. Bureau, “Auroville proposes sustainability meet with UK partnership,” The Hindu, Jan. 11, 2026. Accessed: Jan. 12, 2026. [Online]. Available: <a href="https://www.thehindu.com/news/cities/puducherry/auroville-proposes-sustainability-meet-with-uk-partnership/article70498071.ece">https://www.thehindu.com/news/cities/puducherry/auroville-proposes-sustainability-meet-with-uk-partnership/article70498071.ece</a></li>
+
+<li>T. H. Bureau, “French artist’s works of lyrical abstraction on show in Auroville,” The Hindu, Nov. 29, 2025. Accessed: Nov. 29, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/puducherry/french-artists-works-of-lyrical-abstraction-on-show-in-auroville/article70335125.ece">https://www.thehindu.com/news/cities/puducherry/french-artists-works-of-lyrical-abstraction-on-show-in-auroville/article70335125.ece</a></li>
+
+<li>T. H. Bureau, “RRU-Auroville tie up to establish centre to offer courses on security education,” The Hindu, Aug. 29, 2025. Accessed: Aug. 31, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/puducherry/rru-auroville-tie-up-to-establish-centre-to-offer-courses-on-security-education/article69989153.ece">https://www.thehindu.com/news/cities/puducherry/rru-auroville-tie-up-to-establish-centre-to-offer-courses-on-security-education/article69989153.ece</a></li>
+
+<li>T. H. Bureau, “Digvijaya Singh, chair of Parliamentary panel reviews Auroville projects,” The Hindu, Aug. 25, 2025. Accessed: Aug. 31, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/puducherry/digvijaya-singh-chair-of-parliamentary-panel-reviews-auroville-projects/article69975110.ece">https://www.thehindu.com/news/cities/puducherry/digvijaya-singh-chair-of-parliamentary-panel-reviews-auroville-projects/article69975110.ece</a></li>
+
+<li>P. Dutta, “A photographic tribute to John Mandeen’s time at Auroville,” The Hindu, Aug. 01, 2025. Accessed: Aug. 02, 2025. [Online]. Available: <a href="https://www.thehindu.com/entertainment/art/a-photographic-tribute-to-john-mandeens-time-at-auroville/article69875513.ece">https://www.thehindu.com/entertainment/art/a-photographic-tribute-to-john-mandeens-time-at-auroville/article69875513.ece</a></li>
+
+<li>T. H. Bureau, “Auroville greenlights key proposals across housing, sustainability and governance,” The Hindu, Jul. 08, 2025. Accessed: Jul. 09, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/puducherry/auroville-greenlights-key-proposals-across-housing-sustainability-and-governance/article69788143.ece">https://www.thehindu.com/news/cities/puducherry/auroville-greenlights-key-proposals-across-housing-sustainability-and-governance/article69788143.ece</a></li>
+
+<li>T. H. Bureau, “Auroville’s push for transformative engagement with schoolchildren,” The Hindu, Jul. 03, 2025. Accessed: Jul. 04, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/puducherry/aurovilles-push-for-transformative-engagement-with-schoolchildren/article69768473.ece">https://www.thehindu.com/news/cities/puducherry/aurovilles-push-for-transformative-engagement-with-schoolchildren/article69768473.ece</a></li>
+
+<li>T. H. Bureau, “Hospitality sector delegation visits Auroville,” The Hindu, Jun. 23, 2025. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/puducherry/hospitality-sector-delegation-visits-auroville/article69727961.ece">https://www.thehindu.com/news/cities/puducherry/hospitality-sector-delegation-visits-auroville/article69727961.ece</a></li>
+
+<li>V. of Auroville, “Summary – November 2024 to February 2025 - Auroville Media Liaison.” Accessed: May 25, 2025. [Online]. Available: <a href="https://auroville.media/summary-november-2024-to-february-2025/">https://auroville.media/summary-november-2024-to-february-2025/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>T. H. Bureau, “Floral tributes paid to Sri Aurobindo on the 115th anniversary of his arrival in Puducherry,” The Hindu, Apr. 04, 2025. Accessed: Apr. 07, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/puducherry/anniversary-of-aurobindos-arrival-to-puducherry-celebrated/article69412542.ece">https://www.thehindu.com/news/cities/puducherry/anniversary-of-aurobindos-arrival-to-puducherry-celebrated/article69412542.ece</a></li>
+
+<li>T. H. Bureau, “Auroville Foundation, CDAC sign MoU for mutual collaboration,” The Hindu, Apr. 05, 2025. Accessed: Apr. 07, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/puducherry/auroville-foundation-cdac-sign-mou-for-mutual-collaboration/article69416489.ece">https://www.thehindu.com/news/cities/puducherry/auroville-foundation-cdac-sign-mou-for-mutual-collaboration/article69416489.ece</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://github.com/ourghostorg">OurGhostOrg</a></p>
+<p class="date">Created: 2026-05-19 Tue 18:56</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

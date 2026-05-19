@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-19 Tue 18:56 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Peace</title>
+<meta name="author" content="Staff Member(s), [[https://github.com/ourghostorg][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Peace</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgb592a45">1. General</a></li>
+<li><a href="#org5f9a72b">2. Philosophy</a>
+<ul>
+<li><a href="#org084a601">2.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgd948f39">3. STEMM</a>
+<ul>
+<li><a href="#orgf2c2979">3.1. Computer Science And Engineering</a>
+<ul>
+<li><a href="#orgd0ff8fb">3.1.1. AI</a></li>
+</ul>
+</li>
+<li><a href="#org3511aaf">3.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgc9ff184">4. Worldly Matters</a>
+<ul>
+<li><a href="#orgb273754">4.1. Space and Time</a></li>
+<li><a href="#orga2edda9">4.2. Space, Earth, Life Sciences, Environment, Health, Misc</a></li>
+<li><a href="#org8badf98">4.3. Religions, Spirituality, Misc</a>
+<ul>
+<li><a href="#orga4a170d">4.3.1. Stereotypically Related Religions</a></li>
+<li><a href="#org5eaf525">4.3.2. Hypocritically Related Religions</a></li>
+</ul>
+</li>
+<li><a href="#org18442a3">4.4. Humanities, Misc</a>
+<ul>
+<li><a href="#org579fb94">4.4.1. People</a></li>
+</ul>
+</li>
+<li><a href="#org984e745">4.5. SocioPolitical Studies, Law, Misc</a>
+<ul>
+<li><a href="#orgc64c1c7">4.5.1. Orgs</a></li>
+<li><a href="#org45ef4fa">4.5.2. Events</a></li>
+<li><a href="#org2e92ec5">4.5.3. Feminism, Women Studies, Misc</a></li>
+</ul>
+</li>
+<li><a href="#org6e6102b">4.6. Business Studies, Misc</a>
+<ul>
+<li><a href="#org75cc3c4">4.6.1. Economics, Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgb0053f1">4.7. Security Studies, Misc</a></li>
+<li><a href="#org61c1795">4.8. Communication, Misc</a></li>
+<li><a href="#org11047b2">4.9. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org1a01a80">5. Arts</a>
+<ul>
+<li><a href="#org00db422">5.1. Music</a></li>
+<li><a href="#org973e673">5.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgda60ff9">6. Special Topics</a></li>
+<li><a href="#org0aa668d">7. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orgb592a45" class="outline-2">
+<h2 id="orgb592a45"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Peace and conflict studies,” Wikipedia. Feb. 28, 2024. Accessed: Feb. 29, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Peace_and_conflict_studies&amp;oldid=1210811461">https://en.wikipedia.org/w/index.php?title=Peace_and_conflict_studies&amp;oldid=1210811461</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5f9a72b" class="outline-2">
+<h2 id="org5f9a72b"><span class="section-number-2">2.</span> Philosophy</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org084a601" class="outline-3">
+<h3 id="org084a601"><span class="section-number-3">2.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgd948f39" class="outline-2">
+<h2 id="orgd948f39"><span class="section-number-2">3.</span> STEMM</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgf2c2979" class="outline-3">
+<h3 id="orgf2c2979"><span class="section-number-3">3.1.</span> Computer Science And Engineering</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-orgd0ff8fb" class="outline-4">
+<h4 id="orgd0ff8fb"><span class="section-number-4">3.1.1.</span> AI</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<ul class="org-ul">
+<li>“AI for Peace,” Routledge &amp; CRC Press. Accessed: May 24, 2024. [Online]. Available: <a href="https://www.routledge.com/AI-for-Peace/Panic-Arthur/p/book/9781032418377">https://www.routledge.com/AI-for-Peace/Panic-Arthur/p/book/9781032418377</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org3511aaf" class="outline-3">
+<h3 id="org3511aaf"><span class="section-number-3">3.2.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>A. Meston, “International Science Council Statement on the occasion of the United Nations International Day of Living Together in Peace,” International Science Council. Accessed: May 17, 2024. [Online]. Available: <a href="https://council.science/current/press/international-science-council-statement-on-the-occasion-of-the-united-nations-international-day-of-living-together-in-peace/">https://council.science/current/press/international-science-council-statement-on-the-occasion-of-the-united-nations-international-day-of-living-together-in-peace/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc9ff184" class="outline-2">
+<h2 id="orgc9ff184"><span class="section-number-2">4.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgb273754" class="outline-3">
+<h3 id="orgb273754"><span class="section-number-3">4.1.</span> Space and Time</h3>
+</div>
+<div id="outline-container-orga2edda9" class="outline-3">
+<h3 id="orga2edda9"><span class="section-number-3">4.2.</span> Space, Earth, Life Sciences, Environment, Health, Misc</h3>
+</div>
+<div id="outline-container-org8badf98" class="outline-3">
+<h3 id="org8badf98"><span class="section-number-3">4.3.</span> Religions, Spirituality, Misc</h3>
+<div class="outline-text-3" id="text-4-3">
+</div>
+<div id="outline-container-orga4a170d" class="outline-4">
+<h4 id="orga4a170d"><span class="section-number-4">4.3.1.</span> Stereotypically Related Religions</h4>
+<div class="outline-text-4" id="text-4-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="org8dc1e8e"></a>Jainism<br />
+<div class="outline-text-5" id="text-4-3-1-1">
+<ul class="org-ul">
+<li>Misc Tiny URLs - Jainism: <a href="https://tinyurl.com/463juz9h">https://tinyurl.com/463juz9h</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgd44dd07"></a>Buddhism<br />
+<ol class="org-ol">
+<li><a id="org7a64428"></a>General<br />
+<div class="outline-text-6" id="text-4-3-1-2-1">
+<ul class="org-ul">
+<li>Misc Tiny URLs - Buddhism: <a href="https://tinyurl.com/muw5wwhc">https://tinyurl.com/muw5wwhc</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6948e62"></a>Peace, Buddhism<br />
+<ul class="org-ul">
+<li><a id="org210fa1c"></a>General<br /></li>
+<li><a id="org5035966"></a>Texts<br />
+<div class="outline-text-7" id="text-org5035966">
+<ul class="org-ul">
+<li>P. Press, Ed., True Peace Work: Essential Writings on Engaged Buddhism. Erscheinungsort nicht ermittelbar: Parallax Press, 2019.</li>
+<li>T. N. Hanh and J. Goodall, Being Peace. Parallax Press, 2020.</li>
+<li>J. H. Roshi and V. Straus, Buddhist Peacework: Creating Cultures of Peace. Somerville, Mass: Wisdom Publications, 2000.</li>
+<li>K. Kraft, Ed., Inner Peace, World Peace: Essays on Buddhism and Nonviolence. Albany, NY: State Univ of New York Pr, 1992.</li>
+</ul>
+</div>
+</li>
+<li><a id="org19c77e0"></a>Misc<br />
+<div class="outline-text-7" id="text-org19c77e0">
+<ul class="org-ul">
+<li>N. Swann, “Where did Buddhism get its reputation for peace?,” The Conversation. Accessed: Apr. 28, 2025. [Online]. Available: <a href="http://theconversation.com/where-did-buddhism-get-its-reputation-for-peace-157206">http://theconversation.com/where-did-buddhism-get-its-reputation-for-peace-157206</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org5eaf525" class="outline-4">
+<h4 id="org5eaf525"><span class="section-number-4">4.3.2.</span> Hypocritically Related Religions</h4>
+<div class="outline-text-4" id="text-4-3-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgb14ce91"></a>Christianity<br />
+<div class="outline-text-5" id="text-4-3-2-1">
+<ul class="org-ul">
+<li>Misc Tiny URLs - Christianity: <a href="https://tinyurl.com/37erevrj">https://tinyurl.com/37erevrj</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org18442a3" class="outline-3">
+<h3 id="org18442a3"><span class="section-number-3">4.4.</span> Humanities, Misc</h3>
+<div class="outline-text-3" id="text-4-4">
+</div>
+<div id="outline-container-org579fb94" class="outline-4">
+<h4 id="org579fb94"><span class="section-number-4">4.4.1.</span> People</h4>
+<div class="outline-text-4" id="text-4-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="org94050a5"></a>Johan Galtung<br />
+<ol class="org-ol">
+<li><a id="orgf6a251c"></a>General<br />
+<div class="outline-text-6" id="text-4-4-1-1-1">
+<ul class="org-ul">
+<li>“Johan Galtung,” Wikipedia. Feb. 23, 2024. Accessed: Feb. 29, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Johan_Galtung&amp;oldid=1209760228">https://en.wikipedia.org/w/index.php?title=Johan_Galtung&amp;oldid=1209760228</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6dfdfde"></a>Interviews<br />
+<div class="outline-text-6" id="text-4-4-1-1-2">
+<ul class="org-ul">
+<li>“Shows featuring Johan Galtung,” Democracy Now! Accessed: Feb. 29, 2024. [Online]. Available: <a href="https://www.democracynow.org/appearances/johan_galtung">https://www.democracynow.org/appearances/johan_galtung</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org7c35e14"></a>Works<br />
+<div class="outline-text-6" id="text-4-4-1-1-3">
+<ul class="org-ul">
+<li>J. Galtung and D. Fischer, Johan Galtung: Pioneer of Peace Research: 5, 2013th edition. Heidelberg New York, NY Dordrecht London: Springer-Verlag Berlin and Heidelberg GmbH &amp; Co. K, 2013.</li>
+
+<li>J. Galtung and D. Ikeda, Choose Peace: A Dialogue Between Johan Galtung and Daisaku Ikeda. London: Pluto Press, 1995.</li>
+</ul>
+</div>
+</li>
+<li><a id="org6e9d43e"></a>Misc<br />
+<div class="outline-text-6" id="text-4-4-1-1-4">
+<ul class="org-ul">
+<li>“Johan Galtung, ‘Father of Peace and Conflict Studies,’ Dies at 93,” Democracy Now! Accessed: Feb. 29, 2024. [Online]. Available: <a href="https://www.democracynow.org/2024/2/26/headlines/johan_galtung_father_of_peace_and_conflict_studies_dies_at_93">https://www.democracynow.org/2024/2/26/headlines/johan_galtung_father_of_peace_and_conflict_studies_dies_at_93</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org282b200"></a>Gandhi Ji<br />
+<div class="outline-text-5" id="text-4-4-1-2">
+<ul class="org-ul">
+<li><b>Gandhi Ji</b>: <a href="https://tinyurl.com/352wnnmj">https://tinyurl.com/352wnnmj</a>
+<ul class="org-ul">
+<li>Gandhi Ji - Music: <a href="https://tinyurl.com/mrkjs829">https://tinyurl.com/mrkjs829</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org9311b30"></a>Misc<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org984e745" class="outline-3">
+<h3 id="org984e745"><span class="section-number-3">4.5.</span> SocioPolitical Studies, Law, Misc</h3>
+<div class="outline-text-3" id="text-4-5">
+</div>
+<div id="outline-container-orgc64c1c7" class="outline-4">
+<h4 id="orgc64c1c7"><span class="section-number-4">4.5.1.</span> Orgs</h4>
+<div class="outline-text-4" id="text-4-5-1">
+<ul class="org-ul">
+<li>“Peace Research Institute Oslo,” Wikipedia. Jan. 01, 2024. Accessed: Feb. 29, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Peace_Research_Institute_Oslo&amp;oldid=1192990088">https://en.wikipedia.org/w/index.php?title=Peace_Research_Institute_Oslo&amp;oldid=1192990088</a></li>
+<li>“Home – Peace Research Institute Oslo (PRIO).” Accessed: Feb. 29, 2024. [Online]. Available: <a href="https://www.prio.org/">https://www.prio.org/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“War Resisters’ International,” War Resisters’ International. Accessed: Oct. 03, 2024. [Online]. Available: <a href="https://wri-irg.orgwww.wri-irg.org">https://wri-irg.orgwww.wri-irg.org</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org45ef4fa" class="outline-4">
+<h4 id="org45ef4fa"><span class="section-number-4">4.5.2.</span> Events</h4>
+<div class="outline-text-4" id="text-4-5-2">
+</div>
+<ol class="org-ol">
+<li><a id="org8a7684a"></a>IPD<br />
+<div class="outline-text-5" id="text-4-5-2-1">
+<ul class="org-ul">
+<li><i>“International Day of Peace,”</i> Wikipedia. Oct. 04, 2021. Accessed: Oct. 06, 2021. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=International_Day_of_Peace&amp;oldid=1048233884">https://en.wikipedia.org/w/index.php?title=International_Day_of_Peace&amp;oldid=1048233884</a></li>
+<li>U. Nations, “International Day of Peace,” United Nations. Accessed: Sep. 21, 2025. [Online]. Available: <a href="https://www.un.org/en/observances/international-day-peace">https://www.un.org/en/observances/international-day-peace</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org2e92ec5" class="outline-4">
+<h4 id="org2e92ec5"><span class="section-number-4">4.5.3.</span> Feminism, Women Studies, Misc</h4>
+<div class="outline-text-4" id="text-4-5-3">
+<ul class="org-ul">
+<li>“Women in Multilateral Peace Operations in 2025: What is the State of Play?,” SIPRI, Oct. 2025. Accessed: Oct. 21, 2025. [Online]. Available: <a href="https://www.sipri.org/publications/2025/other-publications/women-multilateral-peace-operations-2025-what-state-play">https://www.sipri.org/publications/2025/other-publications/women-multilateral-peace-operations-2025-what-state-play</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org6e6102b" class="outline-3">
+<h3 id="org6e6102b"><span class="section-number-3">4.6.</span> Business Studies, Misc</h3>
+<div class="outline-text-3" id="text-4-6">
+</div>
+<div id="outline-container-org75cc3c4" class="outline-4">
+<h4 id="org75cc3c4"><span class="section-number-4">4.6.1.</span> Economics, Misc</h4>
+<div class="outline-text-4" id="text-4-6-1">
+<ul class="org-ul">
+<li>“The Economics of War &amp; Peace,” Institute for New Economic Thinking. Accessed: Oct. 23, 2025. [Online]. Available: <a href="https://www.ineteconomics.org/perspectives/videos/war">https://www.ineteconomics.org/perspectives/videos/war</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb0053f1" class="outline-3">
+<h3 id="orgb0053f1"><span class="section-number-3">4.7.</span> Security Studies, Misc</h3>
+</div>
+<div id="outline-container-org61c1795" class="outline-3">
+<h3 id="org61c1795"><span class="section-number-3">4.8.</span> Communication, Misc</h3>
+</div>
+<div id="outline-container-org11047b2" class="outline-3">
+<h3 id="org11047b2"><span class="section-number-3">4.9.</span> Misc</h3>
+<div class="outline-text-3" id="text-4-9">
+<ul class="org-ul">
+<li>“Women in Multilateral Peace Operations in 2025: What is the State of Play?,” SIPRI, Oct. 2025. Accessed: Oct. 21, 2025. [Online]. Available: <a href="https://www.sipri.org/publications/2025/other-publications/women-multilateral-peace-operations-2025-what-state-play">https://www.sipri.org/publications/2025/other-publications/women-multilateral-peace-operations-2025-what-state-play</a></li>
+
+<li>“SIPRI statement on the 2025 Nobel Peace Prize | SIPRI.” Accessed: Oct. 17, 2025. [Online]. Available: <a href="https://www.sipri.org/news/press-release/2025/sipri-statement-2025-nobel-peace-prize">https://www.sipri.org/news/press-release/2025/sipri-statement-2025-nobel-peace-prize</a></li>
+
+<li>“2025 Nobel Peace Prize for Anti-Maduro Leader María Corina Machado ‘Opposite of Peace’: Greg Grandin,” Democracy Now! Accessed: Oct. 11, 2025. [Online]. Available: <a href="https://www.democracynow.org/2025/10/10/nobel_peace_prize">https://www.democracynow.org/2025/10/10/nobel_peace_prize</a></li>
+
+<li>“When Maria Corina Machado Wins the Nobel Peace Prize, ‘Peace’ Has Lost Its Meaning.,” CODEPINK - Women for Peace. Accessed: Oct. 11, 2025. [Online]. Available: <a href="https://www.codepink.org/nobel_peace_prize_peace_has_lost_its_meaning">https://www.codepink.org/nobel_peace_prize_peace_has_lost_its_meaning</a></li>
+<li>“2009 Yale World Fellow María Corina Machado wins Nobel Peace Prize,” Yale Jackson School of Global Affairs. Accessed: Oct. 11, 2025. [Online]. Available: <a href="https://jackson.yale.edu/news/2009-yale-world-fellow-maria-corina-machado-wins-nobel-peace-prize/">https://jackson.yale.edu/news/2009-yale-world-fellow-maria-corina-machado-wins-nobel-peace-prize/</a></li>
+<li>“Nobel Prize for imperialist war and regime change goes to Washington’s Venezuelan puppet María Corina Machado,” World Socialist Web Site. Accessed: Oct. 11, 2025. [Online]. Available: <a href="https://www.wsws.org/en/articles/2025/10/11/sjsy-o11.html">https://www.wsws.org/en/articles/2025/10/11/sjsy-o11.html</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>R. Vaz, “Of Peace, of War, and Other Demons,” Tricontinental: Institute for Social Research. Accessed: Aug. 28, 2025. [Online]. Available: <a href="https://thetricontinental.org/newsletter-na-war-peace-other-demons/">https://thetricontinental.org/newsletter-na-war-peace-other-demons/</a></li>
+
+<li>“The Ron Paul Institute for Peace &amp; Prosperity,” <a href="https://ronpaulinstitute.org/">https://ronpaulinstitute.org/</a>. Accessed: Aug. 19, 2025. [Online]. Available: <a href="https://ronpaulinstitute.org/">https://ronpaulinstitute.org/</a></li>
+
+<li>“How can we protect peace and democracy? Greenpeace joins a united call to action,” Greenpeace International. Accessed: Jul. 31, 2025. [Online]. Available: <a href="https://www.greenpeace.org/international/story/77486/how-can-we-protect-peace-and-democracy-greenpeace-joins-a-united-call-to-action/">https://www.greenpeace.org/international/story/77486/how-can-we-protect-peace-and-democracy-greenpeace-joins-a-united-call-to-action/</a></li>
+
+<li>“New video series—The Future of Conflict Resolution and Peacebuilding | SIPRI.” Accessed: Jul. 02, 2025. [Online]. Available: <a href="https://www.sipri.org/news/2025/new-video-series-future-conflict-resolution-and-peacebuilding">https://www.sipri.org/news/2025/new-video-series-future-conflict-resolution-and-peacebuilding</a></li>
+
+<li>“Deployments fall more than 40% in a decade, as geopolitical tensions and funding cuts increase pressure on multilateral peace operations | SIPRI.” Accessed: May 30, 2025. [Online]. Available: <a href="https://www.sipri.org/media/press-release/2025/peace-operation-deployments-fall-40-per-cent">https://www.sipri.org/media/press-release/2025/peace-operation-deployments-fall-40-per-cent</a></li>
+
+<li>“Addressing Fragility through Integrated Peacebuilding,” SIPRI, Feb. 2025. Accessed: Feb. 04, 2025. [Online]. Available: <a href="https://www.sipri.org/publications/2025/sipri-insights-peace-and-security/addressing-fragility-through-integrated-peacebuilding">https://www.sipri.org/publications/2025/sipri-insights-peace-and-security/addressing-fragility-through-integrated-peacebuilding</a></li>
+
+<li>“Fredrik Heffermehl,” Wikipedia. Oct. 07, 2025. Accessed: Jan. 08, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Fredrik_Heffermehl&amp;oldid=1315572685">https://en.wikipedia.org/w/index.php?title=Fredrik_Heffermehl&amp;oldid=1315572685</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org1a01a80" class="outline-2">
+<h2 id="org1a01a80"><span class="section-number-2">5.</span> Arts</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org00db422" class="outline-3">
+<h3 id="org00db422"><span class="section-number-3">5.1.</span> Music</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>Peace - Music: <a href="https://tinyurl.com/4xwfvwz3">https://tinyurl.com/4xwfvwz3</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org973e673" class="outline-3">
+<h3 id="org973e673"><span class="section-number-3">5.2.</span> Misc</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>“Homepage - Cartooning for Peace.” Accessed: Sep. 25, 2025. [Online]. Available: <a href="https://www.cartooningforpeace.org/en/">https://www.cartooningforpeace.org/en/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgda60ff9" class="outline-2">
+<h2 id="orgda60ff9"><span class="section-number-2">6.</span> Special Topics</h2>
+</div>
+<div id="outline-container-org0aa668d" class="outline-2">
+<h2 id="org0aa668d"><span class="section-number-2">7.</span> Misc</h2>
+<div class="outline-text-2" id="text-7">
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://github.com/ourghostorg">OurGhostOrg</a></p>
+<p class="date">Created: 2026-05-19 Tue 18:56</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

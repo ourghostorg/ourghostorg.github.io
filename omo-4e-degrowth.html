@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-19 Tue 18:56 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Degrowth</title>
+<meta name="author" content="Staff Member(s), [[https://github.com/ourghostorg][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Degrowth</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org72e4655">1. General</a></li>
+<li><a href="#orgde40eee">2. STEMM</a>
+<ul>
+<li><a href="#orgc0c076a">2.1. Advanced Sciences, Misc</a></li>
+<li><a href="#orgf3d4ab6">2.2. Systems Sciences, Misc</a>
+<ul>
+<li><a href="#orga2f193c">2.2.1. Complexity Science</a></li>
+<li><a href="#org0f864b5">2.2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgb353b1e">2.3. Biological Sciences, Misc</a></li>
+<li><a href="#org73e62c5">2.4. Basic Sciences, Misc</a></li>
+<li><a href="#orga00603a">2.5. Mathematical, Computational Sciences, Misc</a>
+<ul>
+<li><a href="#orgfdfa2ef">2.5.1. CSE</a></li>
+</ul>
+</li>
+<li><a href="#orgd64a3b0">2.6. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org3399751">3. Worldly Matters</a>
+<ul>
+<li><a href="#orgc62cb1e">3.1. Space and Time</a></li>
+<li><a href="#orgad48337">3.2. Space, Earth, Life Sciences, Environment, Health, Misc</a>
+<ul>
+<li><a href="#org89fba73">3.2.1. COVID-19</a></li>
+<li><a href="#org08b32a2">3.2.2. Green Growth</a></li>
+</ul>
+</li>
+<li><a href="#org220ea3d">3.3. Religions, Spirituality, Misc</a></li>
+<li><a href="#orge9877dd">3.4. Humanities, Misc</a>
+<ul>
+<li><a href="#orge8dc30a">3.4.1. LifeStyle</a></li>
+<li><a href="#orge0a371e">3.4.2. People</a></li>
+</ul>
+</li>
+<li><a href="#orga916888">3.5. SocioPolitical Studies, Law, Misc</a>
+<ul>
+<li><a href="#org0778dc5">3.5.1. Justice</a></li>
+<li><a href="#org17b8c02">3.5.2. Decoupling</a></li>
+<li><a href="#org5e860f3">3.5.3. Rebound Effect</a></li>
+<li><a href="#org847480d">3.5.4. Nation States</a></li>
+</ul>
+</li>
+<li><a href="#org53f90f7">3.6. Business Studies, Misc</a>
+<ul>
+<li><a href="#orgfa38d76">3.6.1. HBR</a></li>
+</ul>
+</li>
+<li><a href="#orga2e1e32">3.7. Security Studies, Misc</a></li>
+<li><a href="#orga919c82">3.8. Communication, Misc</a></li>
+<li><a href="#orga77c21e">3.9. Misc</a>
+<ul>
+<li><a href="#org04bba59">3.9.1. Feminist Political Ecology</a></li>
+<li><a href="#org2fbba2f">3.9.2. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org63f81fb">4. Core</a>
+<ul>
+<li><a href="#org11be40d">4.1. Education</a>
+<ul>
+<li><a href="#org3bd6b61">4.1.1. Courses</a></li>
+<li><a href="#org7cbf709">4.1.2. Picture Books</a></li>
+</ul>
+</li>
+<li><a href="#org378b7cc">4.2. Internet Resources</a></li>
+<li><a href="#org3659c85">4.3. Texts</a>
+<ul>
+<li><a href="#org5fc4e61">4.3.1. Handbooks, Companions, Readers</a></li>
+<li><a href="#org135104d">4.3.2. from The Future Is Degrowth (TFID)</a></li>
+<li><a href="#orgf8251a5">4.3.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgbdcf169">4.4. Articles, Essays</a>
+<ul>
+<li><a href="#org07c7825">4.4.1. Journals</a></li>
+<li><a href="#org7bf3bff">4.4.2. The Conversation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org11384e8">5. Arts</a>
+<ul>
+<li><a href="#org4cb0d52">5.1. Misc</a></li>
+<li><a href="#org931291d">5.2. Videos</a></li>
+</ul>
+</li>
+<li><a href="#org4e19ce1">6. Special Topics</a>
+<ul>
+<li><a href="#org134891d">6.1. Critical Studies</a></li>
+</ul>
+</li>
+<li><a href="#orgab2109e">7. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org72e4655" class="outline-2">
+<h2 id="org72e4655"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Degrowth,” Wikipedia. Jun. 02, 2025. Accessed: Jun. 08, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Degrowth&amp;oldid=1293512706">https://en.wikipedia.org/w/index.php?title=Degrowth&amp;oldid=1293512706</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgde40eee" class="outline-2">
+<h2 id="orgde40eee"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgc0c076a" class="outline-3">
+<h3 id="orgc0c076a"><span class="section-number-3">2.1.</span> Advanced Sciences, Misc</h3>
+</div>
+<div id="outline-container-orgf3d4ab6" class="outline-3">
+<h3 id="orgf3d4ab6"><span class="section-number-3">2.2.</span> Systems Sciences, Misc</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-orga2f193c" class="outline-4">
+<h4 id="orga2f193c"><span class="section-number-4">2.2.1.</span> Complexity Science</h4>
+</div>
+<div id="outline-container-org0f864b5" class="outline-4">
+<h4 id="org0f864b5"><span class="section-number-4">2.2.2.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-orgb353b1e" class="outline-3">
+<h3 id="orgb353b1e"><span class="section-number-3">2.3.</span> Biological Sciences, Misc</h3>
+</div>
+<div id="outline-container-org73e62c5" class="outline-3">
+<h3 id="org73e62c5"><span class="section-number-3">2.4.</span> Basic Sciences, Misc</h3>
+</div>
+<div id="outline-container-orga00603a" class="outline-3">
+<h3 id="orga00603a"><span class="section-number-3">2.5.</span> Mathematical, Computational Sciences, Misc</h3>
+<div class="outline-text-3" id="text-2-5">
+</div>
+<div id="outline-container-orgfdfa2ef" class="outline-4">
+<h4 id="orgfdfa2ef"><span class="section-number-4">2.5.1.</span> CSE</h4>
+<div class="outline-text-4" id="text-2-5-1">
+</div>
+<ol class="org-ol">
+<li><a id="org9afe1f7"></a>Systems Sciences<br />
+<div class="outline-text-5" id="text-2-5-1-1">
+<ul class="org-ul">
+<li>T.-T. W. in 2050, “The Digital Revolution and Sustainable Development: Opportunities and Challenges. Report prepared by the World in 2050 initiative.” Accessed: Dec. 28, 2023. [Online]. Available: <a href="http://www.iiasa.ac.at/web/home/research/twi/TWI2050.html">http://www.iiasa.ac.at/web/home/research/twi/TWI2050.html</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgcd7eab1"></a>Misc<br />
+<div class="outline-text-5" id="text-2-5-1-2">
+<ul class="org-ul">
+<li>L. Futures, “Appropriate Technology, Traditional Cultures and Degrowth — Local Futures,” Medium, Nov. 30, 2021. <a href="https://localfutures.medium.com/appropriate-technology-traditional-cultures-and-degrowth-local-futures-ecdcb407df55">https://localfutures.medium.com/appropriate-technology-traditional-cultures-and-degrowth-local-futures-ecdcb407df55</a> (accessed Jan. 26, 2022).</li>
+
+<li>M. Koch, “Deepening the degrowth planning debate: division of labor, complexity, and the roles of markets and digital tools,” Sustainability: Science, Practice and Policy, vol. 20, no. 1, p. 2383335, Dec. 2024, doi: 10.1080/15487733.2024.2383335.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgd64a3b0" class="outline-3">
+<h3 id="orgd64a3b0"><span class="section-number-3">2.6.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-6">
+<ul class="org-ul">
+<li>N. Author, “The climate is doomed if we continue to be fixated by economic growth,” Physics World. Accessed: Feb. 27, 2024. [Online]. Available: <a href="https://physicsworld.com/a/the-climate-is-doomed-if-we-continue-to-be-fixated-by-economic-growth/">https://physicsworld.com/a/the-climate-is-doomed-if-we-continue-to-be-fixated-by-economic-growth/</a></li>
+<li>I. M. Otto et al., “Social tipping dynamics for stabilizing Earth’s climate by 2050,” Proceedings of the National Academy of Sciences, vol. 117, no. 5, pp. 2354–2365, Feb. 2020, doi: 10.1073/pnas.1900577117.</li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>G. Kallis et al., “Post-growth: the science of wellbeing within planetary boundaries,” The Lancet Planetary Health, vol. 9, no. 1, pp. e62–e78, Jan. 2025, doi: 10.1016/S2542-5196(24)00310-3.
+<ul class="org-ul">
+<li>“Post-growth: the science of wellbeing within planetary boundaries,” Centre for the Understanding of Sustainable Prosperity. Accessed: Jan. 23, 2025. [Online]. Available: <a href="https://cusp.ac.uk/themes/aetw/lancet-post-growth/">https://cusp.ac.uk/themes/aetw/lancet-post-growth/</a></li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>G. Tsakraklides, “Biology Lessons In Degrowth,” George Tsakraklides. Accessed: Jul. 29, 2024. [Online]. Available: <a href="https://tsakraklides.com/2024/07/28/biology-lessons-in-degrowth/">https://tsakraklides.com/2024/07/28/biology-lessons-in-degrowth/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org3399751" class="outline-2">
+<h2 id="org3399751"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgc62cb1e" class="outline-3">
+<h3 id="orgc62cb1e"><span class="section-number-3">3.1.</span> Space and Time</h3>
+</div>
+<div id="outline-container-orgad48337" class="outline-3">
+<h3 id="orgad48337"><span class="section-number-3">3.2.</span> Space, Earth, Life Sciences, Environment, Health, Misc</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-org89fba73" class="outline-4">
+<h4 id="org89fba73"><span class="section-number-4">3.2.1.</span> COVID-19</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<ul class="org-ul">
+<li>M. Büchs et al., “Wellbeing Economics for the COVID-19 recovery,” Wellbeing Economy Alliance, available at: <a href="https://weall">https://weall</a>. org/wpcontent/uploads/2020/05/Wellbeing<sub>Economics</sub><sub>for</sub><sub>the</sub><sub>COVID</sub>-19<sub>recovery</sub><sub>10Principles</sub>. pdf, 2020, Accessed: Dec. 28, 2023. [Online]. Available: <a href="https://serval.unil.ch/resource/serval:BIB_C2D492EC73DF.P001/REF">https://serval.unil.ch/resource/serval:BIB_C2D492EC73DF.P001/REF</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org08b32a2" class="outline-4">
+<h4 id="org08b32a2"><span class="section-number-4">3.2.2.</span> Green Growth</h4>
+<div class="outline-text-4" id="text-3-2-2">
+<ul class="org-ul">
+<li>J. Hickel and G. Kallis, “Is Green Growth Possible?,” New Political Economy, vol. 25, no. 4, pp. 469–486, Jun. 2020, doi: 10.1080/13563467.2019.1598964.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org220ea3d" class="outline-3">
+<h3 id="org220ea3d"><span class="section-number-3">3.3.</span> Religions, Spirituality, Misc</h3>
+</div>
+<div id="outline-container-orge9877dd" class="outline-3">
+<h3 id="orge9877dd"><span class="section-number-3">3.4.</span> Humanities, Misc</h3>
+<div class="outline-text-3" id="text-3-4">
+</div>
+<div id="outline-container-orge8dc30a" class="outline-4">
+<h4 id="orge8dc30a"><span class="section-number-4">3.4.1.</span> LifeStyle</h4>
+<div class="outline-text-4" id="text-3-4-1">
+<ul class="org-ul">
+<li>“Living Well Within Limits [LiLi] | Homepage of the LiLi Leverhulme Research Leadership Award Project.” Accessed: Dec. 28, 2023. [Online]. Available: <a href="https://lili.leeds.ac.uk/">https://lili.leeds.ac.uk/</a></li>
+<li>J. K. Steinberger, M. Lenzen, and T. Wiedmann, “Affluence is killing the planet, warn scientists,” The Conversation. Accessed: Dec. 28, 2023. [Online]. Available: <a href="http://theconversation.com/affluence-is-killing-the-planet-warn-scientists-141017">http://theconversation.com/affluence-is-killing-the-planet-warn-scientists-141017</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge0a371e" class="outline-4">
+<h4 id="orge0a371e"><span class="section-number-4">3.4.2.</span> People</h4>
+<div class="outline-text-4" id="text-3-4-2">
+</div>
+<ol class="org-ol">
+<li><a id="org83ebd84"></a>Julia K. Steinberger<br />
+<div class="outline-text-5" id="text-3-4-2-1">
+<ul class="org-ul">
+<li>“Julia K. Steinberger,” The Conversation. Accessed: Dec. 28, 2023. [Online]. Available: <a href="https://theconversation.com/profiles/julia-k-steinberger-213830">https://theconversation.com/profiles/julia-k-steinberger-213830</a></li>
+
+<li>“‪Roots, Riots, and Radical Change—A Road Less Travelled for Ecological Economics‬.” Accessed: Dec. 28, 2023. [Online]. Available: <a href="https://scholar.google.ch/citations?view_op=view_citation&amp;hl=en&amp;user=c8Ar3N4AAAAJ&amp;cstart=20&amp;pagesize=80&amp;sortby=pubdate&amp;citation_for_view=c8Ar3N4AAAAJ:1sJd4Hv_s6UC">https://scholar.google.ch/citations?view_op=view_citation&amp;hl=en&amp;user=c8Ar3N4AAAAJ&amp;cstart=20&amp;pagesize=80&amp;sortby=pubdate&amp;citation_for_view=c8Ar3N4AAAAJ:1sJd4Hv_s6UC</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orga43b648"></a>Jason Hickel<br />
+<div class="outline-text-5" id="text-3-4-2-2">
+<ul class="org-ul">
+<li>J. Hickel and D. Sullivan, “How much growth is required to achieve good lives for all? Insights from needs-based analysis,” World Development Perspectives, vol. 35, p. 100612, Sep. 2024, doi: 10.1016/j.wdp.2024.100612.</li>
+<li>J. Hickel et al., “Degrowth can work—here’s how science can help,” Nature, vol. 612, no. 7940, pp. 400–403, 2022, Accessed: Dec. 28, 2023. [Online]. Available: <a href="https://www.nature.com/articles/d41586-022-04412-x">https://www.nature.com/articles/d41586-022-04412-x</a></li>
+<li>“Thread by @jasonhickel on Thread Reader App.” Accessed: Nov. 15, 2024. [Online]. Available: <a href="https://threadreaderapp.com/thread/1611660579655008258.html">https://threadreaderapp.com/thread/1611660579655008258.html</a></li>
+<li>“Credit guidance: how we achieve degrowth,” Jason Hickel. Accessed: Sep. 04, 2024. [Online]. Available: <a href="https://www.jasonhickel.org/blog/2024/8/20/credit-guidance-how-we-achieve-degrowth">https://www.jasonhickel.org/blog/2024/8/20/credit-guidance-how-we-achieve-degrowth</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org559d749"></a>Tim Jackson<br />
+<div class="outline-text-5" id="text-3-4-2-3">
+<ul class="org-ul">
+<li>“From Davos to Reykjavík: decoupling wellbeing from growth | By Tim Jackson,” Centre for the Understanding of Sustainable Prosperity. Accessed: Jun. 06, 2024. [Online]. Available: <a href="https://cusp.ac.uk/themes/aetw/tj-blog-wef-reykjavik/">https://cusp.ac.uk/themes/aetw/tj-blog-wef-reykjavik/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orga535060"></a>Misc<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orga916888" class="outline-3">
+<h3 id="orga916888"><span class="section-number-3">3.5.</span> SocioPolitical Studies, Law, Misc</h3>
+<div class="outline-text-3" id="text-3-5">
+</div>
+<div id="outline-container-org0778dc5" class="outline-4">
+<h4 id="org0778dc5"><span class="section-number-4">3.5.1.</span> Justice</h4>
+<div class="outline-text-4" id="text-3-5-1">
+<ul class="org-ul">
+<li>“Degrowth Is About Global Justice.” <a href="https://www.greeneuropeanjournal.eu/degrowth-is-about-global-justice/">https://www.greeneuropeanjournal.eu/degrowth-is-about-global-justice/</a> (accessed Mar. 15, 2022).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org17b8c02" class="outline-4">
+<h4 id="org17b8c02"><span class="section-number-4">3.5.2.</span> Decoupling</h4>
+<div class="outline-text-4" id="text-3-5-2">
+<ul class="org-ul">
+<li>“Decoupling debunked – Evidence and arguments against green growth as a sole strategy for sustainability,” EEB - The European Environmental Bureau. Accessed: Dec. 28, 2023. [Online]. Available: <a href="https://eeb.org/library/decoupling-debunked/">https://eeb.org/library/decoupling-debunked/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5e860f3" class="outline-4">
+<h4 id="org5e860f3"><span class="section-number-4">3.5.3.</span> Rebound Effect</h4>
+<div class="outline-text-4" id="text-3-5-3">
+<ul class="org-ul">
+<li>“What is the Rebound Effect? — Energy Efficiency, Part 2,” The Equation. Accessed: Dec. 28, 2023. [Online]. Available: <a href="https://blog.ucsusa.org/peter-oconnor/energy-efficiency-what-is-the-rebound-effect-946/">https://blog.ucsusa.org/peter-oconnor/energy-efficiency-what-is-the-rebound-effect-946/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org847480d" class="outline-4">
+<h4 id="org847480d"><span class="section-number-4">3.5.4.</span> Nation States</h4>
+<div class="outline-text-4" id="text-3-5-4">
+</div>
+<ol class="org-ol">
+<li><a id="orgda1c814"></a>USA<br />
+<div class="outline-text-5" id="text-3-5-4-1">
+<ul class="org-ul">
+<li>C. Beam, “Is America Ready for ‘Degrowth Communism’?,” The Atlantic. Accessed: Jun. 03, 2024. [Online]. Available: <a href="https://www.theatlantic.com/ideas/archive/2024/05/kohei-saito-degrowth-communism/678481/">https://www.theatlantic.com/ideas/archive/2024/05/kohei-saito-degrowth-communism/678481/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org65717e7"></a>India<br />
+<ol class="org-ol">
+<li><a id="orgc50ccdc"></a>General<br /></li>
+<li><a id="org2d14b9b"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org51827a1"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org67a3a76"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org1533afb"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org516250b"></a>Core<br /></li>
+<li><a id="org134822c"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="org724b623"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org8dd2176"></a>Misc<br /></li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org53f90f7" class="outline-3">
+<h3 id="org53f90f7"><span class="section-number-3">3.6.</span> Business Studies, Misc</h3>
+<div class="outline-text-3" id="text-3-6">
+</div>
+<div id="outline-container-orgfa38d76" class="outline-4">
+<h4 id="orgfa38d76"><span class="section-number-4">3.6.1.</span> HBR</h4>
+<div class="outline-text-4" id="text-3-6-1">
+<ul class="org-ul">
+<li>C. Marquis, “In Defense of Degrowth,” Harvard Business Review, Jun. 11, 2024. Accessed: Jun. 13, 2024. [Online]. Available: <a href="https://hbr.org/2024/06/in-defense-of-degrowth">https://hbr.org/2024/06/in-defense-of-degrowth</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orga2e1e32" class="outline-3">
+<h3 id="orga2e1e32"><span class="section-number-3">3.7.</span> Security Studies, Misc</h3>
+</div>
+<div id="outline-container-orga919c82" class="outline-3">
+<h3 id="orga919c82"><span class="section-number-3">3.8.</span> Communication, Misc</h3>
+</div>
+<div id="outline-container-orga77c21e" class="outline-3">
+<h3 id="orga77c21e"><span class="section-number-3">3.9.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-9">
+</div>
+<div id="outline-container-org04bba59" class="outline-4">
+<h4 id="org04bba59"><span class="section-number-4">3.9.1.</span> Feminist Political Ecology</h4>
+<div class="outline-text-4" id="text-3-9-1">
+<ul class="org-ul">
+<li>S. Barca et al., “Caring Communities for Radical Change: What Can Feminist Political Ecology Bring to Degrowth?,” in Contours of Feminist Political Ecology, W. Harcourt, A. Agostino, R. Elmhirst, M. Gómez, and P. Kotsila, Eds., Cham: Springer International Publishing, 2023, pp. 177–206. doi: 10.1007/978-3-031-20928-4<sub>8</sub>.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2fbba2f" class="outline-4">
+<h4 id="org2fbba2f"><span class="section-number-4">3.9.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-3-9-2">
+<ul class="org-ul">
+<li>M. Digirolamo, “‘Degrowth’ gains a foothold in Barcelona and support internationally,” Mongabay Environmental News. Accessed: Mar. 08, 2025. [Online]. Available: <a href="https://news.mongabay.com/podcast/2025/03/degrowth-gains-a-foothold-in-barcelona-and-support-internationally/">https://news.mongabay.com/podcast/2025/03/degrowth-gains-a-foothold-in-barcelona-and-support-internationally/</a></li>
+
+<li>“The Rise of the Degrowther Right.” Accessed: Mar. 06, 2025. [Online]. Available: <a href="https://jacobin.com/2025/03/right-wing-ecology-degrowth-nationalism">https://jacobin.com/2025/03/right-wing-ecology-degrowth-nationalism</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>K. Richter, “Cosmological limits to growth, affective abundance, and Rights of Nature: Insights from Buen Vivir/sumak kawsay for the cultural politics of degrowth,” Ecological Economics, vol. 228, p. 108442, Feb. 2025, doi: 10.1016/j.ecolecon.2024.108442.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org63f81fb" class="outline-2">
+<h2 id="org63f81fb"><span class="section-number-2">4.</span> Core</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org11be40d" class="outline-3">
+<h3 id="org11be40d"><span class="section-number-3">4.1.</span> Education</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-org3bd6b61" class="outline-4">
+<h4 id="org3bd6b61"><span class="section-number-4">4.1.1.</span> Courses</h4>
+<div class="outline-text-4" id="text-4-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgbc71873"></a>ICTA UAB<br />
+<div class="outline-text-5" id="text-4-1-1-1">
+<ul class="org-ul">
+<li>“Master in Political Ecology &amp; Online Master on Degrowth.” <a href="https://master.degrowth.org/">https://master.degrowth.org/</a> (accessed Jan. 24, 2022).</li>
+<li>“Program – Master in Political Ecology &amp; Online Master on Degrowth.” <a href="https://master.degrowth.org/program-2/">https://master.degrowth.org/program-2/</a> (accessed Jan. 24, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgf8f384b"></a>NMBU<br />
+<div class="outline-text-5" id="text-4-1-1-2">
+<ul class="org-ul">
+<li>“NMBU Sustainability Arena: Embedding planetary boundaries in science, policy and education,” Apr. 15, 2021. <a href="https://www.nmbu.no/en/projects/node/42986">https://www.nmbu.no/en/projects/node/42986</a> (accessed Jan. 24, 2022).</li>
+<li>“Political Ecology of Scarcity, Limits and Degrowth,” Nov. 09, 2021. <a href="https://www.nmbu.no/en/faculty/landsam/department/noragric/news/node/44249">https://www.nmbu.no/en/faculty/landsam/department/noragric/news/node/44249</a> (accessed Jan. 24, 2022).</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org7cbf709" class="outline-4">
+<h4 id="org7cbf709"><span class="section-number-4">4.1.2.</span> Picture Books</h4>
+<div class="outline-text-4" id="text-4-1-2">
+<ul class="org-ul">
+<li>“Who Is Afraid of Degrowth?,” Céline Keller. Accessed: May 08, 2024. [Online]. Available: <a href="https://www.celinekeller.com/who-is-afraid-of-degrowth">https://www.celinekeller.com/who-is-afraid-of-degrowth</a></li>
+<li>F. Goteo, “Who Is Afraid of Degrowth?,” Goteo.org. Accessed: Feb. 04, 2024. [Online]. Available: <a href="https://en.goteo.org/project/who-is-afraid-of-degrowth">https://en.goteo.org/project/who-is-afraid-of-degrowth</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org378b7cc" class="outline-3">
+<h3 id="org378b7cc"><span class="section-number-3">4.2.</span> Internet Resources</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>“GrowthKills.” Accessed: Jun. 26, 2024. [Online]. Available: <a href="https://growthkills.org/">https://growthkills.org/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3659c85" class="outline-3">
+<h3 id="org3659c85"><span class="section-number-3">4.3.</span> Texts</h3>
+<div class="outline-text-3" id="text-4-3">
+</div>
+<div id="outline-container-org5fc4e61" class="outline-4">
+<h4 id="org5fc4e61"><span class="section-number-4">4.3.1.</span> Handbooks, Companions, Readers</h4>
+<div class="outline-text-4" id="text-4-3-1">
+<ul class="org-ul">
+<li>L. Eastwood and K. Heron, Eds., De Gruyter Handbook of Degrowth, 1st edition. De Gruyter, 2024.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org135104d" class="outline-4">
+<h4 id="org135104d"><span class="section-number-4">4.3.2.</span> from The Future Is Degrowth (TFID)</h4>
+<div class="outline-text-4" id="text-4-3-2">
+<ul class="org-ul">
+<li>L. Phillips and M. Rozworski, The People’s Republic of Walmart: How the World’s Biggest Corporations are Laying the Foundation for Socialism. London ; New York: Verso, 2019.</li>
+
+<li>“Buy Platform Capitalism in India (Global Transformations in Media and Communication Research - A Palgrave and IAMCR Series) Book Online at Low Prices in India | Platform Capitalism in India (Global Transformations in Media and Communication Research - A Palgrave and IAMCR Series) Reviews &amp; Ratings - Amazon.in.” Accessed: Mar. 22, 2024. [Online]. Available: <a href="https://www.amazon.in/Platform-Capitalism-Transformations-Communication-Research/dp/3030445623?dib=eyJ2IjoiMSJ9.GMKRmVBy3xGdLxIfRVVid2jeIxXWly7-z_lwQq1WzeQAhw7cIrEZIEm1MJM1pK5bLTJLnPMuHaHPqbubInEHrlxjmQPaJTU1DZDY7SuoKdkZZHAfvvWuj3RERUsdI1D3bCAdaAYQNA4g117uKpzE6lgW5RN_QZnjogFn8X5cmXMCyhuRkrwQT_LoVCXODOjCflWRyjLtuZ-FPRu1NDj7wRDhuQWQvIa59LnN9kCM_io.fXCxZrWlM1hAh2lmsbJALuSjoc0enufSDi5omdaJ1Ck&amp;dib_tag=se">https://www.amazon.in/Platform-Capitalism-Transformations-Communication-Research/dp/3030445623?dib=eyJ2IjoiMSJ9.GMKRmVBy3xGdLxIfRVVid2jeIxXWly7-z_lwQq1WzeQAhw7cIrEZIEm1MJM1pK5bLTJLnPMuHaHPqbubInEHrlxjmQPaJTU1DZDY7SuoKdkZZHAfvvWuj3RERUsdI1D3bCAdaAYQNA4g117uKpzE6lgW5RN_QZnjogFn8X5cmXMCyhuRkrwQT_LoVCXODOjCflWRyjLtuZ-FPRu1NDj7wRDhuQWQvIa59LnN9kCM_io.fXCxZrWlM1hAh2lmsbJALuSjoc0enufSDi5omdaJ1Ck&amp;dib_tag=se</a></li>
+<li>N. Srnicek, Platform Capitalism, 1st edition. Cambridge, UK ; Malden, MA: Polity Press, 2016.</li>
+<li>T. Scholz, Ours to Hack and to Own: The Rise of Platform Cooperativism, A New Vision for the Future of Work and a Fairer Internet, 1st edition. OR Books, 2017.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>N. Dyer-Witheford, A. M. Kjøsen, and J. Steinhoff, Inhuman Power: Artificial Intelligence and the Future of Capitalism. London: Pluto Press, 2019.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“White Skin, Black Fuel,” Verso. Accessed: Mar. 22, 2024. [Online]. Available: <a href="https://www.versobooks.com/en-gb/products/2520-white-skin-black-fuel">https://www.versobooks.com/en-gb/products/2520-white-skin-black-fuel</a></li>
+
+<li>R. Solnit, A Paradise Built in Hell, Reprint edition. New York: Penguin Books, 2010.</li>
+
+<li>P. A. Victor, Managing Without Growth: Slower by Design, Not Disaster. Cheltenham, UK ; Northampton, MA: Edward Elgar Publishing Ltd, 2008.</li>
+
+<li>O. mi O. Taiwo, Reconsidering Reparations. New York: Oxford University Press Inc, 2022.</li>
+
+<li>J. Tyberg, “Degrowth and Revolutionary Organizing,” RLS-NYC. Accessed: Mar. 22, 2024. [Online]. Available: <a href="https://rosalux.nyc/degrowth-and-revolutionary-organizing/">https://rosalux.nyc/degrowth-and-revolutionary-organizing/</a></li>
+
+<li>A. Nelson and F. Edwards, Eds., Food for Degrowth: Perspectives and Practices, 1st edition. Routledge, 2022.</li>
+
+<li>“Mental Infrastructures: How Growth Entered the World and Our Souls | Heinrich Böll Stiftung.” Accessed: Mar. 22, 2024. [Online]. Available: <a href="https://www.boell.de/en/2013/12/09/mental-infrastructures-how-growth-entered-world-and-our-souls">https://www.boell.de/en/2013/12/09/mental-infrastructures-how-growth-entered-world-and-our-souls</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Crashed (Audio Download): Adam Tooze, Simon Vance, Adam Tooze, Penguin Audio: Amazon.in: Books.” Accessed: Mar. 22, 2024. [Online]. Available: <a href="https://www.amazon.in/Crashed/dp/B07FPKSKQJ?dib=eyJ2IjoiMSJ9.GAz7--topaI9aFHY9gU8GLPGkzHZi4GL_pxz4YTPJxmbf8p5GxUWucrp49zidINLpokf04qqGoDiPMFfWMOZ8dpVslL98B4DnQCff0qA5FSL3pb7RJ6j2JzBbUQZ8zdlaxULeBBoMxT1GRfLFR6FfA0l0Kvo5jJGY2m2OPAfjIpJ8gNuNiCK_y3dN-Zz8eJwPPaIFfnMvCdhsV8F02jfBbB4S7tEw9T6GtrFO9Mwym8.ziPjo8oZAQEbXznWkMpBbECNJNxLx2aYkBKii-D0TcI&amp;dib_tag=se">https://www.amazon.in/Crashed/dp/B07FPKSKQJ?dib=eyJ2IjoiMSJ9.GAz7--topaI9aFHY9gU8GLPGkzHZi4GL_pxz4YTPJxmbf8p5GxUWucrp49zidINLpokf04qqGoDiPMFfWMOZ8dpVslL98B4DnQCff0qA5FSL3pb7RJ6j2JzBbUQZ8zdlaxULeBBoMxT1GRfLFR6FfA0l0Kvo5jJGY2m2OPAfjIpJ8gNuNiCK_y3dN-Zz8eJwPPaIFfnMvCdhsV8F02jfBbB4S7tEw9T6GtrFO9Mwym8.ziPjo8oZAQEbXznWkMpBbECNJNxLx2aYkBKii-D0TcI&amp;dib_tag=se</a></li>
+<li>A. Tooze, Shutdown. Dublin: Allen Lane, 2021.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. Lange and T. Santarius, Smart Green World?: Making Digitalization Work for Sustainability, 1st edition. London; New York, NY: Routledge, 2020.</li>
+
+<li>F. Adloff, Gifts of Cooperation, Mauss and Pragmatism, 1st edition. London New York: Routledge, 2017.</li>
+
+<li>M. Arboleda, Planetary Mine: Territories of Extraction under Late Capitalism. London New York: Verso, 2020.</li>
+<li>M. Fairbairn, Fields of Gold: Financing the Global Land Rush. Cornell University Press, 2020.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>M. Hardt and A. Negri, Assembly, Reprint edition. Oxford University Press, 2017.</li>
+
+<li>S. Alexander and B. Gleeson, Degrowth in the Suburbs: A Radical Urban Imaginary, Softcover reprint of the original 1st ed. 2019 edition. Springer Verlag, Singapore, 2018.</li>
+<li>A. Nelson and F. Schneider, Eds., Housing for Degrowth: Principles, Models, Challenges and Opportunities, 1st edition. Abingdon, Oxon ; New York, NY: Routledge, 2018.</li>
+<li>D. Harvey, Rebel Cities: From the Right to the City to the Urban Revolution. London New York: Verso, 2019.</li>
+<li>S. Stein, Capital City: Gentrification and the Real Estate State. Verso, 2019.</li>
+<li>H. Lefebvre, The Production of Space, 1st edition. Malden: Wiley-Blackwell, 1991.</li>
+<li>P. Dauvergne, Environmentalism of the Rich. Cambridge, Massachusetts: MIT Press, 2018.</li>
+<li>S. Lessenich, Living Well at Others’ Expense: The Hidden Costs of Western Prosperity, 1st edition. Polity, 2019.</li>
+
+<li>J. Wajcman, TechnoFeminism: War Crimes, Trials and the Reinvention of International Law, 1st edition. Polity, 2013.</li>
+
+<li>L. Winner, The Whale and the Reactor: A Search for Limits in an Age of High Technology, Second edition. The University of Chicago Press, 2020.</li>
+<li>G. Mueller, Breaking Things at Work: The Luddites Are Right About Why You Hate Your Job. London New York: Verso, 2021.</li>
+
+<li>M. Hultman and P. M. Pulé, Ecological Masculinities: Theoretical Foundations and Practical Guidance, 1st edition. Abingdon New york, NY: Routledge, 2019.</li>
+<li>R. W. Connell, Masculinities, 2nd edition. Routledge, 2005.</li>
+
+<li>B. Erickson and C. Mortimer-Sandilands, Queer Ecologies: Sex, Nature, Politics, Desire. Bloomington, Ind.: Indiana University Press, 2010.</li>
+
+<li>M. Waring, Counting for Nothing: What Men Value and What Women are Worth, 2nd edition. University of Toronto Press, 1999.</li>
+
+<li>S. Alexander, Art Against Empire: Toward an Aesthetics of Degrowth. Melbourne: Simplicity Institute, 2017.</li>
+<li>C. N. Daggett, The Birth of Energy: Fossil Fuels, Thermodynamics, and the Politics of Work. Duke University Press Books, 2019.</li>
+<li>S. Barca, Forces of Reproduction: Notes for a Counter-Hegemonic Anthropocene. Cambridge University Press, 2020.</li>
+<li>H. Rosa, Resonance: A Sociology of Our Relationship to the World, 1st edition. Polity, 2019.</li>
+<li>“Hamster wheel,” Wikipedia. Mar. 01, 2024. Accessed: Mar. 22, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Hamster_wheel&amp;oldid=1211317312">https://en.wikipedia.org/w/index.php?title=Hamster_wheel&amp;oldid=1211317312</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf8251a5" class="outline-4">
+<h4 id="orgf8251a5"><span class="section-number-4">4.3.3.</span> Misc</h4>
+<div class="outline-text-4" id="text-4-3-3">
+<ul class="org-ul">
+<li>“Degrowth &amp; Strategy: how to bring about social-ecological transformation – MayFly.” <a href="https://mayflybooks.org/degrowth-strategy/">https://mayflybooks.org/degrowth-strategy/</a> (accessed Aug. 01, 2022).</li>
+
+<li>M. Wissen and U. Brand, The Limits to Capitalist Nature: Theorizing and Overcoming the Imperial Mode of Living. London ; New York: Rowman &amp; Littlefield, 2018.</li>
+
+<li>K. Saito, Slow Down: How Degrowth Communism Can Save the Earth. W&amp;N, 2024.
+<ul class="org-ul">
+<li>“Is it time to Slow Down?” Accessed: Feb. 29, 2024. [Online]. Available: <a href="https://theecologist.org/2024/feb/20/it-time-slow-down">https://theecologist.org/2024/feb/20/it-time-slow-down</a></li>
+</ul></li>
+
+<li>D. Stuart, R. Gunderson, and B. Petersen, The Degrowth Alternative: A Path to Address our Environmental Crisis? Routledge, 2020.</li>
+<li>G. D’Alisa, F. Demaria, and G. Kallis, Degrowth: A Vocabulary for a New Era. Routledge, 2014.</li>
+<li>G. Kallis, Degrowth. Agenda Publishing, 2018.</li>
+<li>G. Kallis, S. Paulson, G. D’Alisa, and F. Demaria, The Case for Degrowth. Wiley, 2020.</li>
+
+<li>J. Hickel, Less is More: How Degrowth Will Save the World. Random House, 2020.</li>
+
+<li>M. Schmelzer, A. Vansintjan, and A. Vetter, The Future is Degrowth: A Guide to a World Beyond Capitalism. Verso Books, 2022.</li>
+
+<li>N. Treu, M. Schmelzer, and C. Burkhart, Degrowth in Movement(s): Exploring Pathways for Transformation. John Hunt Publishing, 2020.</li>
+
+<li>T. Jackson, Prosperity without Growth: Foundations for the Economy of Tomorrow. Routledge, 2016.</li>
+
+<li>V. Liegey and A. Nelson, Exploring Degrowth: A Critical Guide. Pluto Press, 2020.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbdcf169" class="outline-3">
+<h3 id="orgbdcf169"><span class="section-number-3">4.4.</span> Articles, Essays</h3>
+<div class="outline-text-3" id="text-4-4">
+</div>
+<div id="outline-container-org07c7825" class="outline-4">
+<h4 id="org07c7825"><span class="section-number-4">4.4.1.</span> Journals</h4>
+<div class="outline-text-4" id="text-4-4-1">
+<ul class="org-ul">
+<li>M. Koch, “Deepening the degrowth planning debate: division of labor, complexity, and the roles of markets and digital tools,” Sustainability: Science, Practice and Policy, vol. 20, no. 1, p. 2383335, Dec. 2024, doi: 10.1080/15487733.2024.2383335.</li>
+<li>“Full article: Downscaling down under: towards degrowth in integrated assessment models.” Accessed: Apr. 08, 2024. [Online]. Available: <a href="https://www.tandfonline.com/doi/full/10.1080/09535314.2023.2301443">https://www.tandfonline.com/doi/full/10.1080/09535314.2023.2301443</a></li>
+<li>“Degrowth, energy descent, and ‘low-tech’ living: Potential pathways for increased resilience in times of crisis,” Journal of Cleaner Production, vol. 197, pp. 1840–1848, Oct. 2018, doi: 10.1016/j.jclepro.2016.09.100.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7bf3bff" class="outline-4">
+<h4 id="org7bf3bff"><span class="section-number-4">4.4.2.</span> The Conversation</h4>
+<div class="outline-text-4" id="text-4-4-2">
+<ul class="org-ul">
+<li>K. Shaw, “The case for degrowth: stop the endless expansion and work with what our cities already have,” The Conversation. <a href="http://theconversation.com/the-case-for-degrowth-stop-the-endless-expansion-and-work-with-what-our-cities-already-have-187929">http://theconversation.com/the-case-for-degrowth-stop-the-endless-expansion-and-work-with-what-our-cities-already-have-187929</a> (accessed Aug. 08, 2022).</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org11384e8" class="outline-2">
+<h2 id="org11384e8"><span class="section-number-2">5.</span> Arts</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org4cb0d52" class="outline-3">
+<h3 id="org4cb0d52"><span class="section-number-3">5.1.</span> Misc</h3>
+</div>
+<div id="outline-container-org931291d" class="outline-3">
+<h3 id="org931291d"><span class="section-number-3">5.2.</span> Videos</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>The many social and ecological benefits of a “degrowth” world, (Jan. 31, 2024). Accessed: Jun. 09, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=p0LDGsz97do">https://www.youtube.com/watch?v=p0LDGsz97do</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org4e19ce1" class="outline-2">
+<h2 id="org4e19ce1"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org134891d" class="outline-3">
+<h3 id="org134891d"><span class="section-number-3">6.1.</span> Critical Studies</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>I. Savin and J. van den Bergh, “Reviewing studies of degrowth: Are claims matched by data, methods and policy analysis?,” Ecological Economics, vol. 226, p. 108324, Dec. 2024, doi: 10.1016/j.ecolecon.2024.108324.
+<ul class="org-ul">
+<li>“A response to Savin and van den Bergh: Ceci n’est pas degrowth – Timothée Parrique.” Accessed: Sep. 12, 2024. [Online]. Available: <a href="https://timotheeparrique.com/a-response-to-savin-and-van-den-bergh-ceci-nest-pas-degrowth/">https://timotheeparrique.com/a-response-to-savin-and-van-den-bergh-ceci-nest-pas-degrowth/</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgab2109e" class="outline-2">
+<h2 id="orgab2109e"><span class="section-number-2">7.</span> Misc</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>E. T. Simsek, “ISEE-Degrowth 2025: Building socially just postgrowth futures – linking theory and action,” SustainableCZ. Accessed: Oct. 20, 2025. [Online]. Available: <a href="https://sustainablecz.org/2025/09/30/isee-degrowth-2025-building-socially-just-postgrowth-futures-linking-theory-and-action/">https://sustainablecz.org/2025/09/30/isee-degrowth-2025-building-socially-just-postgrowth-futures-linking-theory-and-action/</a></li>
+
+<li>L. Keyßer, J. Steinberger, and M. Schmelzer, “Economic growth dependencies and imperatives: A review of key theories and their conflicts,” Ecological Economics, vol. 238, p. 108745, Dec. 2025, doi: 10.1016/j.ecolecon.2025.108745.</li>
+
+<li>“Monthly Review | Planning Degrowth: The Necessity, History, and Challenges,” Monthly Review. Accessed: Sep. 08, 2025. [Online]. Available: <a href="https://monthlyreview.org/2023/07/01/planning-degrowth-the-necessity-history-and-challenges/">https://monthlyreview.org/2023/07/01/planning-degrowth-the-necessity-history-and-challenges/</a></li>
+
+<li>“Monthly Review | Ecosocialism and Degrowth,” Monthly Review. Accessed: Sep. 08, 2025. [Online]. Available: <a href="https://monthlyreview.org/2024/06/01/ecosocialism-and-degrowth/">https://monthlyreview.org/2024/06/01/ecosocialism-and-degrowth/</a></li>
+
+<li>Novara Media, Capitalism’s Addiction To Growth Means Civilisational COLLAPSE | Aaron Bastani Meets Jason Hickel, (Aug. 31, 2025). Accessed: Sep. 04, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=bjlqWHXrTak">https://www.youtube.com/watch?v=bjlqWHXrTak</a></li>
+
+<li>“Degrowth Economy: Let’s Address the People and Planetary Crises,” Resilience, Jan. 24, 2022. <a href="https://www.resilience.org/stories/2022-01-24/degrowth-economy-lets-address-the-people-and-planetary-crises/">https://www.resilience.org/stories/2022-01-24/degrowth-economy-lets-address-the-people-and-planetary-crises/</a> (accessed Jan. 26, 2022).</li>
+
+<li>“The limits to growth: eco-socialism or barbarism,” laU, Apr. 29, 2022. <a href="https://la-u.org/the-limits-to-growth-eco-socialism-or-barbarism/">https://la-u.org/the-limits-to-growth-eco-socialism-or-barbarism/</a> (accessed May 06, 2022).</li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://github.com/ourghostorg">OurGhostOrg</a></p>
+<p class="date">Created: 2026-05-19 Tue 18:56</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

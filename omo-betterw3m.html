@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-19 Tue 18:56 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Music For A Better World</title>
+<meta name="author" content="Staff Member(s), [[https://github.com/ourghostorg][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Music For A Better World</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org3dee070">1. English Music</a>
+<ul>
+<li><a href="#orge37224a">1.1. <b>Imagine</b></a></li>
+<li><a href="#org2c38fa0">1.2. Folk</a></li>
+<li><a href="#org34c3317">1.3. Bob Dylan</a></li>
+<li><a href="#org760647e">1.4. Rock</a></li>
+<li><a href="#org3179c40">1.5. USA for Africa</a></li>
+<li><a href="#org16d24db">1.6. Pop</a></li>
+</ul>
+</li>
+<li><a href="#org633b427">2. Music For Peace</a>
+<ul>
+<li><a href="#org810bdd3">2.1. Indian Classical Music, Fusion Music, Misc</a>
+<ul>
+<li><a href="#orgdc50bf5">2.1.1. Ravi Shankar</a></li>
+<li><a href="#org5fc9d13">2.1.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgd9600bb">2.2. Jazz, Fusion Music, Misc</a>
+<ul>
+<li><a href="#org5785600">2.2.1. John Mclaughlin, Misc</a></li>
+</ul>
+</li>
+<li><a href="#org9a30fa8">2.3. English Music</a>
+<ul>
+<li><a href="#org1c29a41">2.3.1. General</a></li>
+<li><a href="#orgea4a49d">2.3.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgb71e257">2.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgf2596de">3. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org3dee070" class="outline-2">
+<h2 id="org3dee070"><span class="section-number-2">1.</span> English Music</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orge37224a" class="outline-3">
+<h3 id="orge37224a"><span class="section-number-3">1.1.</span> <b>Imagine</b></h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>John Lennon, Imagine - John Lennon &amp; The Plastic Ono Band (w The Flux Fiddlers) (Ultimate Mix 2018) - 4K REMASTER, (Dec. 20, 2012). Accessed: Oct. 08, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=VOgFZfRVaww">https://www.youtube.com/watch?v=VOgFZfRVaww</a></li>
+<li>Universal Music India, Imagine (UNICEF: World Version), (Jan. 05, 2015). Accessed: Oct. 08, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=L7IP4UlXvG8">https://www.youtube.com/watch?v=L7IP4UlXvG8</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2c38fa0" class="outline-3">
+<h3 id="org2c38fa0"><span class="section-number-3">1.2.</span> Folk</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>Pete Seeger, <i>We Shall Overcome</i>, (May 19, 2015). Accessed: Oct. 06, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Kfo_W73n0hE">https://www.youtube.com/watch?v=Kfo_W73n0hE</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org34c3317" class="outline-3">
+<h3 id="org34c3317"><span class="section-number-3">1.3.</span> Bob Dylan</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>Bob Dylan, <i>Bob Dylan - Blowin’ in the Wind /(Official Audio)</i>, (Jan. 25, 2019). Accessed: Oct. 06, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=MMFj8uDubsE">https://www.youtube.com/watch?v=MMFj8uDubsE</a></li>
+
+<li>Bob Dylan, <i>Bob Dylan - The Times They Are A-Changin’</i> (Official Audio)/, (Mar. 12, 2019). Accessed: Oct. 06, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=90WD_ats6eE">https://www.youtube.com/watch?v=90WD_ats6eE</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org760647e" class="outline-3">
+<h3 id="org760647e"><span class="section-number-3">1.4.</span> Rock</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>Aerosmith, Aerosmith - <i>Livin’ On The Edge</i> (Official Music Video), (Dec. 25, 2009). Accessed: Oct. 08, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=7nqcL0mjMjw">https://www.youtube.com/watch?v=7nqcL0mjMjw</a></li>
+
+<li>Pink Floyd, <i>On The Turning Away</i>, (Jun. 01, 2018). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=KjGXnSdVwCY">https://www.youtube.com/watch?v=KjGXnSdVwCY</a></li>
+
+<li>John Lennon, Give Peace A Chance. (Ultimate Mix, 2020) - Plastic Ono Band (official music video HD), (Dec. 18, 2016). Accessed: Oct. 08, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=C3_0GqPvr4U">https://www.youtube.com/watch?v=C3_0GqPvr4U</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3179c40" class="outline-3">
+<h3 id="org3179c40"><span class="section-number-3">1.5.</span> USA for Africa</h3>
+<div class="outline-text-3" id="text-1-5">
+<ul class="org-ul">
+<li>U.S.A. for Africa - Topic, We Are The World, (Jun. 23, 2015). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=mIqhl0rH0Wc">https://www.youtube.com/watch?v=mIqhl0rH0Wc</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org16d24db" class="outline-3">
+<h3 id="org16d24db"><span class="section-number-3">1.6.</span> Pop</h3>
+<div class="outline-text-3" id="text-1-6">
+<ul class="org-ul">
+<li>Tracy Chapman, Talkin’ Bout a Revolution, (Apr. 08, 2017). Accessed: Oct. 08, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=721JQZw6Spg">https://www.youtube.com/watch?v=721JQZw6Spg</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Michael Jackson, Michael Jackson - Heal The World (Official Video), (Oct. 03, 2009). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=BWf-eARnf6U">https://www.youtube.com/watch?v=BWf-eARnf6U</a></li>
+<li>Michael Jackson, Michael Jackson - Man In The Mirror (Official Video), (Oct. 03, 2009). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=PivWY9wn5ps">https://www.youtube.com/watch?v=PivWY9wn5ps</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org633b427" class="outline-2">
+<h2 id="org633b427"><span class="section-number-2">2.</span> Music For Peace</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org810bdd3" class="outline-3">
+<h3 id="org810bdd3"><span class="section-number-3">2.1.</span> Indian Classical Music, Fusion Music, Misc</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-orgdc50bf5" class="outline-4">
+<h4 id="orgdc50bf5"><span class="section-number-4">2.1.1.</span> Ravi Shankar</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<ul class="org-ul">
+<li>Ravi Shankar - Topic, <b>Shanti Mantra</b>, (Feb. 09, 2017). Accessed: Apr. 28, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=NBwshaMhoVc">https://www.youtube.com/watch?v=NBwshaMhoVc</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5fc9d13" class="outline-4">
+<h4 id="org5fc9d13"><span class="section-number-4">2.1.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<ul class="org-ul">
+<li>Ustad Amjad Ali Khan - Topic, Raga Yaman (Instrumental), (Jul. 23, 2018). Accessed: Apr. 28, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=yusW12zFP8Y">https://www.youtube.com/watch?v=yusW12zFP8Y</a></li>
+
+<li>Music Today, Raga Shanti Prerna | Pandit Shiv Kumar Sharma | ( Album: Ru-Ba-Ru ) | Music Today, (Mar. 02, 2016). Accessed: Apr. 28, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=gnEJacOHfFE">https://www.youtube.com/watch?v=gnEJacOHfFE</a></li>
+
+<li>Music Today, Shanti | Ganesh  (Album: Spark), (Feb. 26, 2016). Accessed: Apr. 28, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=jT-KMtSWgXE">https://www.youtube.com/watch?v=jT-KMtSWgXE</a></li>
+<li>Music Today, Shanti from Music For Romance - Various Artists (Album: The Garden Of Love), (Dec. 09, 2015). Accessed: Apr. 28, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=BXJA0qD5kxU">https://www.youtube.com/watch?v=BXJA0qD5kxU</a></li>
+<li>Music Today, Shanti | Louis Banks (Album: Music For Romance), (Mar. 09, 2016). Accessed: Apr. 28, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=FusCUlwSAO0">https://www.youtube.com/watch?v=FusCUlwSAO0</a></li>
+
+<li>Music Today, Amazing India - Peace | Audio Jukebox | Instrumental | World Music, (Jul. 28, 2015). Accessed: Apr. 28, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ErZIP2LqW-k">https://www.youtube.com/watch?v=ErZIP2LqW-k</a></li>
+
+<li>Music Today, Shanti Mantra - Various Artists (Album: Positive Mind), (Dec. 02, 2015). Accessed: Apr. 28, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=D8cEl15y7Nw">https://www.youtube.com/watch?v=D8cEl15y7Nw</a></li>
+
+<li>Music Today, Baadha Shanti Mantra | Shankar Mahadevan | ( Album: Mantra Shakti II ) | Music Today, (Mar. 18, 2016). Accessed: Apr. 28, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=bOolBHHIDvs">https://www.youtube.com/watch?v=bOolBHHIDvs</a></li>
+<li>Music Today, Shanti Prapti Mantra | Shankar Mahadevan (Album: Chants For The Soul) | Music Today, (Mar. 10, 2016). Accessed: Apr. 28, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=dVZBSUM5d0Y">https://www.youtube.com/watch?v=dVZBSUM5d0Y</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd9600bb" class="outline-3">
+<h3 id="orgd9600bb"><span class="section-number-3">2.2.</span> Jazz, Fusion Music, Misc</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-org5785600" class="outline-4">
+<h4 id="org5785600"><span class="section-number-4">2.2.1.</span> John Mclaughlin, Misc</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<ul class="org-ul">
+<li><b>Peace One</b> by John Mclaughlin on Apple Music. 1971. Accessed: Jan. 05, 2025. [Online]. Available: <a href="https://music.apple.com/in/song/peace-one/1479057309">https://music.apple.com/in/song/peace-one/1479057309</a></li>
+<li><b>Peace Two</b> by John Mclaughlin on Apple Music. 1971. Accessed: Jan. 05, 2025. [Online]. Available: <a href="https://music.apple.com/in/song/peace-two/1479057310">https://music.apple.com/in/song/peace-two/1479057310</a></li>
+
+<li><b>Peace Piece</b> by John McLaughlin on Apple Music. 1969. Accessed: Jan. 05, 2025. [Online]. Available: <a href="https://music.apple.com/in/song/peace-piece/1443237250">https://music.apple.com/in/song/peace-piece/1443237250</a></li>
+
+<li><b>Peace of Mind</b> by Shakti on Apple Music. 1977. Accessed: Jan. 05, 2025. [Online]. Available: <a href="https://music.apple.com/in/song/peace-of-mind/292664129">https://music.apple.com/in/song/peace-of-mind/292664129</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org9a30fa8" class="outline-3">
+<h3 id="org9a30fa8"><span class="section-number-3">2.3.</span> English Music</h3>
+<div class="outline-text-3" id="text-2-3">
+</div>
+<div id="outline-container-org1c29a41" class="outline-4">
+<h4 id="org1c29a41"><span class="section-number-4">2.3.1.</span> General</h4>
+<div class="outline-text-4" id="text-2-3-1">
+<ul class="org-ul">
+<li>“List of anti-war songs,” Wikipedia. Mar. 25, 2022. Accessed: Mar. 27, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=List_of_anti-war_songs&amp;oldid=1079244965">https://en.wikipedia.org/w/index.php?title=List_of_anti-war_songs&amp;oldid=1079244965</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgea4a49d" class="outline-4">
+<h4 id="orgea4a49d"><span class="section-number-4">2.3.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-3-2">
+<ul class="org-ul">
+<li>johnlennon, <b>Give Peace A Chance</b>. (Ultimate Mix, 2020) - Plastic Ono Band (official music video HD), (Dec. 18, 2016). Accessed: Apr. 28, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=C3_0GqPvr4U">https://www.youtube.com/watch?v=C3_0GqPvr4U</a></li>
+
+<li>“Masters of War,” Wikipedia. Mar. 14, 2022. Accessed: Mar. 27, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Masters_of_War&amp;oldid=1077016020">https://en.wikipedia.org/w/index.php?title=Masters_of_War&amp;oldid=1077016020</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb71e257" class="outline-3">
+<h3 id="orgb71e257"><span class="section-number-3">2.4.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgf2596de" class="outline-2">
+<h2 id="orgf2596de"><span class="section-number-2">3.</span> Misc</h2>
+<div class="outline-text-2" id="text-3">
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://github.com/ourghostorg">OurGhostOrg</a></p>
+<p class="date">Created: 2026-05-19 Tue 18:56</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

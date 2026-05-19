@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-19 Tue 18:56 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ashish Kothari</title>
+<meta name="author" content="Staff Member(s), [[https://github.com/ourghostorg][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Ashish Kothari</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org2a0bd27">1. General</a></li>
+<li><a href="#org1b3d3ef">2. Personal Info</a>
+<ul>
+<li><a href="#org42f6953">2.1. Internet Resources</a>
+<ul>
+<li><a href="#org76cb342">2.1.1. WebSites</a></li>
+<li><a href="#orgf293dfa">2.1.2. X</a></li>
+<li><a href="#org28d41d3">2.1.3. YouTube</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org26da839">3. Works</a>
+<ul>
+<li><a href="#org0909bdd">3.1. Texts</a></li>
+<li><a href="#org0494dab">3.2. Articles, Essays</a>
+<ul>
+<li><a href="#org0a3d5fa">3.2.1. Journals</a></li>
+<li><a href="#org11775da">3.2.2. Chapters, Misc</a></li>
+<li><a href="#org6261dc6">3.2.3. Reports, Misc</a></li>
+<li><a href="#orgbcb9cdd">3.2.4. Scientific American</a></li>
+<li><a href="#org71928b4">3.2.5. Mongabay</a></li>
+<li><a href="#org899037e">3.2.6. Heinrich Böll Stiftung</a></li>
+<li><a href="#org2b30a7a">3.2.7. Topics, Issues</a></li>
+</ul>
+</li>
+<li><a href="#org1654a36">3.3. Presentations, Misc</a></li>
+<li><a href="#org589b22a">3.4. Videos</a></li>
+</ul>
+</li>
+<li><a href="#org902b950">4. Orgs</a>
+<ul>
+<li><a href="#org9536cc0">4.1. Global</a></li>
+<li><a href="#org7c394e1">4.2. India</a></li>
+</ul>
+</li>
+<li><a href="#org79eed43">5. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org2a0bd27" class="outline-2">
+<h2 id="org2a0bd27"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Ashish Kothari,” Wikipedia. Feb. 19, 2022. Accessed: May 20, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Ashish_Kothari&amp;oldid=1072808162">https://en.wikipedia.org/w/index.php?title=Ashish_Kothari&amp;oldid=1072808162</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1b3d3ef" class="outline-2">
+<h2 id="org1b3d3ef"><span class="section-number-2">2.</span> Personal Info</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org42f6953" class="outline-3">
+<h3 id="org42f6953"><span class="section-number-3">2.1.</span> Internet Resources</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org76cb342" class="outline-4">
+<h4 id="org76cb342"><span class="section-number-4">2.1.1.</span> WebSites</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<ul class="org-ul">
+<li>“Ashish Kothari,” Ashish Kothari. Accessed: Jan. 05, 2023. [Online]. Available: <a href="https://ashishkothari.in/">https://ashishkothari.in/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf293dfa" class="outline-4">
+<h4 id="orgf293dfa"><span class="section-number-4">2.1.2.</span> X</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<ul class="org-ul">
+<li>“Ashish Kothari (@chikikothari) / X,” X (formerly Twitter). Accessed: Jun. 07, 2025. [Online]. Available: <a href="https://x.com/chikikothari">https://x.com/chikikothari</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org28d41d3" class="outline-4">
+<h4 id="org28d41d3"><span class="section-number-4">2.1.3.</span> YouTube</h4>
+<div class="outline-text-4" id="text-2-1-3">
+<ul class="org-ul">
+<li>“Ashish Kothari,” YouTube. Accessed: Jun. 07, 2025. [Online]. Available: <a href="https://www.youtube.com/channel/UCgOiTjo_5CvzK9I_1JIHtxw">https://www.youtube.com/channel/UCgOiTjo_5CvzK9I_1JIHtxw</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org26da839" class="outline-2">
+<h2 id="org26da839"><span class="section-number-2">3.</span> Works</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org0909bdd" class="outline-3">
+<h3 id="org0909bdd"><span class="section-number-3">3.1.</span> Texts</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>A. Kothari, A. Salleh, A. Escobar, A. Acosta, and F. Demaria, <b>Pluriverse: A Post-development Dictionary.</b> Tulika Books and Authorsupfront, 2019.
+<ul class="org-ul">
+<li>A. Kothari, A. Salleh, A. Escobar, F. Demaria, and A. Acosta, Pluriverse – A Post–Development Dictionary. New Delhi: Tulika Books, 2019.</li>
+</ul></li>
+<li>A. Shrivastava, <b>Churning the Earth: The Making of Global India.</b> Penguin UK, 2012.
+<ul class="org-ul">
+<li>A. Shrivastava and A. Kothari, Prithvi Manthan, First edition. Rajkamal Prakashan, 2016.</li>
+</ul></li>
+<li>A. Kothari and K. J. Joy, <b>Alternative Futures: India Unshackled.</b> Authorsupfront Publishing Services Private Limited, 2018.
+<ul class="org-ul">
+<li>K. and Joy, Alternative Futures: India Unshackled. AuthorsUpFront, 2017.</li>
+<li>H. Dobhal, “Envisioning a Just and Sustainable Society: Review of Ashish Kothari and K J Joy (eds.). 2017. Alternative Futures: India Unshackled, Authors Upfront: New Delhi,” Ecology, Economy and Society - the INSEE Journal, vol. 01, no. 02, 2018, Accessed: Jun. 07, 2025. [Online]. Available: <a href="https://ideas.repec.org//a/ags/inseej/304015.html">https://ideas.repec.org//a/ags/inseej/304015.html</a></li>
+</ul></li>
+<li>A. Kothari, Birds in Our Lives. Universities Press, 2007.</li>
+<li>A. Kothari, Shero to the Rescue, First Edition. Kalpavriksh, 2015.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0494dab" class="outline-3">
+<h3 id="org0494dab"><span class="section-number-3">3.2.</span> Articles, Essays</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-org0a3d5fa" class="outline-4">
+<h4 id="org0a3d5fa"><span class="section-number-4">3.2.1.</span> Journals</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<ul class="org-ul">
+<li>U. Brand et al., “From planetary to societal boundaries: an argument for collectively defined self-limitation,” Sustainability: Science, Practice and Policy, vol. 17, no. 1, pp. 264–291, Jan. 2021, doi: 10.1080/15487733.2021.1940754.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org11775da" class="outline-4">
+<h4 id="org11775da"><span class="section-number-4">3.2.2.</span> Chapters, Misc</h4>
+<div class="outline-text-4" id="text-3-2-2">
+<ul class="org-ul">
+<li>I. Rodríguez, M. Walter, and L. Temper, Eds., Just Transformations: Grassroots Struggles for Alternative Futures. London ; Las Vegas, NV: Pluto Press, 2023.</li>
+<li>S. Villamayor-Tomas and R. Muradian, Eds., The Barcelona School of Ecological Economics and Political Ecology: A Companion in Honour of Joan Martinez-Alier. Springer, 2023.
+<ul class="org-ul">
+<li>F. Demaria, A. Kothari, A. Salleh, A. Escobar, and A. Acosta, “Post-development: From the Critique of Development to a Pluriverse of Alternatives,” in The Barcelona School of Ecological Economics and Political Ecology: A Companion in Honour of Joan Martinez-Alier, S. Villamayor-Tomas and R. Muradian, Eds., Cham: Springer International Publishing, 2023, pp. 59–69. doi: 10.1007/978-3-031-22566-6<sub>6</sub>.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6261dc6" class="outline-4">
+<h4 id="org6261dc6"><span class="section-number-4">3.2.3.</span> Reports, Misc</h4>
+<div class="outline-text-4" id="text-3-2-3">
+<ul class="org-ul">
+<li>Y. Varoufakis et al., State of Power 2016: Democracy, power and resistance. Transnational Institute, 2016.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbcb9cdd" class="outline-4">
+<h4 id="orgbcb9cdd"><span class="section-number-4">3.2.4.</span> Scientific American</h4>
+<div class="outline-text-4" id="text-3-2-4">
+<ul class="org-ul">
+<li>A. Kothari, “These Alternative Economies Are Inspirations for a Sustainable World,” Scientific American. Accessed: Jul. 11, 2022. [Online]. Available: <a href="https://www.scientificamerican.com/article/these-alternative-economies-are-inspirations-for-a-sustainable-world/">https://www.scientificamerican.com/article/these-alternative-economies-are-inspirations-for-a-sustainable-world/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org71928b4" class="outline-4">
+<h4 id="org71928b4"><span class="section-number-4">3.2.5.</span> Mongabay</h4>
+<div class="outline-text-4" id="text-3-2-5">
+<ul class="org-ul">
+<li>S. G. Warrier, “[Interview] Imagining an alternative future,” Mongabay-India. Accessed: Dec. 31, 2023. [Online]. Available: <a href="https://india.mongabay.com/2018/05/interview-imagining-an-alternative-future/">https://india.mongabay.com/2018/05/interview-imagining-an-alternative-future/</a></li>
+<li>S. Bajpai and A. Kothari, “If all life mattered, what would decision-making look like? (Analysis),” Mongabay Environmental News. Accessed: Jan. 10, 2025. [Online]. Available: <a href="https://news.mongabay.com/2024/10/if-all-life-mattered-what-would-decision-making-look-like-analysis/">https://news.mongabay.com/2024/10/if-all-life-mattered-what-would-decision-making-look-like-analysis/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org899037e" class="outline-4">
+<h4 id="org899037e"><span class="section-number-4">3.2.6.</span> Heinrich Böll Stiftung</h4>
+<div class="outline-text-4" id="text-3-2-6">
+<ul class="org-ul">
+<li>“‘C20 rarely a forum for deep, wide civil society participation in G20’ | Heinrich Böll Stiftung | India Office.” Accessed: Sep. 06, 2023. [Online]. Available: <a href="https://in.boell.org/en/2023/09/02/c20-rarely-forum-deep-wide-civil-society-participation-g20">https://in.boell.org/en/2023/09/02/c20-rarely-forum-deep-wide-civil-society-participation-g20</a></li>
+<li>Heinrich Böll Stiftung New Delhi [@boell<sub>India</sub>], “🌿 Ashish Kothari on Bioregionalism 🌏 Environmentalist @chikikothari explains what bioregionalism is and shares his vision for the South Asia Working Group. 💡How can bioregionalism reshape our approach to sustainability and community? Watch now! For more: @bioregionalism <a href="https://t.co/7fVeXfcI4h">https://t.co/7fVeXfcI4h</a>,” Twitter. Accessed: Jan. 10, 2025. [Online]. Available: <a href="https://x.com/boell_India/status/1876955062007672940">https://x.com/boell_India/status/1876955062007672940</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2b30a7a" class="outline-4">
+<h4 id="org2b30a7a"><span class="section-number-4">3.2.7.</span> Topics, Issues</h4>
+<div class="outline-text-4" id="text-3-2-7">
+</div>
+<ol class="org-ol">
+<li><a id="orgbabd24c"></a>Vikalp Sangam<br />
+<div class="outline-text-5" id="text-3-2-7-1">
+<ul class="org-ul">
+<li>“Vikalp Sangam: a decade of exploration on alternatives in India,” Vikalp Sangam. Accessed: Nov. 16, 2024. [Online]. Available: <a href="https://kafila.online/2024/09/04/vikalp-sangam-a-decade-of-exploration-on-alternatives-in-india-ashish-kothari/">https://kafila.online/2024/09/04/vikalp-sangam-a-decade-of-exploration-on-alternatives-in-india-ashish-kothari/</a></li>
+<li>A. Kothari, “Vikalp Sangam: a decade of alternatives for India,” Meer. Accessed: Sep. 14, 2024. [Online]. Available: <a href="https://www.meer.com/en/82717-vikalp-sangam-a-decade-of-alternatives-for-india">https://www.meer.com/en/82717-vikalp-sangam-a-decade-of-alternatives-for-india</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orge1e400e"></a>Ladakh<br />
+<div class="outline-text-5" id="text-3-2-7-2">
+<ul class="org-ul">
+<li>S. B. &amp; A. Kothari, “The enduring relevance of Ladakh’s Goba tradition,” Frontline. Accessed: Sep. 09, 2023. [Online]. Available: <a href="https://frontline.thehindu.com/the-nation/why-the-age-old-goba-governance-system-in-ladakh-is-relevant-even-today/article67244368.ece">https://frontline.thehindu.com/the-nation/why-the-age-old-goba-governance-system-in-ladakh-is-relevant-even-today/article67244368.ece</a></li>
+<li>“Goba (governance) study presentation generates interest in Ladakh.” Accessed: Jul. 24, 2022. [Online]. Available: <a href="http://ashishkothari51.blogspot.com/2022/07/goba-ladakh-study-presentation.html">http://ashishkothari51.blogspot.com/2022/07/goba-ladakh-study-presentation.html</a></li>
+<li>“Traditional governance and religious harmony in Ladakh: 3 interviews,” Ashish Kothari. Accessed: May 17, 2025. [Online]. Available: <a href="https://ashishkothari.in/traditional-governance-and-religious-harmony-in-ladakh-3-interviews/">https://ashishkothari.in/traditional-governance-and-religious-harmony-in-ladakh-3-interviews/</a></li>
+<li>S. B. &amp; A. Kothari, “‘We have disturbed the spirits of the land’: Ladakh’s Changpas reckon with changing times,” Scroll.in. Accessed: Jun. 09, 2024. [Online]. Available: <a href="https://scroll.in/article/1030010/we-have-disturbed-the-spirits-of-the-land-ladakhs-changpas-reckon-with-changing-times">https://scroll.in/article/1030010/we-have-disturbed-the-spirits-of-the-land-ladakhs-changpas-reckon-with-changing-times</a></li>
+<li>A. Kothari, “Ladakh’s mass agitation heats a cold desert,” Meer. Accessed: Mar. 14, 2024. [Online]. Available: <a href="https://www.meer.com/en/79171-ladakhs-mass-agitation-heats-a-cold-desert">https://www.meer.com/en/79171-ladakhs-mass-agitation-heats-a-cold-desert</a></li>
+<li>A. Kothari, “How Homestays In Zanskar Are Bridging Culture And Conservation,” Outlook Traveller. Accessed: Jan. 27, 2024. [Online]. Available: <a href="https://www.outlooktraveller.com/stay/homestays/how-homestays-in-zanskar-are-bridging-culture-and-conservation">https://www.outlooktraveller.com/stay/homestays/how-homestays-in-zanskar-are-bridging-culture-and-conservation</a></li>
+<li>A. Kothari, “Ladakh, a fragile region, needs autonomy,” The Hindu, Feb. 14, 2023. Accessed: Feb. 15, 2023. [Online]. Available: <a href="https://www.thehindu.com/opinion/op-ed/ladakh-a-fragile-region-needs-autonomy/article66508199.ece">https://www.thehindu.com/opinion/op-ed/ladakh-a-fragile-region-needs-autonomy/article66508199.ece</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org24471c6"></a>SocioPolitical Studies, Law, Misc<br />
+<div class="outline-text-5" id="text-3-2-7-3">
+<ul class="org-ul">
+<li>A. Kothari, “Illusions of elections: super-year 2024,” Meer. Accessed: Feb. 14, 2024. [Online]. Available: <a href="https://www.meer.com/en/78655-illusions-of-elections-super-year-2024">https://www.meer.com/en/78655-illusions-of-elections-super-year-2024</a></li>
+<li>A. Kothari, “The India-Pakistan imbroglio,” Meer. Accessed: Jun. 01, 2025. [Online]. Available: <a href="https://www.meer.com/en/92622-the-india-pakistan-imbroglio">https://www.meer.com/en/92622-the-india-pakistan-imbroglio</a></li>
+<li>A. Kothari, “Sunderlal Bahuguna: Simply Extraordinary,” The Hindu, May 21, 2021. Accessed: Jan. 10, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/national/other-states/sunderlal-bahuguna-simply-extraordinary/article61814951.ece">https://www.thehindu.com/news/national/other-states/sunderlal-bahuguna-simply-extraordinary/article61814951.ece</a></li>
+<li>A. Kothari, “In the supermarket of democracy, choice is an illusion. Is there a real alternative?,” Scroll.in. Accessed: Dec. 08, 2024. [Online]. Available: <a href="https://scroll.in/article/1075836/in-the-supermarket-of-democracy-choice-is-an-illusion-is-there-a-real-alternative">https://scroll.in/article/1075836/in-the-supermarket-of-democracy-choice-is-an-illusion-is-there-a-real-alternative</a></li>
+<li>A. Kothari, “‘Nyay Patra’ vs ‘Modi ki Guarantee’: Free citizens or wards of the state?,” Frontline. Accessed: Apr. 27, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/politics/nyay-patra-modi-ki-guarantee-congress-bjp-manifesto-comparison/article68101333.ece">https://frontline.thehindu.com/politics/nyay-patra-modi-ki-guarantee-congress-bjp-manifesto-comparison/article68101333.ece</a></li>
+<li>“BEEFing up for the Elections.” Accessed: Apr. 08, 2024. [Online]. Available: <a href="http://ashishkothari51.blogspot.com/2024/03/beefing-up-for-elections.html">http://ashishkothari51.blogspot.com/2024/03/beefing-up-for-elections.html</a></li>
+
+<li>A. Kothari, “India at 75 | Stepping back from an ecological abyss,” The Hindu, Aug. 16, 2022. Accessed: Aug. 18, 2022. [Online]. Available: <a href="https://www.thehindu.com/opinion/lead/stepping-back-from-an-ecological-abyss/article65775800.ece">https://www.thehindu.com/opinion/lead/stepping-back-from-an-ecological-abyss/article65775800.ece</a></li>
+<li>A. Kothari, “At 75, is India behaving like a responsible elder?,” Meer. Accessed: Aug. 03, 2022. [Online]. Available: <a href="https://www.meer.com/en/70391-at-75-is-india-behaving-like-a-responsible-elder">https://www.meer.com/en/70391-at-75-is-india-behaving-like-a-responsible-elder</a></li>
+
+<li>A. Kothari, “Living beyond capitalism,” Meer. Accessed: Oct. 18, 2023. [Online]. Available: <a href="https://www.meer.com/en/76457-living-beyond-capitalism">https://www.meer.com/en/76457-living-beyond-capitalism</a></li>
+<li>A. Kothari, “Mohandas Gandhi speaks to Abdullah Öcalan,” Meer. Accessed: Oct. 03, 2023. [Online]. Available: <a href="https://www.meer.com/en/74957-mohandas-gandhi-speaks-to-abdullah-ocalan">https://www.meer.com/en/74957-mohandas-gandhi-speaks-to-abdullah-ocalan</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org4e80431"></a>Religions, Spirituality, Misc<br />
+<div class="outline-text-5" id="text-3-2-7-4">
+<ul class="org-ul">
+<li>A. Kothari, “Should sacredness not be equal?,” Meer. Accessed: Apr. 07, 2023. [Online]. Available: <a href="https://www.meer.com/en/72953-should-sacredness-not-be-equal">https://www.meer.com/en/72953-should-sacredness-not-be-equal</a></li>
+<li>T. Beacon, “The Sacred Ecology of Ahimsa,” The Beacon Webzine. Accessed: Feb. 01, 2023. [Online]. Available: <a href="https://www.thebeacon.in/2023/01/29/the-sacred-ecology-of-ahimsa/">https://www.thebeacon.in/2023/01/29/the-sacred-ecology-of-ahimsa/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org645403c"></a>Misc<br />
+<div class="outline-text-5" id="text-3-2-7-5">
+<ul class="org-ul">
+<li>A. Kothari, “Thirty years of resistance,” Meer. Accessed: Mar. 14, 2025. [Online]. Available: <a href="https://www.meer.com/en/89690-thirty-years-of-resistance">https://www.meer.com/en/89690-thirty-years-of-resistance</a></li>
+<li>A. Kothari, “Regenerating the flow of life,” Meer. Accessed: Mar. 02, 2025. [Online]. Available: <a href="https://www.meer.com/en/88287-regenerating-the-flow-of-life">https://www.meer.com/en/88287-regenerating-the-flow-of-life</a></li>
+<li>A. K. Bajpai Shrishtee, “‘If all life mattered’ by S. Bajpai and A. Kothari,” Local Futures. Accessed: Oct. 31, 2024. [Online]. Available: <a href="https://www.localfutures.org/if-all-life-mattered-what-would-decision-making-look-like/">https://www.localfutures.org/if-all-life-mattered-what-would-decision-making-look-like/</a></li>
+<li>A. Kothari, “Wildlife in a City Pond”, Accessed: Jun. 18, 2024. [Online]. Available: <a href="https://www.academia.edu/8670390/Wildlife_in_a_City_Pond">https://www.academia.edu/8670390/Wildlife_in_a_City_Pond</a></li>
+<li>A. Kothari, “Escalating heat, boiling questions,” Meer. Accessed: Jun. 14, 2024. [Online]. Available: <a href="https://www.meer.com/en/80900-escalating-heat-boiling-questions">https://www.meer.com/en/80900-escalating-heat-boiling-questions</a></li>
+<li>A. K. &amp; S. Bajpai, “Supreme Court’s simplistic view on energy production undercuts its ruling on climate justice,” Scroll.in. Accessed: Jun. 09, 2024. [Online]. Available: <a href="https://scroll.in/article/1067767/supreme-courts-simplistic-view-on-energy-production-undercuts-its-ruling-on-climate-justice">https://scroll.in/article/1067767/supreme-courts-simplistic-view-on-energy-production-undercuts-its-ruling-on-climate-justice</a></li>
+<li>“Youth in Himalaya show how livelihoods and nature conservation can be combined / हिमालय में युवा, आजीविका और प्रकृति संरक्षण को कैसे जोड़ा जा सकता है, बताते हुए.” Accessed: May 31, 2024. [Online]. Available: <a href="http://ashishkothari51.blogspot.com/2024/05/youth-in-himalaya-show-how-livelihoods.html">http://ashishkothari51.blogspot.com/2024/05/youth-in-himalaya-show-how-livelihoods.html</a></li>
+<li>S. Bajpai, J. Crespo, and A. Kothari, “Bioregionalism in Amazonia and South Asia as pathway for healing the Earth,” Culture Hack Labs. Accessed: May 23, 2024. [Online]. Available: <a href="https://www.culturehack.io/issues/post-capitalist-philanthropy/bioregionalism-in-amazonia-and-south-asia-as-pathway-for-healing-the-earth/">https://www.culturehack.io/issues/post-capitalist-philanthropy/bioregionalism-in-amazonia-and-south-asia-as-pathway-for-healing-the-earth/</a></li>
+<li>A. Kothari, “Judicial activism vs. climate crisis,” Meer. Accessed: May 15, 2024. [Online]. Available: <a href="https://www.meer.com/en/80453-judicial-activism-vs-climate-crisis">https://www.meer.com/en/80453-judicial-activism-vs-climate-crisis</a></li>
+<li>A. K. &amp; S. Bajpai, “A half-hearted climate change verdict,” The Hindu, May 06, 2024. Accessed: May 08, 2024. [Online]. Available: <a href="https://www.thehindu.com/opinion/lead/a-half-hearted-climate-change-verdict/article68146535.ece">https://www.thehindu.com/opinion/lead/a-half-hearted-climate-change-verdict/article68146535.ece</a></li>
+<li>Illuminem, “Ashish Kothari.” Accessed: Feb. 19, 2023. [Online]. Available: <a href="https://illuminem.com/illuminemvoicesprofile/a7b12612-b101-41ec-8771-38943869f405">https://illuminem.com/illuminemvoicesprofile/a7b12612-b101-41ec-8771-38943869f405</a></li>
+<li>A. Kothari, “It did not stop the dam, but is it a failure?,” Meer. Accessed: Feb. 14, 2023. [Online]. Available: <a href="https://www.meer.com/en/72111-it-did-not-stop-the-dam-but-is-it-a-failure">https://www.meer.com/en/72111-it-did-not-stop-the-dam-but-is-it-a-failure</a></li>
+<li>A. Kothari, “A clash of worldviews,” Meer. Accessed: Nov. 19, 2022. [Online]. Available: <a href="https://www.meer.com/en/71355-a-clash-of-worldviews">https://www.meer.com/en/71355-a-clash-of-worldviews</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org1654a36" class="outline-3">
+<h3 id="org1654a36"><span class="section-number-3">3.3.</span> Presentations, Misc</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>“Ashish Kothari, Member, kalpavriksh at Kalpavriksh | SlideShare.” Accessed: Aug. 12, 2024. [Online]. Available: <a href="https://www.slideshare.net/AshishKothari6/presentations">https://www.slideshare.net/AshishKothari6/presentations</a></li>
+<li>“Ashish Kothari.” Accessed: Aug. 12, 2024. [Online]. Available: <a href="https://www.slideshare.net/AshishKothari6">https://www.slideshare.net/AshishKothari6</a></li>
+
+<li>“Ashish Kothari, Member, kalpavriksh at Kalpavriksh | SlideShare.” Accessed: Aug. 12, 2024. [Online]. Available: <a href="https://www.slideshare.net/AshishKothari6/presentations">https://www.slideshare.net/AshishKothari6/presentations</a></li>
+<li>“Ecoswaraj: Rights of Nature &amp; the Flower of Transformation,” SlideShare. Accessed: Aug. 12, 2024. [Online]. Available: <a href="https://www.slideshare.net/slideshow/ecoswaraj-rights-of-nature-the-flower-of-transformation/270919081">https://www.slideshare.net/slideshow/ecoswaraj-rights-of-nature-the-flower-of-transformation/270919081</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org589b22a" class="outline-3">
+<h3 id="org589b22a"><span class="section-number-3">3.4.</span> Videos</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li>Ashish Kothari, On homestays, conservation and livelihoods in the transHimalaya - Tanzin Thinlay, Spiti, (Mar. 18, 2024). Accessed: Mar. 21, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=NwGp6tM7BNs">https://www.youtube.com/watch?v=NwGp6tM7BNs</a></li>
+<li>Ashish Kothari, Raju Koranga, homegrown naturalist, (Jul. 25, 2023). Accessed: Jul. 26, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=tlihlQbcdOs">https://www.youtube.com/watch?v=tlihlQbcdOs</a></li>
+<li>Planet: Critical, An Alternative India | Ashish Kothari, (Jun. 21, 2023). Accessed: Jun. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=e1NEfQmh_Vo">https://www.youtube.com/watch?v=e1NEfQmh_Vo</a></li>
+<li>Ashish Kothari, Himalayan food fest, Sarmoli (Munsiari), Uttarakhand हिमालय भोजन मेला, सरमोली (मुनस्यारी), उत्तराखंड, (Jun. 04, 2024). Accessed: Jun. 05, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=AiGmJXE290I">https://www.youtube.com/watch?v=AiGmJXE290I</a></li>
+<li>Ashish Kothari, Mehdi Shah: why Ladakhi youth support movement for Constitutional safeguards, (Apr. 22, 2024). Accessed: Apr. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=iGb3EfjO2AM">https://www.youtube.com/watch?v=iGb3EfjO2AM</a></li>
+<li>Ashish Kothari, Eco-swaraj: Pluriversal Pathways out of Global Crises, (Aug. 19, 2024). Accessed: Aug. 20, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=cSPWZ1eB_5w">https://www.youtube.com/watch?v=cSPWZ1eB_5w</a></li>
+<li>“Auroville Global Fellowship - Presentation of eco swaraj with Ashish Kothari - 11 11 2024 - YouTube.” Accessed: Dec. 25, 2024. [Online]. Available: <a href="https://www.youtube.com/watch?v=M_6uFz-ILhQ">https://www.youtube.com/watch?v=M_6uFz-ILhQ</a></li>
+<li>Ashish Kothari, Shero to the Rescue!, (Aug. 19, 2024). Accessed: Aug. 21, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=KaDaMrUCdoE">https://www.youtube.com/watch?v=KaDaMrUCdoE</a></li>
+<li>Ashish Kothari, T. Stobdan, head Alchi (Ladakh)- local governance  स्तोब्दान, आल्ची (लदाख) गोबा-पारम्परिक स्वशासन, (May 08, 2025). Accessed: May 09, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=XAxVQEpL85w">https://www.youtube.com/watch?v=XAxVQEpL85w</a></li>
+<li>Ashish Kothari, Yusuf, headman in Kargil, on religious harmony  युसु्फ, कारगिल मे नम्बरदार, धार्मिक सद्भावना पे, (May 04, 2025). Accessed: May 08, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=NLuUX2-wgzE">https://www.youtube.com/watch?v=NLuUX2-wgzE</a></li>
+<li>Ashish Kothari, Resistance &amp; Construction-speech, NAPM Convention/संघर्ष व निर्माण-NAPM सम्मेलन मे वक्तव्य 1.3.2025, (Mar. 16, 2025). Accessed: Mar. 19, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=TAVavjiyYa8">https://www.youtube.com/watch?v=TAVavjiyYa8</a></li>
+<li>Ashish Kothari, Traffic - of cars and ants!, (Jul. 28, 2024). Accessed: Jul. 29, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=JrrX8DZQoco">https://www.youtube.com/watch?v=JrrX8DZQoco</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org902b950" class="outline-2">
+<h2 id="org902b950"><span class="section-number-2">4.</span> Orgs</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org9536cc0" class="outline-3">
+<h3 id="org9536cc0"><span class="section-number-3">4.1.</span> Global</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>“Global Tapestry of Alternatives,” Wikipedia. Apr. 15, 2025. Accessed: Jun. 07, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Global_Tapestry_of_Alternatives&amp;oldid=1285740578">https://en.wikipedia.org/w/index.php?title=Global_Tapestry_of_Alternatives&amp;oldid=1285740578</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7c394e1" class="outline-3">
+<h3 id="org7c394e1"><span class="section-number-3">4.2.</span> India</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li><b>“Vikalp Sangam - Alternatives’ Confluence,”</b> Vikalp Sangam. Accessed: Jun. 07, 2025. [Online]. Available: <a href="https://vikalpsangam.org/">https://vikalpsangam.org/</a></li>
+<li>“Kalpavriksh - Wikipedia.” Accessed: Jun. 07, 2025. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Kalpavriksh">https://en.wikipedia.org/wiki/Kalpavriksh</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org79eed43" class="outline-2">
+<h2 id="org79eed43"><span class="section-number-2">5.</span> Misc</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>“When I’m 64! (on eve of birthday).” Accessed: Aug. 15, 2025. [Online]. Available: <a href="http://ashishkothari51.blogspot.com/2025/08/when-im-64-on-eve-of-birthday.html">http://ashishkothari51.blogspot.com/2025/08/when-im-64-on-eve-of-birthday.html</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://github.com/ourghostorg">OurGhostOrg</a></p>
+<p class="date">Created: 2026-05-19 Tue 18:56</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

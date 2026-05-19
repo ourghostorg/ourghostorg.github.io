@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-19 Tue 18:56 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ecological Economics</title>
+<meta name="author" content="Staff Member(s), [[https://github.com/ourghostorg][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Ecological Economics</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgc7f5de0">1. General</a></li>
+<li><a href="#orgf0ce981">2. STEMM</a>
+<ul>
+<li><a href="#org2ca128a">2.1. Advanced Sciences, Misc</a></li>
+<li><a href="#org6af2709">2.2. Systems Sciences, Misc</a>
+<ul>
+<li><a href="#orgeef8d14">2.2.1. Complexity Science</a></li>
+<li><a href="#orga09ff0a">2.2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org7c2e335">2.3. Biological Sciences, Misc</a></li>
+<li><a href="#orga496f63">2.4. Basic Sciences, Misc</a></li>
+<li><a href="#orgd4035ce">2.5. Mathematical, Computational Sciences, Misc</a></li>
+<li><a href="#org2c6958a">2.6. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org43d8325">3. Worldly Matters</a>
+<ul>
+<li><a href="#org19ca89e">3.1. Space and Time</a></li>
+<li><a href="#orgf197dc4">3.2. Space, Earth, Life Sciences, Environment, Health, Misc</a></li>
+<li><a href="#org41e6728">3.3. Religions, Spirituality, Misc</a></li>
+<li><a href="#orgb83fa51">3.4. SocioPolitical Studies, Law, Misc</a>
+<ul>
+<li><a href="#org035c570">3.4.1. Orgs</a></li>
+<li><a href="#orgab69258">3.4.2. People</a></li>
+<li><a href="#org96da5ca">3.4.3. Special Groups</a></li>
+<li><a href="#orgbc04c04">3.4.4. Nation States</a></li>
+</ul>
+</li>
+<li><a href="#org3d9cb73">3.5. Business Studies, Misc</a></li>
+<li><a href="#org60c90a1">3.6. Humanities, Misc</a></li>
+<li><a href="#org8ff25b9">3.7. Security Studies, Misc</a></li>
+<li><a href="#org7e09299">3.8. Communication, Misc</a></li>
+<li><a href="#org016abd0">3.9. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org2958a7f">4. Core</a>
+<ul>
+<li><a href="#orge7e7b2a">4.1. Education</a>
+<ul>
+<li><a href="#orgb9aeccb">4.1.1. Courses</a></li>
+</ul>
+</li>
+<li><a href="#org1a515f0">4.2. Texts</a>
+<ul>
+<li><a href="#orgd578a84">4.2.1. Introductory Texts</a></li>
+<li><a href="#orgbc2fb61">4.2.2. Handbooks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org045a2ab">5. Special Topics</a>
+<ul>
+<li><a href="#org6d99776">5.1. Social Ecological Economics</a></li>
+<li><a href="#orgbe723e0">5.2. Texts</a></li>
+</ul>
+</li>
+<li><a href="#org444cac8">6. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orgc7f5de0" class="outline-2">
+<h2 id="orgc7f5de0"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Ecological economics,” Wikipedia. May 19, 2022. Accessed: Jun. 10, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Ecological_economics&amp;oldid=1088696065">https://en.wikipedia.org/w/index.php?title=Ecological_economics&amp;oldid=1088696065</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf0ce981" class="outline-2">
+<h2 id="orgf0ce981"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org2ca128a" class="outline-3">
+<h3 id="org2ca128a"><span class="section-number-3">2.1.</span> Advanced Sciences, Misc</h3>
+</div>
+<div id="outline-container-org6af2709" class="outline-3">
+<h3 id="org6af2709"><span class="section-number-3">2.2.</span> Systems Sciences, Misc</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-orgeef8d14" class="outline-4">
+<h4 id="orgeef8d14"><span class="section-number-4">2.2.1.</span> Complexity Science</h4>
+</div>
+<div id="outline-container-orga09ff0a" class="outline-4">
+<h4 id="orga09ff0a"><span class="section-number-4">2.2.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-2-2">
+<ul class="org-ul">
+<li>“The Global Economic Ripple Effect Of Climate Change.” Accessed: Sep. 13, 2024. [Online]. Available: <a href="https://csh.ac.at/news/the-global-economic-ripple-effect-of-climate-change/">https://csh.ac.at/news/the-global-economic-ripple-effect-of-climate-change/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org7c2e335" class="outline-3">
+<h3 id="org7c2e335"><span class="section-number-3">2.3.</span> Biological Sciences, Misc</h3>
+</div>
+<div id="outline-container-orga496f63" class="outline-3">
+<h3 id="orga496f63"><span class="section-number-3">2.4.</span> Basic Sciences, Misc</h3>
+</div>
+<div id="outline-container-orgd4035ce" class="outline-3">
+<h3 id="orgd4035ce"><span class="section-number-3">2.5.</span> Mathematical, Computational Sciences, Misc</h3>
+</div>
+<div id="outline-container-org2c6958a" class="outline-3">
+<h3 id="org2c6958a"><span class="section-number-3">2.6.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org43d8325" class="outline-2">
+<h2 id="org43d8325"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org19ca89e" class="outline-3">
+<h3 id="org19ca89e"><span class="section-number-3">3.1.</span> Space and Time</h3>
+</div>
+<div id="outline-container-orgf197dc4" class="outline-3">
+<h3 id="orgf197dc4"><span class="section-number-3">3.2.</span> Space, Earth, Life Sciences, Environment, Health, Misc</h3>
+</div>
+<div id="outline-container-org41e6728" class="outline-3">
+<h3 id="org41e6728"><span class="section-number-3">3.3.</span> Religions, Spirituality, Misc</h3>
+</div>
+<div id="outline-container-orgb83fa51" class="outline-3">
+<h3 id="orgb83fa51"><span class="section-number-3">3.4.</span> SocioPolitical Studies, Law, Misc</h3>
+<div class="outline-text-3" id="text-3-4">
+</div>
+<div id="outline-container-org035c570" class="outline-4">
+<h4 id="org035c570"><span class="section-number-4">3.4.1.</span> Orgs</h4>
+<div class="outline-text-4" id="text-3-4-1">
+<ul class="org-ul">
+<li>“International Society for Ecological Economics,” Wikipedia. Jun. 17, 2021. Accessed: Jun. 10, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=International_Society_for_Ecological_Economics&amp;oldid=1029066256">https://en.wikipedia.org/w/index.php?title=International_Society_for_Ecological_Economics&amp;oldid=1029066256</a></li>
+
+<li>“Beijer Institute.” Accessed: Aug. 21, 2024. [Online]. Available: <a href="https://beijer.kva.se/">https://beijer.kva.se/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgab69258" class="outline-4">
+<h4 id="orgab69258"><span class="section-number-4">3.4.2.</span> People</h4>
+<div class="outline-text-4" id="text-3-4-2">
+</div>
+<ol class="org-ol">
+<li><a id="org67244bf"></a>HD<br />
+<div class="outline-text-5" id="text-3-4-2-1">
+<ul class="org-ul">
+<li>“Herman Daly,” Wikipedia. Dec. 12, 2021. Accessed: Jun. 09, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Herman_Daly&amp;oldid=1059978775">https://en.wikipedia.org/w/index.php?title=Herman_Daly&amp;oldid=1059978775</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgba1a5b2"></a>JMA<br />
+<div class="outline-text-5" id="text-3-4-2-2">
+<ul class="org-ul">
+<li>“Joan Martinez Alier,” Wikipedia. Apr. 09, 2023. Accessed: Apr. 11, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Joan_Martinez_Alier&amp;oldid=1149044440">https://en.wikipedia.org/w/index.php?title=Joan_Martinez_Alier&amp;oldid=1149044440</a></li>
+
+<li>J. Martínez-Alier, Land, Water, Air and Freedom: The Making of World Movements for Environmental Justice. Northampton: Edward Elgar Publishing Ltd, 2023.</li>
+
+<li>S. Villamayor-Tomas and R. Muradian, The Barcelona School of Ecological Economics and Political Ecology: A Companion in Honour of Joan Martinez-Alier. Springer Nature, 2023.
+<ul class="org-ul">
+<li>“The Barcelona School of Ecological Economics and Political Ecology - YouTube.” Accessed: Dec. 01, 2023. [Online]. Available: <a href="https://www.youtube.com/watch?v=IGOq14ac0dU&amp;list=WL&amp;index=3">https://www.youtube.com/watch?v=IGOq14ac0dU&amp;list=WL&amp;index=3</a></li>
+<li>“New book: A tribute to ecological economics scholar Joan Martinez-Alier - YouTube.” Accessed: Dec. 13, 2023. [Online]. Available: <a href="https://www.youtube.com/playlist?list=PLK1vjSCUwqddaT-19aNdCPwsrKcm49Q9Y">https://www.youtube.com/playlist?list=PLK1vjSCUwqddaT-19aNdCPwsrKcm49Q9Y</a></li>
+<li>“Elevator Pitch - YouTube.” Accessed: Dec. 13, 2023. [Online]. Available: <a href="https://www.youtube.com/playlist?list=PLK1vjSCUwqde4iFCeBNCFdNoAVL2PTcfR">https://www.youtube.com/playlist?list=PLK1vjSCUwqde4iFCeBNCFdNoAVL2PTcfR</a></li>
+<li>“Women and Girls in Science - YouTube.” Accessed: Dec. 13, 2023. [Online]. Available: <a href="https://www.youtube.com/playlist?list=PLK1vjSCUwqdeAYUu3mrQfc8PT7FyyHji7">https://www.youtube.com/playlist?list=PLK1vjSCUwqdeAYUu3mrQfc8PT7FyyHji7</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org55d9c3e"></a>PDG<br />
+<ol class="org-ol">
+<li><a id="org212de16"></a>General<br />
+<div class="outline-text-6" id="text-3-4-2-3-1">
+<ul class="org-ul">
+<li>“Partha Dasgupta,” Wikipedia. Mar. 25, 2023. Accessed: Apr. 05, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Partha_Dasgupta&amp;oldid=1146610680">https://en.wikipedia.org/w/index.php?title=Partha_Dasgupta&amp;oldid=1146610680</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Administrator, “Professor Sir Partha Dasgupta,” Feb. 06, 2017. <a href="https://www.econ.cam.ac.uk/people/emeritus/pd10000">https://www.econ.cam.ac.uk/people/emeritus/pd10000</a> (accessed Apr. 05, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="org411ca87"></a>Dasgupta Review<br />
+<ul class="org-ul">
+<li><a id="org9e58770"></a>Critical Studies<br />
+<div class="outline-text-7" id="text-org9e58770">
+<ul class="org-ul">
+<li><b>“Biodiversity is Life – Not an Asset Class: Debunking Biodiversity Credits, the Next Wave of Bio-Imperialism,”</b> Navdanya international. Accessed: Sep. 09, 2024. [Online]. Available: <a href="https://navdanyainternational.org/publications/biodiversity-is-life-not-an-asset-class-debunking-bio-imperialism/">https://navdanyainternational.org/publications/biodiversity-is-life-not-an-asset-class-debunking-bio-imperialism/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgd5f932d"></a>Misc<br />
+<div class="outline-text-7" id="text-orgd5f932d">
+<ul class="org-ul">
+<li>David Attenborough and Venki Ramakrishnan on the Dasgupta Review | The Royal Society, (Feb. 02, 2021). Accessed: Apr. 05, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=e2QDOeKH0DE">https://www.youtube.com/watch?v=e2QDOeKH0DE</a></li>
+<li>“Launch of full report of The Economics of Biodiversity: The Dasgupta Review.” Accessed: Feb. 20, 2024. [Online]. Available: <a href="https://www.cser.ac.uk/news/launch-full-report-economics-biodiversity-dasgupta/">https://www.cser.ac.uk/news/launch-full-report-economics-biodiversity-dasgupta/</a></li>
+<li>“Final Report - The Economics of Biodiversity: The Dasgupta Review,” GOV.UK, Aug. 20, 2021. <a href="https://www.gov.uk/government/publications/final-report-the-economics-of-biodiversity-the-dasgupta-review">https://www.gov.uk/government/publications/final-report-the-economics-of-biodiversity-the-dasgupta-review</a> (accessed Apr. 05, 2023).</li>
+<li>The Economics of Biodiversity: The Dasgupta Review, (Apr. 22, 2021). Accessed: Apr. 05, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=5QQ0KPMYkFc">https://www.youtube.com/watch?v=5QQ0KPMYkFc</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org38dd887"></a>Misc<br />
+<div class="outline-text-6" id="text-3-4-2-3-3">
+<ul class="org-ul">
+<li>“Alexander Skarsgard, Partha Dasgupta and the Answer to Everything | NYT Opinion - YouTube.” <a href="https://www.youtube.com/watch?v=Ggo07G1XB6A">https://www.youtube.com/watch?v=Ggo07G1XB6A</a> (accessed Apr. 05, 2023).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Nature’s Role in Sustainable Economic Development, (Oct. 25, 2011). Accessed: Apr. 05, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=btMxGFYzPGg">https://www.youtube.com/watch?v=btMxGFYzPGg</a></li>
+<li>Ecology in economics, counting nature in, (Nov. 24, 2022). Accessed: Apr. 05, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=lMr8-FZeWnA">https://www.youtube.com/watch?v=lMr8-FZeWnA</a></li>
+
+<li>Sir Partha Dasgupta &amp; Cameron Hepburn in conversation: “The Economics of Biodiversity Review,” (May 06, 2021). Accessed: Apr. 05, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=VHHhtd6mp-w">https://www.youtube.com/watch?v=VHHhtd6mp-w</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orge2c41d1"></a>RBN<br />
+<div class="outline-text-5" id="text-3-4-2-4">
+<ul class="org-ul">
+<li>“Richard B. Norgaard - Wikipedia.” <a href="https://en.wikipedia.org/wiki/Richard_B._Norgaard">https://en.wikipedia.org/wiki/Richard_B._Norgaard</a> (accessed Jun. 16, 2023).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“‘A Communion of Subjects: Law, Environment, and Religion’ with Richard Norgaard - YouTube.” <a href="https://www.youtube.com/watch?v=I8M1UWQqafw">https://www.youtube.com/watch?v=I8M1UWQqafw</a> (accessed Jun. 16, 2023).</li>
+<li>“ERG 22nd Annual Lecture 2016: Richard Norgaard - YouTube.” <a href="https://www.youtube.com/watch?v=OEyoEqO5tPY">https://www.youtube.com/watch?v=OEyoEqO5tPY</a> (accessed Jun. 16, 2023).</li>
+<li>Richard Norgaard: Being An Ecological Economist, (Oct. 27, 2022). Accessed: Jun. 16, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=TfTMMfmkQqo">https://www.youtube.com/watch?v=TfTMMfmkQqo</a></li>
+<li>“Richard Norgaard: Being An Ecological Economist - YouTube.” <a href="https://www.youtube.com/watch?v=TfTMMfmkQqo&amp;list=WL&amp;index=8&amp;t=44s">https://www.youtube.com/watch?v=TfTMMfmkQqo&amp;list=WL&amp;index=8&amp;t=44s</a> (accessed Jun. 19, 2023).</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org96da5ca" class="outline-4">
+<h4 id="org96da5ca"><span class="section-number-4">3.4.3.</span> Special Groups</h4>
+<div class="outline-text-4" id="text-3-4-3">
+</div>
+<ol class="org-ol">
+<li><a id="orge155fb1"></a>Indigenous People<br />
+<div class="outline-text-5" id="text-3-4-3-1">
+<ul class="org-ul">
+<li><b>“What Indigenous Wisdom Can Teach Us About Economics,”</b> Local Futures, Aug. 17, 2020. <a href="https://www.localfutures.org/what-indigenous-wisdom-can-teach-us-about-economics/">https://www.localfutures.org/what-indigenous-wisdom-can-teach-us-about-economics/</a> (accessed Jan. 20, 2022).</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgbc04c04" class="outline-4">
+<h4 id="orgbc04c04"><span class="section-number-4">3.4.4.</span> Nation States</h4>
+<div class="outline-text-4" id="text-3-4-4">
+</div>
+<ol class="org-ol">
+<li><a id="orgf182d81"></a>India<br />
+<div class="outline-text-5" id="text-3-4-4-1">
+<ul class="org-ul">
+<li>“Indian Society for Ecological Economics,” Wikipedia. Jun. 17, 2021. Accessed: Jun. 10, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Indian_Society_for_Ecological_Economics&amp;oldid=1029066564">https://en.wikipedia.org/w/index.php?title=Indian_Society_for_Ecological_Economics&amp;oldid=1029066564</a></li>
+<li>“INSEE | Indian Society for Ecological Economics.” <a href="https://www.ecoinsee.org/">https://www.ecoinsee.org/</a> (accessed Jun. 10, 2022).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Jayanta Bandyopadhyay,” Wikipedia. Mar. 19, 2022. Accessed: Jun. 10, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Jayanta_Bandyopadhyay&amp;oldid=1077975448">https://en.wikipedia.org/w/index.php?title=Jayanta_Bandyopadhyay&amp;oldid=1077975448</a></li>
+
+<li>V. Dayal, A. Duraiappah, and N. Nawn, Ecology, Economy and Society: Essays in Honour of Kanchan Chopra. Springer, 2018.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org3d9cb73" class="outline-3">
+<h3 id="org3d9cb73"><span class="section-number-3">3.5.</span> Business Studies, Misc</h3>
+</div>
+<div id="outline-container-org60c90a1" class="outline-3">
+<h3 id="org60c90a1"><span class="section-number-3">3.6.</span> Humanities, Misc</h3>
+</div>
+<div id="outline-container-org8ff25b9" class="outline-3">
+<h3 id="org8ff25b9"><span class="section-number-3">3.7.</span> Security Studies, Misc</h3>
+</div>
+<div id="outline-container-org7e09299" class="outline-3">
+<h3 id="org7e09299"><span class="section-number-3">3.8.</span> Communication, Misc</h3>
+</div>
+<div id="outline-container-org016abd0" class="outline-3">
+<h3 id="org016abd0"><span class="section-number-3">3.9.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-9">
+<ul class="org-ul">
+<li>“Climate impacts could wipe out profits.” Accessed: Jan. 23, 2025. [Online]. Available: <a href="https://theecologist.org/2025/jan/22/climate-impacts-could-wipe-out-profits">https://theecologist.org/2025/jan/22/climate-impacts-could-wipe-out-profits</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org2958a7f" class="outline-2">
+<h2 id="org2958a7f"><span class="section-number-2">4.</span> Core</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orge7e7b2a" class="outline-3">
+<h3 id="orge7e7b2a"><span class="section-number-3">4.1.</span> Education</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-orgb9aeccb" class="outline-4">
+<h4 id="orgb9aeccb"><span class="section-number-4">4.1.1.</span> Courses</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<ul class="org-ul">
+<li>“Ecological Economics | Rubenstein School of Environment and Natural Resources | The University of Vermont.” Accessed: Aug. 17, 2025. [Online]. Available: <a href="https://www.uvm.edu/rsenr/program/ecological-economics">https://www.uvm.edu/rsenr/program/ecological-economics</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org1a515f0" class="outline-3">
+<h3 id="org1a515f0"><span class="section-number-3">4.2.</span> Texts</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<div id="outline-container-orgd578a84" class="outline-4">
+<h4 id="orgd578a84"><span class="section-number-4">4.2.1.</span> Introductory Texts</h4>
+<div class="outline-text-4" id="text-4-2-1">
+<ul class="org-ul">
+<li>R. Costanza et al., <b>An Introduction to Ecological Economics, Second Edition.</b> CRC Press, 2014.</li>
+<li>H. E. Daly and J. Farley, <b>Ecological Economics, Second Edition: Principles and Applications.</b> Island Press, 2011.</li>
+<li>J. C. Farley, H. E. Daly, and J. D. Erickson, <b>Ecological Economics: A Workbook for Problem-based Learning.</b> Island Press, 2005.</li>
+
+<li>H. Healy, J. Martínez-Alier, L. Temper, M. Walter, and J.-F. Gerber, Ecological Economics from the Ground Up. Routledge, 2013.</li>
+
+<li>J. O. Andersson and R. Eriksson, Elements of Ecological Economics. Routledge, 2010.</li>
+
+<li>M. Common and S. Stagl, Ecological Economics: An Introduction. Cambridge University Press, 2005.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbc2fb61" class="outline-4">
+<h4 id="orgbc2fb61"><span class="section-number-4">4.2.2.</span> Handbooks</h4>
+<div class="outline-text-4" id="text-4-2-2">
+<ul class="org-ul">
+<li>C. L. Spash, Routledge Handbook of Ecological Economics: Nature and Society. Routledge, 2017.</li>
+<li>J. Martínez-Alier and R. Muradian, Handbook of Ecological Economics. Edward Elgar Publishing, 2015.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org045a2ab" class="outline-2">
+<h2 id="org045a2ab"><span class="section-number-2">5.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org6d99776" class="outline-3">
+<h3 id="org6d99776"><span class="section-number-3">5.1.</span> Social Ecological Economics</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>“Manchester University Press - Foundations of social ecological economics,” Manchester University Press. Accessed: Jan. 27, 2024. [Online]. Available: <a href="https://manchesteruniversitypress.co.uk/9781526171481">https://manchesteruniversitypress.co.uk/9781526171481</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbe723e0" class="outline-3">
+<h3 id="orgbe723e0"><span class="section-number-3">5.2.</span> Texts</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>C. A. S. Hall and K. Klitgaard, Energy and the Wealth of Nations: An Introduction to Biophysical Economics, Softcover reprint of the original 2nd ed. 2018 edition. Cham: Springer Nature Switzerland AG, 2018.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org444cac8" class="outline-2">
+<h2 id="org444cac8"><span class="section-number-2">6.</span> Misc</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>“The Serviceberry: An Economy of Abundance – Robin Wall Kimmerer,” Emergence Magazine. Accessed: Jun. 05, 2024. [Online]. Available: <a href="https://emergencemagazine.org/essay/the-serviceberry/">https://emergencemagazine.org/essay/the-serviceberry/</a></li>
+
+<li>D. Wiedenhofer et al., “A systematic review of the evidence on decoupling of GDP, resource use and GHG emissions, part I: bibliometric and conceptual mapping,” Environ. Res. Lett., vol. 15, no. 6, p. 063002, Jun. 2020, doi: 10.1088/1748-9326/ab8429.</li>
+<li>H. Haberl et al., “A systematic review of the evidence on decoupling of GDP, resource use and GHG emissions, part II: synthesizing the insights,” Environ. Res. Lett., vol. 15, no. 6, p. 065003, Jun. 2020, doi: 10.1088/1748-9326/ab842a.</li>
+
+<li>J. B. Foster, Capitalism in the Anthropocene: Ecological Ruin or Ecological Revolution. Monthly Review Press, 2022.</li>
+
+<li>H. Healy, J. Martínez-Alier, L. Temper, M. Walter, and J.-F. Gerber, Eds., Ecological Economics from the Ground Up, 1st edition. London ; New York: Routledge, 2012.</li>
+
+<li>J. D. Erickson, The Progress Illusion: Reclaiming Our Future from the Fairytale of Economics. Island Press, 2022.</li>
+
+<li>H. E. Daly, Beyond Growth: The Economics of Sustainable Development. Beacon Press, 2014.</li>
+
+<li>“Uneconomic growth,” Wikipedia. Aug. 24, 2021. Accessed: Jun. 09, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Uneconomic_growth&amp;oldid=1040478291">https://en.wikipedia.org/w/index.php?title=Uneconomic_growth&amp;oldid=1040478291</a></li>
+
+<li><b>A Good Life For All Within Planetary Boundaries.</b> <a href="https://goodlife.leeds.ac.uk/">https://goodlife.leeds.ac.uk/</a> (accessed Jan. 24, 2021).</li>
+<li>D. O’Neill, <b>“Is it possible for everyone to live a good life within our planet’s limits?,”</b> The Conversation. <a href="http://theconversation.com/is-it-possible-for-everyone-to-live-a-good-life-within-our-planets-limits-91421">http://theconversation.com/is-it-possible-for-everyone-to-live-a-good-life-within-our-planets-limits-91421</a> (accessed Jan. 24, 2021).</li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://github.com/ourghostorg">OurGhostOrg</a></p>
+<p class="date">Created: 2026-05-19 Tue 18:56</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

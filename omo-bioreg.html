@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-19 Tue 18:56 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BioRegionalism</title>
+<meta name="author" content="Staff Member(s), [[https://github.com/ourghostorg][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">BioRegionalism</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org4933dad">1. General</a></li>
+<li><a href="#org038d86a">2. STEMM</a>
+<ul>
+<li><a href="#orga9f1ad4">2.1. Systems Sciences, Misc</a>
+<ul>
+<li><a href="#org1a15291">2.1.1. Complexity Science</a></li>
+<li><a href="#org42bd574">2.1.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org9351021">2.2. Biological Sciences, Misc</a></li>
+<li><a href="#orge1872a1">2.3. Basic Sciences, Misc</a></li>
+<li><a href="#org3bdbf24">2.4. Mathematical, Computational Sciences, Misc</a></li>
+<li><a href="#orga61e4a6">2.5. Advanced Sciences, Misc</a></li>
+<li><a href="#orgf8de0a3">2.6. Technology, Misc</a></li>
+<li><a href="#orgffce197">2.7. Special Topics</a></li>
+<li><a href="#orga3d28b8">2.8. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org57670ef">3. Worldly Matters</a>
+<ul>
+<li><a href="#org90f5a12">3.1. Space and Time</a></li>
+<li><a href="#orgc87c221">3.2. Space, Earth, Life Sciences, Environment, Health, Misc</a></li>
+<li><a href="#org7e3eb55">3.3. Religions, Spirituality, Misc</a></li>
+<li><a href="#org4a35992">3.4. Humanities, Misc</a></li>
+<li><a href="#org20b3a40">3.5. SocioPolitical Studies, Law, Misc</a>
+<ul>
+<li><a href="#org2882510">3.5.1. Orgs</a></li>
+<li><a href="#org848cf9f">3.5.2. Nation States</a></li>
+</ul>
+</li>
+<li><a href="#org3481f8e">3.6. Business Studies, Misc</a>
+<ul>
+<li><a href="#org2175562">3.6.1. Finance</a></li>
+</ul>
+</li>
+<li><a href="#org6bb9b4e">3.7. Security Studies, Misc</a></li>
+<li><a href="#orgcb3295f">3.8. Communication, Misc</a></li>
+<li><a href="#org697d561">3.9. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgb35396d">4. Arts</a>
+<ul>
+<li><a href="#orga938396">4.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgd432396">5. Special Topics</a>
+<ul>
+<li><a href="#org70e007c">5.1. Schumacher X</a></li>
+<li><a href="#org7417aca">5.2. A. Kothari, Misc</a></li>
+<li><a href="#org16da4e3">5.3. BRE</a>
+<ul>
+<li><a href="#orgf6d1744">5.3.1. Misc</a></li>
+<li><a href="#orge0776b3">5.3.2. J. Brewer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org03f5cb1">6. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org4933dad" class="outline-2">
+<h2 id="org4933dad"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Bioregionalism,” Wikipedia. Nov. 21, 2024. Accessed: Dec. 06, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Bioregionalism&amp;oldid=1258772320">https://en.wikipedia.org/w/index.php?title=Bioregionalism&amp;oldid=1258772320</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org038d86a" class="outline-2">
+<h2 id="org038d86a"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orga9f1ad4" class="outline-3">
+<h3 id="orga9f1ad4"><span class="section-number-3">2.1.</span> Systems Sciences, Misc</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org1a15291" class="outline-4">
+<h4 id="org1a15291"><span class="section-number-4">2.1.1.</span> Complexity Science</h4>
+</div>
+<div id="outline-container-org42bd574" class="outline-4">
+<h4 id="org42bd574"><span class="section-number-4">2.1.2.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org9351021" class="outline-3">
+<h3 id="org9351021"><span class="section-number-3">2.2.</span> Biological Sciences, Misc</h3>
+</div>
+<div id="outline-container-orge1872a1" class="outline-3">
+<h3 id="orge1872a1"><span class="section-number-3">2.3.</span> Basic Sciences, Misc</h3>
+</div>
+<div id="outline-container-org3bdbf24" class="outline-3">
+<h3 id="org3bdbf24"><span class="section-number-3">2.4.</span> Mathematical, Computational Sciences, Misc</h3>
+</div>
+<div id="outline-container-orga61e4a6" class="outline-3">
+<h3 id="orga61e4a6"><span class="section-number-3">2.5.</span> Advanced Sciences, Misc</h3>
+</div>
+<div id="outline-container-orgf8de0a3" class="outline-3">
+<h3 id="orgf8de0a3"><span class="section-number-3">2.6.</span> Technology, Misc</h3>
+</div>
+<div id="outline-container-orgffce197" class="outline-3">
+<h3 id="orgffce197"><span class="section-number-3">2.7.</span> Special Topics</h3>
+</div>
+<div id="outline-container-orga3d28b8" class="outline-3">
+<h3 id="orga3d28b8"><span class="section-number-3">2.8.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org57670ef" class="outline-2">
+<h2 id="org57670ef"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org90f5a12" class="outline-3">
+<h3 id="org90f5a12"><span class="section-number-3">3.1.</span> Space and Time</h3>
+</div>
+<div id="outline-container-orgc87c221" class="outline-3">
+<h3 id="orgc87c221"><span class="section-number-3">3.2.</span> Space, Earth, Life Sciences, Environment, Health, Misc</h3>
+</div>
+<div id="outline-container-org7e3eb55" class="outline-3">
+<h3 id="org7e3eb55"><span class="section-number-3">3.3.</span> Religions, Spirituality, Misc</h3>
+</div>
+<div id="outline-container-org4a35992" class="outline-3">
+<h3 id="org4a35992"><span class="section-number-3">3.4.</span> Humanities, Misc</h3>
+</div>
+<div id="outline-container-org20b3a40" class="outline-3">
+<h3 id="org20b3a40"><span class="section-number-3">3.5.</span> SocioPolitical Studies, Law, Misc</h3>
+<div class="outline-text-3" id="text-3-5">
+</div>
+<div id="outline-container-org2882510" class="outline-4">
+<h4 id="org2882510"><span class="section-number-4">3.5.1.</span> Orgs</h4>
+<div class="outline-text-4" id="text-3-5-1">
+<ul class="org-ul">
+<li>“r3.0 | Redesign for Resilience &amp; Regeneration for a green, inclusive and open economie.” Accessed: Dec. 05, 2024. [Online]. Available: <a href="https://www.r3-0.org/">https://www.r3-0.org/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org848cf9f" class="outline-4">
+<h4 id="org848cf9f"><span class="section-number-4">3.5.2.</span> Nation States</h4>
+<div class="outline-text-4" id="text-3-5-2">
+</div>
+<ol class="org-ol">
+<li><a id="orga6cabb8"></a>India<br />
+<div class="outline-text-5" id="text-3-5-2-1">
+<ul class="org-ul">
+<li>BioRegionalism - India: <a href="https://tinyurl.com/59vfw7kz">https://tinyurl.com/59vfw7kz</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org3481f8e" class="outline-3">
+<h3 id="org3481f8e"><span class="section-number-3">3.6.</span> Business Studies, Misc</h3>
+<div class="outline-text-3" id="text-3-6">
+</div>
+<div id="outline-container-org2175562" class="outline-4">
+<h4 id="org2175562"><span class="section-number-4">3.6.1.</span> Finance</h4>
+<div class="outline-text-4" id="text-3-6-1">
+<ul class="org-ul">
+<li>“The BioFi Project: Bioregional Finance for Planetary Regeneration.” Accessed: Jun. 22, 2024. [Online]. Available: <a href="https://www.biofi.earth/">https://www.biofi.earth/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org6bb9b4e" class="outline-3">
+<h3 id="org6bb9b4e"><span class="section-number-3">3.7.</span> Security Studies, Misc</h3>
+</div>
+<div id="outline-container-orgcb3295f" class="outline-3">
+<h3 id="orgcb3295f"><span class="section-number-3">3.8.</span> Communication, Misc</h3>
+</div>
+<div id="outline-container-org697d561" class="outline-3">
+<h3 id="org697d561"><span class="section-number-3">3.9.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-9">
+<ul class="org-ul">
+<li>“Bioregional Pando Funding Ecosystem Meets the Global Moment.” Accessed: Sep. 09, 2025. [Online]. Available: <a href="https://www.bioregionalearth.org/blog/bioregional-pando">https://www.bioregionalearth.org/blog/bioregional-pando</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb35396d" class="outline-2">
+<h2 id="orgb35396d"><span class="section-number-2">4.</span> Arts</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orga938396" class="outline-3">
+<h3 id="orga938396"><span class="section-number-3">4.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgd432396" class="outline-2">
+<h2 id="orgd432396"><span class="section-number-2">5.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org70e007c" class="outline-3">
+<h3 id="org70e007c"><span class="section-number-3">5.1.</span> Schumacher X</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>T. S. C. Staff, “Bioregionalism, Tribal Sovereignty, and Regional Banking,” Schumacher Center for a New Economics. Accessed: May 19, 2024. [Online]. Available: <a href="https://centerforneweconomics.org/newsletters/bioregionalism-tribal-sovereignty-and-regional-banking/">https://centerforneweconomics.org/newsletters/bioregionalism-tribal-sovereignty-and-regional-banking/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7417aca" class="outline-3">
+<h3 id="org7417aca"><span class="section-number-3">5.2.</span> A. Kothari, Misc</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>“Tides of Thought: Integrating Science and Spirit in Marine Bioregionalism,” Radical Ecological Democracy. Accessed: Sep. 10, 2024. [Online]. Available: <a href="https://radicalecologicaldemocracy.org/tides-of-thought-integrating-science-and-spirit-in-marine-bioregionalism/">https://radicalecologicaldemocracy.org/tides-of-thought-integrating-science-and-spirit-in-marine-bioregionalism/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org16da4e3" class="outline-3">
+<h3 id="org16da4e3"><span class="section-number-3">5.3.</span> BRE</h3>
+<div class="outline-text-3" id="text-5-3">
+</div>
+<div id="outline-container-orgf6d1744" class="outline-4">
+<h4 id="orgf6d1744"><span class="section-number-4">5.3.1.</span> Misc</h4>
+<div class="outline-text-4" id="text-5-3-1">
+<ul class="org-ul">
+<li>“The Emergence of the Bioregional Movement: Remapping Mother Earth as Bioregions.” Accessed: Aug. 06, 2025. [Online]. Available: <a href="https://www.bioregionalearth.org/blog/bioregional-movement">https://www.bioregionalearth.org/blog/bioregional-movement</a></li>
+<li>“Walking the Land in Tarn-et-Garonne, France.” Accessed: Jul. 12, 2025. [Online]. Available: <a href="https://www.bioregionalearth.org/blog/tarn-et-garonne">https://www.bioregionalearth.org/blog/tarn-et-garonne</a></li>
+<li>“A Learning Journey for Organizing Bioregions.” Accessed: Jan. 31, 2025. [Online]. Available: <a href="https://www.bioregionalearth.org/explore/organizing-bioregions-ds">https://www.bioregionalearth.org/explore/organizing-bioregions-ds</a></li>
+<li>“Design Immersions for Bioregional Regeneration.” Accessed: May 30, 2025. [Online]. Available: <a href="https://www.bioregionalearth.org/blog/design-immersions">https://www.bioregionalearth.org/blog/design-immersions</a></li>
+<li>“Legacy Project.” Accessed: May 16, 2024. [Online]. Available: <a href="https://legacyproject.org/">https://legacyproject.org/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge0776b3" class="outline-4">
+<h4 id="orge0776b3"><span class="section-number-4">5.3.2.</span> J. Brewer</h4>
+<div class="outline-text-4" id="text-5-3-2">
+</div>
+<ol class="org-ol">
+<li><a id="org2ce9079"></a>From Joe Brewer's Book<br />
+<div class="outline-text-5" id="text-5-3-2-1">
+<ul class="org-ul">
+<li>D. Abram, Becoming Animal. New York (N.Y.): Vintage, 2011.</li>
+<li>D. Abram, The Spell of the Sensuous: Perception and Language in a More-Than-Human World. New York: Vintage Books, 1997.</li>
+
+<li>M. Q. Patton, Blue Marble Evaluation: Premises and Principles, Illustrated edition. The Guilford Press, 2019.</li>
+
+<li>C. Glotfelty and E. Quesnel, Eds., The Biosphere and the Bioregion: Essential Writings of Peter Berg, 1st edition. London ; New York: Routledge, 2014.</li>
+
+<li>W. R. Catton, Overshoot: The Ecological Basis of Revolutionary Change. University of Illinois Press, 1980.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>C. Chavez, AN Organizer’s Tale: Speeches (Penguin Classics) [Paperback] Chavez, Cesar and Stavans, Ilan. London: Penguin Classics, 2008.</li>
+<li>M. Pawel, The Crusades of Cesar Chavez: A Biography, 1st edition. Bloomsbury Press, 2014.</li>
+</ul>
+</div>
+</li>
+<li><a id="org3a69bdf"></a>Misc<br />
+<div class="outline-text-5" id="text-5-3-2-2">
+<ul class="org-ul">
+<li>J. Brewer, “Guide Us Into the Bioregional Future,” Medium. Accessed: Jan. 30, 2025. [Online]. Available: <a href="https://medium.com/@joe_brewer/guide-us-into-the-bioregional-future-a771d04cbacc">https://medium.com/@joe_brewer/guide-us-into-the-bioregional-future-a771d04cbacc</a></li>
+<li>J. Brewer, “The Survivors Will Be Bioregional,” Medium. Accessed: Jan. 25, 2025. [Online]. Available: <a href="https://medium.com/@joe_brewer/the-survivors-will-be-bioregional-ad5f2187f4a6">https://medium.com/@joe_brewer/the-survivors-will-be-bioregional-ad5f2187f4a6</a></li>
+<li>Joe Brewer, Design School Vision for 2024, (Dec. 30, 2023). Accessed: Dec. 19, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=djTrSCzmnnU">https://www.youtube.com/watch?v=djTrSCzmnnU</a></li>
+<li>“The Design Pathway for Regenerating Earth.” Accessed: Nov. 28, 2024. [Online]. Available: <a href="https://www.bioregionalearth.org/pathway/design-pathway">https://www.bioregionalearth.org/pathway/design-pathway</a></li>
+<li>J. Brewer, “Bioregional Weaving in Cali, Colombia,” Medium. Accessed: May 21, 2024. [Online]. Available: <a href="https://medium.com/@joe_brewer/bioregional-weaving-in-cali-colombia-dc256493b8b7">https://medium.com/@joe_brewer/bioregional-weaving-in-cali-colombia-dc256493b8b7</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org03f5cb1" class="outline-2">
+<h2 id="org03f5cb1"><span class="section-number-2">6.</span> Misc</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>D. Lerch, “Nourishing a Bioregional Economy,” resilience. Accessed: Feb. 14, 2026. [Online]. Available: <a href="https://www.resilience.org/stories/2025-12-10/nourishing-a-bioregional-economy/">https://www.resilience.org/stories/2025-12-10/nourishing-a-bioregional-economy/</a></li>
+
+<li>Joe Brewer, Design School Vision for 2026, (Dec. 31, 2025). Accessed: Jan. 11, 2026. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=1-oC-YPJjiQ">https://www.youtube.com/watch?v=1-oC-YPJjiQ</a></li>
+
+<li>J. Brewer, “A Learning Ecosystem for Territorial Regeneration,” Medium. Accessed: Oct. 21, 2025. [Online]. Available: <a href="https://medium.com/@joe_brewer/a-learning-ecosystem-for-territorial-regeneration-c320c82848bb">https://medium.com/@joe_brewer/a-learning-ecosystem-for-territorial-regeneration-c320c82848bb</a></li>
+
+<li>J. Brewer, “A Framework for Large-Scale Regeneration in the Northern Andes,” Medium. Accessed: Sep. 19, 2025. [Online]. Available: <a href="https://medium.com/@joe_brewer/a-framework-for-large-scale-regeneration-in-the-northern-andes-9eda1d387be8">https://medium.com/@joe_brewer/a-framework-for-large-scale-regeneration-in-the-northern-andes-9eda1d387be8</a></li>
+
+<li>Joe Brewer, Continuing on the Path to Regenerate the Earth (After the Learning Journey), (Sep. 02, 2025). Accessed: Sep. 03, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=FbYKMdxUwQk">https://www.youtube.com/watch?v=FbYKMdxUwQk</a></li>
+
+<li>Z. Gaudi, “Bioregional Festival 2025,” Alpa. Accessed: Jun. 14, 2025. [Online]. Available: <a href="https://alpa.land/bioregional-festival-2025/">https://alpa.land/bioregional-festival-2025/</a></li>
+
+<li>Cory, “Regenerate Cascadia Update 4.3.25,” Regenerate Cascadia. Accessed: Apr. 11, 2025. [Online]. Available: <a href="https://regeneratecascadia.org/regenerate-cascadia-update-4-3-25/">https://regeneratecascadia.org/regenerate-cascadia-update-4-3-25/</a></li>
+
+<li>“The Mycelial Art of Soft Rebellion,” Kosmos Journal. Accessed: Mar. 30, 2025. [Online]. Available: <a href="https://www.kosmosjournal.org/kj_article/the-mycelial-art-of-soft-rebellion/">https://www.kosmosjournal.org/kj_article/the-mycelial-art-of-soft-rebellion/</a></li>
+
+<li>“What Works: The Business of a Healthy Bioregion,” The Tyee. Accessed: Mar. 20, 2025. [Online]. Available: <a href="https://thetyee.ca/WhatWorks/About/">https://thetyee.ca/WhatWorks/About/</a></li>
+
+<li>“DS4RE 2025 Cascadia Cohort Registration: How to Organize Your Bioregion,” Regenerate Cascadia. Accessed: Mar. 04, 2025. [Online]. Available: <a href="https://regeneratecascadia.org/2025cascadiacohort/">https://regeneratecascadia.org/2025cascadiacohort/</a></li>
+
+<li>“Contested Terrain,” Future Observatory Journal. Accessed: May 31, 2024. [Online]. Available: <a href="https://fojournal.org/essay/contested-terrain/">https://fojournal.org/essay/contested-terrain/</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://github.com/ourghostorg">OurGhostOrg</a></p>
+<p class="date">Created: 2026-05-19 Tue 18:56</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
