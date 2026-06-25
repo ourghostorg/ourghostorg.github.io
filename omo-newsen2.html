@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-06-25 Thu 17:03 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>STEMM, Misc - Misc English News Resources</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">STEMM, Misc - Misc English News Resources</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org19e0ab0">1. General</a>
+<ul>
+<li><a href="#org323f648">1.1. Elite Organizations</a></li>
+<li><a href="#orge2f11bd">1.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org8c7a933">2. Core</a>
+<ul>
+<li><a href="#orgcbbe29d">2.1. Mathematics, Computer Science and Engineering</a>
+<ul>
+<li><a href="#org2b0f8ec">2.1.1. Mathematics</a></li>
+<li><a href="#orgd8df08f">2.1.2. Computer Science and Engineering</a></li>
+</ul>
+</li>
+<li><a href="#orga047b5e">2.2. Basic STEMM</a>
+<ul>
+<li><a href="#org16c963f">2.2.1. Physics</a></li>
+<li><a href="#orgc4a4d18">2.2.2. Chemistry</a></li>
+<li><a href="#orgf6b4e40">2.2.3. Biology</a></li>
+</ul>
+</li>
+<li><a href="#org13f0540">2.3. Advanced STEMM</a>
+<ul>
+<li><a href="#orgffe9cb5">2.3.1. Nano Science &amp; Technology</a></li>
+<li><a href="#org3bfd92d">2.3.2. Quantum Computing</a></li>
+<li><a href="#org4de6ad9">2.3.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org9560225">2.4. Orgs</a>
+<ul>
+<li><a href="#orgd540e48">2.4.1. Heidelberg Laureate Forum</a></li>
+<li><a href="#org45b6348">2.4.2. Simons Foundation</a></li>
+<li><a href="#orgd6b340c">2.4.3. London Mathematical Laboratory</a></li>
+</ul>
+</li>
+<li><a href="#org93b68d7">2.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgbf6c8cd">3. Special Topics</a>
+<ul>
+<li><a href="#org6f8c515">3.1. India</a>
+<ul>
+<li><a href="#org14bfda0">3.1.1. General</a></li>
+<li><a href="#orgec308a7">3.1.2. Mathematics, Misc</a></li>
+<li><a href="#orgc115389">3.1.3. Computer Science and Engineering</a></li>
+<li><a href="#orgcdb1576">3.1.4. Special Topics</a></li>
+<li><a href="#orgda233f5">3.1.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org79aec64">3.2. Popular Resources</a></li>
+</ul>
+</li>
+<li><a href="#org0ebf47f">4. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org19e0ab0" class="outline-2">
+<h2 id="org19e0ab0"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org323f648" class="outline-3">
+<h3 id="org323f648"><span class="section-number-3">1.1.</span> Elite Organizations</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li><b>“News and resources | Royal Society.”</b> Accessed: May 20, 2026. [Online]. Available: <a href="https://royalsociety.org/news-resources/">https://royalsociety.org/news-resources/</a></li>
+<li>“Current,” International Science Council. Accessed: May 20, 2026. [Online]. Available: <a href="https://council.science/current/">https://council.science/current/</a></li>
+<li><b>“Nature,” Nature.</b> Accessed: May 20, 2026. [Online]. Available: <a href="https://www.nature.com/nature">https://www.nature.com/nature</a></li>
+<li><b>“Science,” AAAS.</b> Accessed: May 20, 2026. [Online]. Available: <a href="https://www.science.org/">https://www.science.org/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge2f11bd" class="outline-3">
+<h3 id="orge2f11bd"><span class="section-number-3">1.2.</span> Misc</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li><b>“Welcome to Appropedia,” Appropedia, the sustainability wiki.</b> Accessed: May 20, 2026. [Online]. Available: <a href="https://www.appropedia.org/Welcome_to_Appropedia">https://www.appropedia.org/Welcome_to_Appropedia</a></li>
+<li>“Blogs,” PLOS. Accessed: May 20, 2026. [Online]. Available: <a href="https://plos.org/blogs/">https://plos.org/blogs/</a></li>
+<li>“Phys.org - News and Articles on Science and Technology.” Accessed: May 20, 2026. [Online]. Available: <a href="https://phys.org/">https://phys.org/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org8c7a933" class="outline-2">
+<h2 id="org8c7a933"><span class="section-number-2">2.</span> Core</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgcbbe29d" class="outline-3">
+<h3 id="orgcbbe29d"><span class="section-number-3">2.1.</span> Mathematics, Computer Science and Engineering</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org2b0f8ec" class="outline-4">
+<h4 id="org2b0f8ec"><span class="section-number-4">2.1.1.</span> Mathematics</h4>
+<div class="outline-text-4" id="text-2-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org924f103"></a>International Mathematical Union<br />
+<div class="outline-text-5" id="text-2-1-1-1">
+<ul class="org-ul">
+<li>“IMU News - Official Newsletter of the International Mathematical Union.” Accessed: May 21, 2026. [Online]. Available: <a href="https://www.mathunion.org/organization/imu-news">https://www.mathunion.org/organization/imu-news</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgffd569c"></a>The Fields Institute for Research in Mathematical Sciences<br />
+<div class="outline-text-5" id="text-2-1-1-2">
+<ul class="org-ul">
+<li>“News and Announcements,” Fields Institute for Research in Mathematical Sciences. Accessed: Jan. 29, 2024. [Online]. Available: <a href="http://www.fields.utoronto.ca/news/news-and-announcements">http://www.fields.utoronto.ca/news/news-and-announcements</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org7fd00aa"></a>Abel Prize<br />
+<div class="outline-text-5" id="text-2-1-1-3">
+<ul class="org-ul">
+<li>“Press room for the 2026 Abel Prize laureate | The Abel Prize.” Accessed: May 21, 2026. [Online]. Available: <a href="https://abelprize.no/page/press-room-2026-abel-prize-laureate">https://abelprize.no/page/press-room-2026-abel-prize-laureate</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf0a9f2a"></a>Clay Mathematics Institute<br />
+<div class="outline-text-5" id="text-2-1-1-4">
+<ul class="org-ul">
+<li>“News Archive,” Clay Mathematics Institute. Accessed: Jan. 29, 2024. [Online]. Available: <a href="https://www.claymath.org/news/">https://www.claymath.org/news/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org2718284"></a>Simons Laufer Mathematical Sciences Institute<br />
+<div class="outline-text-5" id="text-2-1-1-5">
+<ul class="org-ul">
+<li>“Newsletter Archive - SLMath.” Accessed: Jan. 29, 2024. [Online]. Available: <a href="https://www.slmath.org/newsletter-archive">https://www.slmath.org/newsletter-archive</a></li>
+<li>“SLMath in the Media - SLMath.” Accessed: Jan. 29, 2024. [Online]. Available: <a href="https://www.slmath.org/media">https://www.slmath.org/media</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orga242b44"></a>Simons Foundation<br />
+<div class="outline-text-5" id="text-2-1-1-6">
+<ul class="org-ul">
+<li>“Mathematics &amp; Physical Sciences,” Simons Foundation. Accessed: May 21, 2026. [Online]. Available: <a href="https://www.simonsfoundation.org/mathematics-physical-sciences/">https://www.simonsfoundation.org/mathematics-physical-sciences/</a></li>
+<li>“News,” Simons Foundation. Accessed: May 21, 2026. [Online]. Available: <a href="https://www.simonsfoundation.org/mathematics-physical-sciences/news/">https://www.simonsfoundation.org/mathematics-physical-sciences/news/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org067f0d7"></a>European Mathematical Society<br />
+<div class="outline-text-5" id="text-2-1-1-7">
+<ul class="org-ul">
+<li>“EMS | News.” Accessed: Jan. 31, 2024. [Online]. Available: <a href="https://euromathsoc.org/news">https://euromathsoc.org/news</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org0772269"></a>Mathematical Association of America<br />
+<div class="outline-text-5" id="text-2-1-1-8">
+<ul class="org-ul">
+<li>“MATH VALUES,” MATH VALUES. Accessed: Jun. 27, 2024. [Online]. Available: <a href="https://www.mathvalues.org">https://www.mathvalues.org</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org5d448e1"></a>Society for Industrial and Applied Mathematics<br />
+<div class="outline-text-5" id="text-2-1-1-9">
+<ul class="org-ul">
+<li>“SIAM News &gt; Current Issue.” Accessed: Jun. 27, 2024. [Online]. Available: <a href="https://sinews.siam.org/Current-Issue">https://sinews.siam.org/Current-Issue</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org0f5d751"></a>CNRS<br />
+<div class="outline-text-5" id="text-2-1-1-10">
+<ul class="org-ul">
+<li>“News | CNRS Mathématiques.” Accessed: May 21, 2026. [Online]. Available: <a href="https://www.insmi.cnrs.fr/en/news-list">https://www.insmi.cnrs.fr/en/news-list</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org2bcceed"></a>PIMS<br />
+<div class="outline-text-5" id="text-2-1-1-11">
+<ul class="org-ul">
+<li>“News &amp; Updates | PIMS - Pacific Institute for the Mathematical Sciences.” Accessed: May 21, 2026. [Online]. Available: <a href="https://www.pims.math.ca/news">https://www.pims.math.ca/news</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org2ffa795"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="orge04642e"></a>Terry Tao<br />
+<div class="outline-text-6" id="text-2-1-1-12-1">
+<ul class="org-ul">
+<li><b>“What’s new,” What’s new.</b> Accessed: May 20, 2026. [Online]. Available: <a href="https://terrytao.wordpress.com/">https://terrytao.wordpress.com/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org73c07e9"></a>India<br />
+<ul class="org-ul">
+<li><a id="orgf7fd733"></a>General<br /></li>
+<li><a id="org2e8a589"></a>Universities, Misc<br />
+<ul class="org-ul">
+<li><a id="orgea848bd"></a>Elite Universities, Misc<br />
+<div class="outline-text-8" id="text-orgea848bd">
+<ul class="org-ul">
+<li><b>“News: Mathematics@IISc.”</b> Accessed: May 21, 2026. [Online]. Available: <a href="https://math.iisc.ac.in/news.html">https://math.iisc.ac.in/news.html</a></li>
+<li><b>“Tata Institute of Fundamental Research | TIFR.”</b> <a href="https://www.tifr.res.in/portal/mathematics.php">https://www.tifr.res.in/portal/mathematics.php</a> (accessed Jul. 31, 2023).
+<ul class="org-ul">
+<li>“TIFR Centre For Applicable Mathematics — TIFR CAM Bangalore.” <a href="https://www.math.tifrbng.res.in/">https://www.math.tifrbng.res.in/</a> (accessed Jul. 31, 2023).</li>
+<li>“www.math.tifr.res.in.” <a href="http://www.math.tifr.res.in/">http://www.math.tifr.res.in/</a> (accessed Jul. 31, 2023).</li>
+</ul></li>
+
+<li><b>“Lodha Mathematical Sciences Institute (LMSI): Advancing Research &amp; Innovation in Math.”</b> Accessed: May 21, 2026. [Online]. Available: <a href="https://lmsi.org/">https://lmsi.org/</a>
+<ul class="org-ul">
+<li>“Newsroom - Lodha Mathematical Sciences Institute (LMSI).” Accessed: May 21, 2026. [Online]. Available: <a href="https://lmsi.org/newsroom">https://lmsi.org/newsroom</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orgce6fc6c"></a>Misc<br />
+<div class="outline-text-8" id="text-orgce6fc6c">
+<ul class="org-ul">
+<li>“Chennai Mathematical Institute.” <a href="https://www.cmi.ac.in//">https://www.cmi.ac.in//</a> (accessed Jul. 31, 2023).</li>
+<li>“Mathematics | The Institute of Mathematical Sciences.” Accessed: May 21, 2026. [Online]. Available: <a href="https://www.imsc.res.in/mathematics">https://www.imsc.res.in/mathematics</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org98d7219"></a>Magazines<br />
+<div class="outline-text-7" id="text-org98d7219">
+<ul class="org-ul">
+<li>“Bhāvanā – The mathematics magazine &lt;br/&gt;A publication of the Bhavana Trust.” Accessed: May 21, 2026. [Online]. Available: <a href="https://bhavana.org.in/">https://bhavana.org.in/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org7906979"></a>Misc<br /></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org658aa73"></a>Misc<br />
+<div class="outline-text-5" id="text-2-1-1-13">
+<ul class="org-ul">
+<li>“Mathematics News - Math News, Mathematical Sciences.” Accessed: Jun. 27, 2024. [Online]. Available: <a href="https://phys.org/science-news/mathematics/">https://phys.org/science-news/mathematics/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgd8df08f" class="outline-4">
+<h4 id="orgd8df08f"><span class="section-number-4">2.1.2.</span> Computer Science and Engineering</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-newsencse.html">Computer Science and Engineering, Information, Communication Technology, Misc - Misc English News Resources</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orga047b5e" class="outline-3">
+<h3 id="orga047b5e"><span class="section-number-3">2.2.</span> Basic STEMM</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-org16c963f" class="outline-4">
+<h4 id="org16c963f"><span class="section-number-4">2.2.1.</span> Physics</h4>
+<div class="outline-text-4" id="text-2-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="org35ee75a"></a>Institute Of Physics<br />
+<div class="outline-text-5" id="text-2-2-1-1">
+<ul class="org-ul">
+<li>“IOPscience.” Accessed: Jan. 29, 2024. [Online]. Available: <a href="https://iopscience.iop.org/">https://iopscience.iop.org/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orga052991"></a>Bulletin of the Atomic Scientists<br />
+<div class="outline-text-5" id="text-2-2-1-2">
+<ul class="org-ul">
+<li>“Bulletin of the Atomic Scientists,” Bulletin of the Atomic Scientists. Accessed: Jan. 29, 2024. [Online]. Available: <a href="https://thebulletin.org/">https://thebulletin.org/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org225da0a"></a>Physics World<br />
+<div class="outline-text-5" id="text-2-2-1-3">
+<ul class="org-ul">
+<li>“Home,” Physics World. Accessed: Jan. 29, 2024. [Online]. Available: <a href="https://physicsworld.com/">https://physicsworld.com/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org0eb8c5d"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgc4a4d18" class="outline-4">
+<h4 id="orgc4a4d18"><span class="section-number-4">2.2.2.</span> Chemistry</h4>
+<div class="outline-text-4" id="text-2-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgf69f7bc"></a>General<br /></li>
+<li><a id="orgbf83764"></a>Chemistry World<br />
+<div class="outline-text-5" id="text-2-2-2-2">
+<ul class="org-ul">
+<li>“Chemistry news, research and opinions,” Chemistry World. Accessed: Jan. 29, 2024. [Online]. Available: <a href="https://www.chemistryworld.com">https://www.chemistryworld.com</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org571db32"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="org27586a2"></a>Chemicals Of Concern<br />
+<div class="outline-text-6" id="text-2-2-2-3-1">
+<ul class="org-ul">
+<li>“Recent Posts,” Beyond Pesticides Daily News Blog. Accessed: May 20, 2026. [Online]. Available: <a href="https://beyondpesticides.org/dailynewsblog/">https://beyondpesticides.org/dailynewsblog/</a></li>
+<li>“Home U.S. Right to Know,” U.S. Right to Know. Accessed: May 20, 2026. [Online]. Available: <a href="https://usrtk.org/">https://usrtk.org/</a></li>
+<li>oca<sub>admin</sub>, “Home,” Organic Consumers. Accessed: May 20, 2026. [Online]. Available: <a href="https://organicconsumers.org/">https://organicconsumers.org/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org89f1f28"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgf6b4e40" class="outline-4">
+<h4 id="orgf6b4e40"><span class="section-number-4">2.2.3.</span> Biology</h4>
+<div class="outline-text-4" id="text-2-2-3">
+<ul class="org-ul">
+<li>“News,” MIT Department of Biology. Accessed: Feb. 02, 2024. [Online]. Available: <a href="https://biology.mit.edu/news/">https://biology.mit.edu/news/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org13f0540" class="outline-3">
+<h3 id="org13f0540"><span class="section-number-3">2.3.</span> Advanced STEMM</h3>
+<div class="outline-text-3" id="text-2-3">
+</div>
+<div id="outline-container-orgffe9cb5" class="outline-4">
+<h4 id="orgffe9cb5"><span class="section-number-4">2.3.1.</span> Nano Science &amp; Technology</h4>
+<div class="outline-text-4" id="text-2-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="org0741864"></a>Kavli Institute for Nanoscience Discovery<br />
+<div class="outline-text-5" id="text-2-3-1-1">
+<ul class="org-ul">
+<li><b>“News.”</b> Accessed: Feb. 04, 2024. [Online]. Available: <a href="https://kavlinano.ox.ac.uk/latest-news">https://kavlinano.ox.ac.uk/latest-news</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org05032e1"></a>NanoTechnology World<br />
+<div class="outline-text-5" id="text-2-3-1-2">
+<ul class="org-ul">
+<li>“News,” nanotechnologyworld. Accessed: Feb. 04, 2024. [Online]. Available: <a href="https://www.nanotechnologyworld.org/newsroom">https://www.nanotechnologyworld.org/newsroom</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgcdb32b9"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="orgbcd66f6"></a>India<br />
+<ul class="org-ul">
+<li><a id="orgcd291f5"></a>Centre for Nano Science and Engineering (CeNSE), IISc | Indian Institute of Science<br />
+<div class="outline-text-7" id="text-orgcd291f5">
+<ul class="org-ul">
+<li><b>“Centre for Nano Science and Engineering (CeNSE), IISc | Indian Institute of Science.”</b> Accessed March 16, 2021. <a href="http://www.cense.iisc.ac.in/">http://www.cense.iisc.ac.in/</a>.
+<ul class="org-ul">
+<li>“Quarterly Newsletter | CeNSE.” Accessed: May 21, 2026. [Online]. Available: <a href="https://www.cense.iisc.ac.in/quarterly-newsletter/">https://www.cense.iisc.ac.in/quarterly-newsletter/</a></li>
+<li>“Latest News | CeNSE.” Accessed: May 21, 2026. [Online]. Available: <a href="https://www.cense.iisc.ac.in/latest-news/">https://www.cense.iisc.ac.in/latest-news/</a></li>
+<li>“BLOG | CeNSE.” Accessed: May 21, 2026. [Online]. Available: <a href="https://www.cense.iisc.ac.in/blog/">https://www.cense.iisc.ac.in/blog/</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org373dca1"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org3bfd92d" class="outline-4">
+<h4 id="org3bfd92d"><span class="section-number-4">2.3.2.</span> Quantum Computing</h4>
+<div class="outline-text-4" id="text-2-3-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgdabd6b7"></a>Elite Universities<br />
+<div class="outline-text-5" id="text-2-3-2-1">
+<ul class="org-ul">
+<li>V. support, <b>“Latest news and comment | University of Oxford Department of Physics.”</b> Accessed: Feb. 04, 2024. [Online]. Available: <a href="https://www.physics.ox.ac.uk/news?theme=40">https://www.physics.ox.ac.uk/news?theme=40</a></li>
+<li><b>“News – MIT EECS.”</b> Accessed: Feb. 04, 2024. [Online]. Available: <a href="https://www.eecs.mit.edu/category/news/?fwp_topics=quantum-computing-communication-and-sensing">https://www.eecs.mit.edu/category/news/?fwp_topics=quantum-computing-communication-and-sensing</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org84c47ac"></a>Scott Aaronson<br />
+<div class="outline-text-5" id="text-2-3-2-2">
+<ul class="org-ul">
+<li><b>“Shtetl-Optimized,” Shtetl-Optimized.</b> Accessed: May 20, 2026. [Online]. Available: <a href="https://scottaaronson.blog/">https://scottaaronson.blog/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgbe0e264"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="orgde85a26"></a>India<br /></li>
+</ol>
+</li>
+<li><a id="org331ebe3"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org4de6ad9" class="outline-4">
+<h4 id="org4de6ad9"><span class="section-number-4">2.3.3.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org9560225" class="outline-3">
+<h3 id="org9560225"><span class="section-number-3">2.4.</span> Orgs</h3>
+<div class="outline-text-3" id="text-2-4">
+</div>
+<div id="outline-container-orgd540e48" class="outline-4">
+<h4 id="orgd540e48"><span class="section-number-4">2.4.1.</span> Heidelberg Laureate Forum</h4>
+<div class="outline-text-4" id="text-2-4-1">
+<ul class="org-ul">
+<li><b>“Newsroom - Heidelberg Laureate Foundation,” - Heidelberg Laureate Foundation.</b> Accessed: Jan. 29, 2024. [Online]. Available: <a href="https://www.newsroom.hlf-foundation.org/">https://www.newsroom.hlf-foundation.org/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org45b6348" class="outline-4">
+<h4 id="org45b6348"><span class="section-number-4">2.4.2.</span> Simons Foundation</h4>
+<div class="outline-text-4" id="text-2-4-2">
+<ul class="org-ul">
+<li><b>“Advancing Research in Basic Science and Mathematics,”</b> Simons Foundation. Accessed: May 21, 2026. [Online]. Available: <a href="https://www.simonsfoundation.org/">https://www.simonsfoundation.org/</a>
+<ul class="org-ul">
+<li>“Announcements,” Simons Foundation. Accessed: May 21, 2026. [Online]. Available: <a href="https://www.simonsfoundation.org/news/announcements/">https://www.simonsfoundation.org/news/announcements/</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd6b340c" class="outline-4">
+<h4 id="orgd6b340c"><span class="section-number-4">2.4.3.</span> London Mathematical Laboratory</h4>
+<div class="outline-text-4" id="text-2-4-3">
+<ul class="org-ul">
+<li><b>“London Mathematical Laboratory.”</b> Accessed: Jan. 29, 2024. [Online]. Available: <a href="https://lml.org.uk/blog/">https://lml.org.uk/blog/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org93b68d7" class="outline-3">
+<h3 id="org93b68d7"><span class="section-number-3">2.5.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgbf6c8cd" class="outline-2">
+<h2 id="orgbf6c8cd"><span class="section-number-2">3.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org6f8c515" class="outline-3">
+<h3 id="org6f8c515"><span class="section-number-3">3.1.</span> India</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-org14bfda0" class="outline-4">
+<h4 id="org14bfda0"><span class="section-number-4">3.1.1.</span> General</h4>
+</div>
+<div id="outline-container-orgec308a7" class="outline-4">
+<h4 id="orgec308a7"><span class="section-number-4">3.1.2.</span> Mathematics, Misc</h4>
+<div class="outline-text-4" id="text-3-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="org3ab31ab"></a>General<br /></li>
+<li><a id="org1e50246"></a>Universities, Misc<br />
+<ol class="org-ol">
+<li><a id="orgc534fe2"></a>Elite Universities, Misc<br />
+<div class="outline-text-6" id="text-3-1-2-2-1">
+<ul class="org-ul">
+<li><b>“News: Mathematics@IISc.”</b> Accessed: May 21, 2026. [Online]. Available: <a href="https://math.iisc.ac.in/news.html">https://math.iisc.ac.in/news.html</a></li>
+<li><b>“Tata Institute of Fundamental Research | TIFR.”</b> <a href="https://www.tifr.res.in/portal/mathematics.php">https://www.tifr.res.in/portal/mathematics.php</a> (accessed Jul. 31, 2023).
+<ul class="org-ul">
+<li>“TIFR Centre For Applicable Mathematics — TIFR CAM Bangalore.” <a href="https://www.math.tifrbng.res.in/">https://www.math.tifrbng.res.in/</a> (accessed Jul. 31, 2023).</li>
+<li>“www.math.tifr.res.in.” <a href="http://www.math.tifr.res.in/">http://www.math.tifr.res.in/</a> (accessed Jul. 31, 2023).</li>
+</ul></li>
+
+<li><b>“Lodha Mathematical Sciences Institute (LMSI): Advancing Research &amp; Innovation in Math.”</b> Accessed: May 21, 2026. [Online]. Available: <a href="https://lmsi.org/">https://lmsi.org/</a>
+<ul class="org-ul">
+<li>“Newsroom - Lodha Mathematical Sciences Institute (LMSI).” Accessed: May 21, 2026. [Online]. Available: <a href="https://lmsi.org/newsroom">https://lmsi.org/newsroom</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org72e48de"></a>Misc<br />
+<div class="outline-text-6" id="text-3-1-2-2-2">
+<ul class="org-ul">
+<li>“Chennai Mathematical Institute.” <a href="https://www.cmi.ac.in//">https://www.cmi.ac.in//</a> (accessed Jul. 31, 2023).</li>
+<li>“Mathematics | The Institute of Mathematical Sciences.” Accessed: May 21, 2026. [Online]. Available: <a href="https://www.imsc.res.in/mathematics">https://www.imsc.res.in/mathematics</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orga322030"></a>Magazines<br />
+<div class="outline-text-5" id="text-3-1-2-3">
+<ul class="org-ul">
+<li>“Bhāvanā – The mathematics magazine &lt;br/&gt;A publication of the Bhavana Trust.” Accessed: May 21, 2026. [Online]. Available: <a href="https://bhavana.org.in/">https://bhavana.org.in/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org9e8333f"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgc115389" class="outline-4">
+<h4 id="orgc115389"><span class="section-number-4">3.1.3.</span> Computer Science and Engineering</h4>
+<div class="outline-text-4" id="text-3-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="orgeb6bdab"></a>General<br /></li>
+<li><a id="org5c3deaf"></a>Core<br />
+<ol class="org-ol">
+<li><a id="orgfa8715b"></a>Privacy And Security<br />
+<div class="outline-text-6" id="text-3-1-3-2-1">
+<ul class="org-ul">
+<li><b>“CoE News and Events - Centre of Excellence in Cyber Security, Govt. of Karnataka.”</b> Accessed: Jan. 29, 2024. [Online]. Available: <a href="https://cs-coe.iisc.ac.in/about/coe-news-and-events/">https://cs-coe.iisc.ac.in/about/coe-news-and-events/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org4076bc1"></a>MainStream Media<br />
+<div class="outline-text-6" id="text-3-1-3-2-2">
+<ul class="org-ul">
+<li>“Technology News Today, Latest Tech News,” The Hindu. Accessed: May 21, 2026. [Online]. Available: <a href="https://www.thehindu.com/sci-tech/technology/">https://www.thehindu.com/sci-tech/technology/</a></li>
+<li>“Gadgets News, Latest Smartphones, Cameras, Wearable Tech, TVs,” The Hindu. Accessed: May 21, 2026. [Online]. Available: <a href="https://www.thehindu.com/sci-tech/technology/gadgets/">https://www.thehindu.com/sci-tech/technology/gadgets/</a></li>
+<li>“AI News – Latest Updates on Consumer Tech, Cybersecurity, Personal Data Privacy and AI-Based Security,” The Hindu. Accessed: May 21, 2026. [Online]. Available: <a href="https://www.thehindu.com/sci-tech/technology/internet/">https://www.thehindu.com/sci-tech/technology/internet/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgbd96628"></a>Worldly Matters<br />
+<div class="outline-text-5" id="text-3-1-3-3">
+<ul class="org-ul">
+<li>“MediaNama - Digital India Internet Mobile Policy News,” MediaNama. Accessed: Jan. 29, 2024. [Online]. Available: <a href="https://www.medianama.com/">https://www.medianama.com/</a></li>
+<li>“Software Freedom Law Center, India.” Accessed: May 20, 2026. [Online]. Available: <a href="https://sflc.in/">https://sflc.in/</a></li>
+<li>“Internet Freedom Foundation,” Internet Freedom Foundation (IFF). Accessed: May 20, 2026. [Online]. Available: <a href="https://internetfreedom.in/">https://internetfreedom.in/</a></li>
+
+<li><b>“Home | IT for Change.”</b> Accessed: Jan. 14, 2025. [Online]. Available: <a href="https://itforchange.net/index.php/">https://itforchange.net/index.php/</a>
+<ul class="org-ul">
+<li><b>“IT for Change.”</b> Accessed: Jan. 14, 2025. [Online]. Available: <a href="https://itforchange.us11.list-manage.com/subscribe?u=6fd97454ef6c0671ea92b5cb4&amp;id=d88a62d96d">https://itforchange.us11.list-manage.com/subscribe?u=6fd97454ef6c0671ea92b5cb4&amp;id=d88a62d96d</a></li>
+<li><b>“Bot Populi » Talking Digital Justice.”</b> Accessed: Jan. 14, 2025. [Online]. Available: <a href="https://botpopuli.net/">https://botpopuli.net/</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org46c1d6c"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="org2839557"></a><b>Mozilla Foundation</b><br />
+<div class="outline-text-6" id="text-3-1-3-4-1">
+<ul class="org-ul">
+<li>“Mozilla India Blog,” Mozilla India Blog, May 06, 2019. <a href="https://blog.mozillaindia.org">https://blog.mozillaindia.org</a> (accessed Jun. 23, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="orga68c058"></a>Digital Futures Lab<br />
+<div class="outline-text-6" id="text-3-1-3-4-2">
+<ul class="org-ul">
+<li>“News.” Accessed: May 21, 2026. [Online]. Available: <a href="https://www.digitalfutureslab.in/news">https://www.digitalfutureslab.in/news</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orge8ab015"></a>Magazines<br />
+<ul class="org-ul">
+<li><a id="orgadc75dc"></a>General<br />
+<div class="outline-text-7" id="text-orgadc75dc">
+<ul class="org-ul">
+<li>“Category:Computer magazines published in India,” Wikipedia. May 28, 2020. Accessed: Jun. 01, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Category:Computer_magazines_published_in_India&amp;oldid=959374524">https://en.wikipedia.org/w/index.php?title=Category:Computer_magazines_published_in_India&amp;oldid=959374524</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6fd5ac7"></a>MainStream Media<br />
+<div class="outline-text-7" id="text-org6fd5ac7">
+<ul class="org-ul">
+<li>“Digit: Technology Advice, Product Reviews, Latest News,” Digit. Accessed: Feb. 04, 2025. [Online]. Available: <a href="https://www.digit.in/">https://www.digit.in/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org702c5d5"></a>FLOSS<br />
+<div class="outline-text-7" id="text-org702c5d5">
+<ul class="org-ul">
+<li><b>“Open Source For You | Open Source Updates.”</b> Accessed: Feb. 04, 2025. [Online]. Available: <a href="https://www.opensourceforu.com/">https://www.opensourceforu.com/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgea6f1cd"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="orgd8929a9"></a>Hindi<br />
+<ul class="org-ul">
+<li><a id="orgac7c919"></a>MainStream Media<br />
+<div class="outline-text-9" id="text-orgac7c919">
+<ul class="org-ul">
+<li>“Hindi Technology News, हिन्दी टेक्नोलॉजी न्यूज़, हिन्दी तकनीकी समाचार | Digit Hindi,” Digit. Accessed: Feb. 25, 2025. [Online]. Available: <a href="https://www.digit.in/hi/">https://www.digit.in/hi/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orga393dda"></a>Misc<br />
+<div class="outline-text-7" id="text-orga393dda">
+<ul class="org-ul">
+<li>“DATAQUEST - The Bible of Indian IT (Information, Insights and Trends, Analysis, Research, News, Features, Opinion, Interviews, People, Events, Jobs, ISRO recruitment, ITES, DQ Deep Tech).” Accessed: Jun. 01, 2026. [Online]. Available: <a href="https://www.dqindia.com/">https://www.dqindia.com/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org1a47334"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgcdb1576" class="outline-4">
+<h4 id="orgcdb1576"><span class="section-number-4">3.1.4.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-3-1-4">
+</div>
+<ol class="org-ol">
+<li><a id="orgf736993"></a>Magazines<br />
+<div class="outline-text-5" id="text-3-1-4-1">
+<ul class="org-ul">
+<li>“IITM Shaastra - A Science and Technology Magazine | Indian Institute of Technology Madras.” Accessed: May 20, 2026. [Online]. Available: <a href="https://shaastramag.iitm.ac.in/">https://shaastramag.iitm.ac.in/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgda233f5" class="outline-4">
+<h4 id="orgda233f5"><span class="section-number-4">3.1.5.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org79aec64" class="outline-3">
+<h3 id="org79aec64"><span class="section-number-3">3.2.</span> Popular Resources</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>“Undark: Truth, Beauty, Science.,” Undark Magazine. Accessed: Jan. 02, 2024. [Online]. Available: <a href="https://undark.org/">https://undark.org/</a></li>
+<li>“Nautilus | Science Connected,” Nautilus. Accessed: Feb. 23, 2024. [Online]. Available: <a href="https://nautil.us/">https://nautil.us/</a></li>
+<li>“Science and Math News,” Quanta Magazine. Accessed: Feb. 23, 2024. [Online]. Available: <a href="https://www.quantamagazine.org/">https://www.quantamagazine.org/</a></li>
+<li>“Scientific American,” Scientific American. Accessed: Feb. 23, 2024. [Online]. Available: <a href="https://www.scientificamerican.com/">https://www.scientificamerican.com/</a></li>
+<li>“Popular Science Homepage,” Popular Science. Accessed: Feb. 23, 2024. [Online]. Available: <a href="https://www.popsci.com/">https://www.popsci.com/</a></li>
+
+<li>“Popular Mechanics - Product Reviews, How-To, Space, Military, Math, Science, and New Technology,” Popular Mechanics. Accessed: Jul. 13, 2024. [Online]. Available: <a href="https://www.popularmechanics.com/">https://www.popularmechanics.com/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org0ebf47f" class="outline-2">
+<h2 id="org0ebf47f"><span class="section-number-2">4.</span> Misc</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>“Science Advocacy 101,” Union of Concerned Scientists. Accessed: May 15, 2024. [Online]. Available: <a href="https://secure.ucsusa.org/a/2024-science-advocacy-101">https://secure.ucsusa.org/a/2024-science-advocacy-101</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-06-25 Thu 17:03</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
