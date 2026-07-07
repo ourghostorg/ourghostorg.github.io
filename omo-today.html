@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-07 Tue 11:28 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Today</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Today</h1>
+<hr />
+
+<ul class="org-ul">
+<li>L. Mehta, H. N. Adam, and S. Srivastava, Eds., The Politics of Climate Change and Uncertainty in India. Place of publication not identified: Routledge, 2021.</li>
+<li>S. A. Levin et al., Eds., The Princeton Guide to Ecology. Princeton, NJ: Princeton University Press, 2012.</li>
+<li>R. Karban, M. Huntzinger, and I. S. Pearse, How to Do Ecology: A Concise Handbook - Third Edition. Princeton, New Jersey Oxford: Princeton University Press, 2023.</li>
+<li>L. A. Babb, Alchemies of Violence: Myths of Identity and the Life of Trade in Western India. New Delhi Thousand Oaks, Calif: Sage India, 2010.</li>
+<li>cxdig, “A Chemically Defined Synthetic Cell Capable of Growth and Replication,” Complexity Digest. Accessed: Jul. 06, 2026. [Online]. Available: <a href="https://comdig.cssociety.org/2026/07/05/a-chemically-defined-synthetic-cell-capable-of-growth-and-replication/">https://comdig.cssociety.org/2026/07/05/a-chemically-defined-synthetic-cell-capable-of-growth-and-replication/</a></li>
+<li>“Dalit Panthers: Beyond the Battle of the Founders,” The India Forum. Accessed: Jul. 06, 2026. [Online]. Available: <a href="https://www.theindiaforum.in/book-reviews/dalit-panthers-beyond-battle-founders">https://www.theindiaforum.in/book-reviews/dalit-panthers-beyond-battle-founders</a></li>
+<li>“Israel’s Genocide in Gaza Represents the Moral Bankruptcy of the Human Race,” The Wire. Accessed: Jul. 06, 2026. [Online]. Available: <a href="https://thewire.in/rights/israels-genocide-in-gaza-represents-the-moral-bankruptcy-of-the-human-race">https://thewire.in/rights/israels-genocide-in-gaza-represents-the-moral-bankruptcy-of-the-human-race</a></li>
+<li>“RSF and partners launch online platform in memory of environmental journalist Dom Phillips and indigenous expert Bruno Pereira | RSF.” Accessed: Jul. 06, 2026. [Online]. Available: <a href="https://rsf.org/en/rsf-and-partners-launch-online-platform-memory-environmental-journalist-dom-phillips-and-indigenous">https://rsf.org/en/rsf-and-partners-launch-online-platform-memory-environmental-journalist-dom-phillips-and-indigenous</a></li>
+<li>“Sacked Without Inquiry: How Kashmir’s Security Crackdown Cost Govt Teachers, Doctors &amp; Officials Jobs &amp; Hope.” Accessed: Jul. 06, 2026. [Online]. Available: <a href="https://www.article-14.com/post/sacked-without-inquiry-how-kashmir-s-security-crackdown-cost-govt-teachers-doctors-officials-jobs-hope--6a45d77253db8">https://www.article-14.com/post/sacked-without-inquiry-how-kashmir-s-security-crackdown-cost-govt-teachers-doctors-officials-jobs-hope--6a45d77253db8</a></li>
+<li>“Fired drinking water adviser files suit against EPA,” World Socialist Web Site. Accessed: Jul. 06, 2026. [Online]. Available: <a href="https://www.wsws.org/en/articles/2026/07/06/tquf-j06.html">https://www.wsws.org/en/articles/2026/07/06/tquf-j06.html</a></li>
+<li>T. Behanbox, “BehanVox: No Pride, Only Punishment,” BehanBox. Accessed: Jul. 06, 2026. [Online]. Available: <a href="https://behanbox.com/2026/07/05/behanvox-no-pride-only-punishment/">https://behanbox.com/2026/07/05/behanvox-no-pride-only-punishment/</a></li>
+<li>“Campaigners battle ‘monstrous megalith’ AI centre.” Accessed: Jul. 06, 2026. [Online]. Available: <a href="https://theecologist.org/2026/jul/06/campaigners-battle-monstrous-megalith-ai-centre">https://theecologist.org/2026/jul/06/campaigners-battle-monstrous-megalith-ai-centre</a></li>
+<li>B. Rao, “Songs, Drama, Creativity Strengthen Social Movements: MKSS’s Shankar Singh,” BehanBox. Accessed: Jul. 06, 2026. [Online]. Available: <a href="https://behanbox.com/2026/07/06/behanbox-talkies-social-movements-become-stronger-by-incorporating-songs-drama-and-creativity/">https://behanbox.com/2026/07/06/behanbox-talkies-social-movements-become-stronger-by-incorporating-songs-drama-and-creativity/</a></li>
+<li>“Database Error.” Accessed: Jul. 06, 2026. [Online]. Available: <a href="https://regenerationinternational.org/2026/07/04/can-agroecology-transform-global-food-systems-professor-stephen-gliessman-explains-the-five-levels/">https://regenerationinternational.org/2026/07/04/can-agroecology-transform-global-food-systems-professor-stephen-gliessman-explains-the-five-levels/</a></li>
+<li>“MDHHS makes recommendations on preventing foodborne illness amid growing cyclosporiasis outbreak.” Accessed: Jul. 06, 2026. [Online]. Available: <a href="https://www.michigan.gov/mdhhs/inside-mdhhs/newsroom/2026/07/04/mdhhs-makes-recommendations-on-preventing-foodborne-illness-amid-growing-cyclosporiasis-outbreak">https://www.michigan.gov/mdhhs/inside-mdhhs/newsroom/2026/07/04/mdhhs-makes-recommendations-on-preventing-foodborne-illness-amid-growing-cyclosporiasis-outbreak</a></li>
+<li>JSE, “Save it for 2062, Peacock,” Quomodocumque. Accessed: Jul. 06, 2026. [Online]. Available: <a href="https://quomodocumque.wordpress.com/2026/07/05/save-it-for-2062-peacock/">https://quomodocumque.wordpress.com/2026/07/05/save-it-for-2062-peacock/</a></li>
+<li>M. L. magazine Nature, “Is AI ruining our skills? Early results are in—and they’re not good,” Scientific American. Accessed: Jul. 06, 2026. [Online]. Available: <a href="https://www.scientificamerican.com/article/is-ai-ruining-our-skills-early-results-are-in-and-theyre-not-good/">https://www.scientificamerican.com/article/is-ai-ruining-our-skills-early-results-are-in-and-theyre-not-good/</a></li>
+<li>“Command and Control (film),” Wikipedia. Feb. 18, 2026. Accessed: Jul. 05, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Command_and_Control_(film)&amp;oldid=1339048637">https://en.wikipedia.org/w/index.php?title=Command_and_Control_(film)&amp;oldid=1339048637</a></li>
+<li>“Food, Inc. 2,” Wikipedia. Dec. 28, 2025. Accessed: Jul. 05, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Food,_Inc._2&amp;oldid=1329828995">https://en.wikipedia.org/w/index.php?title=Food,_Inc._2&amp;oldid=1329828995</a></li>
+<li>“Food, Inc.,” Wikipedia. Mar. 24, 2026. Accessed: Jul. 05, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Food,_Inc.&amp;oldid=1345189649">https://en.wikipedia.org/w/index.php?title=Food,_Inc.&amp;oldid=1345189649</a></li>
+<li>“Robert Kenner,” Wikipedia. Jun. 01, 2026. Accessed: Jul. 05, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Robert_Kenner&amp;oldid=1357263992">https://en.wikipedia.org/w/index.php?title=Robert_Kenner&amp;oldid=1357263992</a></li>
+<li>“Merchants of Doubt (film),” Wikipedia. Feb. 18, 2026. Accessed: Jul. 05, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Merchants_of_Doubt_(film)&amp;oldid=1339071712">https://en.wikipedia.org/w/index.php?title=Merchants_of_Doubt_(film)&amp;oldid=1339071712</a></li>
+<li>“The American Experiment,” Wikipedia. Jan. 29, 2026. Accessed: Jul. 05, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=The_American_Experiment&amp;oldid=1335420966">https://en.wikipedia.org/w/index.php?title=The_American_Experiment&amp;oldid=1335420966</a></li>
+<li>E. Haber, D. Jemielniak, A. Kurasiński, and A. Przegalińska, Using AI in Academic Writing and Research: A Complete Guide to Effective and Ethical Academic AI. Cham: Palgrave MacMillan, 2025.</li>
+<li>K. L. Turabian, W. C. Booth, G. G. Colomb, J. M. Williams, and J. Bizup, A Manual for Writers of Research Papers, Theses, and Dissertations, Ninth Edition: Chicago Style for Students and Researchers. Chicago London: University of Chicago Press, 2018.</li>
+<li>W. C. Booth, G. G. Colomb, J. M. Williams, J. Bizup, and W. T. Fitzgerald, The Craft of Research. Chicago London: Univ of Chicago Pr, 2024.</li>
+<li>R. Liss and J. Davis, EFFECTIVE ACADEMIC WRITING SECOND EDITION 3 STUDENT BOOK. New York, NY Oxford: Oxford University Press, 2012.</li>
+<li>S. Bailey, Academic Writing: A Handbook for International Students. Oxford: Routledge, 2025.</li>
+<li>S. Bailey, Academic Writing: A Handbook for International Students. London New York: Routledge, 2018.</li>
+<li>A. Savage and M. Shafiei, EFFECTIVE ACADEMIC WRITING SECOND EDITION 1 STUDENT BOOK. Oxford University Press.</li>
+<li>“Buy Pearson Critical Thinking, Academic Writing and Presentation Skills: MG University Edition Book Online at Low Prices in India | Pearson Critical Thinking, Academic Writing and Presentation Skills: MG University Edition Reviews &amp; Ratings - Amazon.in.” Accessed: Jul. 05, 2026. [Online]. Available: <a href="https://www.amazon.in/Critical-Thinking-Academic-Writing-Presentation/dp/8131731987?s=books">https://www.amazon.in/Critical-Thinking-Academic-Writing-Presentation/dp/8131731987?s=books</a></li>
+<li>I. Robeyns, Limitarianism: The Case Against Extreme Wealth. London: Allen Lane, 2024.</li>
+<li>D. Rosenthal, D. Rosenthal, and P. Rosenthal, A Readable Introduction to Real Mathematics. Cham, Switzerland: Springer Nature Switzerland AG, 2018.</li>
+<li>D. W. J. D’Angelo, Mathematical Thinking: Problem-Solving and Proofs, 2/e. Pearson India.</li>
+<li>L. Caviglia, Sex Work in Nepal: The Making and Unmaking of a Category. Milton: Routledge India, 2017.</li>
+<li>“Nepal and Himalayan Studies.” Accessed: Jul. 05, 2026. [Online]. Available: <a href="https://www.amazon.in/Nepal-and-Himalayan-Studies/dp/B0F5W1CHP9?ref_=saga_sdp_cseo_dsk_rmt">https://www.amazon.in/Nepal-and-Himalayan-Studies/dp/B0F5W1CHP9?ref_=saga_sdp_cseo_dsk_rmt</a></li>
+<li>S. P and S. Deb, Commercial Sex Workers in India: Addressing Legal, Health, and Social Issues. Singapore: Springer, 2026.</li>
+<li>R. Ramaswamy, D.D. Kosambi: One Life, Many Worlds. Fourth Estate India.</li>
+<li>T. Tao, Six Maths Essentials: How to Model the World. Pelican.</li>
+<li>A. F. Kay, Escape From Shadow Physics: Quantum Theory, Quantum Reality and the Next Scientific Revolution. Weidenfeld &amp; Nicolson.</li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/zero/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-07 Tue 11:28</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
