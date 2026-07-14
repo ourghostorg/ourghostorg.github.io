@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-14 Tue 15:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Misc Tiny URLs - For Messaging, Misc</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Misc Tiny URLs - For Messaging, Misc</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orga78722a">1. STEMM</a>
+<ul>
+<li><a href="#org72064ee">1.1. Information, Communication Technology, Computer Science and Engineering, Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgda3880c">2. Worldly Matters</a>
+<ul>
+<li><a href="#org92df809">2.1. Space, Earth, Life Sciences, Environment, Ecology, Health, Misc</a>
+<ul>
+<li><a href="#org094e597">2.1.1. Spas</a></li>
+<li><a href="#org2000cee">2.1.2. Salons</a></li>
+<li><a href="#org7705818">2.1.3. Food</a></li>
+<li><a href="#orgd2dbbbc">2.1.4. Misc Tiny URLs - Drugs, Medicine, Misc</a></li>
+<li><a href="#orgb194ed1">2.1.5. Ayurveda</a></li>
+<li><a href="#org23fca72">2.1.6. Mental Health, Misc</a></li>
+<li><a href="#org56dbda8">2.1.7. Exercise</a></li>
+</ul>
+</li>
+<li><a href="#orgc82ec05">2.2. Religions, Spirituality, Misc</a>
+<ul>
+<li><a href="#org5f48e79">2.2.1. Islam</a></li>
+<li><a href="#orgee8f6de">2.2.2. Sikhism</a></li>
+<li><a href="#orgcfc83f6">2.2.3. Hinduism</a></li>
+</ul>
+</li>
+<li><a href="#org7ca9815">2.3. SocioPolitical Studies, Law, Misc</a>
+<ul>
+<li><a href="#orgb8135cb">2.3.1. Politics: Right</a></li>
+</ul>
+</li>
+<li><a href="#orge44d3b5">2.4. Communication, Misc</a></li>
+<li><a href="#orgcad5c82">2.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgd2421b1">3. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orga78722a" class="outline-2">
+<h2 id="orga78722a"><span class="section-number-2">1.</span> STEMM</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org72064ee" class="outline-3">
+<h3 id="org72064ee"><span class="section-number-3">1.1.</span> Information, Communication Technology, Computer Science and Engineering, Misc</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/mtu/blob/main/omomtu-2cse.html">Misc Tiny URLs: Computer Science and Engineering, Misc</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgda3880c" class="outline-2">
+<h2 id="orgda3880c"><span class="section-number-2">2.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org92df809" class="outline-3">
+<h3 id="org92df809"><span class="section-number-3">2.1.</span> Space, Earth, Life Sciences, Environment, Ecology, Health, Misc</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org094e597" class="outline-4">
+<h4 id="org094e597"><span class="section-number-4">2.1.1.</span> Spas</h4>
+<div class="outline-text-4" id="text-2-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="orge4fc25f"></a>General<br />
+<div class="outline-text-5" id="text-2-1-1-1">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-1hspa.html">Spas</a></li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-massage.html">Massage</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgec1475b"></a>Christianity<br />
+<div class="outline-text-5" id="text-2-1-1-2">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/mtu/blob/main/omomtu-42c.html">Misc Tiny URLs: Christianity</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgac8de37"></a>Manners, Grooming, Misc<br />
+<div class="outline-text-5" id="text-2-1-1-3">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/fortythree/blob/main/omo-manners.html">Manners, Misc</a></li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/fortythree/blob/main/omo-grooming.html">Grooming, Misc</a></li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/fortythree/blob/main/omo-salons.html">Salons, Misc</a></li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/fortythree/blob/main/omo-mannershi.html">Manners, Grooming - Hindi</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org86d2251"></a>HomeMaking, HouseKeeping, Misc<br />
+<div class="outline-text-5" id="text-2-1-1-4">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/mtu/blob/main/omomtu-1be.html">Misc Tiny URLs: Home Making, Real Estate, Architecture, Misc</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org804002b"></a>Care Work, Misc<br />
+<ol class="org-ol">
+<li><a id="org9a5ee6f"></a>General<br />
+<div class="outline-text-6" id="text-2-1-1-5-1">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-workcare.html">Care Work</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf95e002"></a>Sex Work<br />
+<div class="outline-text-6" id="text-2-1-1-5-2">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/fortythree/blob/main/omo-sexwork.html">Sex Work</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org9a384a3"></a>Nursing<br />
+<div class="outline-text-6" id="text-2-1-1-5-3">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-nurse.html">Nursing</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org5900b4d"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org173523a"></a>Communication, Misc<br />
+<div class="outline-text-5" id="text-2-1-1-6">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/comm/blob/main/omo-engall.html">Everyday English: The Least Everyone Needs To Know</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org9db88e1"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org2000cee" class="outline-4">
+<h4 id="org2000cee"><span class="section-number-4">2.1.2.</span> Salons</h4>
+<div class="outline-text-4" id="text-2-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="orge4a7670"></a>General<br />
+<div class="outline-text-5" id="text-2-1-2-1">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/fortythree/blob/main/omo-salons.html">Salons, Misc</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org35da75b"></a>Manners, Grooming, Misc<br />
+<div class="outline-text-5" id="text-2-1-2-2">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/fortythree/blob/main/omo-manners.html">Manners, Misc</a></li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/fortythree/blob/main/omo-grooming.html">Grooming, Misc</a></li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/fortythree/blob/main/omo-mannershi.html">Manners, Grooming - Hindi</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org408aa68"></a>HomeMaking, HouseKeeping, Misc<br />
+<div class="outline-text-5" id="text-2-1-2-3">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/mtu/blob/main/omomtu-1be.html">Misc Tiny URLs: Home Making, Real Estate, Architecture, Misc</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org52f195a"></a>Misc<br />
+<div class="outline-text-5" id="text-2-1-2-4">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/three/blob/main/omo-beauty.html">Beauty</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org7705818" class="outline-4">
+<h4 id="org7705818"><span class="section-number-4">2.1.3.</span> Food</h4>
+<div class="outline-text-4" id="text-2-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="org56baa01"></a>General<br />
+<div class="outline-text-5" id="text-2-1-3-1">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/mtu/blob/main/omomtu-1hfoodmed.html">Misc Tiny URLs: Agriculture, Food, Diet, Medicine, Misc</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgbe6d822"></a>Cuisines<br />
+<ol class="org-ol">
+<li><a id="orgffb8c4d"></a>Misc<br />
+<div class="outline-text-6" id="text-2-1-3-2-1">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-fooditaly.html">Italy - Food</a></li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-foodmex.html">Mexico - Food</a></li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-foodyellow.html">'Yellow' Cuisines</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org0e9f008"></a>India, Misc<br />
+<div class="outline-text-6" id="text-2-1-3-2-2">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-foodinjnk.html">Jammu and Kashmir - Food</a></li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-foodsindh.html">Sindh - Food</a></li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-foodpunjab.html">Punjab - Food</a></li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-foodinrj.html">Rajasthan - Food</a></li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-foodinncr.html">India NCR - Food</a></li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-foodinhry.html">Haryana - Food</a></li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-foodinup.html">Uttar Pradesh - Food</a></li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-foodgoa.html">Food - Goa</a></li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-foodbengal.html">Bengal - Food</a></li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-foodkerala.html">Kerala - Food</a></li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-foodhybd.html">Hyderabad - Food</a></li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-foodmughal.html">Mughlai Cuisine, Misc</a></li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-foodinsp.html">Food - Indian Southern Peninsula</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org5a859a8"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgd2dbbbc" class="outline-4">
+<h4 id="orgd2dbbbc"><span class="section-number-4">2.1.4.</span> Misc Tiny URLs - Drugs, Medicine, Misc</h4>
+<div class="outline-text-4" id="text-2-1-4">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/mtu/blob/main/omomtu-drugsmed.html">Misc Tiny URLs: Drugs, Medicine, Misc</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb194ed1" class="outline-4">
+<h4 id="orgb194ed1"><span class="section-number-4">2.1.5.</span> Ayurveda</h4>
+<div class="outline-text-4" id="text-2-1-5">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-ayurveda.html">Ayurveda</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org23fca72" class="outline-4">
+<h4 id="org23fca72"><span class="section-number-4">2.1.6.</span> Mental Health, Misc</h4>
+<div class="outline-text-4" id="text-2-1-6">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/psi/blob/main/omo-1hmental.html">Mental Health</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org56dbda8" class="outline-4">
+<h4 id="org56dbda8"><span class="section-number-4">2.1.7.</span> Exercise</h4>
+<div class="outline-text-4" id="text-2-1-7">
+</div>
+<ol class="org-ol">
+<li><a id="org777a8c4"></a>Yoga<br />
+<div class="outline-text-5" id="text-2-1-7-1">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/fortytwo/blob/main/omo-yoga.html">Yoga</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgbad4e6b"></a>Pilates<br />
+<div class="outline-text-5" id="text-2-1-7-2">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/one/blob/main/omo-pilates.html">Pilates</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgc82ec05" class="outline-3">
+<h3 id="orgc82ec05"><span class="section-number-3">2.2.</span> Religions, Spirituality, Misc</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-org5f48e79" class="outline-4">
+<h4 id="org5f48e79"><span class="section-number-4">2.2.1.</span> Islam</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/mtu/blob/main/omomtu-42i.html">Misc Tiny URLs: Islam</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgee8f6de" class="outline-4">
+<h4 id="orgee8f6de"><span class="section-number-4">2.2.2.</span> Sikhism</h4>
+<div class="outline-text-4" id="text-2-2-2">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/mtu/blob/main/omomtu-42s.html">Misc Tiny URLs: Sikhism</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcfc83f6" class="outline-4">
+<h4 id="orgcfc83f6"><span class="section-number-4">2.2.3.</span> Hinduism</h4>
+<div class="outline-text-4" id="text-2-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="org66e72c9"></a>General<br />
+<div class="outline-text-5" id="text-2-2-3-1">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/mtu/blob/main/omomtu-42h.html">Misc Tiny URLs: Hinduism</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org8cd6a98"></a>People<br />
+<ol class="org-ol">
+<li><a id="org8fd2d53"></a>Sri Aurobindo<br />
+<div class="outline-text-6" id="text-2-2-3-2-1">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/mtu/blob/main/omomtu-42hsa.html">Misc Tiny URLs: Sri Aurobindo</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org3544fe0"></a>Misc<br />
+<div class="outline-text-6" id="text-2-2-3-2-2">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/fortytwo/blob/main/omo-swamiva.html">Swami Vivekananda</a></li>
+
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/fortytwo/blob/main/omo-swamilj.html">Swami LakshmanJoo</a></li>
+
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/fortytwo/blob/main/omo-prabhupada.html">Swami Prabhupada</a>
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/fortytwo/blob/main/omo-iskcon.html">ISKCON</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org46bf7c3"></a>Tantra<br />
+<div class="outline-text-5" id="text-2-2-3-3">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/fortytwo/blob/main/omo-tantra.html">Tantra</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org82430c0"></a>Vishnu<br />
+<div class="outline-text-5" id="text-2-2-3-4">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/mtu/blob/main/omomtu-42hvishnu.html">Misc Tiny URLs: Vishnu</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org7ddbeb4"></a>Lakshmi<br />
+<div class="outline-text-5" id="text-2-2-3-5">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/mtu/blob/main/omomtu-42hlakshmi.html">Misc Tiny URLs: Lakshmi</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf467d58"></a>Krishna Nexus<br />
+<div class="outline-text-5" id="text-2-2-3-6">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/mtu/blob/main/omomtu-42hkrishnan.html">Misc Tiny URLs: Krishna Nexus</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org1a690d2"></a>Rama Nexus<br />
+<div class="outline-text-5" id="text-2-2-3-7">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/mtu/blob/main/omomtu-42hraman.html">Misc Tiny URLs: Rama Nexus</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org7ca9815" class="outline-3">
+<h3 id="org7ca9815"><span class="section-number-3">2.3.</span> SocioPolitical Studies, Law, Misc</h3>
+<div class="outline-text-3" id="text-2-3">
+</div>
+<div id="outline-container-orgb8135cb" class="outline-4">
+<h4 id="orgb8135cb"><span class="section-number-4">2.3.1.</span> Politics: Right</h4>
+<div class="outline-text-4" id="text-2-3-1">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/mtu/blob/main/omomtu-43prinpros.html">Misc Short URLs - Pro Right 'Wing'ish, Pro Sangh Parivar Politics in India</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orge44d3b5" class="outline-3">
+<h3 id="orge44d3b5"><span class="section-number-3">2.4.</span> Communication, Misc</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/comm/blob/main/omo-engall.html">Everyday English: The Least Everyone Needs To Know</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcad5c82" class="outline-3">
+<h3 id="orgcad5c82"><span class="section-number-3">2.5.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgd2421b1" class="outline-2">
+<h2 id="orgd2421b1"><span class="section-number-2">3.</span> Misc</h2>
+<div class="outline-text-2" id="text-3">
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/zero/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-14 Tue 15:41</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
