@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-29 Wed 18:54 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI For Latest News, Today's News</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+
+<script src="https://orgmode.org/org-info.js">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+// @license-end
+</script>
+
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+org_html_manager.set("TOC_DEPTH", "5");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "1");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "y");
+org_html_manager.set("VIEW", "info");
+org_html_manager.setup();  // activate after the parameters are set
+// @license-end
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">AI For Latest News, Today's News</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org4bb0a5b">1. Statements</a></li>
+<li><a href="#orga4933fa">2. Misc Internet Resources</a>
+<ul>
+<li><a href="#org439e17c">2.1. Big Picture</a>
+<ul>
+<li><a href="#org7f39ccf">2.1.1. Post Modernism, Post Development, Misc</a></li>
+<li><a href="#org18437d2">2.1.2. Systems Sciences, Misc</a></li>
+</ul>
+</li>
+<li><a href="#org7572b7e">2.2. STEMM</a>
+<ul>
+<li><a href="#org745d14f">2.2.1. Computer Science and Engineering, Information, Communication Technology, Misc</a></li>
+<li><a href="#org9383a76">2.2.2. Mathematics</a></li>
+<li><a href="#org608d5bb">2.2.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org6c52e85">2.3. Worldly Matters</a>
+<ul>
+<li><a href="#org524168f">2.3.1. Space, Earth, Life Sciences, Environment, Ecology, Health, Misc</a></li>
+<li><a href="#org0ab8a8f">2.3.2. Religions, Spirituality, Misc</a></li>
+<li><a href="#org5f33be4">2.3.3. Business Studies, Misc</a></li>
+<li><a href="#org7a279ca">2.3.4. India</a>
+<ul>
+<li><a href="#orge0a8550">2.3.4.1. Gurugram</a></li>
+<li><a href="#orgbc70687">2.3.4.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgfb85077">2.3.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org684cabc">2.4. Arts</a>
+<ul>
+<li><a href="#org23ee5b3">2.4.1. Music, Misc</a></li>
+</ul>
+</li>
+<li><a href="#org264d7ad">2.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org82659fc">3. Template, T</a>
+<ul>
+<li><a href="#org44818e8">3.1. Big Picture</a>
+<ul>
+<li><a href="#orgf6e48fe">3.1.1. Systems Sciences, Misc</a></li>
+<li><a href="#orgcb71a69">3.1.2. Post Modernism, Post Development, Misc</a></li>
+<li><a href="#org126384a">3.1.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org3aa819f">3.2. STEMM</a>
+<ul>
+<li><a href="#org08a0389">3.2.1. Mathematics, Misc</a></li>
+<li><a href="#org0651d11">3.2.2. Computer Science and Engineering,Information, Communication Technology, Misc</a>
+<ul>
+<li><a href="#org8b669ba">3.2.2.1. Digital Privacy and Security</a></li>
+<li><a href="#org3248d27">3.2.2.2. Artificial Intelligence</a></li>
+<li><a href="#org3f078db">3.2.2.3. Quantum Computing</a></li>
+<li><a href="#org7add311">3.2.2.4. Everyday Computing</a></li>
+<li><a href="#org9ab2aea">3.2.2.5. Computer Science And Engineering, Information, Communication Technology, Misc - Worldly Matters</a></li>
+<li><a href="#orgbcdec59">3.2.2.6. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgbddc371">3.2.3. Physics</a></li>
+<li><a href="#orgfd4e094">3.2.4. Chemistry</a></li>
+<li><a href="#orgbd345c5">3.2.5. Biological Sciences, Misc</a></li>
+<li><a href="#orgf718981">3.2.6. Nano Science &amp; Technology, Misc</a></li>
+<li><a href="#orgeedbdab">3.2.7. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org7705dcd">3.3. Worldly Matters</a>
+<ul>
+<li><a href="#org95dcc84">3.3.1. Space, Earth, Life Sciences, Environment, Ecology, Health, Misc</a></li>
+<li><a href="#org76bcceb">3.3.2. Religions, Spirituality, Misc</a></li>
+<li><a href="#orge427a76">3.3.3. Humanities, Misc</a></li>
+<li><a href="#orgc7e9fab">3.3.4. SocioPolitical Studies, Law, Misc</a></li>
+<li><a href="#org38d1547">3.3.5. Business Studies, Misc</a>
+<ul>
+<li><a href="#org40781fa">3.3.5.1. Economics, Misc</a></li>
+<li><a href="#orga401110">3.3.5.2. Management</a></li>
+<li><a href="#org2cd57d4">3.3.5.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgeb48318">3.3.6. Security Studies, Misc</a>
+<ul>
+<li><a href="#org7d5c6e1">3.3.6.1. Nuclear Security Studies, Misc</a></li>
+<li><a href="#orgdcf7430">3.3.6.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org2228963">3.3.7. Communication, Misc</a></li>
+<li><a href="#org96f834f">3.3.8. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgf622efc">3.4. Arts</a>
+<ul>
+<li><a href="#org47754b1">3.4.1. Music, Misc</a>
+<ul>
+<li><a href="#org3e9e6fd">3.4.1.1. Hindustani Classical Music</a></li>
+<li><a href="#org478bec3">3.4.1.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org0bb1c7d">3.4.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgbcc94fc">3.5. Misc</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org4bb0a5b" class="outline-2">
+<h2 id="org4bb0a5b"><span class="section-number-2">1.</span> Statements</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>List all the <b>latest</b> news, blog and social media posts (on Twitter,
+Instagram, FaceBook, Bluesky, Mastodon, and YouTube), including
+links to all of them, on the following websites and their official
+websites for India, if any. Then classify them all in the template T
+given below.</li>
+<li>List all of <b>today's</b> news, blog and social media posts (on Twitter,
+Instagram, FaceBook, Bluesky, Mastodon, and YouTube), including
+links to all of them, on the following websites and their official
+websites for India, if any. Then classify them all in the template T
+given below.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga4933fa" class="outline-2">
+<h2 id="orga4933fa"><span class="section-number-2">2.</span> Misc Internet Resources</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org439e17c" class="outline-3">
+<h3 id="org439e17c"><span class="section-number-3">2.1.</span> Big Picture</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org7f39ccf" class="outline-4">
+<h4 id="org7f39ccf"><span class="section-number-4">2.1.1.</span> Post Modernism, Post Development, Misc</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<ul class="org-ul">
+<li>Vikalp Sangam, Local Futures</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org18437d2" class="outline-4">
+<h4 id="org18437d2"><span class="section-number-4">2.1.2.</span> Systems Sciences, Misc</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<ul class="org-ul">
+<li>CSH Vienna, SFI, NECSI</li>
+<li>IIASA , Wolfram Research</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org7572b7e" class="outline-3">
+<h3 id="org7572b7e"><span class="section-number-3">2.2.</span> STEMM</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-org745d14f" class="outline-4">
+<h4 id="org745d14f"><span class="section-number-4">2.2.1.</span> Computer Science and Engineering, Information, Communication Technology, Misc</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<ul class="org-ul">
+<li>FSF, EFF, AI Now, MediaNama, SFLC.in, Internet Freedom Foundation, IT for Change, Privacy International, Access Now, EPIC, Cory Doctrow Blog, Schneier Blog. ACM Blog, IEEE Blog</li>
+<li>LCFI, MIT CSAIL</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9383a76" class="outline-4">
+<h4 id="org9383a76"><span class="section-number-4">2.2.2.</span> Mathematics</h4>
+<div class="outline-text-4" id="text-2-2-2">
+<ul class="org-ul">
+<li>AMS, EMS, Fields Institute , Math Values, SLMath, Clay Math</li>
+<li>Bhavana Magazine, IIMS Chennai, IISc Math Dept, Lodha Inst. Simons Foundation</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org608d5bb" class="outline-4">
+<h4 id="org608d5bb"><span class="section-number-4">2.2.3.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-2-3">
+<ul class="org-ul">
+<li>International Science Council, Institute for Advanced Study, Royal Society, Science Mag., Nature Mag., Heidelberg Laureate Forum</li>
+<li>Royal Society of Biology</li>
+<li>Physics World, IOP Physics</li>
+<li>Chem World</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org6c52e85" class="outline-3">
+<h3 id="org6c52e85"><span class="section-number-3">2.3.</span> Worldly Matters</h3>
+<div class="outline-text-3" id="text-2-3">
+</div>
+<div id="outline-container-org524168f" class="outline-4">
+<h4 id="org524168f"><span class="section-number-4">2.3.1.</span> Space, Earth, Life Sciences, Environment, Ecology, Health, Misc</h4>
+<div class="outline-text-4" id="text-2-3-1">
+<ul class="org-ul">
+<li>The Ecologist Magazine, Greenpeace International, Friends Of The Earth International, Down To Earth, Mongabay International, Navdanya International, Regeneration International, Organic Consumers Association, USRTK, Bulletin Of Atomic Scientists, Union Of Concerned Scientists, Extinction Rebellion Global, Fridays For Future, Sunrise Movement , WHN Global , Potsdam Institute For Climate Impact Research, Heinrich Boll Stiftung</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0ab8a8f" class="outline-4">
+<h4 id="org0ab8a8f"><span class="section-number-4">2.3.2.</span> Religions, Spirituality, Misc</h4>
+<div class="outline-text-4" id="text-2-3-2">
+<ul class="org-ul">
+<li>Vrindavan Today, Friends Of Vrindavan, ISKCON International, Mind And Life Institute</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5f33be4" class="outline-4">
+<h4 id="org5f33be4"><span class="section-number-4">2.3.3.</span> Business Studies, Misc</h4>
+<div class="outline-text-4" id="text-2-3-3">
+<ul class="org-ul">
+<li>Centre For Financial Accountability, bthechange, Trezor Blog, Zebpay India</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7a279ca" class="outline-4">
+<h4 id="org7a279ca"><span class="section-number-4">2.3.4.</span> India</h4>
+<div class="outline-text-4" id="text-2-3-4">
+</div>
+<div id="outline-container-orge0a8550" class="outline-5">
+<h5 id="orge0a8550"><span class="section-number-5">2.3.4.1.</span> Gurugram</h5>
+<div class="outline-text-5" id="text-2-3-4-1">
+<ul class="org-ul">
+<li>TOI Gurgaon HT Gurgaon</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbc70687" class="outline-5">
+<h5 id="orgbc70687"><span class="section-number-5">2.3.4.2.</span> Misc</h5>
+<div class="outline-text-5" id="text-2-3-4-2">
+<ul class="org-ul">
+<li>Caravan Magazine, Frontline Magazine, India Forum, EPW, NewsClick</li>
+<li>Feminism in India, PARI India</li>
+<li>Scroll.in, The Wire, News Laundry, News Minute</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgfb85077" class="outline-4">
+<h4 id="orgfb85077"><span class="section-number-4">2.3.5.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-3-5">
+<ul class="org-ul">
+<li>HRW, Amnesty International, Front Line Defenders</li>
+<li>Transnational Institute, Democracy Now, Jacobin, World Socialist Website, RLS South Asia RLS Global, thetricontinental.org, Middle East Eye, Monthly Review</li>
+<li>GIJN, ICIJ, CPJ, IFJ</li>
+<li>OCCRP, Transparency International</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org684cabc" class="outline-3">
+<h3 id="org684cabc"><span class="section-number-3">2.4.</span> Arts</h3>
+<div class="outline-text-3" id="text-2-4">
+</div>
+<div id="outline-container-org23ee5b3" class="outline-4">
+<h4 id="org23ee5b3"><span class="section-number-4">2.4.1.</span> Music, Misc</h4>
+<div class="outline-text-4" id="text-2-4-1">
+<ul class="org-ul">
+<li>SPIC MACAY</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org264d7ad" class="outline-3">
+<h3 id="org264d7ad"><span class="section-number-3">2.5.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-5">
+<ul class="org-ul">
+<li>Aeon, Psyche Magazine, The Conversation</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org82659fc" class="outline-2">
+<h2 id="org82659fc"><span class="section-number-2">3.</span> Template, T</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org44818e8" class="outline-3">
+<h3 id="org44818e8"><span class="section-number-3">3.1.</span> Big Picture</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-orgf6e48fe" class="outline-4">
+<h4 id="orgf6e48fe"><span class="section-number-4">3.1.1.</span> Systems Sciences, Misc</h4>
+</div>
+<div id="outline-container-orgcb71a69" class="outline-4">
+<h4 id="orgcb71a69"><span class="section-number-4">3.1.2.</span> Post Modernism, Post Development, Misc</h4>
+</div>
+<div id="outline-container-org126384a" class="outline-4">
+<h4 id="org126384a"><span class="section-number-4">3.1.3.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org3aa819f" class="outline-3">
+<h3 id="org3aa819f"><span class="section-number-3">3.2.</span> STEMM</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-org08a0389" class="outline-4">
+<h4 id="org08a0389"><span class="section-number-4">3.2.1.</span> Mathematics, Misc</h4>
+</div>
+<div id="outline-container-org0651d11" class="outline-4">
+<h4 id="org0651d11"><span class="section-number-4">3.2.2.</span> Computer Science and Engineering,Information, Communication Technology, Misc</h4>
+<div class="outline-text-4" id="text-3-2-2">
+</div>
+<div id="outline-container-org8b669ba" class="outline-5">
+<h5 id="org8b669ba"><span class="section-number-5">3.2.2.1.</span> Digital Privacy and Security</h5>
+</div>
+<div id="outline-container-org3248d27" class="outline-5">
+<h5 id="org3248d27"><span class="section-number-5">3.2.2.2.</span> Artificial Intelligence</h5>
+</div>
+<div id="outline-container-org3f078db" class="outline-5">
+<h5 id="org3f078db"><span class="section-number-5">3.2.2.3.</span> Quantum Computing</h5>
+</div>
+<div id="outline-container-org7add311" class="outline-5">
+<h5 id="org7add311"><span class="section-number-5">3.2.2.4.</span> Everyday Computing</h5>
+</div>
+<div id="outline-container-org9ab2aea" class="outline-5">
+<h5 id="org9ab2aea"><span class="section-number-5">3.2.2.5.</span> Computer Science And Engineering, Information, Communication Technology, Misc - Worldly Matters</h5>
+</div>
+<div id="outline-container-orgbcdec59" class="outline-5">
+<h5 id="orgbcdec59"><span class="section-number-5">3.2.2.6.</span> Misc</h5>
+</div>
+</div>
+<div id="outline-container-orgbddc371" class="outline-4">
+<h4 id="orgbddc371"><span class="section-number-4">3.2.3.</span> Physics</h4>
+</div>
+<div id="outline-container-orgfd4e094" class="outline-4">
+<h4 id="orgfd4e094"><span class="section-number-4">3.2.4.</span> Chemistry</h4>
+</div>
+<div id="outline-container-orgbd345c5" class="outline-4">
+<h4 id="orgbd345c5"><span class="section-number-4">3.2.5.</span> Biological Sciences, Misc</h4>
+</div>
+<div id="outline-container-orgf718981" class="outline-4">
+<h4 id="orgf718981"><span class="section-number-4">3.2.6.</span> Nano Science &amp; Technology, Misc</h4>
+</div>
+<div id="outline-container-orgeedbdab" class="outline-4">
+<h4 id="orgeedbdab"><span class="section-number-4">3.2.7.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org7705dcd" class="outline-3">
+<h3 id="org7705dcd"><span class="section-number-3">3.3.</span> Worldly Matters</h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-org95dcc84" class="outline-4">
+<h4 id="org95dcc84"><span class="section-number-4">3.3.1.</span> Space, Earth, Life Sciences, Environment, Ecology, Health, Misc</h4>
+</div>
+<div id="outline-container-org76bcceb" class="outline-4">
+<h4 id="org76bcceb"><span class="section-number-4">3.3.2.</span> Religions, Spirituality, Misc</h4>
+</div>
+<div id="outline-container-orge427a76" class="outline-4">
+<h4 id="orge427a76"><span class="section-number-4">3.3.3.</span> Humanities, Misc</h4>
+</div>
+<div id="outline-container-orgc7e9fab" class="outline-4">
+<h4 id="orgc7e9fab"><span class="section-number-4">3.3.4.</span> SocioPolitical Studies, Law, Misc</h4>
+</div>
+<div id="outline-container-org38d1547" class="outline-4">
+<h4 id="org38d1547"><span class="section-number-4">3.3.5.</span> Business Studies, Misc</h4>
+<div class="outline-text-4" id="text-3-3-5">
+</div>
+<div id="outline-container-org40781fa" class="outline-5">
+<h5 id="org40781fa"><span class="section-number-5">3.3.5.1.</span> Economics, Misc</h5>
+</div>
+<div id="outline-container-orga401110" class="outline-5">
+<h5 id="orga401110"><span class="section-number-5">3.3.5.2.</span> Management</h5>
+</div>
+<div id="outline-container-org2cd57d4" class="outline-5">
+<h5 id="org2cd57d4"><span class="section-number-5">3.3.5.3.</span> Misc</h5>
+</div>
+</div>
+<div id="outline-container-orgeb48318" class="outline-4">
+<h4 id="orgeb48318"><span class="section-number-4">3.3.6.</span> Security Studies, Misc</h4>
+<div class="outline-text-4" id="text-3-3-6">
+</div>
+<div id="outline-container-org7d5c6e1" class="outline-5">
+<h5 id="org7d5c6e1"><span class="section-number-5">3.3.6.1.</span> Nuclear Security Studies, Misc</h5>
+</div>
+<div id="outline-container-orgdcf7430" class="outline-5">
+<h5 id="orgdcf7430"><span class="section-number-5">3.3.6.2.</span> Misc</h5>
+</div>
+</div>
+<div id="outline-container-org2228963" class="outline-4">
+<h4 id="org2228963"><span class="section-number-4">3.3.7.</span> Communication, Misc</h4>
+</div>
+<div id="outline-container-org96f834f" class="outline-4">
+<h4 id="org96f834f"><span class="section-number-4">3.3.8.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-orgf622efc" class="outline-3">
+<h3 id="orgf622efc"><span class="section-number-3">3.4.</span> Arts</h3>
+<div class="outline-text-3" id="text-3-4">
+</div>
+<div id="outline-container-org47754b1" class="outline-4">
+<h4 id="org47754b1"><span class="section-number-4">3.4.1.</span> Music, Misc</h4>
+<div class="outline-text-4" id="text-3-4-1">
+</div>
+<div id="outline-container-org3e9e6fd" class="outline-5">
+<h5 id="org3e9e6fd"><span class="section-number-5">3.4.1.1.</span> Hindustani Classical Music</h5>
+</div>
+<div id="outline-container-org478bec3" class="outline-5">
+<h5 id="org478bec3"><span class="section-number-5">3.4.1.2.</span> Misc</h5>
+</div>
+</div>
+<div id="outline-container-org0bb1c7d" class="outline-4">
+<h4 id="org0bb1c7d"><span class="section-number-4">3.4.2.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-orgbcc94fc" class="outline-3">
+<h3 id="orgbcc94fc"><span class="section-number-3">3.5.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-5">
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/zero/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-29 Wed 18:54</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
